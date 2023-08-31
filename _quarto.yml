@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+   
+
+website:
+  title: "jiseok_blog"
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About us
+      - href: documentation.qmd
+        text: Documentation
+      - href: IAM_GCAM.qmd
+        text: IAM-GCAM
+      - href: GGS621.qmd
+        text: GGS621
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+

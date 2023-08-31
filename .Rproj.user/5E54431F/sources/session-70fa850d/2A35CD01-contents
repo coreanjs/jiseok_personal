@@ -1,0 +1,63 @@
+---
+title: "GGS621"
+date : last-modified # now
+author: 
+ - name: "Jiseok AHN"
+   affiliation: "KAIST"
+title-block-banner: true
+format: 
+  html:
+    theme: flatly
+    code-fold: true
+    toc: true
+   # toc-depth: 2
+    toc-title: 목차
+    number-sections : true
+    #number-depth: 2
+    highlight-style: github
+    self-contained: false
+bibliography: references.bib
+---
+
+# '23.08.31 First class
+
+-   Syllabussss
+-   Interesting article
+
+## Paper critique
+
+-   Using ammonia as a shipping fuel could disturb the nitrogen cycle[@wolfram2022]
+
+![](GGS621/ammonia.png)
+
+### Summarize the key findings
+
+-   Ammonia(NH~3~) has been proposed as a shipping fuel. But potential adverse side-effects is not deeply discussed. Also,excessive [reactive notrigen](https://en.wikipedia.org/wiki/Reactive_nitrogen)(N~r~, 반응성 질소) in water and air leads to environmental damages such as eutrophication(부영양화) and air pollution.
+-   N~r~ usually emis N~2~O as a by-product, and N~2~O itself ia a potent GHG with a global warming potential of about 265-298 over a 100-year time horizon.
+-   If nitrogen releases from ammonia are not tightly controlled, the scale of the demands of maritime shipping fuel are such that the technology could significantly alter the global nitrogen cycle.
+
+### Strengths
+
+-   Stress the potential adverse side-effects of using ammonia that is not considered enough.
+
+-   Calculated the amount of N~r~ caused by NH~3~ shipping fuels and that would negate climate benefits of NH~3~.
+
+-   Found a key question of what portion of the NH~3~ and NO~x~ emissions will indirectly resolve to N~2~O on a multi-year timescale.
+
+-   
+
+    ### Weakness
+
+-   Only focuses on maritime emissions. But there are [other N~2~O emission sectors](https://www.epa.gov/ghgemissions/overview-greenhouse-gases#nitrous-oxide).
+
+-   Does not calculate what portion of the NH~3~ and NO~x~ emissions will indirectly resolve to N~2~O on a multi-year timescale.
+
+-   No punchline figure.
+
+### How to improve upon it for my own research
+
+-   Track other fuels that cause N~2~O emission in other emission sectors, such as agriculture, land use, transportation, industry, etc.
+-   
+-   
+
+# Reference
