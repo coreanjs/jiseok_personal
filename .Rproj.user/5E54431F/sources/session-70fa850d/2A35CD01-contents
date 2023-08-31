@@ -10,13 +10,15 @@ format:
     theme: flatly
     code-fold: true
     toc: true
-   # toc-depth: 2
+    toc-depth: 2
     toc-title: 목차
     number-sections : true
     #number-depth: 2
     highlight-style: github
     self-contained: false
 bibliography: references.bib
+
+freeze: true
 ---
 
 # '23.08.31 First class
@@ -118,7 +120,7 @@ Imposed on end-of-century **radiative forcing** increases from the pre-industria
 
 -   
 
-## Summarize the key findings
+### Summarize the key findings
 
 -   
 
