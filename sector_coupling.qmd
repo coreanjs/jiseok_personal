@@ -1,0 +1,42 @@
+---
+title: "GGS621"
+date : last-modified # now
+author: 
+ - name: "Jiseok AHN"
+   affiliation: "KAIST"
+title-block-banner: true
+format: 
+  html:
+    theme: flatly
+    code-fold: true
+    toc: true
+   # toc-depth: 2
+    toc-title: 목차
+    number-sections : true
+    #number-depth: 2
+    highlight-style: github
+    self-contained: false
+bibliography: references.bib
+---
+
+# 23.08.25. 한국환경경제학회
+
+## DIETER 모형을 활용한 전기차 섹터커플링의 환경 및 경제적 편익 산정(KEI 최형식)
+
+1.  섹터커플링 효과 연구
+
+-   섹터커플링 없이는 ESS 및 출력 제한이 증가, P2X를 통해 잉여 전력을 활용하고, ESS 대체 가능[@zerrahn2018]
+
+-   적절한 섹터커플링 정책 없이 수송 및 열부분을 전력시스템과 토압 시 전력시스템 비용 급증. 수송부문에서는 전기차 수요반응 참여 및 V2G 정책 활용 필요.[@brown2018]
+
+-   수송 및 열부문 섹터커플링을 통해 ESS 대체가 가능하며, 기타 수소 및 열저장 기술 투자 비용 절감 가능[@victoria2019]
+
+2.  국내 스마트 충전 관련 연구
+
+-   E-mobility 성장에 따른 석유·전력·신재생에너지 산업 대응 전략 연구(전력)[@gimdoweon]
+
+-   전기차 충전의사결정 모형 기반 게시별 요금제에 대한 부하 이전 효과 평가
+
+-   전기차 충전부하 피크는 19시에 가장 높을 것으로 전망
+
+-   계시별 요금제 도입을 통해 부하 변동성 감소

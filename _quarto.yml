@@ -17,6 +17,8 @@ website:
         text: IAM-GCAM
       - href: GGS621.qmd
         text: GGS621
+      - href: sector_coupling.qmd
+        text: Sector Coupling
         
 format:
   html:

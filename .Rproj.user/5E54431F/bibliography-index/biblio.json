@@ -42,6 +42,133 @@
             "title": "Using ammonia as a shipping fuel could disturb the nitrogen cycle",
             "type": "article-journal",
             "volume": "7"
+        },
+        {
+            "DOI": "10.1016/j.euroecorev.2018.07.004",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0014292118301107",
+            "author": [
+                {
+                    "family": "Zerrahn",
+                    "given": "Alexander"
+                },
+                {
+                    "family": "Schill",
+                    "given": "Wolf-Peter"
+                },
+                {
+                    "family": "Kemfert",
+                    "given": "Claudia"
+                }
+            ],
+            "container-title": "European Economic Review",
+            "id": "zerrahn2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "page": "259-279",
+            "title": "On the economics of electrical storage for variable renewable energy sources",
+            "type": "article-journal",
+            "volume": "108"
+        },
+        {
+            "DOI": "10.1016/j.energy.2018.06.222",
+            "URL": "http://arxiv.org/abs/1801.05290",
+            "author": [
+                {
+                    "family": "Brown",
+                    "given": "T."
+                },
+                {
+                    "family": "Schlachtberger",
+                    "given": "D."
+                },
+                {
+                    "family": "Kies",
+                    "given": "A."
+                },
+                {
+                    "family": "Schramm",
+                    "given": "S."
+                },
+                {
+                    "family": "Greiner",
+                    "given": "M."
+                }
+            ],
+            "container-title": "Energy",
+            "id": "brown2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        10
+                    ]
+                ]
+            },
+            "note": "arXiv:1801.05290 [physics]",
+            "page": "720-739",
+            "title": "Synergies of sector coupling and transmission reinforcement in a cost-optimised, highly renewable european energy system",
+            "type": "article-journal",
+            "volume": "160"
+        },
+        {
+            "DOI": "10.1016/j.enconman.2019.111977",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0196890419309835",
+            "author": [
+                {
+                    "family": "Victoria",
+                    "given": "Marta"
+                },
+                {
+                    "family": "Zhu",
+                    "given": "Kun"
+                },
+                {
+                    "family": "Brown",
+                    "given": "Tom"
+                },
+                {
+                    "family": "Andresen",
+                    "given": "Gorm B."
+                },
+                {
+                    "family": "Greiner",
+                    "given": "Martin"
+                }
+            ],
+            "container-title": "Energy Conversion and Management",
+            "id": "victoria2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        12,
+                        1
+                    ]
+                ]
+            },
+            "page": "111977",
+            "title": "The role of storage technologies throughout the decarbonisation of the sector-coupled european energy system",
+            "type": "article-journal",
+            "volume": "201"
+        },
+        {
+            "author": [
+                {
+                    "family": "김도원",
+                    "given": "정연제"
+                }
+            ],
+            "id": "gimdoweon",
+            "language": "ko",
+            "title": "E-mobility 성장에 따른 석유·전력·신재생에너지 산업 대응 전략 연구(전력)",
+            "type": "article-journal"
         }
     ],
     "project_biblios": []

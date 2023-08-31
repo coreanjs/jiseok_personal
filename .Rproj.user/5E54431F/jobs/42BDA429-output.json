@@ -1,7 +1,0 @@
-[2,"\n"]
-[1,"pandoc \n  to: html\n  output-file: GGS621.html\n  standalone: true\n  self-contained: false\n  title-prefix: jiseok_blog\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  css:\n    - styles.css\n  toc: true\n  number-sections: true\n  highlight-style: github\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  editor: visual\n  theme: cosmo\n  title: GGS621\n  date: last-modified\n  author:\n    - name: Jiseok AHN\n      affiliation: KAIST\n  title-block-banner: true\n  bibliography:\n    - references.bib\n  toc-title: 목차\n  \n"]
-[1,"Output created: docs\\GGS621.html\n\nPreparing to preview\n\nWatching files for changes\nBrowse at http://localhost:3799/GGS621.html\n"]
-[1,"GET: /GGS621.html\n"]
-[1,"GET: /GGS621.html\n"]
-[1,"GET: /IAM_GCAM.html\n"]
-[1,"GET: /documentation.html\n"]

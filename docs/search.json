@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "안지석",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 16, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nDec 16, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -109,6 +109,13 @@
     "href": "GGS621.html",
     "title": "GGS621",
     "section": "",
-    "text": "2 Reference\n\nWolfram, Paul, Page Kyle, Xin Zhang, Savvas Gkantonas, and Steven Smith. 2022. “Using Ammonia as a Shipping Fuel Could Disturb the Nitrogen Cycle.” Nature Energy 7 (12): 1112–14. https://doi.org/10.1038/s41560-022-01124-4."
+    "text": "2 Reference\n\nFuhrman, Jay, Andres Clarens, Katherine Calvin, Scott C. Doney, James A. Edmonds, Patrick O’Rourke, Pralit Patel, Shreekar Pradhan, William Shobe, and Haewon McJeon. 2021. “The Role of Direct Air Capture and Negative Emissions Technologies in the Shared Socioeconomic Pathways Towards +1.5 °C and +2 °C Futures.” Environmental Research Letters 16 (11): 114012. https://doi.org/10.1088/1748-9326/ac2db0.\n\n\nWolfram, Paul, Page Kyle, Xin Zhang, Savvas Gkantonas, and Steven Smith. 2022. “Using Ammonia as a Shipping Fuel Could Disturb the Nitrogen Cycle.” Nature Energy 7 (12): 1112–14. https://doi.org/10.1038/s41560-022-01124-4."
+  },
+  {
+    "objectID": "sector_coupling.html",
+    "href": "sector_coupling.html",
+    "title": "GGS621",
+    "section": "",
+    "text": "References\n\nBrown, T., D. Schlachtberger, A. Kies, S. Schramm, and M. Greiner. 2018. “Synergies of Sector Coupling and Transmission Reinforcement in a Cost-Optimised, Highly Renewable European Energy System.” Energy 160 (October): 720–39. https://doi.org/10.1016/j.energy.2018.06.222.\n\n\nVictoria, Marta, Kun Zhu, Tom Brown, Gorm B. Andresen, and Martin Greiner. 2019. “The Role of Storage Technologies Throughout the Decarbonisation of the Sector-Coupled European Energy System.” Energy Conversion and Management 201 (December): 111977. https://doi.org/10.1016/j.enconman.2019.111977.\n\n\nZerrahn, Alexander, Wolf-Peter Schill, and Claudia Kemfert. 2018. “On the Economics of Electrical Storage for Variable Renewable Energy Sources.” European Economic Review 108 (September): 259–79. https://doi.org/10.1016/j.euroecorev.2018.07.004.\n\n\n김도원정연제. n.d. “E-mobility 성장에 따른 석유·전력·신재생에너지 산업 대응 전략 연구(전력).”"
   }
 ]

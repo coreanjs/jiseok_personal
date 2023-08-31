@@ -24,9 +24,9 @@ bibliography: references.bib
 -   Syllabussss
 -   Interesting article
 
-## Paper critique
+## Ammonia for shipping fuels 
 
--   Using ammonia as a shipping fuel could disturb the nitrogen cycle[@wolfram2022]
+* Using ammonia as a shipping fuel could disturb the nitrogen cycle[@wolfram2022]
 
 ![](GGS621/ammonia.png)
 
@@ -44,9 +44,8 @@ bibliography: references.bib
 
 -   Found a key question of what portion of the NH~3~ and NO~x~ emissions will indirectly resolve to N~2~O on a multi-year timescale.
 
--   
-
-    ### Weakness
+   
+### Weakness
 
 -   Only focuses on maritime emissions. But there are [other N~2~O emission sectors](https://www.epa.gov/ghgemissions/overview-greenhouse-gases#nitrous-oxide).
 
@@ -58,6 +57,97 @@ bibliography: references.bib
 
 -   Track other fuels that cause N~2~O emission in other emission sectors, such as agriculture, land use, transportation, industry, etc.
 -   
+-   
+
+
+## Direct air capture with carbon storage(DACCS)
+
+* The role of direct air capture and negative emissions technologies in the shared socioeconomic pathways towards +1.5 ◦C and +2 ◦C futures[@fuhrman2021]
+
+:::{.callout-note}
+## Shared Socioeconomic Pathway
+
+The shared socioeconomic pathway (SSP) framework defines five storylines that differ in the challenges for mitigation and adaptation, resulting in different levels of long-term warming in the absence of global climate policies
+:::
+
+### Summarize the key findings
+
+- IAM scenarios to date have relied almost on bioenergy with carbon capture and storage (BECCS) and afforestation/reforestation for negative emissions. But, land-intensive strategies could have large impacts on global agricultural and natural biological system.
+
+- This study use GCAM to understand the role of direct air capture with carbon storage (DACCS) across all 5 SSPs for the below 2 ◦C and below 1.5 ◦C end-of-century warming goals.   
+
+:::{.callout-important}
+## Two constraints
+
+Imposed on end-of-century **radiative forcing** increases from the pre-industrial levels: +2.6 W m^−2^, consistent with limiting warming in 2100 to below +2^◦^C, and +1.9 W m^−2^(below 1.5^◦^C in 2100).
+
+**The discount rate**.
+:::
+- DACCS could play up to a tens of GtCO2 yr−1 role in many of these scenarios, particularly those with delayed climate policy and/or higher challenges to emissions mitigation.  
+
+
+### Strengths
+
+- Two different(high and low) DACCS technology details are considered. 
+  + Assesed a DACCS process requiring high temperature heat from natural gas combustion, electricity, and water could contribute to both ambitious near-term and delayed mitigation scenarios that limit end-of century warming to below +1.5 ◦C.
+  + The low-temperature DACCS process is assumed to use solid sorbents and not require water input
+
+- Exogenous treatment of GCAM allows sensitivity analysis of cost or efficiency targets for different technologries.
+
+[Other IAMs (e.g. WITCH, MERGE-ETL) endogenize these changes in cost and performance in an attempt to capture technological development in response to economic incentives]{.aside}
+
+-   
+
+### Weakness
+
+-   
+
+-   
+
+-   
+
+### How to improve upon it for my own research
+
+-   
+
+-   
+
+-   
+
+## paper title
+
+-   
+
+## Summarize the key findings
+
+-   
+
+-   
+
+-   
+
+### Strengths
+
+-   
+
+-   
+
+-   
+
+### Weakness
+
+-   
+
+-   
+
+-   
+
+### How to improve upon it for my own research
+
+-   
+
+-   
+
 -   
 
 # Reference
