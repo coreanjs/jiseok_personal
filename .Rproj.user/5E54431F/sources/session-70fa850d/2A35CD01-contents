@@ -23,9 +23,51 @@ freeze: true
 
 # '23.08.31 First class
 
--   [Syllabus](https://github.com/coreanjs/jiseok_personal/blob/main/GGS621/Syllabus.pdf)
--   Interesting article
+##    [Syllabus](https://github.com/coreanjs/jiseok_personal/blob/main/GGS621/Syllabus.pdf)
 
+### Week 1. Introduction to Integrated Modeling and Assessment: what are the “big issues” in this field, what are IA models, why are IA research and models valuable for understanding integrated systems, and what IA models do (and what they don’t).
+ 
+* Reading 1:
+
+  * [Carbon Brief Explainers, Q&A: How ‘integrated assessment models’ are used to study climate change, 2018.](https://www.carbonbrief.org/qa-how-integrated-assessment-models-are-used-to-study-climate-change/)
+  
+  * Edmonds, J. and J. Reilly. 1983. A Long-Term, Global, Energy-Economic Model of Carbon Dioxide Release From Fossil Fuel Use, Energy Economics, 5(2):74-88.
+  
+  * Volker Krey. Global energy‐climate scenarios and models: a review. WIREs Energy Environ 2014, 3:363–383.
+  
+* Assignment 1: Setup GCAM on a computer (laptop, cluster, or cloud), and run a GCAM reference scenario
+
+###  Week 2. Foundations of Integrated Assessment: history, evolution of the tool and overall structure, types of applications and examples.
+
+* Reading 2:
+
+  * [John Weyant. Some Contributions of Integrated Assessment Models of Global Climate Change. Review of Environmental Economics and Policy, Volume 11, Issue 1, Winter 2017, Pages 115–137.](https://www.journals.uchicago.edu/doi/full/10.1093/reep/rew018)
+  
+  * [Fisher-Vanden, K. and Weyant, J., 2020. The Evolution of Integrated Assessment: Developing the Next Generation of Use-Inspired Integrated Assessment Tools. Annual Review of Resource Economics, 12, pp.471-487.](https://www.annualreviews.org/doi/pdf/10.1146/annurev-resource-110119-030314#article-denial)
+  
+* Assignment 2: Run a GCAM decarbonization scenario
+
+### Week 3. Energy System: energy process at the regional and global scales, energy transition and climate mitigation, climate impacts on energy demand and supply.
+
+* Reading 4:
+
+  * GEA, 2012: Global Energy Assessment - Toward a Sustainable Future, Cambridge University Press, Cambridge, UK and New York, NY, USA and the International Institute for Applied Systems Analysis, Laxenburg, Austria.
+  
+    * [Global Energy Assessment Chapter 1](https://previous.iiasa.ac.at/web/home/research/Flagship-Projects/Global-Energy-Assessment/Chapter1.en.html) (background information)
+
+    * [Global Energy Assessment Chapter 16](https://iiasa.ac.at/web/home/research/Flagship-Projects/Global-Energy-Assessment/Chapte16.en.html)
+ 
+   [Iyer, G., Clarke, L., Edmonds, J. et al. Improved representation of investment decisions in assessments of CO2 mitigation. Nature Clim Change 5, 436–440 (2015).](https://doi.org/10.1038/nclimate2553) 
+
+* Further reading:
+
+  * Iyer et al. [Diffusion of low-carbon technologies and the feasibility of long-term climate targets. Technol. Forecast. Soc. Change, 90 (2015), pp. 103-118](https://www.sciencedirect.com/science/article/pii/S0040162513002096)
+  
+  * [Stegmann, P., Daioglou, V., Londo, M. et al. Plastic futures and their CO2 emissions. Nature 612, 272–276 (2022).](https://doi.org/10.1038/s41586-022-05422-5) 
+   
+* Assignment 3: Compare GCAM energy queries under the reference and decarbonization scenarios
+  
+  
 ## Ammonia for shipping fuels 
 
 * Using ammonia as a shipping fuel could disturb the nitrogen cycle[@wolfram2022]
