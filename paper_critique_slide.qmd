@@ -1,0 +1,107 @@
+---
+title: "Paper critique"
+subtitle: "Read through the syllabus and pick an IAM journal paper that you would like to cite in your term paper"
+format:
+  revealjs: 
+    slide-number: true
+  #  chalkboard: 
+  #    buttons: false
+  #  preview-links: auto
+   # logo: fig/quarto.png
+   # css: css/styles.css
+   # footer: <https://quarto.org>
+---
+
+## Writing an Article Critique{.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+1. Introduction
+* The author’s name(s) and the title of the article
+* The author’s main point
+* A thesis statement that previews your analysis
+
+:::
+
+::: {.column width="33.3%"}
+2. Summary
+* The main points of the article
+* The arguments presented in the article
+* The findings of the article
+
+:::
+
+::: {.column width="33.3%"}
+
+3. Critique
+* Discuss the strengths and weaknesses of the article that you noted while critically reading the article.
+* State your informed opinions about the clarity, relevancy, and accuracy of the article, using specific examples from the article to support your statements.
+
+:::
+
+::::   
+
+
+## Writing an Article Critique2{.smaller}
+
+
+:::: {.columns}
+
+::: {.column height="30%"}
+
+1. Introduction
+* The author’s name(s) and the title of the article
+* The author’s main point
+* A thesis statement that previews your analysis
+
+:::
+
+::: {.column height="33.3%"}
+2. Summary
+* The main points of the article
+* The arguments presented in the article
+* The findings of the article
+
+:::
+
+::: {.column height="33.3%"}
+
+3. Critique
+* Discuss the strengths and weaknesses of the article that you noted while critically reading the article.
+* State your informed opinions about the clarity, relevancy, and accuracy of the article, using specific examples from the article to support your statements.
+
+:::
+
+::::   
+
+
+## Summarize the key findings of the paper{.smaller}
+
+
+
+
+::: incremental
+- A **summary** of a research article requires you to share the key points of the  article so your reader can get a clear picture of what the article is about. 
+- A critique may include a brief summary, but the main focus should be on your evaluation and analysis of the research itself.
+
+:::
+
+## Discuss 3 strengths of the paper {auto-animate="true"}
+
+-   Over 20 syntax highlighting themes available
+-   Default theme optimized for accessibility
+
+::: footer
+Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
+:::
+
+## Critique 3 weakness of the paper {auto-animate="true"}
+
+-   Over 20 syntax highlighting themes available
+-   Default theme optimized for accessibility
+
+## How to improve for my own research
+

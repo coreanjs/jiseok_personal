@@ -1,9 +1,0 @@
----
-title: "Quarto_jiseok"
-foramt : html
-editor : visual
----
-
-``` r
-library(tidyverse)
-```

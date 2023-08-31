@@ -15,11 +15,19 @@ website:
         text: GGS621
       - href: sector_coupling.qmd
         text: Sector Coupling
-        
+  
+  sidebar:
+    style: docked
+    contents: 
+      - section: "PPT"
+        contents:
+          - href: paper_critique_slide.qmd
+            text: "Paper critique GS621"
 format:
   html:
     theme: cosmo
     css: styles.css
 
+ 
 editor: visual
 
