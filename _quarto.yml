@@ -10,11 +10,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About us
-      - href: documentation.qmd
-        text: Documentation
-      - href: IAM_GCAM.qmd
-        text: IAM-GCAM
+        text: About me
       - href: GGS621.qmd
         text: GGS621
       - href: sector_coupling.qmd

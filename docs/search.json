@@ -109,7 +109,7 @@
     "href": "GGS621.html",
     "title": "GGS621",
     "section": "",
-    "text": "2 Reference\n\nFuhrman, Jay, Andres Clarens, Katherine Calvin, Scott C. Doney, James A. Edmonds, Patrick O’Rourke, Pralit Patel, Shreekar Pradhan, William Shobe, and Haewon McJeon. 2021. “The Role of Direct Air Capture and Negative Emissions Technologies in the Shared Socioeconomic Pathways Towards +1.5 °C and +2 °C Futures.” Environmental Research Letters 16 (11): 114012. https://doi.org/10.1088/1748-9326/ac2db0.\n\n\nWolfram, Paul, Page Kyle, Xin Zhang, Savvas Gkantonas, and Steven Smith. 2022. “Using Ammonia as a Shipping Fuel Could Disturb the Nitrogen Cycle.” Nature Energy 7 (12): 1112–14. https://doi.org/10.1038/s41560-022-01124-4."
+    "text": "Syllabus"
   },
   {
     "objectID": "sector_coupling.html",
@@ -117,5 +117,26 @@
     "title": "GGS621",
     "section": "",
     "text": "References\n\nBrown, T., D. Schlachtberger, A. Kies, S. Schramm, and M. Greiner. 2018. “Synergies of Sector Coupling and Transmission Reinforcement in a Cost-Optimised, Highly Renewable European Energy System.” Energy 160 (October): 720–39. https://doi.org/10.1016/j.energy.2018.06.222.\n\n\nVictoria, Marta, Kun Zhu, Tom Brown, Gorm B. Andresen, and Martin Greiner. 2019. “The Role of Storage Technologies Throughout the Decarbonisation of the Sector-Coupled European Energy System.” Energy Conversion and Management 201 (December): 111977. https://doi.org/10.1016/j.enconman.2019.111977.\n\n\nZerrahn, Alexander, Wolf-Peter Schill, and Claudia Kemfert. 2018. “On the Economics of Electrical Storage for Variable Renewable Energy Sources.” European Economic Review 108 (September): 259–79. https://doi.org/10.1016/j.euroecorev.2018.07.004.\n\n\n김도원정연제. n.d. “E-mobility 성장에 따른 석유·전력·신재생에너지 산업 대응 전략 연구(전력).”"
+  },
+  {
+    "objectID": "GGS621.html#ammonia-for-shipping-fuels",
+    "href": "GGS621.html#ammonia-for-shipping-fuels",
+    "title": "GGS621",
+    "section": "1.1 Ammonia for shipping fuels",
+    "text": "1.1 Ammonia for shipping fuels\nTitle: Using ammonia as a shipping fuel could disturb the nitrogen cycle(Wolfram et al. 2022)\n\n\nSummarize the key findings\n\nAmmonia(NH3) has been proposed as a shipping fuel. But potential adverse side-effects is not deeply discussed. Also,excessive reactive notrigen(Nr, 반응성 질소) in water and air leads to environmental damages such as eutrophication(부영양화) and air pollution.\nNr usually emis N2O as a by-product, and N2O itself ia a potent GHG with a global warming potential of about 265-298 over a 100-year time horizon.\nIf nitrogen releases from ammonia are not tightly controlled, the scale of the demands of maritime shipping fuel are such that the technology could significantly alter the global nitrogen cycle.\n\n\n\nStrengths\n\nStress the potential adverse side-effects of using ammonia that is not considered enough.\nCalculated the amount of Nr caused by NH3 shipping fuels and that would negate climate benefits of NH3.\nFound a key question of what portion of the NH3 and NOx emissions will indirectly resolve to N2O on a multi-year timescale.\n\n\n\nWeakness\n\nOnly focuses on maritime emissions. But there are other N2O emission sectors.\nDoes not calculate what portion of the NH3 and NOx emissions will indirectly resolve to N2O on a multi-year timescale.\nNo punchline figure.\n\n\n\nHow to improve upon it for my own research\n\nTrack other fuels that cause N2O emission in other emission sectors, such as agriculture, land use, transportation, industry, etc."
+  },
+  {
+    "objectID": "GGS621.html#direct-air-capture-with-carbon-storagedaccs",
+    "href": "GGS621.html#direct-air-capture-with-carbon-storagedaccs",
+    "title": "GGS621",
+    "section": "1.2 Direct air capture with carbon storage(DACCS)",
+    "text": "1.2 Direct air capture with carbon storage(DACCS)\n\nThe role of direct air capture and negative emissions technologies in the shared socioeconomic pathways towards +1.5 ◦C and +2 ◦C futures(Fuhrman et al. 2021)\n\n\n\n\n\n\n\nShared Socioeconomic Pathway\n\n\n\nThe shared socioeconomic pathway (SSP) framework defines five storylines that differ in the challenges for mitigation and adaptation, resulting in different levels of long-term warming in the absence of global climate policies\n\n\n\nSummarize the key findings\n\nIAM scenarios to date have relied almost on bioenergy with carbon capture and storage (BECCS) and afforestation/reforestation for negative emissions. But, land-intensive strategies could have large impacts on global agricultural and natural biological system.\nThis study use GCAM to understand the role of direct air capture with carbon storage (DACCS) across all 5 SSPs for the below 2 ◦C and below 1.5 ◦C end-of-century warming goals.\n\n\n\n\n\n\n\nTwo constraints\n\n\n\nImposed on end-of-century radiative forcing increases from the pre-industrial levels: +2.6 W m−2, consistent with limiting warming in 2100 to below +2◦C, and +1.9 W m−2(below 1.5◦C in 2100).\nThe discount rate.\n\n\n\nDACCS could play up to a tens of GtCO2 yr−1 role in many of these scenarios, particularly those with delayed climate policy and/or higher challenges to emissions mitigation.\n\n\n\nStrengths\n\nTwo different(high and low) DACCS technology details are considered.\n\nAssesed a DACCS process requiring high temperature heat from natural gas combustion, electricity, and water could contribute to both ambitious near-term and delayed mitigation scenarios that limit end-of century warming to below +1.5 ◦C.\nThe low-temperature DACCS process is assumed to use solid sorbents and not require water input\n\nExogenous treatment of GCAM allows sensitivity analysis of cost or efficiency targets for different technologries.\n\nOther IAMs (e.g. WITCH, MERGE-ETL) endogenize these changes in cost and performance in an attempt to capture technological development in response to economic incentives\n\n\nWeakness\n\n\n\n\n\n\n\nHow to improve upon it for my own research"
+  },
+  {
+    "objectID": "GGS621.html#paper-title",
+    "href": "GGS621.html#paper-title",
+    "title": "GGS621",
+    "section": "3.1 paper title",
+    "text": "3.1 paper title\n\n\n\n\nSummarize the key findings\n\n\n\n\n\n\n\nStrengths\n\n\n\n\n\n\n\nWeakness\n\n\n\n\n\n\n\nHow to improve upon it for my own research"
   }
 ]
