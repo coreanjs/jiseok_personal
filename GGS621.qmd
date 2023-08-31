@@ -13,7 +13,7 @@ format:
     toc-depth: 2
     toc-title: 목차
     number-sections : true
-    #number-depth: 2
+    number-depth: 2
     highlight-style: github
     self-contained: false
 bibliography: references.bib
@@ -23,7 +23,7 @@ freeze: true
 
 # '23.08.31 First class
 
--   Syllabussss
+-   [Syllabus](https://github.com/coreanjs/jiseok_personal/blob/main/GGS621/Syllabus.pdf)
 -   Interesting article
 
 ## Ammonia for shipping fuels 
