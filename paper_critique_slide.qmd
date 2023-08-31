@@ -52,27 +52,30 @@ format:
 
 ::: {.column height="30%"}
 
+::: incremental
 1. Introduction
 * The author’s name(s) and the title of the article
 * The author’s main point
 * A thesis statement that previews your analysis
+:::
 
 :::
 
 ::: {.column height="33.3%"}
+::: incremental
 2. Summary
 * The main points of the article
 * The arguments presented in the article
 * The findings of the article
-
+:::
 :::
 
 ::: {.column height="33.3%"}
-
+::: incremental
 3. Critique
 * Discuss the strengths and weaknesses of the article that you noted while critically reading the article.
 * State your informed opinions about the clarity, relevancy, and accuracy of the article, using specific examples from the article to support your statements.
-
+:::
 :::
 
 ::::   
@@ -85,14 +88,16 @@ format:
 
 ::: incremental
 - A **summary** of a research article requires you to share the key points of the  article so your reader can get a clear picture of what the article is about. 
-- A critique may include a brief summary, but the main focus should be on your evaluation and analysis of the research itself.
+- A **critique** may include a brief summary, but the main focus should be on your evaluation and analysis of the research itself.
 
 :::
 
 ## Discuss 3 strengths of the paper {auto-animate="true"}
 
+::: incremental
 -   Over 20 syntax highlighting themes available
 -   Default theme optimized for accessibility
+:::
 
 ::: footer
 Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
@@ -100,8 +105,9 @@ Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-co
 
 ## Critique 3 weakness of the paper {auto-animate="true"}
 
+::: incremental
 -   Over 20 syntax highlighting themes available
 -   Default theme optimized for accessibility
-
+:::
 ## How to improve for my own research
 
