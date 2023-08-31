@@ -30,8 +30,14 @@ freeze: true
 * Reading 1:
 
   * [Carbon Brief Explainers, Q&A: How ‘integrated assessment models’ are used to study climate change, 2018.](https://www.carbonbrief.org/qa-how-integrated-assessment-models-are-used-to-study-climate-change/)
+    *
+    *
+    *
+    
   
-  * Edmonds, J. and J. Reilly. 1983. A Long-Term, Global, Energy-Economic Model of Carbon Dioxide Release From Fossil Fuel Use, Energy Economics, 5(2):74-88.
+  * [Edmonds, J. and J. Reilly. 1983. A Long-Term, Global, Energy-Economic Model of Carbon Dioxide Release From Fossil Fuel Use, Energy Economics, 5(2):74-88.](https://www.sciencedirect.com/science/article/pii/0140988383900142)
+    * As simple a modelling system as possible has been used to develop a long-term global base case for CO~2~ emissions.
+    * Developed a concept called the 'doubling window'. it is defined by looking at the date at which the CO~2~ concentration reaches 600 ppm under a given scenario assuming that f goes no higher than 0.7 nor lower than 0.4.
   
   * Volker Krey. Global energy‐climate scenarios and models: a review. WIREs Energy Environ 2014, 3:363–383.
   
@@ -42,7 +48,26 @@ freeze: true
 * Reading 2:
 
   * [John Weyant. Some Contributions of Integrated Assessment Models of Global Climate Change. Review of Environmental Economics and Policy, Volume 11, Issue 1, Winter 2017, Pages 115–137.](https://www.journals.uchicago.edu/doi/full/10.1093/reep/rew018)
-  
+    * IAMs differ tremendously in their level of detail and the complexity and interconnections they consider. However, there are two basic types: **detailed process (DP) IAMs** and **benefit–cost (BC) IAMs**. 
+    * Challenges include 
+      * (1) what to count and how to count it
+      * (2) the inclusion of extreme and discontinuous outcomes
+      * (3) the treatment of regional, national, and international equity
+      * (4) the treatment of intertemporal discounting and intergenerational equity
+      * (5) projections of baseline drivers
+      * (6) capturing interactions between impact sectors and feedbacks to the climate system
+      * (7) dealing with uncertainty and risk
+      
+    * Insights and contributions
+      * First, aggregate BC IAMs have improved our understanding of **the importance of costeffectiveness in designing climate policies**.
+      * Second, **projections from DP IAMs provide much more detail than BC IAMs** by identifying key energy technologies and impact sectors/regions, including energy, water, land, agriculture, forestry, and ecosystem impacts in exceptionally hot and cold or wet and dry regions.
+      
+    * Reccomendations
+      * To consider an even more comprehensive set of sensitivity analyses that has typically been included thus far - one that includes alternative treatments of concepts such as equity, attitudes toward risk, and the amount of technological optimism.
+      * Second, given all the uncertainties concerning the inputs to, structures of, and parameter values included in IAMs, it is important to continue to develop decision support tools based on—and supplementary to—conventional IAMs.
+      * Finally, although most of the major uncertainties confronting the models will not be resolved for decades, society cannot afford to wait to make climate policy decisions until these uncertainties are resolved and the BC or DP IAM calculations are further refined.
+      
+    
   * [Fisher-Vanden, K. and Weyant, J., 2020. The Evolution of Integrated Assessment: Developing the Next Generation of Use-Inspired Integrated Assessment Tools. Annual Review of Resource Economics, 12, pp.471-487.](https://www.annualreviews.org/doi/pdf/10.1146/annurev-resource-110119-030314#article-denial)
   
 * Assignment 2: Run a GCAM decarbonization scenario
@@ -57,7 +82,7 @@ freeze: true
 
     * [Global Energy Assessment Chapter 16](https://iiasa.ac.at/web/home/research/Flagship-Projects/Global-Energy-Assessment/Chapte16.en.html)
  
-   [Iyer, G., Clarke, L., Edmonds, J. et al. Improved representation of investment decisions in assessments of CO2 mitigation. Nature Clim Change 5, 436–440 (2015).](https://doi.org/10.1038/nclimate2553) 
+  * [Iyer, G., Clarke, L., Edmonds, J. et al. Improved representation of investment decisions in assessments of CO2 mitigation. Nature Clim Change 5, 436–440 (2015).](https://doi.org/10.1038/nclimate2553) 
 
 * Further reading:
 
