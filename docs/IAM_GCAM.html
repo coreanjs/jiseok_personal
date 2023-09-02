@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="안지석">
-<meta name="dcterms.date" content="2023-08-31">
+<meta name="dcterms.date" content="2023-09-01">
 
 <title>jiseok_blog - KAIST IAM Group</title>
 <style>
@@ -131,7 +131,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -151,13 +151,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="./index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">About us</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./documentation.html">Documentation</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./IAM_GCAM.html" aria-current="page">IAM-GCAM</a>
+    <a class="nav-link" href="./about.html">About me</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./GGS621.html">GGS621</a>
@@ -170,12 +164,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">KAIST IAM Group</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">KAIST IAM Group</h1>
+      <h1 class="title d-none d-lg-block">KAIST IAM Group</h1>
                       </div>
   </div>
     
@@ -199,7 +201,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 31, 2023</p>
+        <p class="date">September 1, 2023</p>
       </div>
     </div>
       
@@ -208,6 +210,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">PPT</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./paper_critique_slide.html" class="sidebar-item-text sidebar-link">Paper critique GS621</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -721,6 +744,58 @@ Note
 </section>
 <section id="failure" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="failure"><span class="header-section-number">5.3</span> failure</h2>
+<ul>
+<li><p>run a model with <code>transportation_UCD_CORE.xml</code>(default file in GCAM7.0) -&gt; worked!</p></li>
+<li><p>run a model with <code>transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml</code> -&gt; error!</p></li>
+</ul>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+erorr message
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Unknown tag: loadFactor encountered while processing period<br>
+</li>
+</ul>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+erorr message
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Market info object cannot be returned because market H2 enduse in XX does not exit<br>
+</li>
+</ul>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+erorr message
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Called for price of non-existant market H2 enduse in region XX<br>
+</li>
+</ul>
+</div>
+</div>
 
 
 </section>

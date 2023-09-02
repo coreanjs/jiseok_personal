@@ -1,0 +1,84 @@
+---
+title: "ITM501"
+date : last-modified # now
+author: 
+ - name: "Jiseok AHN"
+   affiliation: "KAIST"
+title-block-banner: true
+format: 
+  html:
+    theme: flatly
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    toc-title: 목차
+    number-sections : true
+    number-depth: 2
+    highlight-style: github
+    self-contained: false
+bibliography: references.bib
+
+freeze: true
+---
+
+# Week 1.
+
+-   매주 수업과 관련된 주요 개념 및 논문 1편 요약 제출 - KLMS에 숙제 제출 및 강의자료 다운!
+
+    -   모든 분들은 한 학기 2번씩 발표하게 됨 (5-7분)
+
+    -    요약, 가설,
+
+-   Midterm 10/21 휴강
+
+-   **실제 시험은 11/18 or 11/25 (시험의 비중은 60%) - handwriting**
+
+    -   서술 : 핵심 이론에 대한 설명 15문제
+
+    -   에세이 : 주어진 기사에 숨겨있는 혁신원리, 이론을 찾아내고, 관련 현상 설명
+
+-   **Final report**는 지금 신경 쓰지 마세요.
+
+    -   특허 자료를 통해 수업시간에 배운 이론 실증
+
+    -   제출 시 표절검사 결과 함께 제출 e.g., copykiller . 표절률 10\~15%까지 허용
+
+    -   11월 정도에 기말 주제 공지 예정
+
+## Introduction
+
+-   
+
+-   d
+
+-   d
+
+-   d
+
+-   
+
+## 
+
+## Introduction
+
+-   
+
+-   d
+
+-   d
+
+-   d
+
+-   
+
+## Introduction
+
+-   
+
+-   d
+
+-   d
+
+-   d
+
+-   

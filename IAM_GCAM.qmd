@@ -214,4 +214,22 @@ gcamextractor::queries # Get all queries used
  
 ## failure
 
+* run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -> worked!
 
+* run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` -> error!
+
+:::{.callout-important}
+## erorr message  
+* Unknown tag: loadFactor encountered while processing period  
+:::
+
+
+:::{.callout-important}
+## erorr message  
+* Market info object cannot be returned because market H2 enduse in XX does not exit  
+:::
+
+:::{.callout-important}
+## erorr message  
+* Called for price of non-existant market H2 enduse in region XX  
+:::
