@@ -4,7 +4,7 @@ project:
    
 
 website:
-  title: "jiseok_blog"
+  title: "Jiseok AHN"
   navbar: 
     left: 
       - href: index.qmd
