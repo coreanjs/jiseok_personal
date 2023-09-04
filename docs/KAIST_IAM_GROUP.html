@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="안지석">
-<meta name="dcterms.date" content="2023-09-04">
+<meta name="dcterms.date" content="2023-09-05">
 
 <title>Jiseok AHN - KAIST IAM Group</title>
 <style>
@@ -207,7 +207,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 4, 2023</p>
+        <p class="date">September 5, 2023</p>
       </div>
     </div>
       
@@ -774,8 +774,8 @@ erorr message
 </ul>
 </div>
 </div>
-<section id="dac_ssp2-랑-dap_ssp2_x3-시나리오-차이-분석" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="dac_ssp2-랑-dap_ssp2_x3-시나리오-차이-분석"><span class="header-section-number">5.3.1</span> dac_ssp2 랑 dap_ssp2_x3 시나리오 차이 분석</h3>
+<section id="lets-cheack-the-difference-btw-dac_ssp2-and-dap_ssp2_x3-scenario" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="lets-cheack-the-difference-btw-dac_ssp2-and-dap_ssp2_x3-scenario"><span class="header-section-number">5.3.1</span> Let’s cheack the difference btw dac_ssp2 and dap_ssp2_x3 scenario</h3>
 <p>:::{.call-out:note} ## common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison</p>
 <ul>
 <li><value name="1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</value>&nbsp;</li>
@@ -784,7 +784,7 @@ erorr message
 <li><value name="world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</value>&nbsp;<br>
 </li>
 <li><value name="GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</value><br>
-::</li>
+:::</li>
 </ul>
 <div class="cell">
 <details>
@@ -817,21 +817,38 @@ erorr message
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>( <span class="at">year =</span> <span class="fu">as.numeric</span>(year))</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"emission"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector), <span class="at">color =</span> type)<span class="sc">+</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"sequestration"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gghighlight</span>()<span class="sc">+</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector)<span class="sc">+</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(title)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector)<span class="sc">+</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stderr">
-<pre><code>label_key: sector
-Too many data series, skip labeling</code></pre>
-</div>
 <div class="cell-output-display">
 <p><img src="KAIST_IAM_GROUP_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"emission"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>type)<span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="KAIST_IAM_GROUP_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
 </div>
+</div>
+</section>
+<section id="results" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="results"><span class="header-section-number">5.3.2</span> Results</h3>
+<ul>
+<li><p>I used <code>library(gcamextractor)</code> to ease data manipulation burden and make the difference more visible.</p></li>
+<li><p>the results from two scenarios showed no big differences (the results are almost identical)</p></li>
+<li><p>We can also see from the figure below that it seems like there is only one scenario not two.</p></li>
+</ul>
+<p><img src="KAIST_IAM_GROUP/withBio.png" class="img-fluid"></p>
+<p><img src="KAIST_IAM_GROUP/noBio.png" class="img-fluid"></p>
 
 
 </section>

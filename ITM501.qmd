@@ -21,7 +21,7 @@ bibliography: references.bib
 freeze: true
 ---
 
-# Week 1 
+# Week 1
 
 ## Intro
 
@@ -49,7 +49,7 @@ freeze: true
 
     -   11월 정도에 기말 주제 공지 예정
 
-# Week 1. 
+# Week 1.
 
 ## Lecture
 
@@ -105,15 +105,15 @@ freeze: true
 
 -   Introduction
 
-    -   (The author\'s name(s) and the title of the article) Determinants of innovation in energy intensive industry and implications for energy policy, 2015년 Energy Policy에 발간된 논문[@song2015]
+    -   (The author's name(s) and the title of the article) Determinants of innovation in energy intensive industry and implications for energy policy, 2015년 Energy Policy에 발간된 논문[@song2015]
 
-    -   (The author\'s main point) This study aims to emphasize the importance of innovation and analyze the impact of Research and Development (R&D) on both **product innovation** and **process innovation** in energy intensive industry(EII) and compare it to less EII.
+    -   (The author's main point) This study aims to emphasize the importance of innovation and analyze the impact of Research and Development (R&D) on both **product innovation** and **process innovation** in energy intensive industry(EII) and compare it to less EII.
 
     -   (A thesis statement that previews your analysis) It was Schumpeter who brought determinants of innovation into the context of mainstream economics. Schumpeter[@schumpeter1934] argued that large firms with monopolistic power in a concentrated market are more likely to promote technological innovation. This is the famous **Schumpeterian hypothesis**, which presents **firm size** and **market structure** as **the main determinants of innovation**.
 
 -   Summary
 
-    -    (The main points of the article) Use data from the 2008 Korea Innovation Survey to estimate the impact of key economic variables (e.g. firm size and market structure) that are proposed in the Schumpeterian hypothesis, along with other economic variables on innovation in EII.
+    -   (The main points of the article) Use data from the 2008 Korea Innovation Survey to estimate the impact of key economic variables (e.g. firm size and market structure) that are proposed in the Schumpeterian hypothesis, along with other economic variables on innovation in EII.
 
     -   Based on the empirical results, we uncover the implications that **energy policies have on facilitating innovation in EII**.
 
