@@ -17,6 +17,9 @@ website:
         text: ITM501
       - href: sector_coupling.qmd
         text: Sector Coupling
+      - href: IAM_GCAM.qmd
+        text: KAIST IAM Group
+    
   
   sidebar:
     style: docked

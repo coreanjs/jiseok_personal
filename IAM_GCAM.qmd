@@ -184,18 +184,17 @@ flowchart TD
 ```
 :::
 
-
 # 2023-08-31
 
 ## to do
-+ Comparing dac_ssp2 and dac_ssp_x3
-+ `transportation_UCD_CORE.xml` in GCAM7  // `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml`, `transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml` in GCAM-KAIST2.0
+
+-   Comparing dac_ssp2 and dac_ssp_x3
+-   `transportation_UCD_CORE.xml` in GCAM7 // `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml`, `transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml` in GCAM-KAIST2.0
 
 ## success
 
+-   discovery of `library(gcamaextractor)`
 
- + discovery of `library(gcamaextractor)`
- 
 ```{r}
 library(gcamextractor)
 
@@ -208,28 +207,21 @@ gcamextractor::queries # Get all queries used
 #                                    folder = "test_folder")
 
 ```
- 
- 
- + line charts
- 
+
+-   line charts
+
 ## failure
 
-* run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -> worked!
+-   run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -\> worked!
 
-* run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` -> error!
+-   run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` -\> error!
 
-:::{.callout-important}
-## erorr message  
-* Unknown tag: loadFactor encountered while processing period  
+::: callout-important
+## erorr message
+
+-   Unknown tag: loadFactor encountered while processing period\
+-   Market info object cannot be returned because market H2 enduse in XX does not exit\
+-   Called for price of non-existant market H2 enduse in region XX\
+
 :::
 
-
-:::{.callout-important}
-## erorr message  
-* Market info object cannot be returned because market H2 enduse in XX does not exit  
-:::
-
-:::{.callout-important}
-## erorr message  
-* Called for price of non-existant market H2 enduse in region XX  
-:::

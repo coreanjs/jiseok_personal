@@ -102,7 +102,7 @@
     "href": "IAM_GCAM.html#failure",
     "title": "KAIST IAM Group",
     "section": "5.3 failure",
-    "text": "5.3 failure\n\nrun a model with transportation_UCD_CORE.xml(default file in GCAM7.0) -> worked!\nrun a model with transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml -> error!\n\n\n\n\n\n\n\nerorr message\n\n\n\n\nUnknown tag: loadFactor encountered while processing period\n\n\n\n\n\n\n\n\n\n\nerorr message\n\n\n\n\nMarket info object cannot be returned because market H2 enduse in XX does not exit\n\n\n\n\n\n\n\n\n\n\nerorr message\n\n\n\n\nCalled for price of non-existant market H2 enduse in region XX"
+    "text": "5.3 failure\n\nrun a model with transportation_UCD_CORE.xml(default file in GCAM7.0) -> worked!\nrun a model with transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml -> error!\n\n\n\n\n\n\n\nerorr message\n\n\n\n\nUnknown tag: loadFactor encountered while processing period\n\nMarket info object cannot be returned because market H2 enduse in XX does not exit\n\nCalled for price of non-existant market H2 enduse in region XX"
   },
   {
     "objectID": "GGS621.html",
