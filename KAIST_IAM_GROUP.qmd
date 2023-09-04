@@ -222,6 +222,41 @@ gcamextractor::queries # Get all queries used
 -   Unknown tag: loadFactor encountered while processing period\
 -   Market info object cannot be returned because market H2 enduse in XX does not exit\
 -   Called for price of non-existant market H2 enduse in region XX\
-
 :::
+
+### dac_ssp2 랑 dap_ssp2_x3 시나리오 차이 분석
+
+
+:::{.call-out:note}
+## common value applied for two dac_ssp2 & dap_ssp2_x3 comparison
+
+- <Value name = "1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</Value>\ 
+- <Value name = "GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</Value>\            
+- <Value name = "world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</Value>\         
+- <Value name = "GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</Value>\
+::
+
+
+
+```{r}
+library(readxl)
+library(tidyverse)
+library(gghighlight)
+
+dac_data<- read_excel('./KAIST_IAM_GROUP/results.xlsx')
+
+data_tidy<- dac_data %>% 
+    select(-scenario, -region) %>% 
+    relocate(type, query) %>% 
+    pivot_longer(-c('type', 'query', 'sector'), names_to ="year", values_to = "MTC") %>% 
+    mutate( year = as.numeric(year))
+
+data_tidy %>% 
+    filter(query == "emission" & type =="SSP2") %>% 
+    ggplot(aes(x= year, y = MTC, group = sector))+
+    geom_line()+
+    gghighlight(unhighlighted_params = )+
+    facet_wrap(~sector)
+
+```
 
