@@ -252,11 +252,18 @@ data_tidy<- dac_data %>%
     mutate( year = as.numeric(year))
 
 data_tidy %>% 
-    filter(query == "emission" & type =="SSP2") %>% 
-    ggplot(aes(x= year, y = MTC, group = sector))+
+    filter(query == "sequestration") %>% 
+    ggplot(aes(x= year, y = MTC, group = sector, color = type))+
     geom_line()+
-    gghighlight(unhighlighted_params = )+
-    facet_wrap(~sector)
+    facet_wrap(~sector)+
+    labs(title= "Comparison between scenario dap_ssp2 and dap_ssp_x3")
+
+data_tidy %>% 
+    filter(query == "emission") %>% 
+    ggplot(aes(x= year, y = MTC, group = sector, color = type))+
+    geom_line()+
+    facet_wrap(~type)+
+    labs(title= "Comparison between scenario dap_ssp2 and dap_ssp_x3")
 
 ```
 
