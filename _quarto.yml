@@ -17,7 +17,7 @@ website:
         text: ITM501
       - href: sector_coupling.qmd
         text: Sector Coupling
-      - href: KAIST_IAM_GROUPqmd
+      - href: KAIST_IAM_GROUP.qmd
         text: KAIST IAM Group
     
   
