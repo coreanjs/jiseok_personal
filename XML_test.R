@@ -31,12 +31,60 @@ scenarios <- listScenarios(prj)
 scenarios
 
 ??listQueries
-queries <- listQueries(, 'reference_with_dac_ssp_2', anyscen =TRUE)
+queries <- listQueries(jiseok_project_rgcam_test.dat, 'reference_with_dac_ssp_2', anyscen =TRUE)
 
 
 ## Retrieve query named "GDP by region" for all scenarios in the dataset,
 ## formatted as a single table
 gdp.rgn <- getQuery(prj, 'GDP by region')
+
+
+
+
+
+
+
+###https://rdrr.io/github/JGCRI/rgcam/man/addSingleQuery.html
+## addSingleQuery: Add a data by running a single on a GCAM output database to a...
+
+
+# The query must be the same XML found in a GCAM query file:
+SAMPLE.GCAMDBLOC <- system.file("extdata",package="rgcam")
+
+db_connection <- localDBConn(SAMPLE.GCAMDBLOC, "sample_basexdb")
+
+query_name <- "CO2 concentrations"
+
+co2_query <- '<ClimateQuery title="CO2 concentrations">
+                <axis1 name="CO2-concentration">none</axis1>
+                <axis2 name="Year">CO2-concentration[@year]</axis2>
+                <xPath buildList="true" dataName="CO2-concentration" group="false" sumAll="false">climate-model/CO2-concentration/text()</xPath>
+                <comments/>
+              </ClimateQuery>'
+
+addSingleQuery(db_connection, "test.proj", query_name, co2_query)
+
+# However it could also be given for instance as a query string that will result in such XML:
+SAMPLE.QF <- system.file("ModelInterface", "sample-queries-interactive.xml", package="rgcam")
+co2_query <- paste0("doc('", SAMPLE.QF, "')//*[@title='",
+                    query_name, "']")
+addSingleQuery(db_connection, "test.proj", query_name, co2_query)
+
+# Alternatively a user may use an XML package if for instance their query file is
+# stored locally but are running queries on some remote machine:
+library(xml2)
+queries <- read_xml(SAMPLE.QF)
+co2_query <- xml_find_first(queries, paste0("//*[@title='", query_name, "']"))
+addSingleQuery(db_connection, "test.proj", query_name, co2_query)
+
+
+
+
+
+
+
+
+
 
 
 

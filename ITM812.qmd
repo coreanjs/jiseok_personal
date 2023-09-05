@@ -1,0 +1,116 @@
+---
+title: "머신러닝과 사업기회 - ITM812"
+date : last-modified # now
+author: 
+ - name: "Jiseok AHN"
+   affiliation: "KAIST"
+title-block-banner: true
+format: 
+  html:
+    theme: flatly
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    toc-title: 목차
+    number-sections : true
+    number-depth: 2
+    highlight-style: github
+    self-contained: false
+bibliography: references.bib
+
+freeze: true
+---
+
+# Week 1
+
+## Intro
+
+-   30분만에 첫 강의 끝
+
+# Week 2
+
+## 과정 소개
+
+-   데이터가 많이 쌓이고, 선제적 의사결정 지원, Data-Driven Decision 중요
+
+-   질 좋은, 많은 데이터 활용 중요
+
+-   Data Exploration, Machine Learning 개념 및 실습, Internal/External Insight 발견, 프로세스의 효율적 개선과 경쟁력 향상을 위한 역량 향상 목표
+
+-   Python을 활용한 머신러닝 기반 데이터 분석 실습하고 실제 적용을 위한 모델링 수행
+
+-   Python 3를 기반으로 실습
+
+## 평가기준
+
+-   Term projects : 50%, Peer-review
+
+-   Mid Term : 30%,
+
+-   출석,참여도: 20%
+
+## 강의 구성
+
+-   Regression, Classification, etc.
+
+-   
+
+## Data Analytic (Maching Learning) Value
+
+-   정형/비정형 데이터
+
+-   정형 - 틀이 정해진. 나이, 키, 성별 등의 정보를 담는 데이터
+
+-   비정형 - 이미지, 언어, 소리, 컨설팅
+
+## Data -\> Insight -\> Value
+
+-   Analysis : 데이터마이닝, 머신러닝, 딥러닝
+
+-   Action: 의사결정자, 엔지니어, 마케터, 투자자, 인사관리자 등
+
+-   GPU vs CPU. 다윗과 골리앗. 무거운 걸 들을때 다윗 10명 \<\< 찐 골리앗 1명. 우표를 붙이는 작업을 할 때 다윗 10명 \>\> 골리앗 1명.
+
+    -   GPU는 반복작업을 위해 만들어진 것
+
+-   딥러닝은 머신러닝의 세부 단위?. 머신러닝을 잘 알면 딥러닝이 언제 필요한 지 알 수 있을 것
+
+## AI \> Machine Learning \> Deep Learning
+
+-   **AI**: 가장 큰 범주. 큰 범주 안에 머신러닝이 속하고, 머신러닝의 일부분이 딥러닝
+
+-   사람과 유사한 판단을 컴퓨터가 할 수 있게 끔 만드는 것이 **인공지능**
+
+-   기존의 데이터를 이용해 앞으로 일을 예측하는 **머신러닝**
+
+-   머신러닝 안에 여러 알고리즘 중 하나가 **딥러닝**
+
+-   **인공지능**이 먹을 수 있는 모든 음식이라면, **머신러닝**은 그 중 영양가가 많은 고기 음식, 딥러닝은 그 중에서도 최고급 스테이크 요리
+
+## Machine Learning vs. Programming
+
+-   전통적인 SW(프로그래밍)은 한번만 만들면 된다.
+
+-   ML(Machine Learning)은 전통적인 SW 개발과 달리, 데이터 학습을 통해 더 좋은 규칙을 계속 만들어 냄.
+
+-   하드웨어 성능이 좋을 수록, 계속 반복할 수록, 데이터가 많아질 수록 성능도 함께 발전.
+
+## 머신라닝의 세 가지 타입
+
+-   Supervised Learning 지도 학습
+
+    -   지도하다. 가이드하다. 명확하게 답이 있는 것. 정답(맞았다, 틀렸다 가능// TRUE OR FALSE). 라벨링.
+
+    -   **딥러닝**을 잘하라면 라벨링을 잘해야함. 딥러닝은 Classification 방법 중 하나. 방법론은 물론, 데이터 라벨링이 중요.
+
+-   Unsupervised Learning 비지도 학습
+
+    -   지도하지 않는다. 라벨링하지 않는다. 정답이 없다. 정답이 없으니 비슷한 것들끼리 그룹을 지어준다. Grouping-\> Clustering
+
+    -   Clustering. 비슷한 데에 모여있는 것들끼리. K-means, K-NN(Nearest Neighbor, 최근접 이)
+
+-   Reinforcement 강화 학습
+
+    -   정답은 없는데, 부족한 부분을 계속 학습하는 과정. 딥러닝으로 발전하는 것과 비슷함.
+
+-   딥러닝은 Supervised와 Reinforcement가 합쳐진 것이다.
