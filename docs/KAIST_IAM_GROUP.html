@@ -256,9 +256,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul></li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="toc-section-number">5</span>  2023-08-31</a>
   <ul class="collapse">
-  <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do"><span class="toc-section-number">5.1</span>  to do</a></li>
-  <li><a href="#success" id="toc-success" class="nav-link" data-scroll-target="#success"><span class="toc-section-number">5.2</span>  success</a></li>
-  <li><a href="#failure" id="toc-failure" class="nav-link" data-scroll-target="#failure"><span class="toc-section-number">5.3</span>  failure</a></li>
+  <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do"><span class="toc-section-number">5.1</span>  To do</a></li>
+  <li><a href="#failure" id="toc-failure" class="nav-link" data-scroll-target="#failure"><span class="toc-section-number">5.2</span>  Failure</a></li>
+  <li><a href="#success" id="toc-success" class="nav-link" data-scroll-target="#success"><span class="toc-section-number">5.3</span>  Success</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -503,17 +503,73 @@ Note
 <section id="section-2" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> 2023-08-31</h1>
 <section id="to-do" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="to-do"><span class="header-section-number">5.1</span> to do</h2>
+<h2 data-number="5.1" class="anchored" data-anchor-id="to-do"><span class="header-section-number">5.1</span> To do</h2>
 <ul>
-<li>Comparing dac_ssp2 and dac_ssp_x3</li>
-<li><code>transportation_UCD_CORE.xml</code> in GCAM7 // <code>transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml</code>, <code>transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml</code> in GCAM-KAIST2.0</li>
+<li><p>Comparing <code>dac_ssp2.xml</code> and <code>dac_ssp_x3.xml</code>. Maybe _x3 means that the value has increased by 3 times??</p></li>
+<li><p><code>transportation_UCD_CORE.xml</code> is default in configuration file in GCAM7. <code>transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml</code>, <code>transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml</code> in GCAM-KAIST2.0. Run <code>KOREA</code> files in GCAM7.</p></li>
 </ul>
 </section>
-<section id="success" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="success"><span class="header-section-number">5.2</span> success</h2>
-<p>??gcamextractor - discovery of <code>library(gcamaextractor)</code></p>
+<section id="failure" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="failure"><span class="header-section-number">5.2</span> Failure</h2>
 <ul>
-<li><code>gcamextractor</code> is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See <a href="https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html">Details</a>.</li>
+<li><p>Run a model with <code>transportation_UCD_CORE.xml</code>(default file in GCAM7.0) -&gt; Of course, it worked!</p></li>
+<li><p>Run a model with <code>transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml</code> from GCAM-KAIST2.0 -&gt; ERROR! error messages are as follows.</p></li>
+</ul>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+erorr message
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Unknown tag: loadFactor encountered while processing period<br>
+</li>
+<li>Market info object cannot be returned because market H2 enduse in XX does not exit<br>
+</li>
+<li>Called for price of non-existant market H2 enduse in region XX<br>
+</li>
+</ul>
+</div>
+</div>
+<ul>
+<li><p>Tried to find a way to see the differences in different XML files in R. But couldn’t. What is the best way to see the structure of XML? and easy way to do <code>diff</code>?</p></li>
+<li><p>Tried to run <code>library(rgcam)</code> but… failed. need to explore more.</p></li>
+</ul>
+</section>
+<section id="success" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="success"><span class="header-section-number">5.3</span> Success</h2>
+<ul>
+<li><p>Let’s check the difference btw <code>dac_ssp2.xml</code> and <code>dap_ssp2_x3.xml</code> scenarios.</p></li>
+<li><p>Based on the scenarios described below, ran a model to see the different results caused by two dac scenarios. <code>dac_ssp2</code> and <code>dac_ssp2_x3</code></p></li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><value name="1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</value>&nbsp;</li>
+<li><value name="GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</value>&nbsp;<br>
+</li>
+<li><value name="world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</value>&nbsp;<br>
+</li>
+<li><value name="GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</value><br>
+</li>
+</ul>
+</div>
+</div>
+<ul>
+<li><p>discovery of <code>library(gcamaextractor)</code></p></li>
+<li><p><code>gcamextractor</code> is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See <a href="https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html">Details</a>.</p></li>
 </ul>
 <div class="cell">
 <details>
@@ -753,115 +809,46 @@ Note
 <ul>
 <li>line charts</li>
 </ul>
-</section>
-<section id="failure" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="failure"><span class="header-section-number">5.3</span> failure</h2>
-<ul>
-<li><p>run a model with <code>transportation_UCD_CORE.xml</code>(default file in GCAM7.0) -&gt; worked!</p></li>
-<li><p>run a model with <code>transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml</code> -&gt; error!</p></li>
-<li><p>Tried to find a way to see the differences in different XML files in R. What is the best way to see the structure of XML? and easy way to do <code>diff</code>?</p></li>
-<li><p>Tried to run <code>library(rgcam)</code> but… failed. need to explore more.</p></li>
-</ul>
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-erorr message
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Unknown tag: loadFactor encountered while processing period<br>
-</li>
-<li>Market info object cannot be returned because market H2 enduse in XX does not exit<br>
-</li>
-<li>Called for price of non-existant market H2 enduse in region XX<br>
-</li>
-</ul>
-</div>
-</div>
-<section id="lets-cheack-the-difference-btw-dac_ssp2-and-dap_ssp2_x3-scenario" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="lets-cheack-the-difference-btw-dac_ssp2-and-dap_ssp2_x3-scenario"><span class="header-section-number">5.3.1</span> Let’s cheack the difference btw dac_ssp2 and dap_ssp2_x3 scenario</h3>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><value name="1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</value>&nbsp;</li>
-<li><value name="GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</value>&nbsp;<br>
-</li>
-<li><value name="world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</value>&nbsp;<br>
-</li>
-<li><value name="GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</value><br>
-</li>
-</ul>
-</div>
-</div>
-<p>Based on the scenarios described above, ran a model to see the different results caused by two dac scenarios. <code>dac_ssp2</code> and <code>dac_ssp2_x3</code></p>
 <div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.2     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.3     ✔ tibble    3.2.1
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gghighlight)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dac_data<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">'./KAIST_IAM_GROUP/results.xlsx'</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>data_tidy<span class="ot">&lt;-</span> dac_data <span class="sc">%&gt;%</span> </span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>scenario, <span class="sc">-</span>region) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(type, query) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">'type'</span>, <span class="st">'query'</span>, <span class="st">'sector'</span>), <span class="at">names_to =</span><span class="st">"year"</span>, <span class="at">values_to =</span> <span class="st">"MTC"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>( <span class="at">year =</span> <span class="fu">as.numeric</span>(year))</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"sequestration"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector)<span class="sc">+</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gghighlight)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>dac_data<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">'./KAIST_IAM_GROUP/results.xlsx'</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>data_tidy<span class="ot">&lt;-</span> dac_data <span class="sc">%&gt;%</span> </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>scenario, <span class="sc">-</span>region) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(type, query) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">'type'</span>, <span class="st">'query'</span>, <span class="st">'sector'</span>), <span class="at">names_to =</span><span class="st">"year"</span>, <span class="at">values_to =</span> <span class="st">"MTC"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>( <span class="at">year =</span> <span class="fu">as.numeric</span>(year))</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"sequestration"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector)<span class="sc">+</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <p><img src="KAIST_IAM_GROUP_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"emission"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>type)<span class="sc">+</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"emission"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>type)<span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <p><img src="KAIST_IAM_GROUP_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-</section>
-<section id="results" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="results"><span class="header-section-number">5.3.2</span> Results</h3>
+<section id="results" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="results"><span class="header-section-number">5.3.1</span> Results</h3>
 <ul>
 <li><p>I used <code>library(gcamextractor)</code> to ease data manipulation burden and make the differences in result more visible.</p></li>
 <li><p>the results from two scenarios showed no big differences (the results are almost identical)</p></li>
@@ -873,7 +860,12 @@ common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 <li>make a chart using <code>library(rchart)</code></li>
 </ul>
 <p><img src="KAIST_IAM_GROUP/chart_param.png" class="img-fluid"></p>
-<p><img src="KAIST_IAM_GROUP/chart_class.png" class="img-fluid"></p>
+<p><img src="KAIST_IAM_GROUP/chart_class.png" class="img-fluid"> ## Needs to be done</p>
+<ul>
+<li><p>How to see the structure of XML files in R? using <code>XML</code>, <code>XML2</code> libraries or <code>rgacm</code> library</p></li>
+<li><p>What are the parameters we need to focus on? in dac scenario analysis I just selected the <code>emissCO2BySector</code> and <code>emissCO2BySectorNoBio</code>. What else should I consider?</p></li>
+<li><p>How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?</p></li>
+</ul>
 
 
 </section>

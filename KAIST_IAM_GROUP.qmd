@@ -186,15 +186,51 @@ flowchart TD
 
 # 2023-08-31
 
-## to do
+## To do
 
--   Comparing dac_ssp2 and dac_ssp_x3
--   `transportation_UCD_CORE.xml` in GCAM7 // `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml`, `transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml` in GCAM-KAIST2.0
+-   Comparing `dac_ssp2.xml` and `dac_ssp_x3.xml`. Maybe _x3 means that the value has increased by 3 times??
 
-## success
+-   `transportation_UCD_CORE.xml` is default in configuration file in GCAM7.  `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml`, `transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml` in GCAM-KAIST2.0. Run `KOREA` files in GCAM7.
 
 
-??gcamextractor
+## Failure
+
+-   Run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -\> Of course, it worked!
+
+-   Run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` from GCAM-KAIST2.0 -\> ERROR! error messages are as follows.
+
+
+::: callout-important
+## erorr message
+
+-   Unknown tag: loadFactor encountered while processing period\
+-   Market info object cannot be returned because market H2 enduse in XX does not exit\
+-   Called for price of non-existant market H2 enduse in region XX\
+:::
+
+
+- Tried to find a way to see the differences in different XML files in R. But couldn't. What is the best way to see the structure of XML? and easy way to do `diff`?
+
+- Tried to run `library(rgcam)` but... failed. need to explore more.
+
+
+
+## Success
+
+- Let's check the difference btw `dac_ssp2.xml` and `dap_ssp2_x3.xml` scenarios.
+
+- Based on the scenarios described below, ran a model to see the different results caused by two dac scenarios. `dac_ssp2` and `dac_ssp2_x3`
+
+:::{.callout-note} 
+## common value applied for two dac_ssp2 & dap_ssp2_x3 comparison
+
+-   <Value name = "1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</Value> 
+-   <Value name = "GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</Value> \
+-   <Value name = "world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</Value> \
+-   <Value name = "GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</Value>\
+:::
+
+
 -   discovery of `library(gcamaextractor)`
 
 - `gcamextractor` is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See [Details](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html).
@@ -227,43 +263,10 @@ gcamextractor::queries # Get all queries used
 
 -   line charts
 
-## failure
-
--   run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -\> worked!
-
--   run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` -\> error!
-
-- Tried to find a way to see the differences in different XML files in R. What is the best way to see the structure of XML? and easy way to do `diff`?
-
-- Tried to run `library(rgcam)` but... failed. need to explore more.
-
-::: callout-important
-## erorr message
-
--   Unknown tag: loadFactor encountered while processing period\
--   Market info object cannot be returned because market H2 enduse in XX does not exit\
--   Called for price of non-existant market H2 enduse in region XX\
-:::
-
-### Let's cheack the difference btw dac_ssp2 and dap_ssp2_x3 scenario
-
-
-:::{.callout-note} 
-## common value applied for two dac_ssp2 & dap_ssp2_x3 comparison
-
--   <Value name = "1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</Value> 
--   <Value name = "GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</Value> \
--   <Value name = "world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</Value> \
--   <Value name = "GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</Value>\
-
-:::
-
-Based on the scenarios described above, ran a model to see the different results caused by two dac scenarios. `dac_ssp2` and `dac_ssp2_x3`
-
-
 
 
 ```{r}
+#| warning = FALSE
 library(readxl)
 library(tidyverse)
 library(gghighlight)
@@ -312,4 +315,11 @@ data_tidy %>%
 ![](KAIST_IAM_GROUP/chart_param.png)
 
 ![](KAIST_IAM_GROUP/chart_class.png)
+## Needs to be done
+
+- How to see the structure of XML files in R? using `XML`, `XML2` libraries or `rgacm` library
+
+- What are the parameters we need to focus on? in dac scenario analysis I just selected the `emissCO2BySector` and `emissCO2BySectorNoBio`. What else should I consider?
+
+- How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?
 
