@@ -1,0 +1,103 @@
+---
+title: "Research"
+subtitle: "Seminar on fiscal spillover effects"
+format:
+  revealjs: 
+    slide-number: true
+  #  chalkboard: 
+  #    buttons: false
+  #  preview-links: auto
+   # logo: fig/quarto.png
+   # css: css/styles.css
+   # footer: <https://quarto.org>
+---
+
+## Motivation & My Works
+
+-   Just energy transition
+
+-   Fossil fuel declines would affect out (1) **Workers**
+
+-   Fossil fuel declines would affect out (2) **Children**
+
+-   What if public scholls rely on local tax revenue
+
+-   less school funding -\> less instructional spending -\> juvenile crime increase
+
+-   Fossil fuel declines would affect out (2) **Communities**
+
+## Introduction 
+
+-   U.S. Shale boom -\> Natural gas price down
+-   How does a coal mining collapse contribute to\~
+    -   why is a collapse in coal industry different?
+        -   **Land** as a direct input of production in th extraction sector
+        -   Hard to reshuffle land and (relatively immobile) labor and capital -\>limited economic diversification
+    -   It has more **direct** fiscal effects
+    -   Possible cross-boundary spillover effects
+
+## Introduction 
+
+-   Research questions
+
+    -   How does coal decline affect local county and city govermnent financials?
+
+    -   How large are fiscal spillover effects of coal decline?
+
+## Summary of Findings
+
+- A decline in coal production is associated with
+
+## Contribution
+
+- Fiscal Impacts of industry collapse
+- Local fossil fuel econommy
+- Public finance redistribution - Fiscal federalism
+
+
+## Background: Coal industry and Local Gov't Revenue
+::: incremental
+- IG(Intergovermental) Transfer Channel
+- Disbursements to localities
+    - Specific-puropse aid: reimpbursements of local public services (e.g., highways, housing development)
+    - General-purpose aid: **local share** of state-collected taxes(e.g., state severance, income tax)
+- Specific-purpose work // General-purpose work
+:::
+
+## Data
+::: incremental
+
+- Annual survey of coal production and preperation
+- U.S. Census Bureau
+    - Census of Governments
+
+:::
+
+## Identification Strategy
+
+- Two-way fixede ffects model:
+- Instrumental variables(IV) approach
+- The product of *temporal* and *cross-sectoral* variables affecting coal production
+    1. **temporal** variation: exogenous coal demand shocks induced by innovations in natural gas fracking
+    2. **Cross-sectional** variation: predetermined geological determinant of coal mining
+
+## Temporal Variation
+
+- Different **initiation** timings of shale gas plays (Bartik et al., 2019)
+
+## Cross-Sectional Variation
+- Coal reservoir quality as an exogenous predictor for coal extraction
+
+## Results :Local Labor Market
+- local labor market impacts - income shocks
+- Out-migration to other counties in the same state increased
+
+## Results :Local Govnt Finance
+
+- Total revenue and expenditure go down
+
+## Alternative Strategy
+
+- DID with nonparametric preprocessing data
+- Idea: compare coal counties with non-coal ones
+- 

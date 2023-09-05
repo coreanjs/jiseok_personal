@@ -320,7 +320,30 @@ data_tidy %>%
 
 - How to see the structure of XML files in R? Using `XML`, `XML2` libraries or `rgacm` library works?
 
-- What are the parameters we need to focus on? in dac scenario analysis I just selected the `emissCO2BySector` and `emissCO2BySectorNoBio`. What else should I consider?
+- What are the parameters we need to focus on? in dac scenario analysis I just selected the `emissCO2BySector` and `emissCO2BySectorNoBio`. What else should I consider? ->**NoBio** is in which we are intersted.
 
 - How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?
+
+
+# 2023-09-05 Meeting
+
+:::{.callout-important}
+
+- DAC의 경우는 CO2 sequestration parameter 중요
+
+- 광남에게 transportation 시나리오에 대해 물어보기. 무얼 바꿨고 어떻게 작업했는지. quick seminar 가능?
+
+- In KAIST2.0 광남, `energy-final-demand name ="chemical"` 왜??
+
+- GCAM-KAIST2.0 광남시나리오 VS GCAM7 기본 TRANSPORTATION 시나리오 비교.
+
+- DAC의 경우는 CO2 sequestration parameter 중요.
+
+- github jgcri or GCAM 에 DAC 작동안된다고 문의하기.
+
+
+- 시나리오가 아주 많을 떄 `library(gcamextractor)` 사용하면 좋고, 현재는 ModelInterface에서 봐도 충분하다.
+
+- 어디를 봐야할 지 모를 때 look at input by sector, output bt sector.
+:::
 
