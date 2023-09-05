@@ -222,7 +222,7 @@ flowchart TD
 - Based on the scenarios described below, ran a model to see the different results caused by two dac scenarios. `dac_ssp2` and `dac_ssp2_x3`
 
 :::{.callout-note} 
-## common value applied for two dac_ssp2 & dap_ssp2_x3 comparison
+## common scenarios(.xml) applied for two dac_ssp2 & dap_ssp2_x3 comparison
 
 -   <Value name = "1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</Value> 
 -   <Value name = "GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</Value> \
@@ -231,7 +231,7 @@ flowchart TD
 :::
 
 
--   discovery of `library(gcamaextractor)`
+-   Discovery of `library(gcamaextractor)`
 
 - `gcamextractor` is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See [Details](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html).
 
@@ -299,9 +299,9 @@ data_tidy %>%
 
 -   I used `library(gcamextractor)` to ease data manipulation burden and make the differences in result more visible.
 
--   the results from two scenarios showed no big differences (the results are almost identical)
+-   Results from two scenarios showed no big differences (the results are almost identical).
 
--   We can also see from the figure below that it seems like there is only one scenario not two.
+-   Figures below show the results, and it seems like there is only one scenario not two.
 
 ![](KAIST_IAM_GROUP/withBio.png)
 
@@ -309,15 +309,16 @@ data_tidy %>%
 
 
 
--  make a chart using `library(rchart)`
+-  Make a chart using `library(rchart)`
 
 
 ![](KAIST_IAM_GROUP/chart_param.png)
 
 ![](KAIST_IAM_GROUP/chart_class.png)
+
 ## Needs to be done
 
-- How to see the structure of XML files in R? using `XML`, `XML2` libraries or `rgacm` library
+- How to see the structure of XML files in R? Using `XML`, `XML2` libraries or `rgacm` library works?
 
 - What are the parameters we need to focus on? in dac scenario analysis I just selected the `emissCO2BySector` and `emissCO2BySectorNoBio`. What else should I consider?
 

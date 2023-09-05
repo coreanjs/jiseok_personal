@@ -259,6 +259,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do"><span class="toc-section-number">5.1</span>  To do</a></li>
   <li><a href="#failure" id="toc-failure" class="nav-link" data-scroll-target="#failure"><span class="toc-section-number">5.2</span>  Failure</a></li>
   <li><a href="#success" id="toc-success" class="nav-link" data-scroll-target="#success"><span class="toc-section-number">5.3</span>  Success</a></li>
+  <li><a href="#needs-to-be-done" id="toc-needs-to-be-done" class="nav-link" data-scroll-target="#needs-to-be-done"><span class="toc-section-number">5.4</span>  Needs to be done</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -552,7 +553,7 @@ erorr message
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
+common scenarios(.xml) applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -568,7 +569,7 @@ common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 </div>
 </div>
 <ul>
-<li><p>discovery of <code>library(gcamaextractor)</code></p></li>
+<li><p>Discovery of <code>library(gcamaextractor)</code></p></li>
 <li><p><code>gcamextractor</code> is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See <a href="https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html">Details</a>.</p></li>
 </ul>
 <div class="cell">
@@ -851,24 +852,27 @@ common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="results"><span class="header-section-number">5.3.1</span> Results</h3>
 <ul>
 <li><p>I used <code>library(gcamextractor)</code> to ease data manipulation burden and make the differences in result more visible.</p></li>
-<li><p>the results from two scenarios showed no big differences (the results are almost identical)</p></li>
-<li><p>We can also see from the figure below that it seems like there is only one scenario not two.</p></li>
+<li><p>Results from two scenarios showed no big differences (the results are almost identical).</p></li>
+<li><p>Figures below show the results, and it seems like there is only one scenario not two.</p></li>
 </ul>
 <p><img src="KAIST_IAM_GROUP/withBio.png" class="img-fluid"></p>
 <p><img src="KAIST_IAM_GROUP/noBio.png" class="img-fluid"></p>
 <ul>
-<li>make a chart using <code>library(rchart)</code></li>
+<li>Make a chart using <code>library(rchart)</code></li>
 </ul>
 <p><img src="KAIST_IAM_GROUP/chart_param.png" class="img-fluid"></p>
-<p><img src="KAIST_IAM_GROUP/chart_class.png" class="img-fluid"> ## Needs to be done</p>
+<p><img src="KAIST_IAM_GROUP/chart_class.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="needs-to-be-done" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="needs-to-be-done"><span class="header-section-number">5.4</span> Needs to be done</h2>
 <ul>
-<li><p>How to see the structure of XML files in R? using <code>XML</code>, <code>XML2</code> libraries or <code>rgacm</code> library</p></li>
+<li><p>How to see the structure of XML files in R? Using <code>XML</code>, <code>XML2</code> libraries or <code>rgacm</code> library works?</p></li>
 <li><p>What are the parameters we need to focus on? in dac scenario analysis I just selected the <code>emissCO2BySector</code> and <code>emissCO2BySectorNoBio</code>. What else should I consider?</p></li>
 <li><p>How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?</p></li>
 </ul>
 
 
-</section>
 </section>
 </section>
 
