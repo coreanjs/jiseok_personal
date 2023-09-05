@@ -193,20 +193,37 @@ flowchart TD
 
 ## success
 
+
+??gcamextractor
 -   discovery of `library(gcamaextractor)`
+
+- `gcamextractor` is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See [Details](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html).
+
+
 
 ```{r}
 library(gcamextractor)
 
 gcamextractor::params # view available parameters
 gcamextractor::queries # Get all queries used
+
+
+
 #gcamextractor::map_param_query # Get a table of params and the relevants queries used to extract and calculate them.
 
-#dataGCAM <- gcamextractor::readgcam(gcamdatabase = path_to_gcam_database,
-#                                    paramsSelect = c("emissCO2BySector", "emissCO2BySectorNoBio"), 
+# dataGCAM <- gcamextractor::readgcam(gcamdatabase = path_to_gcam_database,
+#                                    paramsSelect = c("emissCO2BySector", 
+#                                        "emissCO2BySectorNoBio"), ### this is a key
+#                                    scenOrigNames = c('reference_with_dac_ssp_2',
+#                                                      'reference_with_dac_ssp_2_x3'),
+#                                    regionsSelect = c("South Korea"),
 #                                    folder = "test_folder")
+#
 
 ```
+
+
+
 
 -   line charts
 
@@ -215,6 +232,10 @@ gcamextractor::queries # Get all queries used
 -   run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -\> worked!
 
 -   run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` -\> error!
+
+- Tried to find a way to see the differences in different XML files in R. What is the best way to see the structure of XML? and easy way to do `diff`?
+
+- Tried to run `library(rgcam)` but... failed. need to explore more.
 
 ::: callout-important
 ## erorr message
@@ -226,13 +247,21 @@ gcamextractor::queries # Get all queries used
 
 ### Let's cheack the difference btw dac_ssp2 and dap_ssp2_x3 scenario
 
-:::{.call-out:note} \## common value applied for two dac_ssp2 & dap_ssp2_x3 comparison
+
+:::{.callout-note} 
+## common value applied for two dac_ssp2 & dap_ssp2_x3 comparison
 
 -   <Value name = "1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</Value> 
 -   <Value name = "GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</Value> \
 -   <Value name = "world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</Value> \
 -   <Value name = "GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</Value>\
-    :::
+
+:::
+
+Based on the scenarios described above, ran a model to see the different results caused by two dac scenarios. `dac_ssp2` and `dac_ssp2_x3`
+
+
+
 
 ```{r}
 library(readxl)
@@ -263,9 +292,9 @@ data_tidy %>%
 
 ```
 
-### Results 
+### Results
 
--   I used `library(gcamextractor)` to ease data manipulation burden and make the difference more visible.
+-   I used `library(gcamextractor)` to ease data manipulation burden and make the differences in result more visible.
 
 -   the results from two scenarios showed no big differences (the results are almost identical)
 
@@ -274,3 +303,13 @@ data_tidy %>%
 ![](KAIST_IAM_GROUP/withBio.png)
 
 ![](KAIST_IAM_GROUP/noBio.png)
+
+
+
+-  make a chart using `library(rchart)`
+
+
+![](KAIST_IAM_GROUP/chart_param.png)
+
+![](KAIST_IAM_GROUP/chart_class.png)
+

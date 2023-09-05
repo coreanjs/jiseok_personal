@@ -511,8 +511,9 @@ Note
 </section>
 <section id="success" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="success"><span class="header-section-number">5.2</span> success</h2>
+<p>??gcamextractor - discovery of <code>library(gcamaextractor)</code></p>
 <ul>
-<li>discovery of <code>library(gcamaextractor)</code></li>
+<li><code>gcamextractor</code> is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See <a href="https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html">Details</a>.</li>
 </ul>
 <div class="cell">
 <details>
@@ -739,9 +740,14 @@ Note
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#gcamextractor::map_param_query # Get a table of params and the relevants queries used to extract and calculate them.</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#dataGCAM &lt;- gcamextractor::readgcam(gcamdatabase = path_to_gcam_database,</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    paramsSelect = c("emissCO2BySector", "emissCO2BySectorNoBio"), </span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    folder = "test_folder")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># dataGCAM &lt;- gcamextractor::readgcam(gcamdatabase = path_to_gcam_database,</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    paramsSelect = c("emissCO2BySector", </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                                        "emissCO2BySectorNoBio"), </span><span class="al">###</span><span class="co"> this is a key</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    scenOrigNames = c('reference_with_dac_ssp_2',</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#                                                      'reference_with_dac_ssp_2_x3'),</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    regionsSelect = c("South Korea"),</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    folder = "test_folder")</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <ul>
@@ -753,6 +759,8 @@ Note
 <ul>
 <li><p>run a model with <code>transportation_UCD_CORE.xml</code>(default file in GCAM7.0) -&gt; worked!</p></li>
 <li><p>run a model with <code>transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml</code> -&gt; error!</p></li>
+<li><p>Tried to find a way to see the differences in different XML files in R. What is the best way to see the structure of XML? and easy way to do <code>diff</code>?</p></li>
+<li><p>Tried to run <code>library(rgcam)</code> but… failed. need to explore more.</p></li>
 </ul>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -776,7 +784,16 @@ erorr message
 </div>
 <section id="lets-cheack-the-difference-btw-dac_ssp2-and-dap_ssp2_x3-scenario" class="level3" data-number="5.3.1">
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="lets-cheack-the-difference-btw-dac_ssp2-and-dap_ssp2_x3-scenario"><span class="header-section-number">5.3.1</span> Let’s cheack the difference btw dac_ssp2 and dap_ssp2_x3 scenario</h3>
-<p>:::{.call-out:note} ## common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+common value applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><value name="1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</value>&nbsp;</li>
 <li><value name="GHG_link_Korea">../input/Korea/GHG_link_Kor.xml</value>&nbsp;<br>
@@ -784,8 +801,11 @@ erorr message
 <li><value name="world_deeper_decarbonization_2050">../input/Korea/FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</value>&nbsp;<br>
 </li>
 <li><value name="GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</value><br>
-:::</li>
+</li>
 </ul>
+</div>
+</div>
+<p>Based on the scenarios described above, ran a model to see the different results caused by two dac scenarios. <code>dac_ssp2</code> and <code>dac_ssp2_x3</code></p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -843,12 +863,17 @@ erorr message
 <section id="results" class="level3" data-number="5.3.2">
 <h3 data-number="5.3.2" class="anchored" data-anchor-id="results"><span class="header-section-number">5.3.2</span> Results</h3>
 <ul>
-<li><p>I used <code>library(gcamextractor)</code> to ease data manipulation burden and make the difference more visible.</p></li>
+<li><p>I used <code>library(gcamextractor)</code> to ease data manipulation burden and make the differences in result more visible.</p></li>
 <li><p>the results from two scenarios showed no big differences (the results are almost identical)</p></li>
 <li><p>We can also see from the figure below that it seems like there is only one scenario not two.</p></li>
 </ul>
 <p><img src="KAIST_IAM_GROUP/withBio.png" class="img-fluid"></p>
 <p><img src="KAIST_IAM_GROUP/noBio.png" class="img-fluid"></p>
+<ul>
+<li>make a chart using <code>library(rchart)</code></li>
+</ul>
+<p><img src="KAIST_IAM_GROUP/chart_param.png" class="img-fluid"></p>
+<p><img src="KAIST_IAM_GROUP/chart_class.png" class="img-fluid"></p>
 
 
 </section>
