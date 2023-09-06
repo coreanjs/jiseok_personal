@@ -340,6 +340,117 @@
             "title": "The theory of economic development: An inquiry into profits, capital, credit, interest, and the business cycle",
             "title-short": "The theory of economic development",
             "type": "book"
+        },
+        {
+            "DOI": "10.1038/s41558-023-01604-9",
+            "URL": "https://www.nature.com/articles/s41558-023-01604-9",
+            "author": [
+                {
+                    "family": "Fuhrman",
+                    "given": "Jay"
+                },
+                {
+                    "family": "Bergero",
+                    "given": "Candelaria"
+                },
+                {
+                    "family": "Weber",
+                    "given": "Maridee"
+                },
+                {
+                    "family": "Monteith",
+                    "given": "Seth"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Frances M."
+                },
+                {
+                    "family": "Clarens",
+                    "given": "Andres F."
+                },
+                {
+                    "family": "Doney",
+                    "given": "Scott C."
+                },
+                {
+                    "family": "Shobe",
+                    "given": "William"
+                },
+                {
+                    "family": "McJeon",
+                    "given": "Haewon"
+                }
+            ],
+            "container-title": "Nature Climate Change",
+            "id": "fuhrman2023",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        4
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Number: 4 Publisher: Nature Publishing Group",
+            "page": "341-350",
+            "title": "Diverse carbon dioxide removal approaches could reduce impacts on the energywaterland system",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "DOI": "10.1016/j.eneco.2010.10.007",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0140988310001866",
+            "author": [
+                {
+                    "family": "McJeon",
+                    "given": "Haewon C."
+                },
+                {
+                    "family": "Clarke",
+                    "given": "Leon"
+                },
+                {
+                    "family": "Kyle",
+                    "given": "Page"
+                },
+                {
+                    "family": "Wise",
+                    "given": "Marshall"
+                },
+                {
+                    "family": "Hackbarth",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Bryant",
+                    "given": "Benjamin P."
+                },
+                {
+                    "family": "Lempert",
+                    "given": "Robert J."
+                }
+            ],
+            "collection-title": "Special issue on the economics of technologies to combat global warming",
+            "container-title": "Energy Economics",
+            "id": "mcjeon2011",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011,
+                        7,
+                        1
+                    ]
+                ]
+            },
+            "page": "619-631",
+            "title": "Technology interactions among low-carbon energy technologies: What can we learn from a large number of scenarios?",
+            "title-short": "Technology interactions among low-carbon energy technologies",
+            "type": "article-journal",
+            "volume": "33"
         }
     ],
     "project_biblios": []

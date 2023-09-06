@@ -23,7 +23,14 @@ library(dplyr)
 
 # gcamextractor basic example
 
+
+#### GCAM7 - GCAM-KAIST2 
 path_to_gcam_database <- "E:/gcam-v7.0-Windows-Release-Package/output/database_basexdb.0"
+
+
+#### GCAM7 NO CHANGES AT ALL 
+path_to_gcam_database<- "E:/gcam-v7.0-Windows-Release-Package_NO_CHANGES_AT_ALL/output/database_basexdb"
+
 
 gcamextractor::params # view available parameters
 gcamextractor::queries # Get all queries used
@@ -31,7 +38,11 @@ gcamextractor::map_param_query # Get a table of params and the relevants queries
 
 dataGCAM <- gcamextractor::readgcam(gcamdatabase = path_to_gcam_database,
                                     paramsSelect = c("emissCO2BySector", "emissCO2BySectorNoBio"), ### this is a key
+                                    regionsSelect = c("South Korea"),
                                     folder = "test_folder")
+
+
+
 
 
 dataGCAM
@@ -69,6 +80,19 @@ dfClass1 %>%
   geom_line()+
   gghighlight()+
   facet_wrap(~class)
+
+unique(dfClass1$param)
+
+dfClass1 %>% 
+    filter(param =="emissCO2BySectorNoBio") %>% 
+    distinct(class)
+
+dfClass1 %>% 
+    filter(param =="emissCO2BySectorNoBio") %>% 
+    ggplot(aes(x = x, y = value, group = class, color = class))+
+    geom_line()+
+    gghighlight()+
+    facet_wrap(~class)
 
 data_chart$param
 
