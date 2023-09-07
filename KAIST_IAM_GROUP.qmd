@@ -188,17 +188,15 @@ flowchart TD
 
 ## To do
 
--   Comparing `dac_ssp2.xml` and `dac_ssp_x3.xml`. Maybe _x3 means that the value has increased by 3 times??
+-   Comparing `dac_ssp2.xml` and `dac_ssp_x3.xml`. Maybe \_x3 means that the value has increased by 3 times??
 
--   `transportation_UCD_CORE.xml` is default in configuration file in GCAM7.  `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml`, `transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml` in GCAM-KAIST2.0. Run `KOREA` files in GCAM7.
-
+-   `transportation_UCD_CORE.xml` is default in configuration file in GCAM7. `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml`, `transportation_UCD_CORE_NetZero_KOREA_Dawoon.xml` in GCAM-KAIST2.0. Run `KOREA` files in GCAM7.
 
 ## Failure
 
 -   Run a model with `transportation_UCD_CORE.xml`(default file in GCAM7.0) -\> Of course, it worked!
 
 -   Run a model with `transportation_UCD_CORE_CurPol_KOREA_Dawoon.xml` from GCAM-KAIST2.0 -\> ERROR! error messages are as follows.
-
 
 ::: callout-important
 ## erorr message
@@ -208,20 +206,17 @@ flowchart TD
 -   Called for price of non-existant market H2 enduse in region XX\
 :::
 
+-   Tried to find a way to see the differences in different XML files in R. But couldn't. What is the best way to see the structure of XML? and easy way to do `diff`?
 
-- Tried to find a way to see the differences in different XML files in R. But couldn't. What is the best way to see the structure of XML? and easy way to do `diff`?
-
-- Tried to run `library(rgcam)` but... failed. need to explore more.
-
-
+-   Tried to run `library(rgcam)` but... failed. need to explore more.
 
 ## Success
 
-- Let's check the difference btw `dac_ssp2.xml` and `dap_ssp2_x3.xml` scenarios.
+-   Let's check the difference btw `dac_ssp2.xml` and `dap_ssp2_x3.xml` scenarios.
 
-- Based on the scenarios described below, ran a model to see the different results caused by two dac scenarios. `dac_ssp2` and `dac_ssp2_x3`
+-   Based on the scenarios described below, ran a model to see the different results caused by two dac scenarios. `dac_ssp2` and `dac_ssp2_x3`
 
-:::{.callout-note} 
+::: callout-note
 ## common scenarios(.xml) applied for two dac_ssp2 & dap_ssp2_x3 comparison
 
 -   <Value name = "1p5">../input/Korea/1p5-incr-UC-kor-LUC-Kwangnam.xml</Value> 
@@ -230,18 +225,20 @@ flowchart TD
 -   <Value name = "GHG_link_row">../input/Korea/PCT_CO2_LUC_link_p10_row.xml</Value>\
 :::
 
-
 -   Discovery of `library(gcamaextractor)`
 
-- `gcamextractor` is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See [Details](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html).
-
-
+-   `gcamextractor` is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See [Details](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html).
 
 ```{r}
+#| echo: false
+
+
 library(gcamextractor)
 
-gcamextractor::params # view available parameters
-gcamextractor::queries # Get all queries used
+
+
+#gcamextractor::params # view available parameters
+#gcamextractor::queries # Get all queries used
 
 
 
@@ -258,12 +255,7 @@ gcamextractor::queries # Get all queries used
 
 ```
 
-
-
-
 -   line charts
-
-
 
 ```{r}
 #| warning = FALSE
@@ -307,10 +299,7 @@ data_tidy %>%
 
 ![](KAIST_IAM_GROUP/noBio.png)
 
-
-
--  Make a chart using `library(rchart)`
-
+-   Make a chart using `library(rchart)`
 
 ![](KAIST_IAM_GROUP/chart_param.png)
 
@@ -318,32 +307,56 @@ data_tidy %>%
 
 ## Needs to be done
 
-- How to see the structure of XML files in R? Using `XML`, `XML2` libraries or `rgacm` library works?
+-   How to see the structure of XML files in R? Using `XML`, `XML2` libraries or `rgacm` library works?
 
-- What are the parameters we need to focus on? in dac scenario analysis I just selected the `emissCO2BySector` and `emissCO2BySectorNoBio`. What else should I consider? ->**NoBio** is in which we are intersted.
+-   What are the parameters we need to focus on? in dac scenario analysis I just selected the `emissCO2BySector` and `emissCO2BySectorNoBio`. What else should I consider? -\>**NoBio** is in which we are intersted.
 
-- How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?
-
+-   How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?
 
 # 2023-09-05 Meeting
 
-:::{.callout-important}
+::: callout-important
+-   DAC의 경우는 CO2 sequestration parameter 중요
 
-- DAC의 경우는 CO2 sequestration parameter 중요
+-   광남에게 transportation 시나리오에 대해 물어보기. 무얼 바꿨고 어떻게 작업했는지. quick seminar 가능?
 
-- 광남에게 transportation 시나리오에 대해 물어보기. 무얼 바꿨고 어떻게 작업했는지. quick seminar 가능?
+-   In KAIST2.0 광남, `energy-final-demand name ="chemical"` 왜??
 
-- In KAIST2.0 광남, `energy-final-demand name ="chemical"` 왜??
+-   GCAM-KAIST2.0 광남시나리오 VS GCAM7 기본 TRANSPORTATION 시나리오 비교.
 
-- GCAM-KAIST2.0 광남시나리오 VS GCAM7 기본 TRANSPORTATION 시나리오 비교.
+-   DAC의 경우는 CO2 sequestration parameter 중요.
 
-- DAC의 경우는 CO2 sequestration parameter 중요.
+-   github jgcri or GCAM 에 DAC 작동안된다고 문의하기.
 
-- github jgcri or GCAM 에 DAC 작동안된다고 문의하기.
+-   시나리오가 아주 많을 떄 `library(gcamextractor)` 사용하면 좋고, 현재는 ModelInterface에서 봐도 충분하다.
 
-
-- 시나리오가 아주 많을 떄 `library(gcamextractor)` 사용하면 좋고, 현재는 ModelInterface에서 봐도 충분하다.
-
-- 어디를 봐야할 지 모를 때 look at input by sector, output bt sector.
+-   어디를 봐야할 지 모를 때 look at input by sector, output bt sector.
 :::
 
+# 2023-09-07 after meeting with prof McJeon
+
+::: callout-important
+-   **(DAC)** DAC 기술인 high DAC? 이런 애들은 다른 나라에서는 나타남, Japan, Thailand에서도. 한국에서만 안나타나는거 같음. 결과가 잘 나타나는 국가를 하나 택해서 이름만 바꿔보기. 예를 들어. Japan \<-\> Korea
+
+-   (Diff) `1p5-incr-uc-KOR-LUC-Kwangnam.xml` vs `FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml` 전자에는`ghgpolicy name = GHG`, 후자에는 `ghgpolicy name = CO2`로 차이가 있음. -\> 이로 인한 문제?
+
+-   (Diff) `GHG_link_kor.xml` vs `PCT_CO2_LUC_link_p10_row.xml` 차이도 있음.
+
+-   **(Transportation)** ModelInterface에서 `transport final energy by tech and fuel`과 `transport service output by tech` 결과 제시 필요!! GCAM-KAIST2.0 vs GCAM7.0
+
+-   **(Transportation)** `CurPol_Dawoon.xml`과 `transportation_UCD_CORE.xml`의 차이. UCD_CORE에는 `<stub-technology name="Hybrid Liquids">` 가 있는데, 전자에는 없음. `Hybrid Liquids`가 없어서 GCAM7에서 시나리오 돌릴 떄 오류??
+:::
+
+## dac_ssp2랑 dac_ssp_x3 ModelInterface에서 확인하기
+
+::: callout-important
+-   코드는 /KAIST_IAM_GROUP `dac_scenario_analysis.R` 에서 확인 가능
+:::
+
+-   Region : USA, Query: **CO2 emissions by sector**
+
+![](KAIST_IAM_GROUP/dac_emission_by_sector.png)
+
+-   Region : USA, Query: **CO2 sequestration by sector**
+
+![](KAIST_IAM_GROUP/dac_co2_sequestration_by_sector.png)

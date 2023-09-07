@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="안지석">
-<meta name="dcterms.date" content="2023-09-05">
+<meta name="dcterms.date" content="2023-09-07">
 
 <title>Jiseok AHN - KAIST IAM Group</title>
 <style>
@@ -210,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 5, 2023</p>
+        <p class="date">September 7, 2023</p>
       </div>
     </div>
       
@@ -270,6 +270,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#needs-to-be-done" id="toc-needs-to-be-done" class="nav-link" data-scroll-target="#needs-to-be-done"><span class="toc-section-number">5.4</span>  Needs to be done</a></li>
   </ul></li>
   <li><a href="#meeting" id="toc-meeting" class="nav-link" data-scroll-target="#meeting"><span class="toc-section-number">6</span>  2023-09-05 Meeting</a></li>
+  <li><a href="#after-meeting-with-prof-mcjeon" id="toc-after-meeting-with-prof-mcjeon" class="nav-link" data-scroll-target="#after-meeting-with-prof-mcjeon"><span class="toc-section-number">7</span>  2023-09-07 after meeting with prof McJeon</a>
+  <ul class="collapse">
+  <li><a href="#dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기" id="toc-dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기" class="nav-link" data-scroll-target="#dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기"><span class="toc-section-number">7.1</span>  dac_ssp2랑 dac_ssp_x3 ModelInterface에서 확인하기</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -582,239 +586,7 @@ common scenarios(.xml) applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 <li><p><code>gcamextractor</code> is R package used to extract and process GCAM data and manipulate into standardized tables. gcamextractor converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. See <a href="https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html">Details</a>.</p></li>
 </ul>
 <div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gcamextractor)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>gcamextractor<span class="sc">::</span>params <span class="co"># view available parameters</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>  [1] "agProdBiomass"                         
-  [2] "agProdByCrop"                          
-  [3] "agProdbyIrrRfd"                        
-  [4] "agProdForest"                          
-  [5] "buildingFloorspace"                    
-  [6] "co2SequestrationBySector"              
-  [7] "elec_cap_usa_GW"                       
-  [8] "elec_capacity_factor_usa_in"           
-  [9] "elec_carbon_capture_escl_rate_fraction"
- [10] "elec_carbon_capture_rate_fraction"     
- [11] "elec_fuel_co2_content_tonsperMBTU"     
- [12] "elec_fuel_price_2015USDperMBTU"        
- [13] "elec_fuel_price_escl_rate_fraction"    
- [14] "elec_heat_rate_BTUperkWh"              
- [15] "elec_lifetime_scurve_yr"               
- [16] "elec_lifetime_yr"                      
- [17] "elec_variable_om_2015USDperMWh"        
- [18] "elec_variable_om_escl_rate_fraction"   
- [19] "elecByTechTWh"                         
- [20] "elecCapByFuel"                         
- [21] "elecConsumByDemandSectorTWh"           
- [22] "elecFinalByFuelTWh"                    
- [23] "elecFinalBySecTWh"                     
- [24] "elecLoadBySegmentGW"                   
- [25] "emissCO2BySector"                      
- [26] "emissCO2BySectorNoBio"                 
- [27] "emissCO2CumGlobal2010to2100"           
- [28] "emissCO2CumGlobal2010to2100RCP"        
- [29] "emissGHGByGasGWPAR5"                   
- [30] "emissGHGByGasNoBioGWPAR5"              
- [31] "emissGHGByResProdGWPAR5"               
- [32] "emissGHGBySectorBuildingsGWPAR5"       
- [33] "emissGHGBySectorGWPAR5"                
- [34] "emissGHGBySectorIndustryGWPAR5"        
- [35] "emissGHGBySectorNoBioGWPAR5"           
- [36] "emissGHGBySectorPowerGWPAR5"           
- [37] "emissGHGBySectorTransportGWPAR5"       
- [38] "emissLUC"                              
- [39] "energyFinalByFuelBySectorEJ"           
- [40] "energyFinalByFuelBySectorMTOE"         
- [41] "energyFinalByFuelBySectorTWh"          
- [42] "energyFinalByFuelEJ"                   
- [43] "energyFinalByFuelEJNoFeedstock"        
- [44] "energyFinalbyFuelMTOE"                 
- [45] "energyFinalbyFuelTWh"                  
- [46] "energyFinalConsumByIntlShpAvEJ"        
- [47] "energyFinalConsumByIntlShpAvMTOE"      
- [48] "energyFinalConsumByIntlShpAvTWh"       
- [49] "energyFinalConsumBySecEJ"              
- [50] "energyFinalConsumBySecEJNoFeedstock"   
- [51] "energyFinalConsumBySecMTOE"            
- [52] "energyFinalConsumBySecTWh"             
- [53] "energyFinalSubsecByFuelBuildEJ"        
- [54] "energyFinalSubsecByFuelBuildMTOE"      
- [55] "energyFinalSubsecByFuelBuildTWh"       
- [56] "energyFinalSubsecByFuelIndusEJ"        
- [57] "energyFinalSubsecByFuelIndusMTOE"      
- [58] "energyFinalSubsecByFuelIndusTWh"       
- [59] "energyFinalSubsecByFuelTranspEJ"       
- [60] "energyFinalSubsecByFuelTranspMTOE"     
- [61] "energyFinalSubsecByFuelTranspTWh"      
- [62] "energyFinalSubsecBySectorBuildEJ"      
- [63] "energyFinalSubsecBySectorBuildMTOE"    
- [64] "energyFinalSubsecBySectorBuildTWh"     
- [65] "energyPrimaryByFuelEJ"                 
- [66] "energyPrimaryByFuelMTOE"               
- [67] "energyPrimaryByFuelTWh"                
- [68] "energyPrimaryRefLiqProdEJ"             
- [69] "energyPrimaryRefLiqProdMTOE"           
- [70] "energyPrimaryRefLiqProdTWh"            
- [71] "fertConsByAgTech"                      
- [72] "gdp"                                   
- [73] "gdpGrowthRate"                         
- [74] "gdpPerCapita"                          
- [75] "hydrogenCostsByTech"                   
- [76] "hydrogenInputsByTech"                  
- [77] "hydrogenOutputsByTech"                 
- [78] "hydrogenPricesBySector"                
- [79] "hydrogenProdByTech"                    
- [80] "hydrogenUtilizationByTech"             
- [81] "inputs"                                
- [82] "landAlloc"                             
- [83] "landAllocByCrop"                       
- [84] "landAllocDetail"                       
- [85] "landIrrCrop"                           
- [86] "landIrrRfd"                            
- [87] "landRfdCrop"                           
- [88] "livestock_MeatDairybySubsector"        
- [89] "livestock_MeatDairybyTechImports"      
- [90] "livestock_MeatDairybyTechMixed"        
- [91] "livestock_MeatDairybyTechPastoral"     
- [92] "outputs"                               
- [93] "pop"                                   
- [94] "serviceOutputByTechBuildings"          
- [95] "transportFreightGHGByMode"             
- [96] "transportFreightVMTByFuel"             
- [97] "transportFreightVMTByFuelNew"          
- [98] "transportFreightVMTByMode"             
- [99] "transportFreightVMTByTech"             
-[100] "transportPassengerGHGByMode"           
-[101] "transportPassengerVMTByFuel"           
-[102] "transportPassengerVMTByFuelNew"        
-[103] "transportPassengerVMTByMode"           
-[104] "transportPassengerVMTByTech"           
-[105] "watBioPhysCons"                        
-[106] "watConsumBySec"                        
-[107] "waterWithdrawROGW"                     
-[108] "watIrrConsBasin"                       
-[109] "watIrrWithdrawBasin"                   
-[110] "watSupRunoffBasin"                     
-[111] "watWithdrawByCrop"                     
-[112] "watWithdrawBySec"                      </code></pre>
-</div>
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>gcamextractor<span class="sc">::</span>queries <span class="co"># Get all queries used</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "ag production by tech"                                     
- [2] "aggregated land allocation"                                
- [3] "Basin level available runoff"                              
- [4] "biophysical water demand by crop type and land region"     
- [5] "building final energy by fuel"                             
- [6] "building final energy by subsector"                        
- [7] "building floorspace"                                       
- [8] "building service output by tech"                           
- [9] "CO2 emissions by sector"                                   
-[10] "CO2 emissions by sector"                                   
-[11] "CO2 emissions by sector"                                   
-[12] "CO2 emissions by sector"                                   
-[13] "CO2 emissions by sector"                                   
-[14] "CO2 emissions by sector"                                   
-[15] "CO2 emissions by sector"                                   
-[16] "CO2 emissions by sector (no bio)"                          
-[17] "CO2 emissions by sector (no bio)"                          
-[18] "CO2 emissions by sector (no bio)"                          
-[19] "CO2 emissions by sector (no bio)"                          
-[20] "CO2 emissions by sector (no bio)"                          
-[21] "CO2 emissions by subsector"                                
-[22] "CO2 sequestration by sector"                               
-[23] "CO2 sequestration by sector"                               
-[24] "CO2 sequestration by sector"                               
-[25] "CO2 sequestration by sector"                               
-[26] "CO2 sequestration by sector"                               
-[27] "CO2 sequestration by sector"                               
-[28] "CO2 sequestration by sector"                               
-[29] "detailed land allocation"                                  
-[30] "elec capacity by tech and vintage"                         
-[31] "elec coeff"                                                
-[32] "elec consumption by demand sector"                         
-[33] "elec gen by gen tech and cooling tech"                     
-[34] "elec gen by gen tech cogen USA"                            
-[35] "elec gen by gen tech USA"                                  
-[36] "elec gen by segment (grid level)"                          
-[37] "elec investment capacity factor"                           
-[38] "elec operating costs by tech and vintage"                  
-[39] "fertilizer consumption by ag tech"                         
-[40] "Final energy by detailed end-use sector and fuel"          
-[41] "GDP Growth Rate (Percent)"                                 
-[42] "GDP MER by region"                                         
-[43] "GDP per capita MER by region"                              
-[44] "hydrogen costs by tech"                                    
-[45] "hydrogen inputs by tech"                                   
-[46] "hydrogen outputs by technology"                            
-[47] "hydrogen prices by sector"                                 
-[48] "hydrogen production by tech"                               
-[49] "hydrogen utilization by technology"                        
-[50] "industry final energy by fuel"                             
-[51] "inputs by tech"                                            
-[52] "land allocation by crop"                                   
-[53] "land allocation by crop and water source"                  
-[54] "Land Use Change Emission (future)"                         
-[55] "Land Use Change Emission (future)"                         
-[56] "Land Use Change Emission (future)"                         
-[57] "Land Use Change Emission (future)"                         
-[58] "Land Use Change Emission (future)"                         
-[59] "Land Use Change Emission (future)"                         
-[60] "Land Use Change Emission (future)"                         
-[61] "meat and dairy production by tech"                         
-[62] "nonCO2 emissions by resource production"                   
-[63] "nonCO2 emissions by resource production"                   
-[64] "nonCO2 emissions by resource production"                   
-[65] "nonCO2 emissions by resource production"                   
-[66] "nonCO2 emissions by sector"                                
-[67] "nonCO2 emissions by sector"                                
-[68] "nonCO2 emissions by sector"                                
-[69] "nonCO2 emissions by sector"                                
-[70] "nonCO2 emissions by sector"                                
-[71] "nonCO2 emissions by sector USA"                            
-[72] "nonCO2 emissions by sector USA"                            
-[73] "nonCO2 emissions by sector USA"                            
-[74] "nonCO2 emissions by sector USA"                            
-[75] "nonCO2 emissions by subsector"                             
-[76] "nonCO2 emissions by subsector"                             
-[77] "outputs by tech"                                           
-[78] "Population by region"                                      
-[79] "prices by sector"                                          
-[80] "primary energy consumption by region (direct equivalent)"  
-[81] "refined liquids production by subsector"                   
-[82] "total final energy by aggregate sector"                    
-[83] "total final energy by sector"                              
-[84] "transport final energy by fuel"                            
-[85] "transport final energy by mode and fuel"                   
-[86] "transport service output by mode"                          
-[87] "transport service output by tech"                          
-[88] "transport service output by tech (new)"                    
-[89] "water consumption by state, sector, basin (includes desal)"
-[90] "water consumption by water mapping source"                 
-[91] "water withdrawals by crop"                                 
-[92] "water withdrawals by state, sector, basin (includes desal)"
-[93] "water withdrawals by water mapping source"                 
-[94] "Water withdrawals by water source (runoff vs. groundwater)"</code></pre>
-</div>
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#gcamextractor::map_param_query # Get a table of params and the relevants queries used to extract and calculate them.</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># dataGCAM &lt;- gcamextractor::readgcam(gcamdatabase = path_to_gcam_database,</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    paramsSelect = c("emissCO2BySector", </span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                                        "emissCO2BySectorNoBio"), </span><span class="al">###</span><span class="co"> this is a key</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    scenOrigNames = c('reference_with_dac_ssp_2',</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#                                                      'reference_with_dac_ssp_2_x3'),</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    regionsSelect = c("South Korea"),</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">#                                    folder = "test_folder")</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+
 </div>
 <ul>
 <li>line charts</li>
@@ -822,36 +594,36 @@ common scenarios(.xml) applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gghighlight)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>dac_data<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">'./KAIST_IAM_GROUP/results.xlsx'</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>data_tidy<span class="ot">&lt;-</span> dac_data <span class="sc">%&gt;%</span> </span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>scenario, <span class="sc">-</span>region) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(type, query) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">'type'</span>, <span class="st">'query'</span>, <span class="st">'sector'</span>), <span class="at">names_to =</span><span class="st">"year"</span>, <span class="at">values_to =</span> <span class="st">"MTC"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>( <span class="at">year =</span> <span class="fu">as.numeric</span>(year))</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"sequestration"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector)<span class="sc">+</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gghighlight)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>dac_data<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">'./KAIST_IAM_GROUP/results.xlsx'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>data_tidy<span class="ot">&lt;-</span> dac_data <span class="sc">%&gt;%</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>scenario, <span class="sc">-</span>region) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">relocate</span>(type, query) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">'type'</span>, <span class="st">'query'</span>, <span class="st">'sector'</span>), <span class="at">names_to =</span><span class="st">"year"</span>, <span class="at">values_to =</span> <span class="st">"MTC"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>( <span class="at">year =</span> <span class="fu">as.numeric</span>(year))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"sequestration"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector)<span class="sc">+</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <p><img src="KAIST_IAM_GROUP_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"emission"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>type)<span class="sc">+</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_tidy <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(query <span class="sc">==</span> <span class="st">"emission"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span> year, <span class="at">y =</span> MTC, <span class="at">group =</span> sector, <span class="at">color =</span> type))<span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>type)<span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span> <span class="st">"Comparison between scenario dap_ssp2 and dap_ssp_x3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <p><img src="KAIST_IAM_GROUP_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
@@ -877,7 +649,7 @@ common scenarios(.xml) applied for two dac_ssp2 &amp; dap_ssp2_x3 comparison
 <h2 data-number="5.4" class="anchored" data-anchor-id="needs-to-be-done"><span class="header-section-number">5.4</span> Needs to be done</h2>
 <ul>
 <li><p>How to see the structure of XML files in R? Using <code>XML</code>, <code>XML2</code> libraries or <code>rgacm</code> library works?</p></li>
-<li><p>What are the parameters we need to focus on? in dac scenario analysis I just selected the <code>emissCO2BySector</code> and <code>emissCO2BySectorNoBio</code>. What else should I consider?</p></li>
+<li><p>What are the parameters we need to focus on? in dac scenario analysis I just selected the <code>emissCO2BySector</code> and <code>emissCO2BySectorNoBio</code>. What else should I consider? -&gt;<strong>NoBio</strong> is in which we are intersted.</p></li>
 <li><p>How to immigrate transportation scenario from GCAM-KAIST2.0 to GCAM7?</p></li>
 </ul>
 </section>
@@ -895,17 +667,67 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>광남에게 transportation 시나리오에 대해 물어보기. 무얼 바꿨고 어떻게 작업했는지.</p></li>
+<li><p>DAC의 경우는 CO2 sequestration parameter 중요</p></li>
+<li><p>광남에게 transportation 시나리오에 대해 물어보기. 무얼 바꿨고 어떻게 작업했는지. quick seminar 가능?</p></li>
 <li><p>In KAIST2.0 광남, <code>energy-final-demand name ="chemical"</code> 왜??</p></li>
 <li><p>GCAM-KAIST2.0 광남시나리오 VS GCAM7 기본 TRANSPORTATION 시나리오 비교.</p></li>
 <li><p>DAC의 경우는 CO2 sequestration parameter 중요.</p></li>
 <li><p>github jgcri or GCAM 에 DAC 작동안된다고 문의하기.</p></li>
 <li><p>시나리오가 아주 많을 떄 <code>library(gcamextractor)</code> 사용하면 좋고, 현재는 ModelInterface에서 봐도 충분하다.</p></li>
+<li><p>어디를 봐야할 지 모를 때 look at input by sector, output bt sector.</p></li>
 </ul>
 </div>
 </div>
+</section>
+<section id="after-meeting-with-prof-mcjeon" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 2023-09-07 after meeting with prof McJeon</h1>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>(DAC)</strong> DAC 기술인 high DAC? 이런 애들은 다른 나라에서는 나타남, Japan, Thailand에서도. 한국에서만 안나타나는거 같음. 결과가 잘 나타나는 국가를 하나 택해서 이름만 바꿔보기. 예를 들어. Japan &lt;-&gt; Korea</p></li>
+<li><p>(Diff) <code>1p5-incr-uc-KOR-LUC-Kwangnam.xml</code> vs <code>FFI-const-row-deeper-decarb-2050-1p5-6000-Linear.xml</code> 전자에는<code>ghgpolicy name = GHG</code>, 후자에는 <code>ghgpolicy name = CO2</code>로 차이가 있음. -&gt; 이로 인한 문제?</p></li>
+<li><p>(Diff) <code>GHG_link_kor.xml</code> vs <code>PCT_CO2_LUC_link_p10_row.xml</code> 차이도 있음.</p></li>
+<li><p><strong>(Transportation)</strong> ModelInterface에서 <code>transport final energy by tech and fuel</code>과 <code>transport service output by tech</code> 결과 제시 필요!! GCAM-KAIST2.0 vs GCAM7.0</p></li>
+<li><p><strong>(Transportation)</strong> <code>CurPol_Dawoon.xml</code>과 <code>transportation_UCD_CORE.xml</code>의 차이. UCD_CORE에는 <code>&lt;stub-technology name="Hybrid Liquids"&gt;</code> 가 있는데, 전자에는 없음. <code>Hybrid Liquids</code>가 없어서 GCAM7에서 시나리오 돌릴 떄 오류??</p></li>
+</ul>
+</div>
+</div>
+<section id="dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기"><span class="header-section-number">7.1</span> dac_ssp2랑 dac_ssp_x3 ModelInterface에서 확인하기</h2>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>코드는 /KAIST_IAM_GROUP <code>dac_scenario_analysis.R</code> 에서 확인 가능</li>
+</ul>
+</div>
+</div>
+<ul>
+<li>Region : USA, Query: <strong>CO2 emissions by sector</strong></li>
+</ul>
+<p><img src="KAIST_IAM_GROUP/dac_emission_by_sector.png" class="img-fluid"></p>
+<ul>
+<li>Region : USA, Query: <strong>CO2 sequestration by sector</strong></li>
+</ul>
+<p><img src="KAIST_IAM_GROUP/dac_co2_sequestration_by_sector.png" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

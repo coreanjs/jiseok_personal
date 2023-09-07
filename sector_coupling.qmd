@@ -43,7 +43,7 @@ bibliography: references.bib
 
 -   계시별 요금제 도입을 통해 부하 변동성 감소
 
-## Modeling  of Power-to-X systems
+## Modeling of Power-to-X systems
 
 -   Article : Modeling and simulation of Power-to-X systems: A review[@ince2021]
 
@@ -65,7 +65,7 @@ bibliography: references.bib
 
 -   Thermodynamic analysis
 
-    -    The **SOE technology** in steam and co-electrolysis modes is the most preferable electrolyzer technology in the P-t-X systems, among the other electrolyzer types. SOE technology is preferred mainly due to its thermal integration compatibility with other subcomponents.
+    -   The **SOE technology** in steam and co-electrolysis modes is the most preferable electrolyzer technology in the P-t-X systems, among the other electrolyzer types. SOE technology is preferred mainly due to its thermal integration compatibility with other subcomponents.
 
     -   The energy requirement for the CO2 capture process. **The membrane-integrated** P-t-X system gives better system performance thermodynamically among the other CO2 capture techniques
 
