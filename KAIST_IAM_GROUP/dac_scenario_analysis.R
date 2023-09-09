@@ -64,10 +64,10 @@ data_ssp2_sector_seq_longer%>%
     scale_x_continuous(breaks = c( 2020, 2050, 2100))+
     facet_wrap(~sector, scale="free_y", ncol = 4)+
     theme(legend.position ="bottom")+
-    labs(title ="CO2 emission by tech (dac_ssp2 vs dap_ssp2_x3)")
+    labs(title ="CO2 sequestraion by tech (dac_ssp2 vs dap_ssp2_x3)")
 
 ggsave(filename="dac_co2_sequestration_by_sector.png", path = paste0(getwd(), "/KAIST_IAM_GROUP/"), 
-       dpi=100, width = 1200, height = 1400, units ="px")
+       dpi=100, width = 1200, height = 900, units ="px")
 
 
 

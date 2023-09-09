@@ -49,11 +49,9 @@ freeze: true
 
     -   11월 정도에 기말 주제 공지 예정
 
-# Week 1.
+## Why Do Firms Differ
 
-## Lecture
-
--   Why do firms differ -\> 혁신역량의 차이.
+-   혁신 역량의 차이
 
     -   디지털 경제는 기존 경제와 완전히 다르다. **디지털 기술의 속성**을 모르면 디지털 경제을 알 수 없다. 디지털은 한계체증을 한다(marginal utility, 한계체감이 제로로간다). -\> 그래서 플랫폼 기업들이 생긴다. 네이버가 고객 한명을 더 받는데 비용이 얼마나 들까? 거의 0 일것이다.
 
@@ -136,3 +134,98 @@ freeze: true
     -   As for the relationship between **firm size** and innovation, interestingly, firm size has no impact on product innovation, but a positive effect on process innovation.
 
 -   The Probit model is described as the relationship between the explanatory variables and the dependent variable that has a value of 0 or 1
+
+**Determinants of innovation in energy intensive industry and implications for energy policy(위 homework 한글로 작성한 것임)**
+
+-   들어가며
+
+본 논문 분석은 슘페터 가설과 관련된 논문을 요약하는 2023년 가을학기 이노베이션 경영 1주차 과제이며, 분석 대상 논문은 에너지집약산업에서 연구개발의 영향과 혁신의 중요성을 분석한 논문으로 2015년 Energy Policy에 개제되었고 인용수는 '23년 9월 현재 89회를 기록하고 있다.
+
+-   주요 내용요약
+    -   본 연구는 연구개발(Research & Development, R&D)이 에너지집약산업(Energy Intensive Industry, EII)에서의 제품 혁신(process innovation)과 공정 혁신(process innovation)에 미치는 영향을 분석하고, 혁신의 중요성을 강조한다. 그리고 이 영향을 비 에너지집약산업과 비교한다.
+
+    -   혁신의 결정요인을 주류 경제학으로 끌고 온 사람은 슘페터이다. 슘페터는 집중된 시장에서 독점력을 가진 대기업이 기술 혁신을 촉진할 가능성성이 높다고 주장하였다. 이는 유명한 슘페터 가설로, 기업의 규모와 시장 구조를 혁신의 주요 결정요인으로 제시하였다.
+
+    -   2008년 한국의 기술혁신조사의 데이터를 사용하여 에너지집악산업의 혁신에 대한 경제 변수와 함께 슘페터 가설에서 제안된 주요 경제 변수(예: 기업 규모 및 시장 구조)가 혁신에 미치는 영향을 추정한다.
+
+    -   실증적 결과를 바탕으로 우리는 에너지 정책이 에너지집약산업의 혁신 촉진에 미치는 영향을 밝히며, R&D는 에너지집약산업의 혁신을 촉진할 것이라는 점을 밝힌다.
+-   결과
+    -   에너지집약산업과 비에너지집약산업에 회귀분석을 수행하였고, 분석에 사용된 변수는 firm size, squared firm size, market concentration, export ratio, capital ratio, advertising intensity, R&D intensity, R&D personnel ratio로 구분된다. 분석 결과는 다음과 같이 4가지로 구분하여 제시한다.
+
+    -   R&D 집약도와 제품 혁신, R&D 인력과 제품 혁신, R&D 집약도와 공정 혁신, R&D 인력과 공정 혁신
+
+    -   R&D 인력 비율은 제품 및 공정 혁신 모두에 통계적으로 유의미한 영향을 미치나, R&D 집약도는 에너지집약산업의 공정 혁신에만 중요한 영향을 미치는 것으로 보인다. 이는 공정 혁신을 개선하기 위해서는 R&D 프로그램에서 인력과 금전적 지출을 모두 늘려야 함을 의미한다. 반면, 제품 혁신은 상대적으로 적은 재정 투자로 R&D 인력을 추가함으로써 강화할 수 있다. 공정 혁신이 제품 혁신보다 비용과 시간이 더 많이 소요되는 것이다.
+
+    -   기업 규모와 혁신의 관계를 살펴보면, 흥미롭게도 기업 규모는 제품 혁신에는 영향을 미치지 않지만 공정 혁신에는 긍정적인 영향을 미친다. 큰 규모의 재정적 투자가 필요한 R&D는 중소기업들에게는 쉽지 않을 것이기 때문에, 공정 혁신을 달성하기는 보다는 제품 혁신을 달성해야 할 것이다.
+-   결론
+    -   OECD 오슬로 매뉴얼에 따라 KIS2008에서는 기업이 제품 혁신을 수행하는지, 공정 혁신을 수행하는지 확인하기 위해 더미변수를 사용하여 기술 혁신을 측정하였다. 이렇게 측정된 혁신의 결과는 신뢰도 측면에서 매우 이질적일 수 있다. 또한, 에너지집약산업의 혁신에 대한 시장 집중도의 미미한 영향은 상대적으로 짧은 표본 기간으로 인해 발생한 것일 수도 있다.
+
+    -   Hermansen (2011)에 따르면 소기업과 대기업은 중기업보다 혁신을 추진하기 쉬우며, 기업의 규모에 따라 혁신활동에 미치는 영향이 다를 것이다. 향후 연구에서는 기업의 규모와 산업에 따른 혁신의 결정요인들을 분석해볼 수 있을 것이다. 또한, 패널 회귀 또는 로짓 모델과 같은 다양한 분석 방법을 통해 이를 조사를 통해 연구 결과를 확장할 수 있을 것이다.
+
+# Week 2
+
+## Classics of Innovation Studies
+
+-   슘페터 가설은 정답이 없다. 그래서 여전히 논문주제로 나온다. 왜 이런 물음들이 던져진걸까..?
+
+-   **아담 스미스** 전의 경제는 학문이 아니고, 신학과 철학, 정치 수준에 불과하였음. 수요 = 공급, 공식화 될 수 있는 걸 얘기한 사람이 아담스미스. 아담스미스가 경제**학**을만든 것임. 하나의 시장, 커뮤니티를 살펴보니 그 안에서 개인은 이기적인 마음으로 자유롭게 거래를 하는 것을 살펴봄. 모아놓고 보니 그 안에서 균형을 잡고, 전체의 후생이 증가한다는 걸 발견. **기본은 완전경쟁시장.**
+
+-   **칼 막스**는 아담 스미스의 주장에 돌을 던짐.
+
+-   대공황(1929, Great Depression)이 오는 원인? 수요와 공급의 사이클이 느리거나 멈췄을 때. 어디를 자극해서? 어디를 관심? 케인즈는 수요쪽. 슘페터는 공급(기업).
+
+-   케인즈는 유효수요론 주장하면서 정부의 개입을 이야기함. - 소득주도. 왜냐하면 시장은 한번도 완전한 적이 없었기 때문. 케인즈는 기업 쪽에 관심이 없음. 수요쪽에만 관심을 가짐.
+
+-   슘페터는 기업에서 혁신을 통해 수요 공급 사이클을 돌릴 수 있다고 말함. - 혁신성장론.
+
+-   케인즈, 슘페터 모두 시장의 불완전성에는 동의
+
+## Schumpeterian hypothesis
+
+-   **Part II Can Capitalism Survive? Chapter 8 Monopolistic Practices**
+
+::: callout-important
+## 중간고사 시험 대비
+
+-   **The Schumpeterian tradeoff revisited**[@nelson1982], **시험에 나옴!!!** **Table의 결과 정리해두면 좋을 것**
+
+    -   기본적으로 슘페터의 가설 및 이론을 지지함.
+
+    -   많은 경쟁자들이 있는 시장보다는 적은 경쟁자들이 있는 시장에서 혁신적인 활동이 일어나기 쉽다는 것을 보여줌.
+
+    -   투자가 제한된 상황에서는 경쟁 시장이 혁신을 촉진하는 것 보다는 독점적 시장이 혁신을 촉진하는 것이 더 효과적임.
+
+    -   **Table 1\~6 주요 내용 정리 필요**
+:::
+
+-   제품혁신, 공정혁신. cost reduction인지, 매출 상승인지에 따라 제품 or 공정 혁신이 달라질 수 있다.
+
+-   first-mover와 follower의 R&D 비용 차이는 어마어마함.
+
+## Paradigm
+
+-   Thomas Kuhn, 패러다임의 변화. 믿음, 세계관을 포함하는 넓은 의미의 형이상학적 변화 정상과학(교과서의 변경)
+
+-   Though the world does not change with a change of paradigm, the scientist afterwards works in a different world. "The Structure of Scientific Revolutions, p. 121."
+
+```{mermaid}
+flowchart LR 
+  A(Anomalies) --> B(Crisis) 
+  B(Crisis) --> C(Revolution)
+  C(Revolution) --> D(Normal Science)
+  D(Normal Science) --> A(Anomalies)
+```
+
+## General Purpose Technology
+
+-   **범용기술.** 새로운 세대로의 기술적, 산업적 변화를 불러오는 혁신기술들의 최상단에 위치하는 기술로, 한 세대 산업혁명 안에서 많은 기술들의 뿌리로 인식될 수 있는 기술
+
+-   산업혁명은 일반적으로 범용기술의 출현과 함께 시작되어 당시 산업구조의 혁신적 변화를 일으킴
+
+-   Enabling Technology라고도 부르며, **산업간 확산성(Pervasiveness), 개선 가능성(Improvement), 혁신 촉진성(Innovation Spawning)**
+
+## Assignment
+
+-   **혁신의 원천 관련 논문( 공급, 수요, 사용자, 기술 디지털 등) 1편 요약**
+-   혁신의 trigger, driving force? 기술인가 수요인가. source of innovation
+-   
