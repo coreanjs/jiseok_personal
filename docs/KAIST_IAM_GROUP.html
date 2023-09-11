@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="안지석">
-<meta name="dcterms.date" content="2023-09-07">
+<meta name="dcterms.date" content="2023-09-11">
 
 <title>Jiseok AHN - KAIST IAM Group</title>
 <style>
@@ -210,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 7, 2023</p>
+        <p class="date">September 11, 2023</p>
       </div>
     </div>
       
@@ -270,9 +270,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#needs-to-be-done" id="toc-needs-to-be-done" class="nav-link" data-scroll-target="#needs-to-be-done"><span class="toc-section-number">5.4</span>  Needs to be done</a></li>
   </ul></li>
   <li><a href="#meeting" id="toc-meeting" class="nav-link" data-scroll-target="#meeting"><span class="toc-section-number">6</span>  2023-09-05 Meeting</a></li>
-  <li><a href="#after-meeting-with-prof-mcjeon" id="toc-after-meeting-with-prof-mcjeon" class="nav-link" data-scroll-target="#after-meeting-with-prof-mcjeon"><span class="toc-section-number">7</span>  2023-09-07 after meeting with prof McJeon</a>
+  <li><a href="#meeting-1" id="toc-meeting-1" class="nav-link" data-scroll-target="#meeting-1"><span class="toc-section-number">7</span>  2023-09-07 meeting</a>
   <ul class="collapse">
   <li><a href="#dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기" id="toc-dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기" class="nav-link" data-scroll-target="#dac_ssp2랑-dac_ssp_x3-modelinterface에서-확인하기"><span class="toc-section-number">7.1</span>  dac_ssp2랑 dac_ssp_x3 ModelInterface에서 확인하기</a></li>
+  <li><a href="#automation-of-graph-reporting-with-r-librarygcamextractor" id="toc-automation-of-graph-reporting-with-r-librarygcamextractor" class="nav-link" data-scroll-target="#automation-of-graph-reporting-with-r-librarygcamextractor"><span class="toc-section-number">7.2</span>  Automation of graph reporting with R library(gcamextractor)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -679,8 +680,8 @@ Important
 </div>
 </div>
 </section>
-<section id="after-meeting-with-prof-mcjeon" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> 2023-09-07 after meeting with prof McJeon</h1>
+<section id="meeting-1" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 2023-09-07 meeting</h1>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -713,7 +714,12 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>코드는 /KAIST_IAM_GROUP <code>dac_scenario_analysis.R</code> 에서 확인 가능</li>
+<li>Check dac_ssp2 &amp; dac_ssp2_x3 scenarios results of USA using Modelinterface in GCAM</li>
+<li>Selected parameter : <code>CO2 emission by tech</code> and <code>CO2 sequestration by tech</code></li>
+<li>Drag and drop the resuls in excels</li>
+<li>See the differences using R</li>
+<li>Differences can be seen in <code>airCO2</code> , <code>CO2 removal</code>, <code>process heat dac</code>, -&gt; dac scenario works in USA</li>
+<li>/KAIST_IAM_GROUP <code>dac_scenario_analysis.R</code> 에서 확인 가능</li>
 </ul>
 </div>
 </div>
@@ -725,6 +731,14 @@ Important
 <li>Region : USA, Query: <strong>CO2 sequestration by sector</strong></li>
 </ul>
 <p><img src="KAIST_IAM_GROUP/dac_co2_sequestration_by_sector.png" class="img-fluid"></p>
+</section>
+<section id="automation-of-graph-reporting-with-r-librarygcamextractor" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="automation-of-graph-reporting-with-r-librarygcamextractor"><span class="header-section-number">7.2</span> Automation of graph reporting with R library(gcamextractor)</h2>
+<ul>
+<li>Using <code>library(gcamextractor)</code>, query data can be imported as dataset in R and saved in excel files. -&gt; Details can be found in <code>Template.R</code></li>
+<li>User guide for <a href="https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html">gcamextractor</a> here.</li>
+</ul>
+<p><img src="KAIST_IAM_GROUP/images_gcamextractor.png" class="img-fluid"></p>
 
 
 </section>

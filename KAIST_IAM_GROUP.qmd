@@ -333,7 +333,7 @@ data_tidy %>%
 -   어디를 봐야할 지 모를 때 look at input by sector, output bt sector.
 :::
 
-# 2023-09-07 after meeting with prof McJeon
+# 2023-09-07 meeting
 
 ::: callout-important
 -   **(DAC)** DAC 기술인 high DAC? 이런 애들은 다른 나라에서는 나타남, Japan, Thailand에서도. 한국에서만 안나타나는거 같음. 결과가 잘 나타나는 국가를 하나 택해서 이름만 바꿔보기. 예를 들어. Japan \<-\> Korea
@@ -350,7 +350,12 @@ data_tidy %>%
 ## dac_ssp2랑 dac_ssp_x3 ModelInterface에서 확인하기
 
 ::: callout-important
--   코드는 /KAIST_IAM_GROUP `dac_scenario_analysis.R` 에서 확인 가능
+-   Check dac_ssp2 & dac_ssp2_x3 scenarios results of USA using Modelinterface in GCAM
+-   Selected parameter : `CO2 emission by tech` and `CO2 sequestration by tech`
+-   Drag and drop the resuls in excels
+-   See the differences using R
+-   Differences can be seen in `airCO2` , `CO2 removal`, `process heat dac`, -\> dac scenario works in USA
+-   /KAIST_IAM_GROUP `dac_scenario_analysis.R` 에서 확인 가능
 :::
 
 -   Region : USA, Query: **CO2 emissions by sector**
@@ -360,3 +365,10 @@ data_tidy %>%
 -   Region : USA, Query: **CO2 sequestration by sector**
 
 ![](KAIST_IAM_GROUP/dac_co2_sequestration_by_sector.png)
+
+## Automation of graph reporting with R library(gcamextractor)
+
+-   Using `library(gcamextractor)`, query data can be imported as dataset in R and saved in excel files. -\> Details can be found in `Template.R`
+-   User guide for [gcamextractor](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html) here.
+
+![](KAIST_IAM_GROUP/images_gcamextractor.png)
