@@ -1,6 +1,6 @@
 ---
 title: "머신러닝과 사업기회 - ITM812"
-date : last-modified # now
+date: last-modified # now
 author: 
  - name: "Jiseok AHN"
    affiliation: "KAIST"
@@ -12,7 +12,7 @@ format:
     toc: true
     toc-depth: 3
     toc-title: 목차
-    number-sections : true
+    number-sections: true
     number-depth: 2
     highlight-style: github
     self-contained: false
@@ -55,13 +55,15 @@ freeze: true
 
 -   
 
-## Data Analytic (Maching Learning) Value
+## Data Analytic (Machine Learning) Value
 
 -   정형/비정형 데이터
 
 -   정형 - 틀이 정해진. 나이, 키, 성별 등의 정보를 담는 데이터
 
 -   비정형 - 이미지, 언어, 소리, 컨설팅
+
+-   인간과 유사한 판단을 할 수 있도록 컴퓨터에게 학습을 시킨다. 적당한 반복을 할 수 있을 때, 이를 대체할 수 도록
 
 ## Data -\> Insight -\> Value
 
@@ -95,22 +97,87 @@ freeze: true
 
 -   하드웨어 성능이 좋을 수록, 계속 반복할 수록, 데이터가 많아질 수록 성능도 함께 발전.
 
+-   값을 주면 결과를 제시하는 게 프로그래밍, 데이터와 답을 주면 규칙을 내놓는 게 머신러닝.
+
 ## 머신라닝의 세 가지 타입
 
 -   Supervised Learning 지도 학습
 
-    -   지도하다. 가이드하다. 명확하게 답이 있는 것. 정답(맞았다, 틀렸다 가능// TRUE OR FALSE). 라벨링.
+    -   제일 많이 쓰임. 지도하다. 가이드하다. 명확하게 답이 있는 것. 정답(맞았다, 틀렸다 가능// TRUE OR FALSE). 라벨링.
 
     -   **딥러닝**을 잘하라면 라벨링을 잘해야함. 딥러닝은 Classification 방법 중 하나. 방법론은 물론, 데이터 라벨링이 중요.
 
 -   Unsupervised Learning 비지도 학습
 
-    -   지도하지 않는다. 라벨링하지 않는다. 정답이 없다. 정답이 없으니 비슷한 것들끼리 그룹을 지어준다. Grouping-\> Clustering
+    -   지도하지 않는다. 라벨링하지 않는다. 정답이 없다. 정답이 없으니 비슷한 것들끼리 그룹을 지어준다. Grouping-\> Clustering. Similarity. Distance 기반.
 
-    -   Clustering. 비슷한 데에 모여있는 것들끼리. K-means, K-NN(Nearest Neighbor, 최근접 이)
+    -   Clustering. 비슷한 데에 모여있는 것들끼리. K-means, K-NN(Nearest Neighbor, 최근접 이웃)
 
 -   Reinforcement 강화 학습
 
     -   정답은 없는데, 부족한 부분을 계속 학습하는 과정. 딥러닝으로 발전하는 것과 비슷함.
 
 -   딥러닝은 Supervised와 Reinforcement가 합쳐진 것이다.
+
+# Week 3
+
+## 통계 vs. Machine Learning
+
+-   통계는 과거를 통해 대표값을 얻는 것. e.g., 평균. 머신라닝은 과거를 통해 미래를 예측하고 인사이트를 찾는 것.
+
+-   표본: 다수에서 소수를 뽑고 대표값을 구하는 것
+
+## Deep Learning
+
+-   다른 머신러닝 기법들과 차이점. Nonlinear function을 풀기 휘애 NONLINEAR FUNCTION을 linear function의 결합으로. -\> 엄청 복잡한 함수(인공지능)를 만들 수 있다.
+
+-   다층 레이어(Multiple layer)
+
+-   Hidden layer가 2개 이상인 NN(Neural Network)을 Deep Learning이라고 부른다.
+
+## Linear function vs. Nonlinear function
+
+-   선형회귀 모델은 '회귀계수(regression coefficient)를 선형 결합으로 표현할 수 있는 모델'
+
+-   계수들과 변수의 곱셈과 그들의 덧셈과 뺄셈으ㅗㄹ만 결합되어 있는 것을 의미한다.
+
+-   독립변수가 일차식인지, 이차식인지, 로그함수인지가 중요한 것이 아니라 추정할 대사인 파라미터가 어떻게 생겼느냐의 문제.
+
+-   y = a0 + a1x1, y = a0+a1x1+a2x2 등은 선형회귀식.
+
+-   비선형회귀 모델은 데이터를 어떻게 변형하더라도 파라미터를 선형결합식으로 표현할 수 없는 모델.
+
+-   선형회귀모델은 파라미터 계수에 대한 해석이 단순하지만, 비선형 모델은 형태가 복잡할 경우 해석하기 어렵기 때문에 통계 모델에서는 비선형회귀 모델을 잘 사용하지 않는다.
+
+## Machine Learning은 문제 해결을 위한 함수 f()를 찾는 것이다.
+
+-   종속변수(y)를 독립변수(x)들의 함수 f(x)로 적합. Y =f(x)
+
+-   f(함수)가 무엇일까? 문제를 풀 방법? 분석방법을 의미한다.
+
+-   예제 1) Sales prediction : 특정 고객 -\> 마케핑 캠패인에 반응할 확률
+
+    -   x : 고객 과거 data, 캠페인 요소들
+
+    -   y : 반응할 확률 -\> 캠패인을 확인한 사람에게 세일즈를 하는 것이 좋다.
+
+-   예제 2) 휴대폰 고객이 향후 6개월 이내에 이탈할 확률
+
+    -   x : 휴대폰 고객, y : 이탈할 확률
+
+-   예제 3) y: 다음 주 주가상승 여부 =f(x :최근 주가 추이, 환경분석)
+
+## 머신러닝 모델링 프로세스
+
+1.  문제 정의 및 명확한 목표 설정
+2.  데이터 수집 (including Random Sampling)
+3.  데이터 탐색, Cleaning, Pre-processing
+4.  데이터 분류 및 데이터 세닝
+    -   Training set, Validation set, Testing set 으로 구분
+5.  데이터 방법론 선택
+    -   Regression, Classification, Clustering, Recommender 등 선택
+6.  구체적인 기술 및 평가 방법 선택
+    -   Linear Regression, Logistic Regression, Decision tree, Random Forest, KNN, K-means, Matrix Factorization
+7.  테스트 및 튜닝
+8.  결과 및 모델 비교
+9.  모델 선택 및 적용

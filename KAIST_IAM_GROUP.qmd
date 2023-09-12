@@ -372,3 +372,13 @@ data_tidy %>%
 -   User guide for [gcamextractor](https://jgcri.github.io/gcamextractor/articles/vignette_parameters.html) here.
 
 ![](KAIST_IAM_GROUP/images_gcamextractor.png)
+
+## 2023-09-12 회의
+
+::: callout-important
+## What to do
+
+-   에너지통계연보 수치를, R 템플릿 결과에 추가해서 볼 수 있게
+
+-   dac 시나리오 나라 바꿔서 돌려보기 e.g., Korea \<-\> USA
+:::
