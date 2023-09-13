@@ -212,46 +212,14 @@ Energy System: energy process at the regional and global scales, energy transiti
 Compare GCAM energy queries under the reference and decarbonization scenarios
 :::
 
--   
+::: callout-important
+## 발표 10월 4일!!!!!!!!!!!!!!!!
 
-## paper title
+Paper crique
 
--   
+-   **The role of direct air capture and negative emissions technologies** in the shared socioeconomic pathways towards +1.5 ◦C and +2 ◦C futures[@fuhrman2021]
+:::
 
-### Summarize the key findings
-
--   
-
--   
+## Lecture
 
 -   
-
-### Strengths
-
--   
-
--   
-
--   
-
-### Weakness
-
--   
-
--   
-
--   
-
-### How to improve upon it for my own research
-
--   
-
--   
-
--   
-
-# Reference
-
-# 
-
-## 

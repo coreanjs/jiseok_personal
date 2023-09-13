@@ -123,14 +123,14 @@
     "href": "ITM812.html#machine-learning-vs.-programming",
     "title": "머신러닝과 사업기회 - ITM812",
     "section": "2.7 Machine Learning vs. Programming",
-    "text": "2.7 Machine Learning vs. Programming\n\n전통적인 SW(프로그래밍)은 한번만 만들면 된다.\nML(Machine Learning)은 전통적인 SW 개발과 달리, 데이터 학습을 통해 더 좋은 규칙을 계속 만들어 냄.\n하드웨어 성능이 좋을 수록, 계속 반복할 수록, 데이터가 많아질 수록 성능도 함께 발전."
+    "text": "2.7 Machine Learning vs. Programming\n\n전통적인 SW(프로그래밍)은 한번만 만들면 된다.\nML(Machine Learning)은 전통적인 SW 개발과 달리, 데이터 학습을 통해 더 좋은 규칙을 계속 만들어 냄.\n하드웨어 성능이 좋을 수록, 계속 반복할 수록, 데이터가 많아질 수록 성능도 함께 발전.\n값을 주면 결과를 제시하는 게 프로그래밍, 데이터와 답을 주면 규칙을 내놓는 게 머신러닝."
   },
   {
     "objectID": "ITM812.html#머신라닝의-세-가지-타입",
     "href": "ITM812.html#머신라닝의-세-가지-타입",
     "title": "머신러닝과 사업기회 - ITM812",
     "section": "2.8 머신라닝의 세 가지 타입",
-    "text": "2.8 머신라닝의 세 가지 타입\n\nSupervised Learning 지도 학습\n\n지도하다. 가이드하다. 명확하게 답이 있는 것. 정답(맞았다, 틀렸다 가능// TRUE OR FALSE). 라벨링.\n딥러닝을 잘하라면 라벨링을 잘해야함. 딥러닝은 Classification 방법 중 하나. 방법론은 물론, 데이터 라벨링이 중요.\n\nUnsupervised Learning 비지도 학습\n\n지도하지 않는다. 라벨링하지 않는다. 정답이 없다. 정답이 없으니 비슷한 것들끼리 그룹을 지어준다. Grouping-> Clustering\nClustering. 비슷한 데에 모여있는 것들끼리. K-means, K-NN(Nearest Neighbor, 최근접 이)\n\nReinforcement 강화 학습\n\n정답은 없는데, 부족한 부분을 계속 학습하는 과정. 딥러닝으로 발전하는 것과 비슷함.\n\n딥러닝은 Supervised와 Reinforcement가 합쳐진 것이다."
+    "text": "2.8 머신라닝의 세 가지 타입\n\nSupervised Learning 지도 학습\n\n제일 많이 쓰임. 지도하다. 가이드하다. 명확하게 답이 있는 것. 정답(맞았다, 틀렸다 가능// TRUE OR FALSE). 라벨링.\n딥러닝을 잘하라면 라벨링을 잘해야함. 딥러닝은 Classification 방법 중 하나. 방법론은 물론, 데이터 라벨링이 중요.\n\nUnsupervised Learning 비지도 학습\n\n지도하지 않는다. 라벨링하지 않는다. 정답이 없다. 정답이 없으니 비슷한 것들끼리 그룹을 지어준다. Grouping-> Clustering. Similarity. Distance 기반.\nClustering. 비슷한 데에 모여있는 것들끼리. K-means, K-NN(Nearest Neighbor, 최근접 이웃)\n\nReinforcement 강화 학습\n\n정답은 없는데, 부족한 부분을 계속 학습하는 과정. 딥러닝으로 발전하는 것과 비슷함.\n\n딥러닝은 Supervised와 Reinforcement가 합쳐진 것이다."
   },
   {
     "objectID": "jiseok.html",
@@ -474,5 +474,54 @@
     "title": "KAIST IAM Group",
     "section": "7.3 2023-09-12 회의",
     "text": "7.3 2023-09-12 회의\n\n\n\n\n\n\nImportant\n\n\n\n\n에너지통계연보 수치를, R 템플릿 결과에 추가해서 볼 수 있게\ndac 시나리오 나라 바꿔서 돌려보기 e.g., Korea <-> USA"
+  },
+  {
+    "objectID": "ITM812.html#data-analytic-machine-learning-value",
+    "href": "ITM812.html#data-analytic-machine-learning-value",
+    "title": "머신러닝과 사업기회 - ITM812",
+    "section": "2.4 Data Analytic (Machine Learning) Value",
+    "text": "2.4 Data Analytic (Machine Learning) Value\n\n정형/비정형 데이터\n정형 - 틀이 정해진. 나이, 키, 성별 등의 정보를 담는 데이터\n비정형 - 이미지, 언어, 소리, 컨설팅\n인간과 유사한 판단을 할 수 있도록 컴퓨터에게 학습을 시킨다. 적당한 반복을 할 수 있을 때, 이를 대체할 수 도록"
+  },
+  {
+    "objectID": "ITM812.html#통계-vs.-machine-learning",
+    "href": "ITM812.html#통계-vs.-machine-learning",
+    "title": "머신러닝과 사업기회 - ITM812",
+    "section": "3.1 통계 vs. Machine Learning",
+    "text": "3.1 통계 vs. Machine Learning\n\n통계는 과거를 통해 대표값을 얻는 것. e.g., 평균. 머신라닝은 과거를 통해 미래를 예측하고 인사이트를 찾는 것.\n표본: 다수에서 소수를 뽑고 대표값을 구하는 것"
+  },
+  {
+    "objectID": "ITM812.html#deep-learning",
+    "href": "ITM812.html#deep-learning",
+    "title": "머신러닝과 사업기회 - ITM812",
+    "section": "3.2 Deep Learning",
+    "text": "3.2 Deep Learning\n\n다른 머신러닝 기법들과 차이점. Nonlinear function을 풀기 휘애 NONLINEAR FUNCTION을 linear function의 결합으로. -> 엄청 복잡한 함수(인공지능)를 만들 수 있다.\n다층 레이어(Multiple layer)\nHidden layer가 2개 이상인 NN(Neural Network)을 Deep Learning이라고 부른다."
+  },
+  {
+    "objectID": "ITM812.html#linear-function-vs.-nonlinear-function",
+    "href": "ITM812.html#linear-function-vs.-nonlinear-function",
+    "title": "머신러닝과 사업기회 - ITM812",
+    "section": "3.3 Linear function vs. Nonlinear function",
+    "text": "3.3 Linear function vs. Nonlinear function\n\n선형회귀 모델은 ‘회귀계수(regression coefficient)를 선형 결합으로 표현할 수 있는 모델’\n계수들과 변수의 곱셈과 그들의 덧셈과 뺄셈으ㅗㄹ만 결합되어 있는 것을 의미한다.\n독립변수가 일차식인지, 이차식인지, 로그함수인지가 중요한 것이 아니라 추정할 대사인 파라미터가 어떻게 생겼느냐의 문제.\ny = a0 + a1x1, y = a0+a1x1+a2x2 등은 선형회귀식.\n비선형회귀 모델은 데이터를 어떻게 변형하더라도 파라미터를 선형결합식으로 표현할 수 없는 모델.\n선형회귀모델은 파라미터 계수에 대한 해석이 단순하지만, 비선형 모델은 형태가 복잡할 경우 해석하기 어렵기 때문에 통계 모델에서는 비선형회귀 모델을 잘 사용하지 않는다."
+  },
+  {
+    "objectID": "ITM812.html#machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다.",
+    "href": "ITM812.html#machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다.",
+    "title": "머신러닝과 사업기회 - ITM812",
+    "section": "3.4 Machine Learning은 문제 해결을 위한 함수 f()를 찾는 것이다.",
+    "text": "3.4 Machine Learning은 문제 해결을 위한 함수 f()를 찾는 것이다.\n\n종속변수(y)를 독립변수(x)들의 함수 f(x)로 적합. Y =f(x)\nf(함수)가 무엇일까? 문제를 풀 방법? 분석방법을 의미한다.\n예제 1) Sales prediction : 특정 고객 -> 마케핑 캠패인에 반응할 확률\n\nx : 고객 과거 data, 캠페인 요소들\ny : 반응할 확률 -> 캠패인을 확인한 사람에게 세일즈를 하는 것이 좋다.\n\n예제 2) 휴대폰 고객이 향후 6개월 이내에 이탈할 확률\n\nx : 휴대폰 고객, y : 이탈할 확률\n\n예제 3) y: 다음 주 주가상승 여부 =f(x :최근 주가 추이, 환경분석)"
+  },
+  {
+    "objectID": "ITM812.html#머신러닝-모델링-프로세스",
+    "href": "ITM812.html#머신러닝-모델링-프로세스",
+    "title": "머신러닝과 사업기회 - ITM812",
+    "section": "3.5 머신러닝 모델링 프로세스",
+    "text": "3.5 머신러닝 모델링 프로세스\n\n문제 정의 및 명확한 목표 설정\n데이터 수집 (including Random Sampling)\n데이터 탐색, Cleaning, Pre-processing\n데이터 분류 및 데이터 세닝\n\nTraining set, Validation set, Testing set 으로 구분\n\n데이터 방법론 선택\n\nRegression, Classification, Clustering, Recommender 등 선택\n\n구체적인 기술 및 평가 방법 선택\n\nLinear Regression, Logistic Regression, Decision tree, Random Forest, KNN, K-means, Matrix Factorization\n\n테스트 및 튜닝\n결과 및 모델 비교\n모델 선택 및 적용"
+  },
+  {
+    "objectID": "GGS621.html#lecture",
+    "href": "GGS621.html#lecture",
+    "title": "GGS621",
+    "section": "3.1 Lecture",
+    "text": "3.1 Lecture"
   }
 ]
