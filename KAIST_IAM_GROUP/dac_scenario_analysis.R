@@ -5,6 +5,7 @@ getwd()
 
 
 ### dac _ emission by sector
+
 data_ssp2_sector<-read_excel(paste0(getwd(), "/KAIST_IAM_GROUP/dac_emission_by_sector.xlsx"))
 
 
@@ -33,6 +34,8 @@ data_ssp2_sector_longer%>%
 
 ggsave(filename="dac_co2_emission_by_sector.png", path = paste0(getwd(), "/KAIST_IAM_GROUP/"), 
        dpi=100, width = 1200, height = 1400, units ="px")
+
+
 
 
 
@@ -76,6 +79,10 @@ ggsave(filename="dac_co2_sequestration_by_sector.png", path = paste0(getwd(), "/
 
 
 
+
+
+
+
 ######## 여기 미완성!!!!!!!!!!!!!!!!!!
 
 
@@ -110,3 +117,41 @@ data_ssp2_tech_longer %>%
 ggsave(filename="dac_co2_emission_by_tech.png", path = paste0(getwd(), "/KAIST_IAM_GROUP/"), 
        dpi=100, width = 1200, height = 1400, units ="px")
  
+
+
+
+
+
+Japan<-read_excel(paste0(getwd(), "/KAIST_IAM_GROUP/230918_co2_emission_by_sector_nobio.xlsx"))
+
+Japan
+
+
+
+Japan_longer<-Japan %>% 
+    select(-region, -scenario, -subsector) %>% 
+    pivot_longer(-c('sector', 'technology', 'Units'), names_to= "year", values_to="MTC") %>% 
+    mutate(year = as.numeric(year))
+
+
+Japan_longer
+
+library(scales)
+
+options(scipen = 999)
+Japan_longer %>% 
+    ggplot(aes(x = year, y = MTC, group = technology, color = technology))+
+    geom_line()+
+    scale_y_continuous(labels = comma)+
+    scale_x_continuous(breaks = c( 2020, 2050, 2100))+
+    facet_wrap(~sector, ncol = 4)+
+    theme(legend.position ="none")+
+    labs(title ="CO2 emission by tech (dac_ssp2 vs dap_ssp2_x3)")
+
+ggsave(filename="dac_co2_emission_by_tech.png", path = paste0(getwd(), "/KAIST_IAM_GROUP/"), 
+       dpi=100, width = 1200, height = 1400, units ="px")
+
+
+
+
+

@@ -220,6 +220,22 @@ Paper crique
 -   **The role of direct air capture and negative emissions technologies** in the shared socioeconomic pathways towards +1.5 ◦C and +2 ◦C futures[@fuhrman2021]
 :::
 
-## Lecture
+## Assignment - due to 9/20
 
--   
+### Run a GCAM low-emission scenario
+
+### Query a sector of your choice
+
+### Plot the outcome
+
+### Where do CO2 emission reductions come from?
+
+### How is energy supply decarbonized?
+
+### How are the end-use sectors decarbonized?
+
+### How does total energy consumption in each sector change?
+
+### How does fuel structure in each sector change?
+
+### Are the decarbonization strategies different between the two regions?

@@ -1,0 +1,520 @@
+"scenario","region","subRegion","param","xLabel","x","vintage","units","value"
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.52822758064
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",3.2756366122381
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",6.91989111266
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",7.79683873033
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",8.6471809456
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",8.89866829267
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",9.271257877239
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",9.4607326274715
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",9.52254084006502
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",9.4952658684925
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",9.4194358559567
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",9.2691246736221
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2055,"Vint_2055","Final Energy by Fuel (EJ)",9.06195467868402
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2060,"Vint_2060","Final Energy by Fuel (EJ)",8.78733311478013
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2065,"Vint_2065","Final Energy by Fuel (EJ)",8.4808696682453
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2070,"Vint_2070","Final Energy by Fuel (EJ)",8.1710887839617
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2075,"Vint_2075","Final Energy by Fuel (EJ)",7.85350345560678
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2080,"Vint_2080","Final Energy by Fuel (EJ)",7.54754384755881
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2085,"Vint_2085","Final Energy by Fuel (EJ)",7.25169916053061
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2090,"Vint_2090","Final Energy by Fuel (EJ)",6.96464892584642
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2095,"Vint_2095","Final Energy by Fuel (EJ)",6.68556634402233
+"Reference","South Korea","South Korea","energyFinalByFuelEJ","Year",2100,"Vint_2100","Final Energy by Fuel (EJ)",6.41423778214423
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.52822758064
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",3.2756366122381
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",6.91989111266
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",7.79683873033
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",8.6471809456
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",8.89866829267
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",9.271257877239
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",9.4607326274715
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",9.52254084006502
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",9.4952658684925
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",9.4194358559567
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",9.2691246736221
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2055,"Vint_2055","Final Energy by Sector (EJ)",9.06195467868402
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2060,"Vint_2060","Final Energy by Sector (EJ)",8.78733311478013
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2065,"Vint_2065","Final Energy by Sector (EJ)",8.4808696682453
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2070,"Vint_2070","Final Energy by Sector (EJ)",8.1710887839617
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2075,"Vint_2075","Final Energy by Sector (EJ)",7.85350345560678
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2080,"Vint_2080","Final Energy by Sector (EJ)",7.54754384755881
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2085,"Vint_2085","Final Energy by Sector (EJ)",7.25169916053061
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",6.96464892584642
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",6.68556634402233
+"Reference","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",6.41423778214423
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",1990,"Vint_1990","Building Final Energy by Fuel (EJ)",0.936282523
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2005,"Vint_2005","Building Final Energy by Fuel (EJ)",1.5428551
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2010,"Vint_2010","Building Final Energy by Fuel (EJ)",1.6420789
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2015,"Vint_2015","Building Final Energy by Fuel (EJ)",1.6343724
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2020,"Vint_2020","Building Final Energy by Fuel (EJ)",1.74302096
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2025,"Vint_2025","Building Final Energy by Fuel (EJ)",1.8676951649
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2030,"Vint_2030","Building Final Energy by Fuel (EJ)",1.945131223
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2035,"Vint_2035","Building Final Energy by Fuel (EJ)",1.97896976
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2040,"Vint_2040","Building Final Energy by Fuel (EJ)",1.971244148
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2045,"Vint_2045","Building Final Energy by Fuel (EJ)",1.93709823
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2050,"Vint_2050","Building Final Energy by Fuel (EJ)",1.881679155
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2055,"Vint_2055","Building Final Energy by Fuel (EJ)",1.813055988
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2060,"Vint_2060","Building Final Energy by Fuel (EJ)",1.732648808
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2065,"Vint_2065","Building Final Energy by Fuel (EJ)",1.645275462
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2070,"Vint_2070","Building Final Energy by Fuel (EJ)",1.558697705
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2075,"Vint_2075","Building Final Energy by Fuel (EJ)",1.472234756
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2080,"Vint_2080","Building Final Energy by Fuel (EJ)",1.389258815
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2085,"Vint_2085","Building Final Energy by Fuel (EJ)",1.310741784
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2090,"Vint_2090","Building Final Energy by Fuel (EJ)",1.23548173
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2095,"Vint_2095","Building Final Energy by Fuel (EJ)",1.163642025
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2100,"Vint_2100","Building Final Energy by Fuel (EJ)",1.097558355
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",1975,"Vint_1975","Industry Final Energy by Fuel (EJ)",0.43690302564
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",1990,"Vint_1990","Industry Final Energy by Fuel (EJ)",1.638008925
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2005,"Vint_2005","Industry Final Energy by Fuel (EJ)",3.613609357
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2010,"Vint_2010","Industry Final Energy by Fuel (EJ)",4.347164828
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2015,"Vint_2015","Industry Final Energy by Fuel (EJ)",5.044561256
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2020,"Vint_2020","Industry Final Energy by Fuel (EJ)",5.03254632735
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2025,"Vint_2025","Industry Final Energy by Fuel (EJ)",5.24256624023
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2030,"Vint_2030","Industry Final Energy by Fuel (EJ)",5.406893252071
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2035,"Vint_2035","Industry Final Energy by Fuel (EJ)",5.497394268354
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2040,"Vint_2040","Industry Final Energy by Fuel (EJ)",5.510431580928
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2045,"Vint_2045","Industry Final Energy by Fuel (EJ)",5.464565449734
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2050,"Vint_2050","Industry Final Energy by Fuel (EJ)",5.366641045792
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2055,"Vint_2055","Industry Final Energy by Fuel (EJ)",5.204287020773
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2060,"Vint_2060","Industry Final Energy by Fuel (EJ)",4.9972210034617
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2065,"Vint_2065","Industry Final Energy by Fuel (EJ)",4.775637074664
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2070,"Vint_2070","Industry Final Energy by Fuel (EJ)",4.5566734786075
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2075,"Vint_2075","Industry Final Energy by Fuel (EJ)",4.33741427379178
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2080,"Vint_2080","Industry Final Energy by Fuel (EJ)",4.12285367420601
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2085,"Vint_2085","Industry Final Energy by Fuel (EJ)",3.91253051324371
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2090,"Vint_2090","Industry Final Energy by Fuel (EJ)",3.70933886596082
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2095,"Vint_2095","Industry Final Energy by Fuel (EJ)",3.51452450628033
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2100,"Vint_2100","Industry Final Energy by Fuel (EJ)",3.32260575502723
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",1975,"Vint_1975","Transport Final Energy by Fuel (EJ)",0.084866278
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",1990,"Vint_1990","Transport Final Energy by Fuel (EJ)",0.68783366
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2005,"Vint_2005","Transport Final Energy by Fuel (EJ)",1.7401045896
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2010,"Vint_2010","Transport Final Energy by Fuel (EJ)",1.779738603
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2015,"Vint_2015","Transport Final Energy by Fuel (EJ)",1.93877751
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2020,"Vint_2020","Transport Final Energy by Fuel (EJ)",2.0904578081
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2025,"Vint_2025","Transport Final Energy by Fuel (EJ)",2.14160866499
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2030,"Vint_2030","Transport Final Energy by Fuel (EJ)",2.11948345104
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2035,"Vint_2035","Transport Final Energy by Fuel (EJ)",2.0704321042399
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2040,"Vint_2040","Transport Final Energy by Fuel (EJ)",2.0413005927878
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2045,"Vint_2045","Transport Final Energy by Fuel (EJ)",2.04147176654
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2050,"Vint_2050","Transport Final Energy by Fuel (EJ)",2.03974087072
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2055,"Vint_2055","Transport Final Energy by Fuel (EJ)",2.04533608781
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2060,"Vint_2060","Transport Final Energy by Fuel (EJ)",2.03598735135
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2065,"Vint_2065","Transport Final Energy by Fuel (EJ)",2.01860726394
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2070,"Vint_2070","Transport Final Energy by Fuel (EJ)",2.00035254805
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2075,"Vint_2075","Transport Final Energy by Fuel (EJ)",1.97693153268
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2080,"Vint_2080","Transport Final Energy by Fuel (EJ)",1.95486848844
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2085,"Vint_2085","Transport Final Energy by Fuel (EJ)",1.93213984961
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2090,"Vint_2090","Transport Final Energy by Fuel (EJ)",1.90770908572
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2095,"Vint_2095","Transport Final Energy by Fuel (EJ)",1.88146017762
+"Reference","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2100,"Vint_2100","Transport Final Energy by Fuel (EJ)",1.85625864771
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.936282523
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",1.5428551
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",1.6420789
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",1.6343724
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",1.74302096
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",1.8676951649
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",1.945131223
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",1.97896976
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",1.971244148
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",1.93709823
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",1.881679155
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",1.813055988
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",1.732648808
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",1.645275462
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",1.558697705
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",1.472234756
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",1.389258815
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",1.310741784
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",1.23548173
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",1.163642025
+"Reference","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",1.097558355
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",1975,"Vint_1975","Primary Energy Consumption by Fuel (EJ)",0.1053856
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.59263550013
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",0.7642145214
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",0.83734698
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2015,"Vint_2015","Primary Energy Consumption by Fuel (EJ)",0.95640979
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",1.12993242750967
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",1.33948353481177
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",1.56099152629077
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",1.82818436154877
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",2.16912274206877
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",2.55303167019877
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",2.8930882835791
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",3.075212088697
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",3.104816345376
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",3.076904243229
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",2.963784755204
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",2.848622051649
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",2.742698912623
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",2.6359320489
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",2.539045852578
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",2.454883008507
+"Reference","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",2.373243148348
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",1990,"Vint_1990","Refined Liquids Production (EJ)",2.09434
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2005,"Vint_2005","Refined Liquids Production (EJ)",4.165380479
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2010,"Vint_2010","Refined Liquids Production (EJ)",4.1955687
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2015,"Vint_2015","Refined Liquids Production (EJ)",4.4966065
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2020,"Vint_2020","Refined Liquids Production (EJ)",4.6819277
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2025,"Vint_2025","Refined Liquids Production (EJ)",4.71672355885
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2030,"Vint_2030","Refined Liquids Production (EJ)",4.6034361193
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2035,"Vint_2035","Refined Liquids Production (EJ)",4.4400412157
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2040,"Vint_2040","Refined Liquids Production (EJ)",4.2752859537
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2045,"Vint_2045","Refined Liquids Production (EJ)",4.1653044175
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2050,"Vint_2050","Refined Liquids Production (EJ)",4.0691220904
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2055,"Vint_2055","Refined Liquids Production (EJ)",3.9672183366
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2060,"Vint_2060","Refined Liquids Production (EJ)",3.834950426
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2065,"Vint_2065","Refined Liquids Production (EJ)",3.69624841948
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2070,"Vint_2070","Refined Liquids Production (EJ)",3.562200659
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2075,"Vint_2075","Refined Liquids Production (EJ)",3.4340420059
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2080,"Vint_2080","Refined Liquids Production (EJ)",3.324368481
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2085,"Vint_2085","Refined Liquids Production (EJ)",3.216518943
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2090,"Vint_2090","Refined Liquids Production (EJ)",3.119337144
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2095,"Vint_2095","Refined Liquids Production (EJ)",3.030770207
+"Reference","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2100,"Vint_2100","Refined Liquids Production (EJ)",2.9467861602
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.52822758064
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",3.2756366122381
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",6.91989111266
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",7.79683873033
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",8.6471809456
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",8.89866829267
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",9.143884005771
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",9.199503392105
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",9.21294175230608
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",9.165072367794
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",9.076683167956
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",8.921797254007
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2055,"Vint_2055","Final Energy by Fuel (EJ)",8.6805847048303
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2060,"Vint_2060","Final Energy by Fuel (EJ)",8.3513240962147
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2065,"Vint_2065","Final Energy by Fuel (EJ)",8.00618720559586
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2070,"Vint_2070","Final Energy by Fuel (EJ)",7.64701927094596
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2075,"Vint_2075","Final Energy by Fuel (EJ)",7.32188257209093
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2080,"Vint_2080","Final Energy by Fuel (EJ)",7.07150059606758
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2085,"Vint_2085","Final Energy by Fuel (EJ)",6.79627645024657
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2090,"Vint_2090","Final Energy by Fuel (EJ)",6.52526011039092
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2095,"Vint_2095","Final Energy by Fuel (EJ)",6.26694160401853
+"cap","South Korea","South Korea","energyFinalByFuelEJ","Year",2100,"Vint_2100","Final Energy by Fuel (EJ)",6.01563256176026
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.52822758064
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",3.2756366122381
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",6.91989111266
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",7.79683873033
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",8.6471809456
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",8.89866829267
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",9.143884005771
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",9.199503392105
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",9.21294175230608
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",9.165072367794
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",9.076683167956
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",8.921797254007
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2055,"Vint_2055","Final Energy by Sector (EJ)",8.6805847048303
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2060,"Vint_2060","Final Energy by Sector (EJ)",8.3513240962147
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2065,"Vint_2065","Final Energy by Sector (EJ)",8.00618720559586
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2070,"Vint_2070","Final Energy by Sector (EJ)",7.64701927094596
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2075,"Vint_2075","Final Energy by Sector (EJ)",7.32188257209093
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2080,"Vint_2080","Final Energy by Sector (EJ)",7.07150059606758
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2085,"Vint_2085","Final Energy by Sector (EJ)",6.79627645024657
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",6.52526011039092
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",6.26694160401853
+"cap","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",6.01563256176026
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",1990,"Vint_1990","Building Final Energy by Fuel (EJ)",0.936282523
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2005,"Vint_2005","Building Final Energy by Fuel (EJ)",1.5428551
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2010,"Vint_2010","Building Final Energy by Fuel (EJ)",1.6420789
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2015,"Vint_2015","Building Final Energy by Fuel (EJ)",1.6343724
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2020,"Vint_2020","Building Final Energy by Fuel (EJ)",1.74302096
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2025,"Vint_2025","Building Final Energy by Fuel (EJ)",1.8422707826
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2030,"Vint_2030","Building Final Energy by Fuel (EJ)",1.908052514
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2035,"Vint_2035","Building Final Energy by Fuel (EJ)",1.946598167
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2040,"Vint_2040","Building Final Energy by Fuel (EJ)",1.944977071
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2045,"Vint_2045","Building Final Energy by Fuel (EJ)",1.916255057
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2050,"Vint_2050","Building Final Energy by Fuel (EJ)",1.864939607
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2055,"Vint_2055","Building Final Energy by Fuel (EJ)",1.795971272
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2060,"Vint_2060","Building Final Energy by Fuel (EJ)",1.713957317
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2065,"Vint_2065","Building Final Energy by Fuel (EJ)",1.625161091
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2070,"Vint_2070","Building Final Energy by Fuel (EJ)",1.536711937
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2075,"Vint_2075","Building Final Energy by Fuel (EJ)",1.451290727
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2080,"Vint_2080","Building Final Energy by Fuel (EJ)",1.373446805
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2085,"Vint_2085","Building Final Energy by Fuel (EJ)",1.296941765
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2090,"Vint_2090","Building Final Energy by Fuel (EJ)",1.223477088
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2095,"Vint_2095","Building Final Energy by Fuel (EJ)",1.153466705
+"cap","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2100,"Vint_2100","Building Final Energy by Fuel (EJ)",1.088384069
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",1975,"Vint_1975","Industry Final Energy by Fuel (EJ)",0.43690302564
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",1990,"Vint_1990","Industry Final Energy by Fuel (EJ)",1.638008925
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2005,"Vint_2005","Industry Final Energy by Fuel (EJ)",3.613609357
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2010,"Vint_2010","Industry Final Energy by Fuel (EJ)",4.347164828
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2015,"Vint_2015","Industry Final Energy by Fuel (EJ)",5.044561256
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2020,"Vint_2020","Industry Final Energy by Fuel (EJ)",5.03254632735
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2025,"Vint_2025","Industry Final Energy by Fuel (EJ)",5.158968743081
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2030,"Vint_2030","Industry Final Energy by Fuel (EJ)",5.216614801805
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2035,"Vint_2035","Industry Final Energy by Fuel (EJ)",5.256907980304
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2040,"Vint_2040","Industry Final Energy by Fuel (EJ)",5.244206437604
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2045,"Vint_2045","Industry Final Energy by Fuel (EJ)",5.180541487656
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2050,"Vint_2050","Industry Final Energy by Fuel (EJ)",5.073591769836
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2055,"Vint_2055","Industry Final Energy by Fuel (EJ)",4.8842755638312
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2060,"Vint_2060","Industry Final Energy by Fuel (EJ)",4.6345343889569
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2065,"Vint_2065","Industry Final Energy by Fuel (EJ)",4.3854360400016
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2070,"Vint_2070","Industry Final Energy by Fuel (EJ)",4.13316697518196
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2075,"Vint_2075","Industry Final Energy by Fuel (EJ)",3.91350835536693
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2080,"Vint_2080","Industry Final Energy by Fuel (EJ)",3.74441450718558
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2085,"Vint_2085","Industry Final Energy by Fuel (EJ)",3.55463296876757
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2090,"Vint_2090","Industry Final Energy by Fuel (EJ)",3.36752138884092
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2095,"Vint_2095","Industry Final Energy by Fuel (EJ)",3.19093025798853
+"cap","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2100,"Vint_2100","Industry Final Energy by Fuel (EJ)",3.01711562977426
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",1975,"Vint_1975","Transport Final Energy by Fuel (EJ)",0.084866278
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",1990,"Vint_1990","Transport Final Energy by Fuel (EJ)",0.68783366
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2005,"Vint_2005","Transport Final Energy by Fuel (EJ)",1.7401045896
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2010,"Vint_2010","Transport Final Energy by Fuel (EJ)",1.779738603
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2015,"Vint_2015","Transport Final Energy by Fuel (EJ)",1.93877751
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2020,"Vint_2020","Transport Final Energy by Fuel (EJ)",2.0904578081
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2025,"Vint_2025","Transport Final Energy by Fuel (EJ)",2.12394503148
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2030,"Vint_2030","Transport Final Energy by Fuel (EJ)",2.08923787801
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2035,"Vint_2035","Transport Final Energy by Fuel (EJ)",2.04000475867377
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2040,"Vint_2040","Transport Final Energy by Fuel (EJ)",2.0123020545218
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2045,"Vint_2045","Transport Final Energy by Fuel (EJ)",2.014205070424
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2050,"Vint_2050","Transport Final Energy by Fuel (EJ)",2.01422651781
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2055,"Vint_2055","Transport Final Energy by Fuel (EJ)",2.01517496737
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2060,"Vint_2060","Transport Final Energy by Fuel (EJ)",1.99859429843
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2065,"Vint_2065","Transport Final Energy by Fuel (EJ)",1.97507316997
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2070,"Vint_2070","Transport Final Energy by Fuel (EJ)",1.94758074915
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2075,"Vint_2075","Transport Final Energy by Fuel (EJ)",1.91993712854
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2080,"Vint_2080","Transport Final Energy by Fuel (EJ)",1.90333724616
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2085,"Vint_2085","Transport Final Energy by Fuel (EJ)",1.88042440302
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2090,"Vint_2090","Transport Final Energy by Fuel (EJ)",1.8552268255
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2095,"Vint_2095","Transport Final Energy by Fuel (EJ)",1.82920514607
+"cap","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2100,"Vint_2100","Transport Final Energy by Fuel (EJ)",1.80391417379
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.936282523
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",1.5428551
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",1.6420789
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",1.6343724
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",1.74302096
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",1.8422707826
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",1.908052514
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",1.946598167
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",1.944977071
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",1.916255057
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",1.864939607
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",1.795971272
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",1.713957317
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",1.625161091
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",1.536711937
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",1.451290727
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",1.373446805
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",1.296941765
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",1.223477088
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",1.153466705
+"cap","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",1.088384069
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",1975,"Vint_1975","Primary Energy Consumption by Fuel (EJ)",0.1053856
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.59263550013
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",0.7642145214
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",0.83734698
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2015,"Vint_2015","Primary Energy Consumption by Fuel (EJ)",0.95640979
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",1.12993242750967
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",1.35225721829797
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",1.64072262196897
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",1.99445845972497
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",2.41719088117497
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",2.84897809691497
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",3.2035650598453
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",3.396134097799
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",3.460831558206
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",3.470427792
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",3.38897916008
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",3.31992100954
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",3.2541392218
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",3.1741655094
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",3.0809782135
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",2.97933689
+"cap","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",2.8787811429
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",1990,"Vint_1990","Refined Liquids Production (EJ)",2.09434
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2005,"Vint_2005","Refined Liquids Production (EJ)",4.165380479
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2010,"Vint_2010","Refined Liquids Production (EJ)",4.1955687
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2015,"Vint_2015","Refined Liquids Production (EJ)",4.4966065
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2020,"Vint_2020","Refined Liquids Production (EJ)",4.6819277
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2025,"Vint_2025","Refined Liquids Production (EJ)",4.697541406336
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2030,"Vint_2030","Refined Liquids Production (EJ)",4.563695033673
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2035,"Vint_2035","Refined Liquids Production (EJ)",4.402167621771
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2040,"Vint_2040","Refined Liquids Production (EJ)",4.24095770905
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2045,"Vint_2045","Refined Liquids Production (EJ)",4.132314403875
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2050,"Vint_2050","Refined Liquids Production (EJ)",4.035994956845
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2055,"Vint_2055","Refined Liquids Production (EJ)",3.920975249844
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2060,"Vint_2060","Refined Liquids Production (EJ)",3.7710274337382
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2065,"Vint_2065","Refined Liquids Production (EJ)",3.6179508621121
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2070,"Vint_2070","Refined Liquids Production (EJ)",3.46415388994
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2075,"Vint_2075","Refined Liquids Production (EJ)",3.325662368692
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2080,"Vint_2080","Refined Liquids Production (EJ)",3.22306066628
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2085,"Vint_2085","Refined Liquids Production (EJ)",3.1118807331
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2090,"Vint_2090","Refined Liquids Production (EJ)",3.0107294287
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2095,"Vint_2095","Refined Liquids Production (EJ)",2.9201908026
+"cap","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2100,"Vint_2100","Refined Liquids Production (EJ)",2.8340882797
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.52822758064
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",3.2756366122381
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",6.91989111266
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",7.79683873033
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",8.6471809456
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",8.89866829267
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",9.18514260514
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",9.323655204499
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",9.32317313129891
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",9.222030093621
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",9.060376127377
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",8.820634812596
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2055,"Vint_2055","Final Energy by Fuel (EJ)",8.5267921191238
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2060,"Vint_2060","Final Energy by Fuel (EJ)",8.1671401077011
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2065,"Vint_2065","Final Energy by Fuel (EJ)",7.77728011902587
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2070,"Vint_2070","Final Energy by Fuel (EJ)",7.39181957576333
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2075,"Vint_2075","Final Energy by Fuel (EJ)",7.00358953591287
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2080,"Vint_2080","Final Energy by Fuel (EJ)",6.62878906274392
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2085,"Vint_2085","Final Energy by Fuel (EJ)",6.27770076056717
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2090,"Vint_2090","Final Energy by Fuel (EJ)",5.94804604544163
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2095,"Vint_2095","Final Energy by Fuel (EJ)",5.6391079720819
+"tax","South Korea","South Korea","energyFinalByFuelEJ","Year",2100,"Vint_2100","Final Energy by Fuel (EJ)",5.35087090520786
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.52822758064
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",3.2756366122381
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",6.91989111266
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",7.79683873033
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",8.6471809456
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",8.89866829267
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",9.18514260514
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",9.323655204499
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",9.32317313129891
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",9.222030093621
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",9.060376127377
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",8.820634812596
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2055,"Vint_2055","Final Energy by Sector (EJ)",8.5267921191238
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2060,"Vint_2060","Final Energy by Sector (EJ)",8.1671401077011
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2065,"Vint_2065","Final Energy by Sector (EJ)",7.77728011902587
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2070,"Vint_2070","Final Energy by Sector (EJ)",7.39181957576333
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2075,"Vint_2075","Final Energy by Sector (EJ)",7.00358953591288
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2080,"Vint_2080","Final Energy by Sector (EJ)",6.62878906274392
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2085,"Vint_2085","Final Energy by Sector (EJ)",6.27770076056717
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",5.94804604544163
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",5.6391079720819
+"tax","South Korea","South Korea","energyFinalConsumBySecEJ","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",5.35087090520786
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",1990,"Vint_1990","Building Final Energy by Fuel (EJ)",0.936282523
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2005,"Vint_2005","Building Final Energy by Fuel (EJ)",1.5428551
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2010,"Vint_2010","Building Final Energy by Fuel (EJ)",1.6420789
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2015,"Vint_2015","Building Final Energy by Fuel (EJ)",1.6343724
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2020,"Vint_2020","Building Final Energy by Fuel (EJ)",1.74302096
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2025,"Vint_2025","Building Final Energy by Fuel (EJ)",1.850348162
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2030,"Vint_2030","Building Final Energy by Fuel (EJ)",1.926576557
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2035,"Vint_2035","Building Final Energy by Fuel (EJ)",1.958992474
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2040,"Vint_2040","Building Final Energy by Fuel (EJ)",1.949316879
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2045,"Vint_2045","Building Final Energy by Fuel (EJ)",1.913489989
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2050,"Vint_2050","Building Final Energy by Fuel (EJ)",1.856175119
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2055,"Vint_2055","Building Final Energy by Fuel (EJ)",1.783482786
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2060,"Vint_2060","Building Final Energy by Fuel (EJ)",1.699192576
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2065,"Vint_2065","Building Final Energy by Fuel (EJ)",1.607169682
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2070,"Vint_2070","Building Final Energy by Fuel (EJ)",1.516444128
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2075,"Vint_2075","Building Final Energy by Fuel (EJ)",1.425372381
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2080,"Vint_2080","Building Final Energy by Fuel (EJ)",1.3370206712
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2085,"Vint_2085","Building Final Energy by Fuel (EJ)",1.2534216396
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2090,"Vint_2090","Building Final Energy by Fuel (EJ)",1.1733247971
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2095,"Vint_2095","Building Final Energy by Fuel (EJ)",1.0983401875
+"tax","South Korea","South Korea","energyFinalSubsecByFuelBuildEJ","Year",2100,"Vint_2100","Building Final Energy by Fuel (EJ)",1.03109565935
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",1975,"Vint_1975","Industry Final Energy by Fuel (EJ)",0.43690302564
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",1990,"Vint_1990","Industry Final Energy by Fuel (EJ)",1.638008925
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2005,"Vint_2005","Industry Final Energy by Fuel (EJ)",3.613609357
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2010,"Vint_2010","Industry Final Energy by Fuel (EJ)",4.347164828
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2015,"Vint_2015","Industry Final Energy by Fuel (EJ)",5.044561256
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2020,"Vint_2020","Industry Final Energy by Fuel (EJ)",5.03254632735
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2025,"Vint_2025","Industry Final Energy by Fuel (EJ)",5.1859277886
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2030,"Vint_2030","Industry Final Energy by Fuel (EJ)",5.305026258249
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2035,"Vint_2035","Industry Final Energy by Fuel (EJ)",5.340760593532
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2040,"Vint_2040","Industry Final Energy by Fuel (EJ)",5.290000865796
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2045,"Vint_2045","Industry Final Energy by Fuel (EJ)",5.169029909677
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2050,"Vint_2050","Industry Final Energy by Fuel (EJ)",4.993594242396
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2055,"Vint_2055","Industry Final Energy by Fuel (EJ)",4.7639584218748
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2060,"Vint_2060","Industry Final Energy by Fuel (EJ)",4.4949698781271
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2065,"Vint_2065","Industry Final Energy by Fuel (EJ)",4.21753485534447
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2070,"Vint_2070","Industry Final Energy by Fuel (EJ)",3.95501118151233
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2075,"Vint_2075","Industry Final Energy by Fuel (EJ)",3.70210438639887
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2080,"Vint_2080","Industry Final Energy by Fuel (EJ)",3.46108777731892
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2085,"Vint_2085","Industry Final Energy by Fuel (EJ)",3.23789631278517
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2090,"Vint_2090","Industry Final Energy by Fuel (EJ)",3.03143547028063
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2095,"Vint_2095","Industry Final Energy by Fuel (EJ)",2.8385953397319
+"tax","South Korea","South Korea","energyFinalSubsecByFuelIndusEJ","Year",2100,"Vint_2100","Industry Final Energy by Fuel (EJ)",2.65899125560786
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",1975,"Vint_1975","Transport Final Energy by Fuel (EJ)",0.084866278
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",1990,"Vint_1990","Transport Final Energy by Fuel (EJ)",0.68783366
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2005,"Vint_2005","Transport Final Energy by Fuel (EJ)",1.7401045896
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2010,"Vint_2010","Transport Final Energy by Fuel (EJ)",1.779738603
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2015,"Vint_2015","Transport Final Energy by Fuel (EJ)",1.93877751
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2020,"Vint_2020","Transport Final Energy by Fuel (EJ)",2.0904578081
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2025,"Vint_2025","Transport Final Energy by Fuel (EJ)",2.12997017789
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2030,"Vint_2030","Transport Final Energy by Fuel (EJ)",2.10497964912
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2035,"Vint_2035","Transport Final Energy by Fuel (EJ)",2.05226094408011
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2040,"Vint_2040","Transport Final Energy by Fuel (EJ)",2.0179456054524
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2045,"Vint_2045","Transport Final Energy by Fuel (EJ)",2.012157114423
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2050,"Vint_2050","Transport Final Energy by Fuel (EJ)",2.00351633221
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2055,"Vint_2055","Transport Final Energy by Fuel (EJ)",1.99826320749
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2060,"Vint_2060","Transport Final Energy by Fuel (EJ)",1.97603721616
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2065,"Vint_2065","Transport Final Energy by Fuel (EJ)",1.94379993378
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2070,"Vint_2070","Transport Final Energy by Fuel (EJ)",1.90686818689
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2075,"Vint_2075","Transport Final Energy by Fuel (EJ)",1.86108598042
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2080,"Vint_2080","Transport Final Energy by Fuel (EJ)",1.81169854887
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2085,"Vint_2085","Transport Final Energy by Fuel (EJ)",1.75797682465
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2090,"Vint_2090","Transport Final Energy by Fuel (EJ)",1.70042084146
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2095,"Vint_2095","Transport Final Energy by Fuel (EJ)",1.63990462665
+"tax","South Korea","South Korea","energyFinalSubsecByFuelTranspEJ","Year",2100,"Vint_2100","Transport Final Energy by Fuel (EJ)",1.58036404964
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.936282523
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",1.5428551
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",1.6420789
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",1.6343724
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",1.74302096
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",1.850348162
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",1.926576557
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",1.958992474
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",1.949316879
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",1.913489989
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",1.856175119
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",1.783482786
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",1.699192576
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",1.607169682
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",1.516444128
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",1.425372381
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",1.3370206712
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",1.2534216396
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",1.1733247971
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",1.0983401875
+"tax","South Korea","South Korea","energyFinalSubsecBySectorBuildEJ","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",1.03109565935
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",1975,"Vint_1975","Primary Energy Consumption by Fuel (EJ)",0.1053856
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.59263550013
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",0.7642145214
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",0.83734698
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2015,"Vint_2015","Primary Energy Consumption by Fuel (EJ)",0.95640979
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",1.12993242750967
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",1.34843881330697
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",1.60355455953497
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",1.92190291767197
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",2.33246225094197
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",2.79218733938197
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",3.2158605630723
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",3.468478579874
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",3.578908417847
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",3.64612352487
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",3.65489396744
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",3.7240964153
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",3.8391491644
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",4.0354315172
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",4.2273228705
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",4.4155697574
+"tax","South Korea","South Korea","energyPrimaryByFuelEJ","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",4.5706842479
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",1990,"Vint_1990","Refined Liquids Production (EJ)",2.09434
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2005,"Vint_2005","Refined Liquids Production (EJ)",4.165380479
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2010,"Vint_2010","Refined Liquids Production (EJ)",4.1955687
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2015,"Vint_2015","Refined Liquids Production (EJ)",4.4966065
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2020,"Vint_2020","Refined Liquids Production (EJ)",4.6819277
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2025,"Vint_2025","Refined Liquids Production (EJ)",4.705219556138
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2030,"Vint_2030","Refined Liquids Production (EJ)",4.587032362497
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2035,"Vint_2035","Refined Liquids Production (EJ)",4.418935660511
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2040,"Vint_2040","Refined Liquids Production (EJ)",4.247336373027
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2045,"Vint_2045","Refined Liquids Production (EJ)",4.127604727423
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2050,"Vint_2050","Refined Liquids Production (EJ)",4.01857641757
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2055,"Vint_2055","Refined Liquids Production (EJ)",3.892888542937
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2060,"Vint_2060","Refined Liquids Production (EJ)",3.730593220191
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2065,"Vint_2065","Refined Liquids Production (EJ)",3.5591330508811
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2070,"Vint_2070","Refined Liquids Production (EJ)",3.38582854972
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2075,"Vint_2075","Refined Liquids Production (EJ)",3.210111661205
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2080,"Vint_2080","Refined Liquids Production (EJ)",3.03468430168
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2085,"Vint_2085","Refined Liquids Production (EJ)",2.8546211113
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2090,"Vint_2090","Refined Liquids Production (EJ)",2.67667415528
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2095,"Vint_2095","Refined Liquids Production (EJ)",2.5000346696733
+"tax","South Korea","South Korea","energyPrimaryRefLiqProdEJ","Year",2100,"Vint_2100","Refined Liquids Production (EJ)",2.32463344793746

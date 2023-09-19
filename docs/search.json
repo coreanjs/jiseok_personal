@@ -465,15 +465,15 @@
     "objectID": "KAIST_IAM_GROUP.html#automation-of-graph-reporting-with-r-librarygcamextractor",
     "href": "KAIST_IAM_GROUP.html#automation-of-graph-reporting-with-r-librarygcamextractor",
     "title": "KAIST IAM Group",
-    "section": "7.2 Automation of graph reporting with R library(gcamextractor)",
-    "text": "7.2 Automation of graph reporting with R library(gcamextractor)\n\nUsing library(gcamextractor), query data can be imported as dataset in R and saved in excel files. -> Details can be found in Template.R\nUser guide for gcamextractor here."
+    "section": "7.3 Automation of graph reporting with R library(gcamextractor)",
+    "text": "7.3 Automation of graph reporting with R library(gcamextractor)\n\nUsing library(gcamextractor), query data can be imported as dataset in R and saved in excel files. -> Details can be found in Template.R\nUser guide for gcamextractor here."
   },
   {
     "objectID": "KAIST_IAM_GROUP.html#회의",
     "href": "KAIST_IAM_GROUP.html#회의",
     "title": "KAIST IAM Group",
-    "section": "7.3 2023-09-12 회의",
-    "text": "7.3 2023-09-12 회의\n\n\n\n\n\n\nImportant\n\n\n\n\n에너지통계연보 수치를, R 템플릿 결과에 추가해서 볼 수 있게\ndac 시나리오 나라 바꿔서 돌려보기 e.g., Korea <-> USA"
+    "section": "7.4 2023-09-12 회의",
+    "text": "7.4 2023-09-12 회의\n\n\n\n\n\n\nWhat to do\n\n\n\n\n에너지통계연보 수치를, R 템플릿 결과에 추가해서 볼 수 있게\ndac 시나리오 나라 바꿔서 돌려보기 e.g., Korea <-> USA"
   },
   {
     "objectID": "ITM812.html#data-analytic-machine-learning-value",
@@ -523,5 +523,40 @@
     "title": "GGS621",
     "section": "3.1 Lecture",
     "text": "3.1 Lecture"
+  },
+  {
+    "objectID": "ITM501.html#source-of-innovation",
+    "href": "ITM501.html#source-of-innovation",
+    "title": "ITM501 - Innovation Management",
+    "section": "4.1 Source of Innovation",
+    "text": "4.1 Source of Innovation\n\nTechnology Push\n\nTechnology Push Model\nBasic Science -> Applied Science and Engineering -> Manufacturing -> Marketing\n\n\n\nDemand Pull\n\n\nSeven sources of innovation\n\nUnexpected, Incongruity, Market Structure, Necessity, Demographics, Changing Perception, New Knowledge\nDescriptive, 통계 등을 활용해 증명을 해야 한다.\nPrescriptive 처방적. 피터 드러커의 연구는 증명할 거리가 아니다. 처방적인 것은 측정하기가 너무 어렵다. 기껏해야 설문 조사. 처방적 얘기를 가지고 연구주제로 가기는 쉽지 않다. 마케팅이나 MBA에서 가능\nGibbons Mode 1 to Mode 2 (중요!!!!!!!!!!!)\n\n\n\n\n\n\n과학-기술 연계성 분석\n\n특허의 NPL(Non-Patent Literature) 특허에 있는 참고문헌 중 비특허문헌\n\n\n\nAssignment\n\n\n\n\n\n\nImportant\n\n\n\nTypes, Architecture and Taxonomy 관련 논문\n(아티텍쳐 혁신, 모듈러 혁신, Pavitt 분류, 혁신의 분류)"
+  },
+  {
+    "objectID": "GGS621.html#assignment---due-to-920",
+    "href": "GGS621.html#assignment---due-to-920",
+    "title": "GGS621",
+    "section": "3.1 Assignment - due to 9/20",
+    "text": "3.1 Assignment - due to 9/20\n\nRun a GCAM low-emission scenario\n\n\nQuery a sector of your choice\n\n\nPlot the outcome\n\n\nWhere do CO2 emission reductions come from?\n\n\nHow is energy supply decarbonized?\n\n\nHow are the end-use sectors decarbonized?\n\n\nHow does total energy consumption in each sector change?\n\n\nHow does fuel structure in each sector change?"
+  },
+  {
+    "objectID": "KAIST_IAM_GROUP.html#section-3",
+    "href": "KAIST_IAM_GROUP.html#section-3",
+    "title": "KAIST IAM Group",
+    "section": "7.2 ",
+    "text": "7.2"
+  },
+  {
+    "objectID": "KAIST_IAM_GROUP.html#section-4",
+    "href": "KAIST_IAM_GROUP.html#section-4",
+    "title": "KAIST IAM Group",
+    "section": "7.5 ",
+    "text": "7.5"
+  },
+  {
+    "objectID": "KAIST_IAM_GROUP.html#after-ggs621-class-meeting-with-proj-mcjeon",
+    "href": "KAIST_IAM_GROUP.html#after-ggs621-class-meeting-with-proj-mcjeon",
+    "title": "KAIST IAM Group",
+    "section": "7.6 2023-09-13 After GGS621 class, meeting with proj McJeon",
+    "text": "7.6 2023-09-13 After GGS621 class, meeting with proj McJeon\n\n\n\n\n\n\nImportant\n\n\n\n\n(DAC) DAC 기술인 high DAC? 이런 애들은 다른 나라에서는 나타남, Japan, Thailand에서도. 한국에서만 안나타나는거 같음. 결과가 잘 나타나는 국가를 하나 택해서 이름만 바꿔보기. 예를 들어. Japan <-> Korea\nJapan을 대상으로 테스트.\n\n\n\n\nModified NZ scenario to verify in case of Japan\n\n1p5-incr-UC-kor-LUC-Japan.xml\n\nregion name = replaced South Korea with Japan\nmarket = Japan\nconstraint year 2025 = 1100, 2030 = 900, 2035 = 700, 2040 = 500, 2045 = 300, 2050 = 56, 2055= 5, 2066 = 5 ..\n\nGHG-link-Japan.xml\n\nregion name = replaced all South Korea with Japan\n\nFFI-const-row-deeper-decarb-2050-1p5-6000-Linear-Japan.xml\n\nReplaced Japan with South Korea\n\nPCT_CO2_LUC_Link_p10_row-Japan.xml\n\nReplaced Japan with South Korea\n\ndac_ssp2.xml\n\n\n\n7.6.1 \n\n\n7.6.2 2023-09-19\n\n\n\n\n\n\nImportant\n\n\n\n\nThe reason why there is no dac in South Korea is due to high price!!\ngeneral -> market and prices -> cost by tech\n\nsector : carbon storage, subsector: onshore carbon storage, technology: onshore carbon storage => cost is 8,938 90us$/tC\nfrom 2020 to 2050, 8938.28 19663.0 30745.3 41899.0 53067.0 64237.9 75409.4\n\nit’s not KAIST member who set this high values, but JGCRI member.(pf Haewon told)\nand what’s next??"
   }
 ]

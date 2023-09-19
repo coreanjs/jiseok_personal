@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<queries>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="Final energy by detailed end-use sector and fuel">
+   <axis1 name="sector">sector</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' and ((@name='building' or @name='industry' or @name='transportation') or (exists(child::keyword/@final-energy)))]//*[@type='input' and not(contains(@name, 'trn') or @name='limestone' or @name='process heat cement' or @name='industrial energy use' or @name='industrial feedstocks' or @name='renewable' or @name='oil-credits')]/demand-physical[@unit='EJ']/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="refined liquids production by subsector">
+   <axis1 name="subsector">subsector</axis1>
+   <axis2 name="Year">physical-output[@vintage]</axis2>
+   <xPath buildList="true" dataName="output" group="false" sumAll="false">*[@type='sector' and (@name='refining')]/*[@type='subsector']//
+               output-primary[@type='output' (:collapse:)]/physical-output/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="refined liquids production by subsector">
+   <axis1 name="subsector">subsector</axis1>
+   <axis2 name="Year">physical-output[@vintage]</axis2>
+   <xPath buildList="true" dataName="output" group="false" sumAll="false">*[@type='sector' and (@name='refining')]/*[@type='subsector']//
+               output-primary[@type='output' (:collapse:)]/physical-output/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="total final energy by aggregate sector">
+   <axis1 name="sector">sector</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' and ((@name='building' or @name='industry' or @name='transportation') or
+            (exists(child::keyword/@final-energy)))]//*[@type='input' (:collapse:) and
+            not(@name='limestone' or @name='process heat cement' or @name='industrial energy use' or
+                @name='industrial feedstocks' or @name='renewable' or contains(@name, 'trn') or @name='oil-credits')]/
+            demand-physical[@unit='EJ']/node()</xPath>
+   <comments/>
+   <labelRewriteList append-values="false">
+    <level name="sector">
+     <rewrite from="trn_pass_road_bus" to="transportation"/>
+     <rewrite from="trn_pass_road_LDV" to="transportation"/>
+     <rewrite from="trn_freight" to="transportation"/>
+     <rewrite from="trn_pass_road_LDV_2W" to="transportation"/>
+     <rewrite from="N fertilizer" to="industry"/>
+     <rewrite from="resid heating" to="building"/>
+     <rewrite from="industrial feedstocks" to="industry"/>
+     <rewrite from="comm heating" to="building"/>
+     <rewrite from="trn_aviation_intl" to="transportation"/>
+     <rewrite from="industrial energy use" to="industry"/>
+     <rewrite from="comm cooling" to="building"/>
+     <rewrite from="trn_shipping_intl" to="transportation"/>
+     <rewrite from="trn_pass_road_LDV_4W" to="transportation"/>
+     <rewrite from="trn_freight_road" to="transportation"/>
+     <rewrite from="comm others" to="building"/>
+     <rewrite from="trn_pass" to="transportation"/>
+     <rewrite from="process heat cement" to="industry"/>
+     <rewrite from="resid cooling" to="building"/>
+     <rewrite from="cement" to="industry"/>
+     <rewrite from="resid others" to="building"/>
+     <rewrite from="trn_pass_road" to="transportation"/>
+    </level>
+   </labelRewriteList>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="primary energy consumption by region (direct equivalent)">
+   <axis1 name="fuel">input[@name]</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">
+    <![CDATA[
+    declare function local:append-heirarchy($parent as node(), $append as node()) as node() {
+								 let $scn := $parent/ancestor::scenario,
+									  $rgn := $parent/ancestor::region
+								   return
+									  document { element scenario {
+														$scn/@*,
+														element region {
+															$rgn/@*,
+															$append
+														}
+													}
+									}
+							 };
+							 declare function local:get-primary-renewable($outputs as node()*) as node()* {
+							 unordered {
+							 for $output in $outputs
+							 let $new_output :=
+							 element input {
+								 attribute type {'input'},
+								 attribute name {$output/parent::*/following-sibling::keyword/@primary-renewable},
+								 element demand-physical {
+									 attribute vintage {$output/@vintage},
+									 attribute unit {$output/@unit},
+									 text { $output }
+								 }
+							 },
+							 $new_root := local:append-heirarchy($output/parent::*/parent::*, $new_output)
+							 return $new_root//text()
+							 }
+							 };
+							 declare function local:run-primary-energy($scenarios as xs:string*, $regions as xs:string*, $collection as xs:string) as node()* {
+							 let $regionsG := if(not($regions[1] = 'Global'))
+									  then $regions
+									  else distinct-values(collection($collection)/scenario/world/*[@type='region']/@name)
+							 return
+							 for $scenario in $scenarios,
+							 $region in $regionsG
+							 let $scenario_split := tokenize($scenario, ' '),
+							 $scenario_name := string-join($scenario_split[position() < last()], ' '),
+							 $scenario_date := $scenario_split[last()],
+							 $currTree := collection($collection)/scenario[@name = $scenario_name and @date = $scenario_date]/world/*[@type = 'region' and @name=$region]
+							 return (: get renewables from electricity :)
+										local:get-primary-renewable($currTree/*[@type='sector' (: collapse :) and (@name='electricity' or @name='base load generation' or @name='intermediate generation' or @name='subpeak generation' or @name='peak generation' or @name='elect_td_bld' or starts-with(@name,'elec_'))]//keyword[fn:exists(@primary-renewable)]/preceding-sibling::output-primary/physical-output)
+										| (: get renewables from H2ProdCS :)
+										local:get-primary-renewable($currTree/supplysector[@name='H2 central production'](: /*[@type='subsector' (: collapse :) and fn:not(@name='electrolysis')] :)//keyword[fn:exists(@primary-renewable)]/preceding-sibling::output-primary/physical-output)
+										| (: get renewables from H2ProdDist :)
+										local:get-primary-renewable($currTree/supplysector[@name='H2 forecourt production'](: /*[@type='subsector' (: collapse :) and fn:not(@name='electrolysis')] :)//keyword[fn:exists(@primary-renewable)]/preceding-sibling::output-primary/physical-output)
+										| (: get the primaries :)
+										$currTree//keyword[fn:exists(@primary-consumption)]/preceding-sibling::input-energy/demand-physical/text()
+										| (: get traditional biomass :)
+										$currTree//*[@type='input' and @name='traditional biomass']/demand-physical/node()
+
+				 };
+						 local:run-primary-energy((:scenarios:), (:regions:), (:collection:))    ]]>
+   </xPath>
+   <comments/>
+   <labelRewriteList append-values="false">
+    <level name="input">
+     <rewrite from="exotic-elect" to="j breakthrough"/>
+     <rewrite from="water_td_pri_C" to=""/>
+     <rewrite from="wind-H2" to="g wind"/>
+     <rewrite from="biomass" to="d biomass"/>
+     <rewrite from="traditional biomass" to="j traditional biomass"/>
+     <rewrite from="crude oil" to="a oil"/>
+     <rewrite from="nuclear-elect" to="e nuclear"/>
+     <rewrite from="solar-H2" to="h solar"/>
+     <rewrite from="regional natural gas" to=""/>
+     <rewrite from="traded unconventional oil" to="a oil"/>
+     <rewrite from="geothermal-elect" to="i geothermal"/>
+     <rewrite from="natural gas" to="b natural gas"/>
+     <rewrite from="hydro-elect" to="f hydro"/>
+     <rewrite from="solar-elect" to="h solar"/>
+     <rewrite from="seawater" to=""/>
+     <rewrite from="coal" to="c coal"/>
+     <rewrite from="elect_td_ind" to=""/>
+     <rewrite from="wind-elect" to="g wind"/>
+     <rewrite from="water_td_pri_W" to=""/>
+     <rewrite from="total biomass" to="d biomass"/>
+     <rewrite from="nuclear-H2" to="e nuclear"/>
+     <rewrite from="k new" to="k new"/>
+     <rewrite from="regional corn for ethanol" to="d biomass"/>
+     <rewrite from="regional biomassOil" to="d biomass"/>
+     <rewrite from="wholesale gas" to=""/>
+    </level>
+   </labelRewriteList>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="building final energy by fuel">
+   <axis1 name="input">input</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' (:collapse:) and (@name='building' or (exists(child::keyword[@final-energy='building'])))]//
+               *[@type='input']/demand-physical/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="transport final energy by fuel">
+   <axis1 name="input">input</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' (:collapse:) and (@name='transportation' or (exists(child::keyword[@final-energy='transportation'])))]//
+               *[@type='input' and not (@name='renewable')]/demand-physical[@unit='EJ']/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="industry final energy by fuel">
+   <axis1 name="input">input</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' (:collapse:) and (@name='industry' or (exists(child::keyword[@final-energy='industry'])))]//
+               *[@type='input' and (@name='delivered biomass' or @name='delivered coal' or
+               @name='H2 enduse' or @name='elect_td_ind' or @name='wholesale gas' or
+               @name='refined liquids industrial')]/demand-physical/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+ <aQuery>
+  <region name="South Korea"/>
+  <supplyDemandQuery title="building final energy by subsector">
+   <axis1 name="subsector">subsector</axis1>
+   <axis2 name="Year">demand-physical[@vintage]</axis2>
+   <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' and (@name='building' or (exists(child::keyword[@final-energy='building'])))]/
+               *[@type='subsector']//*[@type='input' (:collapse:)]/demand-physical/node()</xPath>
+   <comments/>
+  </supplyDemandQuery>
+ </aQuery>
+</queries>
