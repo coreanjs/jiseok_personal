@@ -325,3 +325,71 @@ Types, Architecture and Taxonomy 관련 논문
 
 (아티텍쳐 혁신, 모듈러 혁신, Pavitt 분류, 혁신의 분류)
 :::
+
+### Patterns of technological innovation and evolution in the energy sector: A patent-based approach
+
+-   요약
+
+    -   Given the ever-increasing pace and complexity of technological innovation in the energy sector, monitoring technological changes has become of strategic importance.
+
+    -   Patent analysis is one of the most prevalent methods used to analyze technological innovation. This study aims to explore patterns of innovation and of evolution in energy technologies, particularly focusing on similarities and differences across technologies.
+
+    -   we first defined the relevant energy technologies and extracted the associated patent data from the United States Patents and Trademark Office (USPTO) and then adopted six patent indices and developed six patent maps to analyze their innovation characteristics
+
+-   인트로
+
+    -   Patents are a good proxy measure for innovation activities---they have been used to assess the current state of firms' innovation efforts and to shape their future direction and support their R&D decision-making.
+
+    -   The importance of patent data is being increasingly recognized, and is growing daily across all industry sectors. Given the globally competitive and cooperative landscape of energy technology development, patents are considered as the core means of protecting innovation in the energy sector, as in other sectors.
+
+    -   This paper, therefore, aims to investigate the energy sector's patterns of technological innovation and evolution, and to categorize the essential innovation aspects of energy technologies in more detail according to their similarities and differences..
+
+-   Patterns of innovation
+
+    -   Previous research has broadly classified types of innovation into 'innovation subject', 'innovation degree', and 'innovation activity'.
+
+    -   As well as these classifications using single criteria, there have been various studies that try to classify technological innovation according to two criteria.
+
+    -   As well as these classifications using single criteria, there have been various studies that try to classify technological innovation according to two criteria.
+
+-   Methodology
+
+    -   we collected energy-technology related patents filed at the USPTO during the period 1991--2010.
+
+    -   we designed a composite index to analyze innovations' characteristics, composed of six indices and classified according to input, process and output points of view.
+
+    -   the six individual indices we developed measured: (1) developer intensity (actor-input); (2) developer openness (actor-process); (3) market potential (actor-output); (4) technology intensity (technology-input); (5) technology openness (technology-process); and (6) technology potential (technology-output).
+
+    -   Using these indices, we analyzed the innovation characteristics of 21 new energy technologies to identify patterns of technology innovation and evolution.
+
+-   Patterns of innovation in the energy sector
+
+    -   Static portfolio analyis result
+
+-   Discussions and policy implications
+
+    -   different energy technologies have different patterns of innovation. Six types of innovation patterns were identified---but those types were not determined by the sources of energies.
+
+    -   the innovation patterns of energy technologies change as they evolve.
+
+    -   energy technologies have a tendency to decrease in developer openness, against the trend towards open innovation.
+
+    -   both the application and technology potential of energy technologies tended to increase, indicating that their importance in the marketplace has increased and their development has accelerated.
+
+-   Conclusions
+
+    -   First, in methodological terms, it is one of the first attempts to use patent analysis to categorize the general characteristics of energy technologies.
+
+    -   on a practical level, our results provide an important overview of the current situation, which shows that, since innovation and evolution patterns differ according to energy technology.
+
+    -   each new and renewable technology also have representative characteristics, but the general trends show that both developer intensity and technology intensity are generally low.
+
+-   Limitations
+
+    -   More advanced patent analysis methods such as patent citation and text-mining could also be applied.
+
+    -   we adopted a technology classification system from a previous study and identified 20 technologies from it.
+
+    -   limited to the analysis of global patterns of innovation, but the analysis of national or regional innovation patterns could reveal implications that might be more meaningful at those levels.
+
+    -   it should be noted that knowledge about patterns of innovation and evolution based on patent analysis may be limited, as patent documents provide only little information about markets.

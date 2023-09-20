@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jiseok AHN">
-<meta name="dcterms.date" content="2023-09-12">
+<meta name="dcterms.date" content="2023-09-19">
 
 <title>Jiseok AHN - 머신러닝과 사업기회 - ITM812</title>
 <style>
@@ -22,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -60,6 +123,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -144,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 12, 2023</p>
+        <p class="date">September 19, 2023</p>
       </div>
     </div>
       
@@ -207,6 +273,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#linear-function-vs.-nonlinear-function" id="toc-linear-function-vs.-nonlinear-function" class="nav-link" data-scroll-target="#linear-function-vs.-nonlinear-function"><span class="toc-section-number">3.3</span>  Linear function vs.&nbsp;Nonlinear function</a></li>
   <li><a href="#machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다." id="toc-machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다." class="nav-link" data-scroll-target="#machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다."><span class="toc-section-number">3.4</span>  Machine Learning은 문제 해결을 위한 함수 f()를 찾는 것이다.</a></li>
   <li><a href="#머신러닝-모델링-프로세스" id="toc-머신러닝-모델링-프로세스" class="nav-link" data-scroll-target="#머신러닝-모델링-프로세스"><span class="toc-section-number">3.5</span>  머신러닝 모델링 프로세스</a></li>
+  </ul></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4"><span class="toc-section-number">4</span>  Week 4</a>
+  <ul class="collapse">
+  <li><a href="#regression회귀" id="toc-regression회귀" class="nav-link" data-scroll-target="#regression회귀"><span class="toc-section-number">4.1</span>  Regression(회귀)</a>
+  <ul class="collapse">
+  <li><a href="#선형회귀" id="toc-선형회귀" class="nav-link" data-scroll-target="#선형회귀">선형회귀</a></li>
+  </ul></li>
+  <li><a href="#실습" id="toc-실습" class="nav-link" data-scroll-target="#실습"><span class="toc-section-number">4.2</span>  실습</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -345,7 +419,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다." class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="machine-learning은-문제-해결을-위한-함수-f를-찾는-것이다."><span class="header-section-number">3.4</span> Machine Learning은 문제 해결을 위한 함수 f()를 찾는 것이다.</h2>
 <ul>
-<li><p>종속변수(y)를 독립변수(x)들의 함수 f(x)로 적합. Y =f(x)</p></li>
+<li><p>종속변수(y)를 독립변수(x)들의 함수 f(x)로 적합. Y =f(x)</p>
+<ul>
+<li>독립변수!!! x1, x2, x3, x4, … 독립볍수가 아니라면 전처리를 해야 함</li>
+</ul></li>
 <li><p>f(함수)가 무엇일까? 문제를 풀 방법? 분석방법을 의미한다.</p></li>
 <li><p>예제 1) Sales prediction : 특정 고객 -&gt; 마케핑 캠패인에 반응할 확률</p>
 <ul>
@@ -372,6 +449,7 @@ ul.task-list li input[type="checkbox"] {
 <li>데이터 방법론 선택
 <ul>
 <li>Regression, Classification, Clustering, Recommender 등 선택</li>
+<li>regression은 원인과 결과를 찾는 데 쓸 수 있는데, 상관관계는 correlation. 다르다.</li>
 </ul></li>
 <li>구체적인 기술 및 평가 방법 선택
 <ul>
@@ -381,6 +459,368 @@ ul.task-list li input[type="checkbox"] {
 <li>결과 및 모델 비교</li>
 <li>모델 선택 및 적용</li>
 </ol>
+</section>
+</section>
+<section id="week-4" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Week 4</h1>
+<section id="regression회귀" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="regression회귀"><span class="header-section-number">4.1</span> Regression(회귀)</h2>
+<ul>
+<li><p>Regression -&gt; 원인과 결과를 분석하는데 쓰임. y= ax1+bx2+cx3+d 와 같은 회귀식을 도출한다.</p></li>
+<li><p>똘똘한 기울기와 절편을 구하는 것. 기울기 = 가중치, 절편 = 편향.</p></li>
+</ul>
+<section id="선형회귀" class="level3">
+<h3 class="anchored" data-anchor-id="선형회귀">선형회귀</h3>
+<ul>
+<li><p>가장 훌륭한 선 긋기 -&gt; 머신러닝은 미래의 방향을 설정하는 것에서 부터 시작. y = ax+b로 표현될 수 있으며, x값이 변함에 따라 y 값도 변한다. Simple linear regression. 예, 독립변수 x가 공부한 시간, 성적 y를 예측할 경우, x가 한 개 이므로, simple linear regression.</p></li>
+<li><p>가장 정확한 기울기 a와 절편 b를 찾으면 된다.</p></li>
+<li><p>여러가지 선을 그을 수 있고, 여러가지 선 중, 반복되는 선 긋기를 통해 가장 훌륭한 선을 찾는다.</p></li>
+<li><p>선형회귀는 임의의 직선을 그어 이에 대한 평균제곱오차를 구하고, 이 값을 가장 작게 만들어주는 a와 b를 찾아가는 작업.</p></li>
+<li><p>어떻게 훌륭한 선을 찾을까? 오차(예측값 - 실제값) 줄이기</p></li>
+<li><p>예측모델 성능 평가</p>
+<ul>
+<li><p>가장 많이 쓰는 방법: <strong>평균 제곱 오차(MSE: Mean Square Error)</strong></p></li>
+<li><p><strong>평균 제곱근 오차(RMSE: Root Mean Square Error)</strong> : MSE 값은 오류의 제곱을 구하므로, 실제 오류의 푱균보다 값이 더 커질 수 있어, MSE 에 루트를 씌운 경우</p></li>
+<li><p><strong>평균절대오차(MAE: Mean Absolute Error</strong>)</p></li>
+</ul></li>
+<li><p>모든 것을 정확히 고려하면 overfitting이 될 수 있다.</p></li>
+<li><p>선형은 직선을 의미하는 것이 아니라 계수들의 곱과 합을로 이루어진 것을 말함.</p></li>
+<li></li>
+<li><p>예재로 배우기 : 집값 예측</p>
+<ul>
+<li><p>최근 주변 부동산 시세를 살펴본다. 보통 얼마에 거래되었을까?</p></li>
+<li><p>방법: 여러가지 특징 세트가 있을 때 특정 변화에 따라 output(y)의 변화를 살펴본다.</p></li>
+</ul></li>
+<li><p><strong>(로지스틱 회귀)</strong> 전달받은 정보를 놓고 참과 거짓 중 하나를 Output으로 선택하는 방법론. 참/거짓 판단장치라고 하며, 이진 분류에 많이 사용함. 예제) 합격자 발표에서 점수화 상관없이 ‘합격’ 불합격’만 존재합니다.</p></li>
+</ul>
+</section>
+</section>
+<section id="실습" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="실습"><span class="header-section-number">4.2</span> 실습</h2>
+<ul>
+<li><p>python 설치. Terminal.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>py -m pip install jupyter</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>python -m pip install jupyter</code></pre>
+<ul>
+<li><p>pip install pandas</p></li>
+<li><p>pip install numpy</p></li>
+<li><p>pip install matplotlib</p></li>
+<li><p>pip install seaborn</p></li>
+</ul>
+</div>
+</div>
+<p>python3 -m pip install matplotlib</p></li>
+<li></li>
+<li></li>
+</ul>
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co">### 데이터 분석을 하기 위한 파이썬 라이브러리 such as a table</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np <span class="co">### 수치해석 라이브러리</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt <span class="co">### 그래프 그리는 라이브러리</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns <span class="co">### 그래프 그리는 라이브러리</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="3">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="ITM812_files/figure-html/fig-polar-output-1.png" width="450" height="439" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: A line plot on a polar axis</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">"./ITM812/BostonHousing2.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="5">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#데이터셋을 불러와서 첫 세 줄을 출력하여 데이터의 구성을 한 번 살펴볼게요.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">10</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#df.tail(3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="5">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>TOWN</th>
+      <th>LON</th>
+      <th>LAT</th>
+      <th>CMEDV</th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>CHAS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>496</th>
+      <td>Revere</td>
+      <td>-71.0010</td>
+      <td>42.2525</td>
+      <td>19.7</td>
+      <td>0.28960</td>
+      <td>0.0</td>
+      <td>9.69</td>
+      <td>0</td>
+      <td>0.585</td>
+      <td>5.390</td>
+      <td>72.9</td>
+      <td>2.7986</td>
+      <td>6</td>
+      <td>391</td>
+      <td>19.2</td>
+      <td>396.90</td>
+      <td>21.14</td>
+    </tr>
+    <tr>
+      <th>497</th>
+      <td>Revere</td>
+      <td>-70.9947</td>
+      <td>42.2496</td>
+      <td>18.3</td>
+      <td>0.26838</td>
+      <td>0.0</td>
+      <td>9.69</td>
+      <td>0</td>
+      <td>0.585</td>
+      <td>5.794</td>
+      <td>70.6</td>
+      <td>2.8927</td>
+      <td>6</td>
+      <td>391</td>
+      <td>19.2</td>
+      <td>396.90</td>
+      <td>14.10</td>
+    </tr>
+    <tr>
+      <th>498</th>
+      <td>Revere</td>
+      <td>-71.0050</td>
+      <td>42.2455</td>
+      <td>21.2</td>
+      <td>0.23912</td>
+      <td>0.0</td>
+      <td>9.69</td>
+      <td>0</td>
+      <td>0.585</td>
+      <td>6.019</td>
+      <td>65.3</td>
+      <td>2.4091</td>
+      <td>6</td>
+      <td>391</td>
+      <td>19.2</td>
+      <td>396.90</td>
+      <td>12.92</td>
+    </tr>
+    <tr>
+      <th>499</th>
+      <td>Revere</td>
+      <td>-70.9985</td>
+      <td>42.2430</td>
+      <td>17.5</td>
+      <td>0.17783</td>
+      <td>0.0</td>
+      <td>9.69</td>
+      <td>0</td>
+      <td>0.585</td>
+      <td>5.569</td>
+      <td>73.5</td>
+      <td>2.3999</td>
+      <td>6</td>
+      <td>391</td>
+      <td>19.2</td>
+      <td>395.77</td>
+      <td>15.10</td>
+    </tr>
+    <tr>
+      <th>500</th>
+      <td>Revere</td>
+      <td>-70.9920</td>
+      <td>42.2380</td>
+      <td>16.8</td>
+      <td>0.22438</td>
+      <td>0.0</td>
+      <td>9.69</td>
+      <td>0</td>
+      <td>0.585</td>
+      <td>6.027</td>
+      <td>79.7</td>
+      <td>2.4982</td>
+      <td>6</td>
+      <td>391</td>
+      <td>19.2</td>
+      <td>396.90</td>
+      <td>14.33</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>Winthrop</td>
+      <td>-70.9860</td>
+      <td>42.2312</td>
+      <td>22.4</td>
+      <td>0.06263</td>
+      <td>0.0</td>
+      <td>11.93</td>
+      <td>0</td>
+      <td>0.573</td>
+      <td>6.593</td>
+      <td>69.1</td>
+      <td>2.4786</td>
+      <td>1</td>
+      <td>273</td>
+      <td>21.0</td>
+      <td>391.99</td>
+      <td>9.67</td>
+    </tr>
+    <tr>
+      <th>502</th>
+      <td>Winthrop</td>
+      <td>-70.9910</td>
+      <td>42.2275</td>
+      <td>20.6</td>
+      <td>0.04527</td>
+      <td>0.0</td>
+      <td>11.93</td>
+      <td>0</td>
+      <td>0.573</td>
+      <td>6.120</td>
+      <td>76.7</td>
+      <td>2.2875</td>
+      <td>1</td>
+      <td>273</td>
+      <td>21.0</td>
+      <td>396.90</td>
+      <td>9.08</td>
+    </tr>
+    <tr>
+      <th>503</th>
+      <td>Winthrop</td>
+      <td>-70.9948</td>
+      <td>42.2260</td>
+      <td>23.9</td>
+      <td>0.06076</td>
+      <td>0.0</td>
+      <td>11.93</td>
+      <td>0</td>
+      <td>0.573</td>
+      <td>6.976</td>
+      <td>91.0</td>
+      <td>2.1675</td>
+      <td>1</td>
+      <td>273</td>
+      <td>21.0</td>
+      <td>396.90</td>
+      <td>5.64</td>
+    </tr>
+    <tr>
+      <th>504</th>
+      <td>Winthrop</td>
+      <td>-70.9875</td>
+      <td>42.2240</td>
+      <td>22.0</td>
+      <td>0.10959</td>
+      <td>0.0</td>
+      <td>11.93</td>
+      <td>0</td>
+      <td>0.573</td>
+      <td>6.794</td>
+      <td>89.3</td>
+      <td>2.3889</td>
+      <td>1</td>
+      <td>273</td>
+      <td>21.0</td>
+      <td>393.45</td>
+      <td>6.48</td>
+    </tr>
+    <tr>
+      <th>505</th>
+      <td>Winthrop</td>
+      <td>-70.9825</td>
+      <td>42.2210</td>
+      <td>19.0</td>
+      <td>0.04741</td>
+      <td>0.0</td>
+      <td>11.93</td>
+      <td>0</td>
+      <td>0.573</td>
+      <td>6.030</td>
+      <td>80.8</td>
+      <td>2.5050</td>
+      <td>1</td>
+      <td>273</td>
+      <td>21.0</td>
+      <td>396.90</td>
+      <td>7.88</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
 
 
 </section>

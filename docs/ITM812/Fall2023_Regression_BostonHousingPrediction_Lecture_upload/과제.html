@@ -1,0 +1,4081 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Jiseok AHN – quarto-inputb67dea6e</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Jiseok AHN</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About me</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../GGS621.html">GGS621</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ITM501.html">ITM501</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ITM812.html">ITM812</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sector_coupling.html">Sector Coupling</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../KAIST_IAM_GROUP.html">KAIST IAM Group</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">PPT</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../paper_critique_slide.html" class="sidebar-item-text sidebar-link">Paper critique GS621</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../research_slide.html" class="sidebar-item-text sidebar-link">Research</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<p>Minseo Park KAIST @ 2023 Fall Class</p>
+<section id="regression-실습-집값-예측하기" class="level3">
+<h3 class="anchored" data-anchor-id="regression-실습-집값-예측하기">Regression 실습 : 집값 예측하기</h3>
+<ul>
+<li><p>미국 매사추세츠주의 주택 가격 데이터(Boston Housing 1970)를 활용해 지역의 평균 주택 가격을 예측하는 선형 회귀 모델을 학습한다.</p></li>
+<li><p>이를 기초로 하여 주택 가격의 영향 요소 파악 및 주택 가격 예측을 진행할 수 있다.</p>
+<ol type="1">
+<li>Library &amp; Data Import</li>
+<li>데이터 파악 (EDA: 탐색적 데이터 분석) 2-1. 데이터셋 기본 정보 파악 2-2. 종속 변수(목표 변수) 탐색 2-3. 설명 변수 탐색 2-4. 설명변수와 종속변수 간의 관계 탐색</li>
+<li>주택 가격 예측 모델링: 회귀 분석 3-1. 데이터 전처리 3-2. 회귀 모델링 3-3. 모델 해석 3-4. 모델 예측 결과 및 성능 평가</li>
+</ol></li>
+</ul>
+</section>
+<section id="import-libraries-data-set" class="level3">
+<h3 class="anchored" data-anchor-id="import-libraries-data-set">1. Import Libraries &amp; Data Set</h3>
+<div class="cell" data-tags="[]" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co">### 데이터 분석을 하기 위한 파이썬 라이브러리 such as a table</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np <span class="co">### 수치해석 라이브러리</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt <span class="co">### 그래프 그리는 라이브러리</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns <span class="co">### 그래프 그리는 라이브러리</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">### 출력을 jupyter lab으로</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#import warnings</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#warnings.filterwarnings("ignore", category=FutureWarning)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#warnings.filterwarnings("ignore", category=DeprecationWarning)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="import-boston-housing-dataset" class="level5">
+<h5 class="anchored" data-anchor-id="import-boston-housing-dataset">Import Boston Housing Dataset</h5>
+<ul>
+<li>분석에 사용될 데이터셋은 Boston Housing 데이터의 일부 변수를 추출한 데이터입니다.</li>
+<li>미국 매사추세츠주 92개 도시(TOWN)의 506개 지역의 주택 가격 및 기타 지역 특성 데이터가 포함되어 있습니다. (Dataset Introduction)</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">"./BostonHouse/demand_trade.csv"</span>,  encoding<span class="op">=</span><span class="st">'cp949'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="eda-exploratory-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="eda-exploratory-data-analysis">2. EDA (Exploratory Data Analysis)</h3>
+<div class="cell" data-tags="[]" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#데이터셋을 불러와서 첫 세 줄을 출력하여 데이터의 구성을 한 번 살펴볼게요.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">10</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#df.tail(3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>전력수요</th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>...</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>가스압</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>RPS</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>8750</th>
+      <td>73706</td>
+      <td>21611.57852</td>
+      <td>23902.89676</td>
+      <td>0.0</td>
+      <td>43.465699</td>
+      <td>63.942418</td>
+      <td>50.236036</td>
+      <td>216.997832</td>
+      <td>0.297540</td>
+      <td>26.007552</td>
+      <td>...</td>
+      <td>13.340096</td>
+      <td>603.776762</td>
+      <td>0.0</td>
+      <td>190.618848</td>
+      <td>0</td>
+      <td>635.391697</td>
+      <td>263.12608</td>
+      <td>185.066112</td>
+      <td>0</td>
+      <td>66.313799</td>
+    </tr>
+    <tr>
+      <th>8751</th>
+      <td>74401</td>
+      <td>21607.37082</td>
+      <td>23869.77610</td>
+      <td>0.0</td>
+      <td>43.566059</td>
+      <td>63.357549</td>
+      <td>48.957665</td>
+      <td>268.057674</td>
+      <td>393.669769</td>
+      <td>25.762960</td>
+      <td>...</td>
+      <td>12.023872</td>
+      <td>602.820888</td>
+      <td>0.0</td>
+      <td>160.209168</td>
+      <td>0</td>
+      <td>640.263001</td>
+      <td>264.09824</td>
+      <td>185.504312</td>
+      <td>0</td>
+      <td>65.993555</td>
+    </tr>
+    <tr>
+      <th>8752</th>
+      <td>75972</td>
+      <td>21606.57250</td>
+      <td>23912.40938</td>
+      <td>0.0</td>
+      <td>43.838738</td>
+      <td>66.471086</td>
+      <td>52.666449</td>
+      <td>266.936949</td>
+      <td>1758.277786</td>
+      <td>25.666768</td>
+      <td>...</td>
+      <td>14.753088</td>
+      <td>603.022961</td>
+      <td>0.0</td>
+      <td>101.889480</td>
+      <td>0</td>
+      <td>641.781027</td>
+      <td>265.06256</td>
+      <td>185.983280</td>
+      <td>0</td>
+      <td>66.507547</td>
+    </tr>
+    <tr>
+      <th>8753</th>
+      <td>75798</td>
+      <td>21603.31334</td>
+      <td>24071.73105</td>
+      <td>0.0</td>
+      <td>44.281396</td>
+      <td>59.308129</td>
+      <td>51.982697</td>
+      <td>241.257582</td>
+      <td>2345.287308</td>
+      <td>25.679774</td>
+      <td>...</td>
+      <td>26.767664</td>
+      <td>602.711322</td>
+      <td>0.0</td>
+      <td>29.854776</td>
+      <td>0</td>
+      <td>641.400021</td>
+      <td>264.11112</td>
+      <td>205.018016</td>
+      <td>0</td>
+      <td>65.943663</td>
+    </tr>
+    <tr>
+      <th>8754</th>
+      <td>74578</td>
+      <td>21602.67549</td>
+      <td>23977.67268</td>
+      <td>0.0</td>
+      <td>44.465464</td>
+      <td>58.252277</td>
+      <td>51.665045</td>
+      <td>229.640478</td>
+      <td>2201.006920</td>
+      <td>25.648395</td>
+      <td>...</td>
+      <td>34.054832</td>
+      <td>603.045246</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>644.101206</td>
+      <td>266.16968</td>
+      <td>205.968056</td>
+      <td>0</td>
+      <td>66.079962</td>
+    </tr>
+    <tr>
+      <th>8755</th>
+      <td>72976</td>
+      <td>21602.35903</td>
+      <td>23922.15419</td>
+      <td>0.0</td>
+      <td>44.445979</td>
+      <td>58.889583</td>
+      <td>53.217794</td>
+      <td>221.865026</td>
+      <td>2125.206968</td>
+      <td>25.530062</td>
+      <td>...</td>
+      <td>33.991328</td>
+      <td>603.529542</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>642.872043</td>
+      <td>266.58520</td>
+      <td>205.989280</td>
+      <td>0</td>
+      <td>65.303873</td>
+    </tr>
+    <tr>
+      <th>8756</th>
+      <td>71602</td>
+      <td>21602.06826</td>
+      <td>23721.98757</td>
+      <td>0.0</td>
+      <td>44.515754</td>
+      <td>59.077641</td>
+      <td>54.150084</td>
+      <td>182.704335</td>
+      <td>2024.454339</td>
+      <td>25.365024</td>
+      <td>...</td>
+      <td>33.786480</td>
+      <td>604.219977</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>637.673190</td>
+      <td>266.57064</td>
+      <td>205.992640</td>
+      <td>0</td>
+      <td>65.740697</td>
+    </tr>
+    <tr>
+      <th>8757</th>
+      <td>69383</td>
+      <td>21600.93928</td>
+      <td>23474.14164</td>
+      <td>0.0</td>
+      <td>44.339380</td>
+      <td>59.033801</td>
+      <td>54.169285</td>
+      <td>84.330694</td>
+      <td>1814.126382</td>
+      <td>25.371944</td>
+      <td>...</td>
+      <td>30.851184</td>
+      <td>604.657741</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>633.697648</td>
+      <td>266.16688</td>
+      <td>205.894024</td>
+      <td>0</td>
+      <td>66.100753</td>
+    </tr>
+    <tr>
+      <th>8758</th>
+      <td>68874</td>
+      <td>21600.69253</td>
+      <td>23662.44691</td>
+      <td>0.0</td>
+      <td>44.449957</td>
+      <td>59.422150</td>
+      <td>53.064628</td>
+      <td>47.868268</td>
+      <td>1762.303100</td>
+      <td>25.363832</td>
+      <td>...</td>
+      <td>28.246848</td>
+      <td>604.925284</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>634.645627</td>
+      <td>267.70800</td>
+      <td>205.963520</td>
+      <td>0</td>
+      <td>65.475027</td>
+    </tr>
+    <tr>
+      <th>8759</th>
+      <td>70123</td>
+      <td>21601.90874</td>
+      <td>24206.65930</td>
+      <td>0.0</td>
+      <td>44.298274</td>
+      <td>60.707217</td>
+      <td>49.997528</td>
+      <td>39.134795</td>
+      <td>2131.843248</td>
+      <td>25.346184</td>
+      <td>...</td>
+      <td>26.412176</td>
+      <td>605.367336</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>635.806799</td>
+      <td>267.70912</td>
+      <td>205.779896</td>
+      <td>0</td>
+      <td>65.634424</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 25 columns</p>
+</div>
+</div>
+</div>
+<section id="데이터-셋-기본-정보-파악" class="level4">
+<h4 class="anchored" data-anchor-id="데이터-셋-기본-정보-파악">2-1 : 데이터 셋 기본 정보 파악</h4>
+<ul>
+<li><p>Features Descriptions</p>
+<ol type="1">
+<li>TOWN: 소속 도시 이름</li>
+<li>LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보</li>
+<li>CMEDV: 해당 지역의 주택 가격 (중앙값) (corrected median values of housing)(단위 USD 1000)</li>
+<li>CRIM: 지역 범죄율 (per capita crime)</li>
+<li>ZN: 소속 도시에 25,000 제곱 피트(sq.ft) 이상의 주택지 비율</li>
+<li>INDUS: 소속 도시에 상업적 비즈니스에 활용되지 않는 농지 면적</li>
+<li>CHAS: 해당 지역이 Charles 강과 접하고 있는지 여부 (dummy variable)</li>
+<li>NOX: 소속 도시의 산화질소 농도</li>
+<li>RM: 해당 지역의 자택당 평균 방 갯수</li>
+<li>AGE: 해당 지역에 1940년 이전에 건설된 주택의 비율</li>
+<li>DIS: 5개의 보스턴 고용 센터와의 거리에 따른 가중치 부여</li>
+<li>RAD: 소속 도시가 Radial 고속도로와의 접근성 지수</li>
+<li>TAX: 소속 도시의 10000달러당 재산세</li>
+<li>PTRATIO: 소속 도시의 학생-교사 비율</li>
+<li>B: 해당 지역의 흑인 지수 (1000(Bk - 0.63)^2), Bk는 흑인의 비</li>
+<li>LSTAT: 해당 지역의 빈곤층 비율</li>
+</ol></li>
+<li><p>데이터의 각 변수(features, attributes, columns, x들)의 기본 정보 및 각 변수의 특성을 살펴보겠습니다.</p></li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 그래프의 배경 설정 : sns --&gt; seaborn 라이브러리 이용</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">'darkgrid'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>데이터 셋의 기본 정보 파악하기</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 데이터 셋 구조 보기</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df.shape </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 해석: 행이 506, 집이 506개, 열이 17, 집값을 예측하는데 사용한 변수가 17개라고 생각하시면 됩니다. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>(8760, 25)</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 결측치 : 비어있는 데이터를 찾습니다. </span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 여기서는 어떤 컬럼(변수, 특성, x)에 결측치가 많은지 봅니다.</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>전력수요     0
+원자력      0
+유연탄      0
+무연탄      0
+바이오가스    0
+부생가스     0
+소수력      0
+수력       0
+양수       0
+매립가스     0
+중유       0
+태양광      0
+폐기물      0
+풍력       0
+LNG      0
+LPG      0
+연료전지     0
+경유       0
+해양에너지    0
+가스압      0
+바이오매스    0
+IGCC     0
+바이오중유    0
+RPS      0
+기타       0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="367">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### 해석) 다행입니다. 506개의 관측치(observations, 집들)에서, 17개의 변수(variable, features, columns, x)에 결측치가 없습니다.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 만약 결측치가 있다면, 결측치를 처리해야 됩니다. 이것을 전처리라고 합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">### data type을 확인합니다.</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 8760 entries, 0 to 8759
+Data columns (total 25 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   전력수요    8760 non-null   int64  
+ 1   원자력     8760 non-null   float64
+ 2   유연탄     8760 non-null   float64
+ 3   무연탄     8760 non-null   float64
+ 4   바이오가스   8760 non-null   float64
+ 5   부생가스    8760 non-null   float64
+ 6   소수력     8760 non-null   float64
+ 7   수력      8760 non-null   float64
+ 8   양수      8760 non-null   float64
+ 9   매립가스    8760 non-null   float64
+ 10  중유      8760 non-null   float64
+ 11  태양광     8760 non-null   float64
+ 12  폐기물     8760 non-null   float64
+ 13  풍력      8760 non-null   float64
+ 14  LNG     8760 non-null   float64
+ 15  LPG     8760 non-null   float64
+ 16  연료전지    8760 non-null   float64
+ 17  경유      8760 non-null   float64
+ 18  해양에너지   8760 non-null   float64
+ 19  가스압     8760 non-null   int64  
+ 20  바이오매스   8760 non-null   float64
+ 21  IGCC    8760 non-null   float64
+ 22  바이오중유   8760 non-null   float64
+ 23  RPS     8760 non-null   int64  
+ 24  기타      8760 non-null   float64
+dtypes: float64(22), int64(3)
+memory usage: 1.7 MB</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="369">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해셕)Town(소속도시이름)만 문자형 변수(범주형 변수)이고, 이를 제외한 모든 변수는 숫자형입니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 슷지형 변수만 뽑아서 기본 통계를 해 봅니다.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df.describe().<span class="bu">round</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>전력수요</th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>...</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>가스압</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>RPS</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>...</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+      <td>8760.0</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>63737.3</td>
+      <td>17175.4</td>
+      <td>21369.6</td>
+      <td>189.2</td>
+      <td>40.7</td>
+      <td>124.4</td>
+      <td>65.8</td>
+      <td>276.1</td>
+      <td>419.4</td>
+      <td>21.0</td>
+      <td>...</td>
+      <td>5.8</td>
+      <td>532.3</td>
+      <td>15.5</td>
+      <td>51.9</td>
+      <td>0.0</td>
+      <td>527.3</td>
+      <td>191.5</td>
+      <td>146.7</td>
+      <td>0.0</td>
+      <td>65.4</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>9156.9</td>
+      <td>1712.9</td>
+      <td>3838.2</td>
+      <td>112.0</td>
+      <td>10.9</td>
+      <td>127.3</td>
+      <td>16.2</td>
+      <td>166.2</td>
+      <td>529.0</td>
+      <td>8.6</td>
+      <td>...</td>
+      <td>11.7</td>
+      <td>37.9</td>
+      <td>40.0</td>
+      <td>75.1</td>
+      <td>0.0</td>
+      <td>98.7</td>
+      <td>111.2</td>
+      <td>41.2</td>
+      <td>0.0</td>
+      <td>10.1</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>39720.0</td>
+      <td>14001.9</td>
+      <td>11269.4</td>
+      <td>0.0</td>
+      <td>7.8</td>
+      <td>12.8</td>
+      <td>26.3</td>
+      <td>19.0</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>449.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>203.2</td>
+      <td>0.0</td>
+      <td>38.7</td>
+      <td>0.0</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>56839.5</td>
+      <td>15944.7</td>
+      <td>18143.6</td>
+      <td>136.4</td>
+      <td>35.8</td>
+      <td>46.7</td>
+      <td>52.2</td>
+      <td>115.1</td>
+      <td>0.0</td>
+      <td>18.4</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>500.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>450.3</td>
+      <td>167.5</td>
+      <td>109.5</td>
+      <td>0.0</td>
+      <td>64.9</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>62861.0</td>
+      <td>16987.9</td>
+      <td>21215.4</td>
+      <td>164.2</td>
+      <td>45.7</td>
+      <td>59.0</td>
+      <td>65.7</td>
+      <td>284.3</td>
+      <td>122.8</td>
+      <td>22.9</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>525.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>538.8</td>
+      <td>255.1</td>
+      <td>139.2</td>
+      <td>0.0</td>
+      <td>68.7</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>69732.8</td>
+      <td>18087.4</td>
+      <td>24368.4</td>
+      <td>275.9</td>
+      <td>48.6</td>
+      <td>155.4</td>
+      <td>78.4</td>
+      <td>399.2</td>
+      <td>786.2</td>
+      <td>26.0</td>
+      <td>...</td>
+      <td>9.4</td>
+      <td>563.1</td>
+      <td>0.0</td>
+      <td>103.7</td>
+      <td>0.0</td>
+      <td>609.2</td>
+      <td>265.8</td>
+      <td>185.0</td>
+      <td>0.0</td>
+      <td>71.6</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>91141.0</td>
+      <td>21640.2</td>
+      <td>30338.2</td>
+      <td>349.4</td>
+      <td>53.3</td>
+      <td>618.8</td>
+      <td>111.2</td>
+      <td>955.5</td>
+      <td>2945.1</td>
+      <td>36.2</td>
+      <td>...</td>
+      <td>79.0</td>
+      <td>613.8</td>
+      <td>519.3</td>
+      <td>250.8</td>
+      <td>0.0</td>
+      <td>709.9</td>
+      <td>309.3</td>
+      <td>315.9</td>
+      <td>0.0</td>
+      <td>74.6</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 25 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 범주형 변수(Categorical Variables): 문자열 변수</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 타운의 수, 소속도시의 수를 구합니다. </span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">### .unique()는 중복을 제거 하는 것입니다. </span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">### 2명이 노원구에 산다고, 노원구가 2개 되면 안되겠죠?:-) 노원구는 1개니까요. :-)</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>num_town<span class="op">=</span>df[<span class="st">'TOWN'</span>].unique()</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(num_town))</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>num_town</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>KeyError: 'TOWN'</code></pre>
+</div>
+</div>
+</section>
+<section id="종속변수타겟변수-y의-탐색" class="level4">
+<h4 class="anchored" data-anchor-id="종속변수타겟변수-y의-탐색">2-2 종속변수(타겟변수, y)의 탐색</h4>
+<pre><code>- CMEDV : 주택가격이 타겟변수가 됩니다. 왜냐면, 저희는 주택의 가격을 맞추기 위하이기 때문입니다. 
+- matplot 참고 사이트:
+    - https://codetorial.net/matplotlib/basic_plot.html
+    - https://matplotlib.org/stable/gallery/index.html</code></pre>
+<div class="cell" data-tags="[]" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 기초 통계량을 다시 살펴봅니다.</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'전력수요'</span>].describe().<span class="bu">round</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>count     8760.0
+mean     63737.3
+std       9156.9
+min      39720.0
+25%      56839.5
+50%      62861.0
+75%      69732.8
+max      91141.0
+Name: 전력수요, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 시각화를 해서 살펴봅니다. </span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 데이터의 분포를 파악할때, 시각화각 가장 좋은 방법 중 한개 입니다.</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">### .hist(): 히스토그램을 의미합니다. bins=50:주머니가 50개 이다. x가 50개로 나누어 진다라고 이해하셔도 좋습니다. </span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co">### y축은 frequency 빈도수입니다. x 축은 실제 주택 값입니다. </span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co">## $50,000 근처의 집도 16~17개는 된다??</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'전력수요'</span>].hist()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+<pre><code>&lt;Axes: &gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-14-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 분포를 보는 또 다른 시각화 방법이 있습니다. 여러가지로 찍어 보겠습니다.</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 첫번째 :boxplot 입니다.</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>plt.boxplot(df[<span class="st">'전력수요'</span>])</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해석) $17,000~$25000 사이에 분포되어 있고, $40,000 이상인 고가 주택도 존재합니다.</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.font_manager <span class="im">as</span> fm</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> [f.name <span class="cf">for</span> f <span class="kw">in</span> fm.fontManager.ttflist]</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(f)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="co">### 폰트 추가 하기</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 확인 이후</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>plt.rc(<span class="st">'font'</span>, family<span class="op">=</span><span class="st">'Malgun Gothic'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['DejaVu Sans Mono', 'STIXNonUnicode', 'cmtt10', 'STIXGeneral', 'DejaVu Sans', 'DejaVu Sans', 'DejaVu Serif', 'STIXSizeOneSym', 'cmb10', 'STIXNonUnicode', 'STIXGeneral', 'STIXSizeFourSym', 'cmsy10', 'STIXGeneral', 'STIXSizeThreeSym', 'DejaVu Sans Display', 'DejaVu Sans', 'DejaVu Serif', 'STIXNonUnicode', 'DejaVu Sans Mono', 'DejaVu Sans', 'STIXNonUnicode', 'cmmi10', 'DejaVu Serif Display', 'STIXSizeFiveSym', 'cmex10', 'STIXSizeThreeSym', 'DejaVu Sans Mono', 'STIXSizeTwoSym', 'STIXGeneral', 'cmr10', 'STIXSizeOneSym', 'STIXSizeTwoSym', 'STIXSizeFourSym', 'DejaVu Sans Mono', 'cmss10', 'DejaVu Serif', 'DejaVu Serif', 'KBIZgo M', 'Gill Sans MT', 'Agency FB', 'Arial', 'Microsoft Sans Serif', 'Impact', 'Times New Roman', 'MaruBuriOTF', 'Franklin Gothic Demi Cond', 'Webdings', 'Calibri', 'Bernard MT Condensed', 'Harlow Solid Italic', 'MaruBuriOTF', 'Lucida Sans Typewriter', 'Georgia', 'Cooper Black', 'HYSinMyeongJo-Medium', 'High Tower Text', 'Perpetua', 'Stencil', 'NanumGothicOTF', 'Mistral', 'HoloLens MDL2 Assets', 'Bodoni MT', 'Sitka Small', 'Rage Italic', 'Bodoni MT', 'Berlin Sans FB', 'Kunstler Script', 'HCR Dotum Ext', 'NanumGothic', 'Book Antiqua', 'Fira Code', 'Niagara Engraved', 'Palatino Linotype', 'Cambria', 'Tempus Sans ITC', 'HCR Batang ExtB', 'Eras Light ITC', 'Bookman Old Style', 'Arial Rounded MT Bold', 'Franklin Gothic Medium', 'NanumMyeongjoOTF', 'Fira Code', 'Lucida Fax', 'Batang', 'Pyunji R', 'MJemokGothic', 'Colonna MT', 'MS Outlook', 'Copperplate Gothic Light', 'Rockwell', 'Informal Roman', 'Californian FB', 'Tw Cen MT', 'Candara', 'Constantia', 'Berlin Sans FB Demi', 'LG Smart UI', 'Sitka Small', 'Courier New', 'HYGothic-Medium', 'Arial', 'Corbel', 'Lucida Fax', 'MHunmin', 'Lucida Bright', 'Courier New', 'Segoe Print', 'Ink Free', 'MDotum', 'Candara', 'Poor Richard', 'Lucida Bright', 'Century Schoolbook', 'Gill Sans MT Ext Condensed Bold', 'Brush Script MT', 'Snap ITC', 'Magneto', 'Lucida Bright', 'Microsoft JhengHei', 'Lucida Sans', 'Yet R', 'Wingdings', 'Blackadder ITC', 'Yu Gothic', 'NanumGothicOTF', 'Segoe UI', 'Book Antiqua', 'Agency FB', 'Papyrus', 'Corbel', 'New Gulim', 'Berlin Sans FB', 'Verdana', 'Segoe UI Emoji', 'Calibri', 'Microsoft Uighur', 'Ami R', 'Century', 'MS Reference Specialty', 'Ebrima', 'Lucida Sans Unicode', 'Calisto MT', 'Bahnschrift', 'Candara', 'Headline R', 'Nirmala UI', 'Lucida Sans Typewriter', 'Palatino Linotype', 'Segoe UI', 'D2Coding', 'Microsoft YaHei', 'Book Antiqua', 'Sitka Small', 'Tw Cen MT Condensed', 'Century Gothic', 'Microsoft PhagsPa', 'Cambria', 'Constantia', 'KoPubDotum Light', 'Symbol', 'Footlight MT Light', 'Arial', 'MJemokBatang', 'Fira Code', 'Californian FB', 'Franklin Gothic Medium', 'Microsoft JhengHei', 'Rockwell', 'Bradley Hand ITC', 'MaruBuri', 'MGungHeulim', 'Engravers MT', 'Perpetua Titling MT', 'Bookshelf Symbol 7', 'Yu Gothic', 'Segoe Script', 'Trebuchet MS', 'Garamond', 'Kristen ITC', 'Javanese Text', 'KBIZmjo B', 'Bodoni MT', 'Algerian', 'Rockwell Condensed', 'Tw Cen MT', 'Lucida Sans', 'Segoe UI', 'Viner Hand ITC', 'Rockwell', 'Franklin Gothic Demi', 'Trebuchet MS', 'Lucida Fax', 'MaruBuri', 'Microsoft Tai Le', 'Showcard Gothic', 'Courier New', 'Consolas', 'Dubai', 'Microsoft Himalaya', 'Felix Titling', 'French Script MT', 'Century Gothic', 'MoeumT R', 'KoPubDotum Bold', 'Segoe UI', 'Matura MT Script Capitals', 'Monotype Corsiva', 'Candara', 'Malgun Gothic', 'MaruBuriOTF', 'Bell MT', 'Century Gothic', 'MV Boli', 'MaruBuriOTF', 'Leelawadee', 'Eras Bold ITC', 'Gill Sans Ultra Bold Condensed', 'Palatino Linotype', 'Consolas', 'Forte', 'NanumMyeongjo', 'NanumGothic', 'YiSunShin Dotum B', 'Bodoni MT', 'Arial', 'KBIZmjo M', 'Nirmala UI', 'Lucida Sans', 'Candara', 'Verdana', 'Arial', 'OCR A Extended', 'Sitka Small', 'YiSunShin Dotum L', 'Edwardian Script ITC', 'Bodoni MT', 'Cambria', 'Arial', 'HYPMokGak-Bold', 'Script MT Bold', 'Modern No. 20', 'Franklin Gothic Heavy', 'Parchment', 'Dubai', 'Onyx', 'Perpetua', 'Segoe UI', 'NanumMyeongjoOTF', 'Franklin Gothic Medium Cond', 'Arial', 'Comic Sans MS', 'Bell MT', 'Perpetua', 'Bodoni MT', 'Corbel', 'Niagara Solid', 'Calibri', 'Gigi', 'NewJumja', 'Garamond', 'MGungJeong', 'Lucida Handwriting', 'Broadway', 'Tw Cen MT', 'HYShortSamul-Medium', 'HYGraphic-Medium', 'HYMyeongJo-Extra', 'Californian FB', 'Bodoni MT', 'Microsoft PhagsPa', 'Myanmar Text', 'NanumSquare', 'Gadugi', 'HCR Batang Ext', 'Perpetua', 'Courier New', 'Centaur', 'Leelawadee UI', 'Juice ITC', 'KBIZmjo R', 'HYHeadLine-Medium', 'Franklin Gothic Book', 'Century Schoolbook', 'Constantia', 'HCR Batang', 'Bookman Old Style', 'NanumGothic', 'Bookman Old Style', 'Yu Gothic', 'LG Smart UI', 'Chiller', 'Segoe Print', 'NanumMyeongjo', 'Freestyle Script', 'Leelawadee UI', 'Microsoft New Tai Lue', 'HCR Dotum', 'V3Detect', 'KBIZgo R', 'Wingdings 3', 'Verdana', 'Corbel', 'MS Reference Sans Serif', 'Calibri', 'Dubai', 'Times New Roman', 'Gill Sans MT Condensed', 'Consolas', 'Pristina', 'NanumGothic', 'Eras Demi ITC', 'Segoe UI', 'Gadugi', 'Lucida Calligraphy', 'Georgia', 'Century Schoolbook', 'MaruBuriOTF', 'Vivaldi', 'NanumGothic', 'Tw Cen MT', 'Jokerman', 'Perpetua Titling MT', 'Goudy Stout', 'Leelawadee UI', 'Gill Sans Ultra Bold', 'Segoe UI Historic', 'Dubai', 'Bodoni MT', 'Imprint MT Shadow', 'Calisto MT', 'Comic Sans MS', 'Tahoma', 'Arial', 'Copperplate Gothic Bold', 'Corbel', 'Lucida Sans Typewriter', 'Verdana', 'Franklin Gothic Book', 'Book Antiqua', 'Myanmar Text', 'Cambria', 'Britannic Bold', 'Garamond', 'Century Gothic', 'MaruBuri', 'Microsoft Uighur', 'Franklin Gothic Heavy', 'Goudy Old Style', 'Segoe MDL2 Assets', 'HYPost-Light', 'Calisto MT', 'Lucida Fax', 'Segoe Script', 'Elephant', 'Microsoft Yi Baiti', 'Segoe UI', 'HCR Batang ExtB', 'MSugiJeong', 'Fira Code', 'Trebuchet MS', 'Franklin Gothic Demi', 'Microsoft Tai Le', 'Rockwell Extra Bold', 'Malgun Gothic', 'Georgia', 'Century Schoolbook', 'HYGothic-Extra', 'Palace Script MT', 'HCR Batang', 'HyhwpEQ', 'Magic R', 'Segoe UI', 'Arial', 'Palatino Linotype', 'Rockwell Condensed', 'Fira Code', 'Comic Sans MS', 'Baskerville Old Face', 'Goudy Old Style', 'Gulim', 'Sylfaen', 'Comic Sans MS', 'Gabriola', 'KoPubDotum Medium', 'Gill Sans MT', 'SimSun-ExtB', 'Castellar', 'Tahoma', 'MBatang', 'MaruBuri', 'Calibri', 'Consolas', 'Old English Text MT', 'SimSun', 'HYGungSo-Bold', 'Calisto MT', 'Marlett', 'NanumMyeongjoOTF', 'MaruBuri', 'Constantia', 'Microsoft YaHei', 'Vladimir Script', 'Bauhaus 93', 'LG Smart UI', 'MSugiHeulim', 'Leelawadee', 'KBIZgo B', 'Trebuchet MS', 'MS Gothic', 'Harrington', 'Haettenschweiler', 'Nirmala UI', 'Gloucester MT Extra Condensed', 'Goudy Old Style', 'Tw Cen MT Condensed Extra Bold', 'Lucida Console', 'MingLiU-ExtB', 'Rockwell', 'Lucida Sans', 'Corbel', 'Lucida Sans Typewriter', 'Microsoft New Tai Lue', 'Wide Latin', 'NanumSquare', 'ZWAdobeF', 'Ravie', 'Segoe UI', 'Bell MT', 'Eras Medium ITC', 'MT Extra', 'Playbill', 'Segoe UI', 'NanumGothicOTF', 'Maiandra GD', 'Bodoni MT', 'BareunDotum', 'HYPost-Medium', 'Times New Roman', 'Wingdings 2', 'Segoe UI Symbol', 'Bodoni MT', 'Microsoft YaHei', 'Lucida Bright', 'Georgia', 'Calibri', 'Gill Sans MT', 'Fira Code', 'Segoe UI', 'MaruBuriOTF', 'Times New Roman', 'Yu Gothic', 'Microsoft JhengHei', 'NanumSquare', 'NanumMyeongjo', 'Elephant', 'YiSunShin Dotum M', 'Bookman Old Style', 'HCR Dotum', 'NanumGothicOTF', 'High Tower Text', 'Tw Cen MT Condensed', 'Segoe UI', 'LG Smart UI', 'Ebrima', 'NanumSquare', 'Mongolian Baiti', 'Bodoni MT', 'Gill Sans MT', 'Candara', 'Malgun Gothic', 'Curlz MT']</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">### numerical features(except "LON" &amp; "LAT") :  LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co">### figsize()는 plot()의 기본 크기를 지정합니다. </span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize <span class="op">=</span> (<span class="dv">16</span>, <span class="dv">20</span>))</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.gca()  <span class="co"># Axes 생성</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="co">### gca()</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="co">### gca()로 현재의 Axes를 할당한다.</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="co">### ax=plt.gica(): 축의 위치를 호출하여 ax로 설정(축 위치 변경을 위해 필요한 과정)</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>df.hist(ax<span class="op">=</span>ax)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\User\AppData\Local\Temp\ipykernel_35448\2624497163.py:12: UserWarning: To output multiple subplots, the figure containing the passed axes is being cleared.
+  df.hist(ax=ax)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-17-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="설명변수독립변수-features-attributes-x-살펴보기" class="level4">
+<h4 class="anchored" data-anchor-id="설명변수독립변수-features-attributes-x-살펴보기">2-3 설명변수(독립변수, features, attributes, x) 살펴보기</h4>
+<div class="cell" data-execution_count="377">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">## AttributeError: 'SubplotSpec' object has no attribute 'is_first_col'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="378">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">## ! pip install --upgrade matplotlib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="379">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">### numerical features(except "LON" &amp; "LAT") :  LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>numerical_columns<span class="op">=</span>[<span class="st">'CRIM'</span>, <span class="st">'ZN'</span>, <span class="st">'INDUS'</span>, <span class="st">'CHAS'</span>, <span class="st">'NOX'</span>, <span class="st">'RM'</span>, <span class="st">'AGE'</span>, <span class="st">'DIS'</span>, <span class="st">'RAD'</span>, <span class="st">'TAX'</span>, <span class="st">'PTRATIO'</span>, <span class="st">'B'</span>, <span class="st">'LSTAT'</span>]</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co">### figsize()는 plot()의 기본 크기를 지정합니다. </span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize <span class="op">=</span> (<span class="dv">16</span>, <span class="dv">20</span>))</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.gca()  <span class="co"># Axes 생성</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="co">### gca()</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co">### gca()로 현재의 Axes를 할당한다.</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co">### ax=plt.gica(): 축의 위치를 호출하여 ax로 설정(축 위치 변경을 위해 필요한 과정)</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>df[numerical_columns].hist(ax<span class="op">=</span>ax)</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>UserWarning: To output multiple subplots, the figure containing the passed axes is being cleared
+  df[numerical_columns].hist(ax=ax)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-20-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="설명변수x-와-종속변수y-간의-관계-탐색" class="level4">
+<h4 class="anchored" data-anchor-id="설명변수x-와-종속변수y-간의-관계-탐색">2-4. 설명변수(x) 와 종속변수(y) 간의 관계 탐색</h4>
+<ul>
+<li>변수간의 상관관계 파악해 봅니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Person 상관계수 : 대표적으로 상관관계 분석시 사용하는 지표입니다.</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co">### -1 에서 1 사이의 값을 가진다는 특징이 있습니다.</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 1일 때는 완전 양의 상관(perfect positive correlation), -1일 때는 완전 음의 상관관계(perfect negative correlation)관계를 보입니다.</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co">### https://m.blog.naver.com/istech7/50153047118</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">'전력수요'</span>, <span class="st">'원자력'</span>, <span class="st">'유연탄'</span>, <span class="st">'무연탄'</span>, <span class="st">'바이오가스'</span>, <span class="st">'부생가스'</span>, <span class="st">'소수력'</span>, <span class="st">'수력'</span>, <span class="st">'양수'</span>, <span class="st">'매립가스'</span>, <span class="st">'중유'</span>, <span class="st">'태양광'</span>, <span class="st">'폐기물'</span>,</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">'풍력'</span>, <span class="st">'LNG'</span>, <span class="st">'LPG'</span>, <span class="st">'연료전지'</span>, <span class="st">'경유'</span>, <span class="st">'해양에너지'</span>, <span class="st">'가스압'</span>, <span class="st">'바이오매스'</span>, <span class="st">'IGCC'</span>, <span class="st">'바이오중유'</span>, <span class="st">'RPS'</span>, <span class="st">'기타'</span> ]</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>corr <span class="op">=</span> df[cols].corr(method <span class="op">=</span> <span class="st">'pearson'</span>)</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>corr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="39">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>전력수요</th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>...</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>가스압</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>RPS</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>전력수요</th>
+      <td>1.000000</td>
+      <td>0.174751</td>
+      <td>0.652963</td>
+      <td>0.189491</td>
+      <td>0.128547</td>
+      <td>0.436785</td>
+      <td>-0.048442</td>
+      <td>0.300876</td>
+      <td>0.473086</td>
+      <td>-0.063006</td>
+      <td>...</td>
+      <td>0.357447</td>
+      <td>0.056724</td>
+      <td>0.165617</td>
+      <td>-0.023999</td>
+      <td>NaN</td>
+      <td>-0.028204</td>
+      <td>0.040418</td>
+      <td>0.302660</td>
+      <td>NaN</td>
+      <td>0.071249</td>
+    </tr>
+    <tr>
+      <th>원자력</th>
+      <td>0.174751</td>
+      <td>1.000000</td>
+      <td>-0.068908</td>
+      <td>-0.331350</td>
+      <td>0.014150</td>
+      <td>-0.041218</td>
+      <td>-0.558679</td>
+      <td>-0.379042</td>
+      <td>0.006063</td>
+      <td>0.173488</td>
+      <td>...</td>
+      <td>0.464514</td>
+      <td>0.374126</td>
+      <td>-0.065265</td>
+      <td>-0.018044</td>
+      <td>NaN</td>
+      <td>0.065617</td>
+      <td>0.357635</td>
+      <td>0.057229</td>
+      <td>NaN</td>
+      <td>-0.049923</td>
+    </tr>
+    <tr>
+      <th>유연탄</th>
+      <td>0.652963</td>
+      <td>-0.068908</td>
+      <td>1.000000</td>
+      <td>0.321806</td>
+      <td>0.155439</td>
+      <td>0.112919</td>
+      <td>0.256629</td>
+      <td>0.188037</td>
+      <td>0.117159</td>
+      <td>-0.105392</td>
+      <td>...</td>
+      <td>0.100317</td>
+      <td>0.200459</td>
+      <td>-0.023079</td>
+      <td>-0.024360</td>
+      <td>NaN</td>
+      <td>-0.001422</td>
+      <td>-0.182270</td>
+      <td>0.403813</td>
+      <td>NaN</td>
+      <td>0.189003</td>
+    </tr>
+    <tr>
+      <th>무연탄</th>
+      <td>0.189491</td>
+      <td>-0.331350</td>
+      <td>0.321806</td>
+      <td>1.000000</td>
+      <td>0.404113</td>
+      <td>0.167845</td>
+      <td>0.060150</td>
+      <td>0.159281</td>
+      <td>0.033684</td>
+      <td>0.086679</td>
+      <td>...</td>
+      <td>0.003989</td>
+      <td>-0.384960</td>
+      <td>0.083641</td>
+      <td>-0.025557</td>
+      <td>NaN</td>
+      <td>-0.004082</td>
+      <td>-0.117133</td>
+      <td>-0.151878</td>
+      <td>NaN</td>
+      <td>-0.066913</td>
+    </tr>
+    <tr>
+      <th>바이오가스</th>
+      <td>0.128547</td>
+      <td>0.014150</td>
+      <td>0.155439</td>
+      <td>0.404113</td>
+      <td>1.000000</td>
+      <td>0.111376</td>
+      <td>-0.179308</td>
+      <td>0.075733</td>
+      <td>0.030059</td>
+      <td>-0.124442</td>
+      <td>...</td>
+      <td>0.137084</td>
+      <td>-0.309213</td>
+      <td>0.031981</td>
+      <td>0.005401</td>
+      <td>NaN</td>
+      <td>-0.049047</td>
+      <td>-0.179717</td>
+      <td>-0.104911</td>
+      <td>NaN</td>
+      <td>-0.060774</td>
+    </tr>
+    <tr>
+      <th>부생가스</th>
+      <td>0.436785</td>
+      <td>-0.041218</td>
+      <td>0.112919</td>
+      <td>0.167845</td>
+      <td>0.111376</td>
+      <td>1.000000</td>
+      <td>-0.113504</td>
+      <td>0.232652</td>
+      <td>0.260266</td>
+      <td>-0.085046</td>
+      <td>...</td>
+      <td>0.158328</td>
+      <td>-0.281481</td>
+      <td>0.092942</td>
+      <td>-0.021733</td>
+      <td>NaN</td>
+      <td>-0.156539</td>
+      <td>0.030290</td>
+      <td>0.046569</td>
+      <td>NaN</td>
+      <td>-0.105509</td>
+    </tr>
+    <tr>
+      <th>소수력</th>
+      <td>-0.048442</td>
+      <td>-0.558679</td>
+      <td>0.256629</td>
+      <td>0.060150</td>
+      <td>-0.179308</td>
+      <td>-0.113504</td>
+      <td>1.000000</td>
+      <td>0.387411</td>
+      <td>0.011456</td>
+      <td>-0.004284</td>
+      <td>...</td>
+      <td>-0.533405</td>
+      <td>0.123801</td>
+      <td>-0.013632</td>
+      <td>-0.255623</td>
+      <td>NaN</td>
+      <td>0.230752</td>
+      <td>-0.348979</td>
+      <td>0.303690</td>
+      <td>NaN</td>
+      <td>-0.056167</td>
+    </tr>
+    <tr>
+      <th>수력</th>
+      <td>0.300876</td>
+      <td>-0.379042</td>
+      <td>0.188037</td>
+      <td>0.159281</td>
+      <td>0.075733</td>
+      <td>0.232652</td>
+      <td>0.387411</td>
+      <td>1.000000</td>
+      <td>0.371284</td>
+      <td>-0.151029</td>
+      <td>...</td>
+      <td>-0.204712</td>
+      <td>-0.211886</td>
+      <td>0.074191</td>
+      <td>0.000724</td>
+      <td>NaN</td>
+      <td>0.082424</td>
+      <td>-0.331391</td>
+      <td>0.062833</td>
+      <td>NaN</td>
+      <td>0.053906</td>
+    </tr>
+    <tr>
+      <th>양수</th>
+      <td>0.473086</td>
+      <td>0.006063</td>
+      <td>0.117159</td>
+      <td>0.033684</td>
+      <td>0.030059</td>
+      <td>0.260266</td>
+      <td>0.011456</td>
+      <td>0.371284</td>
+      <td>1.000000</td>
+      <td>-0.023523</td>
+      <td>...</td>
+      <td>0.054439</td>
+      <td>-0.021590</td>
+      <td>0.201666</td>
+      <td>-0.006593</td>
+      <td>NaN</td>
+      <td>0.021969</td>
+      <td>0.008028</td>
+      <td>0.136868</td>
+      <td>NaN</td>
+      <td>-0.000402</td>
+    </tr>
+    <tr>
+      <th>매립가스</th>
+      <td>-0.063006</td>
+      <td>0.173488</td>
+      <td>-0.105392</td>
+      <td>0.086679</td>
+      <td>-0.124442</td>
+      <td>-0.085046</td>
+      <td>-0.004284</td>
+      <td>-0.151029</td>
+      <td>-0.023523</td>
+      <td>1.000000</td>
+      <td>...</td>
+      <td>-0.135477</td>
+      <td>0.303327</td>
+      <td>-0.085124</td>
+      <td>0.049093</td>
+      <td>NaN</td>
+      <td>0.167088</td>
+      <td>0.066110</td>
+      <td>-0.041567</td>
+      <td>NaN</td>
+      <td>-0.119972</td>
+    </tr>
+    <tr>
+      <th>중유</th>
+      <td>0.416412</td>
+      <td>-0.049303</td>
+      <td>0.273959</td>
+      <td>0.091773</td>
+      <td>0.013707</td>
+      <td>0.094515</td>
+      <td>-0.002301</td>
+      <td>0.037629</td>
+      <td>0.066466</td>
+      <td>-0.055472</td>
+      <td>...</td>
+      <td>0.292509</td>
+      <td>-0.013728</td>
+      <td>0.155376</td>
+      <td>-0.006472</td>
+      <td>NaN</td>
+      <td>0.064914</td>
+      <td>0.053236</td>
+      <td>-0.024562</td>
+      <td>NaN</td>
+      <td>0.076558</td>
+    </tr>
+    <tr>
+      <th>태양광</th>
+      <td>0.173617</td>
+      <td>-0.121310</td>
+      <td>-0.045160</td>
+      <td>0.016793</td>
+      <td>0.011713</td>
+      <td>0.387557</td>
+      <td>0.121132</td>
+      <td>0.500851</td>
+      <td>0.143036</td>
+      <td>-0.016571</td>
+      <td>...</td>
+      <td>-0.123493</td>
+      <td>-0.060539</td>
+      <td>-0.078801</td>
+      <td>-0.076767</td>
+      <td>NaN</td>
+      <td>0.017563</td>
+      <td>-0.088462</td>
+      <td>-0.141975</td>
+      <td>NaN</td>
+      <td>-0.017365</td>
+    </tr>
+    <tr>
+      <th>폐기물</th>
+      <td>-0.230366</td>
+      <td>-0.220905</td>
+      <td>0.024739</td>
+      <td>-0.187606</td>
+      <td>-0.250489</td>
+      <td>-0.193278</td>
+      <td>0.345977</td>
+      <td>0.074221</td>
+      <td>-0.083607</td>
+      <td>0.011424</td>
+      <td>...</td>
+      <td>-0.356560</td>
+      <td>0.194064</td>
+      <td>-0.034074</td>
+      <td>0.039082</td>
+      <td>NaN</td>
+      <td>-0.071907</td>
+      <td>-0.408427</td>
+      <td>0.141514</td>
+      <td>NaN</td>
+      <td>0.100823</td>
+    </tr>
+    <tr>
+      <th>풍력</th>
+      <td>0.096913</td>
+      <td>0.356436</td>
+      <td>-0.093208</td>
+      <td>-0.050836</td>
+      <td>0.007739</td>
+      <td>0.025798</td>
+      <td>-0.363496</td>
+      <td>-0.185716</td>
+      <td>0.017691</td>
+      <td>0.053406</td>
+      <td>...</td>
+      <td>0.337577</td>
+      <td>0.035373</td>
+      <td>-0.076536</td>
+      <td>-0.031328</td>
+      <td>NaN</td>
+      <td>-0.036755</td>
+      <td>0.291615</td>
+      <td>-0.209720</td>
+      <td>NaN</td>
+      <td>0.033044</td>
+    </tr>
+    <tr>
+      <th>LNG</th>
+      <td>0.888073</td>
+      <td>0.036543</td>
+      <td>0.313039</td>
+      <td>0.144186</td>
+      <td>0.088653</td>
+      <td>0.478621</td>
+      <td>-0.107138</td>
+      <td>0.289586</td>
+      <td>0.456186</td>
+      <td>-0.074251</td>
+      <td>...</td>
+      <td>0.332237</td>
+      <td>-0.151000</td>
+      <td>0.251316</td>
+      <td>0.002780</td>
+      <td>NaN</td>
+      <td>-0.081685</td>
+      <td>0.059137</td>
+      <td>0.162766</td>
+      <td>NaN</td>
+      <td>0.000552</td>
+    </tr>
+    <tr>
+      <th>LPG</th>
+      <td>0.357447</td>
+      <td>0.464514</td>
+      <td>0.100317</td>
+      <td>0.003989</td>
+      <td>0.137084</td>
+      <td>0.158328</td>
+      <td>-0.533405</td>
+      <td>-0.204712</td>
+      <td>0.054439</td>
+      <td>-0.135477</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>-0.218873</td>
+      <td>0.086300</td>
+      <td>0.010474</td>
+      <td>NaN</td>
+      <td>-0.155920</td>
+      <td>0.257420</td>
+      <td>-0.100595</td>
+      <td>NaN</td>
+      <td>0.106544</td>
+    </tr>
+    <tr>
+      <th>연료전지</th>
+      <td>0.056724</td>
+      <td>0.374126</td>
+      <td>0.200459</td>
+      <td>-0.384960</td>
+      <td>-0.309213</td>
+      <td>-0.281481</td>
+      <td>0.123801</td>
+      <td>-0.211886</td>
+      <td>-0.021590</td>
+      <td>0.303327</td>
+      <td>...</td>
+      <td>-0.218873</td>
+      <td>1.000000</td>
+      <td>-0.102583</td>
+      <td>-0.008626</td>
+      <td>NaN</td>
+      <td>0.202642</td>
+      <td>0.222508</td>
+      <td>0.333846</td>
+      <td>NaN</td>
+      <td>-0.015694</td>
+    </tr>
+    <tr>
+      <th>경유</th>
+      <td>0.165617</td>
+      <td>-0.065265</td>
+      <td>-0.023079</td>
+      <td>0.083641</td>
+      <td>0.031981</td>
+      <td>0.092942</td>
+      <td>-0.013632</td>
+      <td>0.074191</td>
+      <td>0.201666</td>
+      <td>-0.085124</td>
+      <td>...</td>
+      <td>0.086300</td>
+      <td>-0.102583</td>
+      <td>1.000000</td>
+      <td>0.015688</td>
+      <td>NaN</td>
+      <td>-0.014942</td>
+      <td>0.005110</td>
+      <td>0.055267</td>
+      <td>NaN</td>
+      <td>-0.055727</td>
+    </tr>
+    <tr>
+      <th>해양에너지</th>
+      <td>-0.023999</td>
+      <td>-0.018044</td>
+      <td>-0.024360</td>
+      <td>-0.025557</td>
+      <td>0.005401</td>
+      <td>-0.021733</td>
+      <td>-0.255623</td>
+      <td>0.000724</td>
+      <td>-0.006593</td>
+      <td>0.049093</td>
+      <td>...</td>
+      <td>0.010474</td>
+      <td>-0.008626</td>
+      <td>0.015688</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>0.019100</td>
+      <td>-0.008345</td>
+      <td>0.033866</td>
+      <td>NaN</td>
+      <td>-0.008706</td>
+    </tr>
+    <tr>
+      <th>가스압</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>바이오매스</th>
+      <td>-0.028204</td>
+      <td>0.065617</td>
+      <td>-0.001422</td>
+      <td>-0.004082</td>
+      <td>-0.049047</td>
+      <td>-0.156539</td>
+      <td>0.230752</td>
+      <td>0.082424</td>
+      <td>0.021969</td>
+      <td>0.167088</td>
+      <td>...</td>
+      <td>-0.155920</td>
+      <td>0.202642</td>
+      <td>-0.014942</td>
+      <td>0.019100</td>
+      <td>NaN</td>
+      <td>1.000000</td>
+      <td>0.047592</td>
+      <td>0.158491</td>
+      <td>NaN</td>
+      <td>-0.073955</td>
+    </tr>
+    <tr>
+      <th>IGCC</th>
+      <td>0.040418</td>
+      <td>0.357635</td>
+      <td>-0.182270</td>
+      <td>-0.117133</td>
+      <td>-0.179717</td>
+      <td>0.030290</td>
+      <td>-0.348979</td>
+      <td>-0.331391</td>
+      <td>0.008028</td>
+      <td>0.066110</td>
+      <td>...</td>
+      <td>0.257420</td>
+      <td>0.222508</td>
+      <td>0.005110</td>
+      <td>-0.008345</td>
+      <td>NaN</td>
+      <td>0.047592</td>
+      <td>1.000000</td>
+      <td>-0.001049</td>
+      <td>NaN</td>
+      <td>-0.212192</td>
+    </tr>
+    <tr>
+      <th>바이오중유</th>
+      <td>0.302660</td>
+      <td>0.057229</td>
+      <td>0.403813</td>
+      <td>-0.151878</td>
+      <td>-0.104911</td>
+      <td>0.046569</td>
+      <td>0.303690</td>
+      <td>0.062833</td>
+      <td>0.136868</td>
+      <td>-0.041567</td>
+      <td>...</td>
+      <td>-0.100595</td>
+      <td>0.333846</td>
+      <td>0.055267</td>
+      <td>0.033866</td>
+      <td>NaN</td>
+      <td>0.158491</td>
+      <td>-0.001049</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+      <td>-0.158646</td>
+    </tr>
+    <tr>
+      <th>RPS</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>기타</th>
+      <td>0.071249</td>
+      <td>-0.049923</td>
+      <td>0.189003</td>
+      <td>-0.066913</td>
+      <td>-0.060774</td>
+      <td>-0.105509</td>
+      <td>-0.056167</td>
+      <td>0.053906</td>
+      <td>-0.000402</td>
+      <td>-0.119972</td>
+      <td>...</td>
+      <td>0.106544</td>
+      <td>-0.015694</td>
+      <td>-0.055727</td>
+      <td>-0.008706</td>
+      <td>NaN</td>
+      <td>-0.073955</td>
+      <td>-0.212192</td>
+      <td>-0.158646</td>
+      <td>NaN</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>25 rows × 25 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 상관관계를 직관적으로 살펴보기 위해 Heatmap 으로 돌려봅니다.</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co">### heatmap (seaborn): 여기서는 seaborn 시각화 라이브러리를 사용해서 표현합니다. </span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 시각화의 대표적인 라이브러리가 matplot(https://matplotlib.org/)과 seaborn(https://seaborn.pydata.org/)이 있습니다.</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize <span class="op">=</span> (<span class="dv">16</span>, <span class="dv">12</span>))</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.gca()</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="co"># https://seaborn.pydata.org/generated/seaborn.heatmap.html</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(font_scale <span class="op">=</span> <span class="fl">1.5</span>)  <span class="co"># heatmap 안의 font-size 설정 </span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>heatmap <span class="op">=</span> sns.heatmap(corr.values, annot <span class="op">=</span> <span class="va">True</span>, fmt<span class="op">=</span><span class="st">'.2f'</span>, annot_kws<span class="op">=</span>{<span class="st">'size'</span>:<span class="dv">15</span>},</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>                      yticklabels <span class="op">=</span> cols, xticklabels <span class="op">=</span> cols, ax<span class="op">=</span>ax, cmap <span class="op">=</span> <span class="st">"RdYlBu"</span>)</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) </span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 우리의 관심사인 target variable **“CMEDV - 주택 가격”**과 다른 변수간의 상관관계를 살펴보면,</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co">### “CMEDV - 주택 가격”</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="co">### “RM - 자택당 평균 방 갯수”(0.7) (양의 상관관계)</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="co">### “LSTAT - 빈곤층의 비율”(-0.74) (음의 상관관게)</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co">## 과 강한 상관관계를 보이고 있다는 것을 알 수 있습니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="cmedv---주택-가격-방-갯수rm의-관계" class="level5">
+<h5 class="anchored" data-anchor-id="cmedv---주택-가격-방-갯수rm의-관계">2.4.1 CMEDV - 주택 가격~ 방 갯수(“RM”)의 관계</h5>
+<div class="cell" data-tags="[]" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 폰트 https://whiplash-bd.tistory.com/33</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> font_manager, rc <span class="co"># 폰트 세팅을 위한 모듈 추가</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>font_path <span class="op">=</span> <span class="st">"C:/Windows/Fonts/malgun.ttf"</span> <span class="co"># 사용할 폰트명 경로 삽입</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>font <span class="op">=</span> font_manager.FontProperties(fname <span class="op">=</span> font_path).get_name()</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>rc(<span class="st">'font'</span>, family <span class="op">=</span> font)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="co">### scatter plot 산점도, https://seaborn.pydata.org/generated/seaborn.scatterplot.html</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">'LNG'</span>, y<span class="op">=</span><span class="st">'전력수요'</span>, markers<span class="op">=</span><span class="st">'o'</span>, color<span class="op">=</span><span class="st">'blue'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Scatter Plot'</span>)</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-24-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="384">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) </span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 주택 가격이 방 갯수와 양의 상관관계(positive correlation)를 갖고 있습니다. </span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 즉, 방 갯수가 많은 주택들이 상대적으로 더 높은 가격을 갖고 있습니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="cmedv---빈곤층의-비율lstat의-관계" class="level5">
+<h5 class="anchored" data-anchor-id="cmedv---빈곤층의-비율lstat의-관계">2.4.2 CMEDV - 빈곤층의 비율(“LSTAT”)의 관계</h5>
+<div class="cell" data-tags="[]" data-execution_count="48">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># scatter plot</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">'원자력'</span>, y<span class="op">=</span><span class="st">'전력수요'</span>, markers<span class="op">=</span><span class="st">'o'</span>, color<span class="op">=</span><span class="st">'blue'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Scatter Plot'</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-26-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="386">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설)</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 주택 가격이 빈곤층의 비율과 음의 상관관계(negative correlation)를 갖고 있습니다. </span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 즉, 빈곤층의 비율이 높은 지역의 주택 가격이 상대적으로 낮은 경향이 있습니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="도시별-차이-탐색" class="level5">
+<h5 class="anchored" data-anchor-id="도시별-차이-탐색">2.4.3 도시별 차이 탐색</h5>
+<ul>
+<li>데이터를 살펴보면 여러 지역이 같은 도시에 속한 경우가 있습니다.</li>
+<li>변수 중에서도 도시 단위로 측정되는 변수가 많고요. 따라서 우리는 자연스럽게 도시 간의 차이를 궁금하게 됩니다.</li>
+<li>다시한번 변수의 설명을 열거해 봅니다.</li>
+</ul>
+<ol type="1">
+<li>TOWN: 소속 도시 이름</li>
+<li>LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보</li>
+<li>CMEDV: 해당 지역의 주택 가격 (중앙값) (corrected median values of housing)(단위: USD 1000)</li>
+<li>CRIM: 지역 범죄율 (per capita crime)</li>
+<li>ZN: 소속 도시에 25,000 제곱 피트(sq.ft) 이상의 주택지 비율</li>
+<li>INDUS: 소속 도시에 상업적 비즈니스에 활용되지 않는 농지 면적</li>
+<li>CHAS: 해당 지역이 Charles 강과 접하고 있는지 여부 (dummy variable)</li>
+<li>NOX: 소속 도시의 산화질소 농도</li>
+<li>RM: 해당 지역의 자택당 평균 방 갯수</li>
+<li>AGE: 해당 지역에 1940년 이전에 건설된 주택의 비율</li>
+<li>DIS: 5개의 보스턴 고용 센터와의 거리에 따른 가중치 부여</li>
+<li>RAD: 소속 도시가 Radial 고속도로와의 접근성 지수</li>
+<li>TAX: 소속 도시의 10000달러당 재산세</li>
+<li>PTRATIO: 소속 도시의 학생-교사 비율</li>
+<li>B: 해당 지역의 흑인 지수 (1000(Bk - 0.63)^2), Bk는 흑인의 비</li>
+<li>LSTAT: 해당 지역의 빈곤층 비율</li>
+</ol>
+<div class="cell" data-execution_count="387">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 각 도시 데이터 갯수 살펴보기 </span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'TOWN'</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="387">
+<pre><code>Cambridge            30
+Boston Savin Hill    23
+Lynn                 22
+Boston Roxbury       19
+Newton               18
+                     ..
+Medfield              1
+Dover                 1
+Lincoln               1
+Sherborn              1
+Nahant                1
+Name: TOWN, Length: 92, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="388">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) 도시 갯수가 92개 입니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="389">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 각 도시 데이터 갯수 살펴보기 (bar plot)을 활용해서 시각화를 합니다.</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 위의 각 도시 데이터 갯수를 x 축으로, 합니다. </span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="co">### x 축을 50개로 나누었습니다.</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'TOWN'</span>].value_counts().hist(bins<span class="op">=</span><span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="389">
+<pre><code>&lt;Axes: &gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-30-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 도시별 주택 가격 특징 (boxplot 이용)</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize <span class="op">=</span> (<span class="dv">12</span>, <span class="dv">20</span>))</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">'CMEDV'</span>, y<span class="op">=</span><span class="st">'TOWN'</span>, data<span class="op">=</span>df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="390">
+<pre><code>&lt;Axes: xlabel='CMEDV', ylabel='TOWN'&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) Boston 지역(Boston으로 시작하는 도시)의 주택 가격이 전반적으로 다른 지역보다 낮다는 것을 알 수 있습니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 도시별 범죄율을 확인해 보겠습니다.</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 도시별 범죄율 특징</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize <span class="op">=</span> (<span class="dv">12</span>, <span class="dv">20</span>))</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">'CRIM'</span>, y<span class="op">=</span><span class="st">'TOWN'</span>, data<span class="op">=</span>df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) Boston 지역의 범죄율이 유독 높다는 것을 확인할 수 있고, 따라서 범죄율이 높은 지역의 주택 가격이 상대적으로 낮다는 것을 추측해볼 수 있겠습니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<pre><code>1. Library &amp; Data Import
+2. 데이터 파악 (EDA: 탐색적 데이터 분석)
+    2-1. 데이터셋 기본 정보 파악
+    2-2. 종속 변수(목표 변수) 탐색
+    2-3. 설명 변수 탐색
+    2-4. 설명변수와 종속변수 간의 관계 탐색
+3. 주택 가격 예측 모델링: 회귀 분석
+    3-1. 데이터 전처리
+    3-2. 회귀 모델링
+    3-3. 모델 해석
+    3-4. 모델 예측 결과 및 성능 평가</code></pre>
+</section>
+</section>
+</section>
+<section id="주택가격-예측-모델링-회귀분석" class="level3">
+<h3 class="anchored" data-anchor-id="주택가격-예측-모델링-회귀분석">3. 주택가격 예측 모델링: 회귀분석</h3>
+<ul>
+<li>이제 변수들을 활용하여 매사추세츠주 각 지역의 주택 가격을 예측하는 회귀 모델을 만들어 보겠습니다.</li>
+</ul>
+<section id="데이터-전처리" class="level4">
+<h4 class="anchored" data-anchor-id="데이터-전처리">3-1 데이터 전처리</h4>
+<ul>
+<li>먼저 Feature 들의 scale 차이를 없애기 위해 수치형 Feature에 대해서 표준화를 진행해야 합니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="49">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="49">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>전력수요</th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>...</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>가스압</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>RPS</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>64942</td>
+      <td>19801.59614</td>
+      <td>20648.61961</td>
+      <td>275.084752</td>
+      <td>46.411899</td>
+      <td>21.987878</td>
+      <td>52.974962</td>
+      <td>42.006667</td>
+      <td>786.187487</td>
+      <td>20.599213</td>
+      <td>...</td>
+      <td>39.839744</td>
+      <td>484.648144</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>554.207971</td>
+      <td>185.33200</td>
+      <td>101.170048</td>
+      <td>0</td>
+      <td>70.790582</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>62593</td>
+      <td>19800.37141</td>
+      <td>20388.47312</td>
+      <td>278.730595</td>
+      <td>46.148465</td>
+      <td>22.411095</td>
+      <td>52.292313</td>
+      <td>42.014917</td>
+      <td>239.793783</td>
+      <td>20.721555</td>
+      <td>...</td>
+      <td>43.216096</td>
+      <td>484.893300</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>553.769543</td>
+      <td>235.33104</td>
+      <td>101.179008</td>
+      <td>0</td>
+      <td>71.087030</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>60905</td>
+      <td>19800.32776</td>
+      <td>20365.38723</td>
+      <td>276.932504</td>
+      <td>46.408393</td>
+      <td>22.537354</td>
+      <td>48.794418</td>
+      <td>42.032154</td>
+      <td>0.048300</td>
+      <td>20.774781</td>
+      <td>...</td>
+      <td>40.816832</td>
+      <td>484.925545</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0</td>
+      <td>554.970371</td>
+      <td>238.34664</td>
+      <td>101.177216</td>
+      <td>0</td>
+      <td>71.040694</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>59889</td>
+      <td>19798.40984</td>
+      <td>20298.30731</td>
+      <td>275.579426</td>
+      <td>46.313306</td>
+      <td>22.719873</td>
+      <td>44.005635</td>
+      <td>42.015553</td>
+      <td>0.000000</td>
+      <td>20.772397</td>
+      <td>...</td>
+      <td>37.220624</td>
+      <td>485.075876</td>
+      <td>0.0</td>
+      <td>61.221048</td>
+      <td>0</td>
+      <td>552.863967</td>
+      <td>238.60592</td>
+      <td>101.183936</td>
+      <td>0</td>
+      <td>70.422899</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>59638</td>
+      <td>19795.97617</td>
+      <td>20289.56329</td>
+      <td>275.375931</td>
+      <td>46.585862</td>
+      <td>22.678411</td>
+      <td>40.841085</td>
+      <td>41.986467</td>
+      <td>0.000000</td>
+      <td>21.046917</td>
+      <td>...</td>
+      <td>33.687808</td>
+      <td>485.112767</td>
+      <td>0.0</td>
+      <td>146.600496</td>
+      <td>0</td>
+      <td>550.342585</td>
+      <td>239.09256</td>
+      <td>101.180576</td>
+      <td>0</td>
+      <td>71.277898</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 25 columns</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>데이터를 살펴보면 여러 지역이 같은 도시에 속한 경우가 있습니다.</p></li>
+<li><p>변수 중에서도 도시 단위로 측정되는 변수가 많고요. 따라서 우리는 자연스럽게 도시 간의 차이를 궁금하게 됩니다.</p></li>
+<li><p>다시한번 변수의 설명을 열거해 봅니다.</p>
+<ol type="1">
+<li>TOWN: 소속 도시 이름</li>
+<li>LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보</li>
+<li>CMEDV: 해당 지역의 주택 가격 (중앙값) (corrected median values of housing)(단위: USD 1000)</li>
+<li>CRIM: 지역 범죄율 (per capita crime)</li>
+<li>ZN: 소속 도시에 25,000 제곱 피트(sq.ft) 이상의 주택지 비율</li>
+<li>INDUS: 소속 도시에 상업적 비즈니스에 활용되지 않는 농지 면적</li>
+<li>CHAS: 해당 지역이 Charles 강과 접하고 있는지 여부 (dummy variable)</li>
+<li>NOX: 소속 도시의 산화질소 농도</li>
+<li>RM: 해당 지역의 자택당 평균 방 갯수</li>
+<li>AGE: 해당 지역에 1940년 이전에 건설된 주택의 비율</li>
+<li>DIS: 5개의 보스턴 고용 센터와의 거리에 따른 가중치 부여</li>
+<li>RAD: 소속 도시가 Radial 고속도로와의 접근성 지수</li>
+<li>TAX: 소속 도시의 10000달러당 재산세</li>
+<li>PTRATIO: 소속 도시의 학생-교사 비율</li>
+<li>B: 해당 지역의 흑인 지수 (1000(Bk - 0.63)^2), Bk는 흑인의 비</li>
+<li>LSTAT: 해당 지역의 빈곤층 비율</li>
+</ol></li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="50">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 8760 entries, 0 to 8759
+Data columns (total 25 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   전력수요    8760 non-null   int64  
+ 1   원자력     8760 non-null   float64
+ 2   유연탄     8760 non-null   float64
+ 3   무연탄     8760 non-null   float64
+ 4   바이오가스   8760 non-null   float64
+ 5   부생가스    8760 non-null   float64
+ 6   소수력     8760 non-null   float64
+ 7   수력      8760 non-null   float64
+ 8   양수      8760 non-null   float64
+ 9   매립가스    8760 non-null   float64
+ 10  중유      8760 non-null   float64
+ 11  태양광     8760 non-null   float64
+ 12  폐기물     8760 non-null   float64
+ 13  풍력      8760 non-null   float64
+ 14  LNG     8760 non-null   float64
+ 15  LPG     8760 non-null   float64
+ 16  연료전지    8760 non-null   float64
+ 17  경유      8760 non-null   float64
+ 18  해양에너지   8760 non-null   float64
+ 19  가스압     8760 non-null   int64  
+ 20  바이오매스   8760 non-null   float64
+ 21  IGCC    8760 non-null   float64
+ 22  바이오중유   8760 non-null   float64
+ 23  RPS     8760 non-null   int64  
+ 24  기타      8760 non-null   float64
+dtypes: float64(22), int64(3)
+memory usage: 1.7 MB</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="79">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 문자형 변수인 "TOWN"와 범주형 변수인 “CHAS” (Dummy variable), 위도(LON), 경도(LAT)를 제외하고 모든 수치형 변수에 대해서 표준화를 진행합니다.</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 참고) CHAS: 해당 지역이 Charles 강과 접하고 있는지 여부 (dummy variable)</span></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 사이킷런은 파이썬에서 머신러닝 분석을 할 때 유용하게 사용할 수 있는 라이브러리입니다. 여러가지 머신러닝 모듈로 구성되어있습니다.</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a><span class="co"># feature standardization  (numerical_columns except dummy var.-"CHAS")</span></span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()  <span class="co"># 평균 0, 표준편차 1</span></span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a><span class="co">## numerical_columns=['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']</span></span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>scale_columns <span class="op">=</span> [<span class="st">'전력수요'</span>, <span class="st">'원자력'</span>, <span class="st">'유연탄'</span>, <span class="st">'무연탄'</span>, <span class="st">'바이오가스'</span>, <span class="st">'부생가스'</span>, <span class="st">'소수력'</span>, <span class="st">'수력'</span>, <span class="st">'양수'</span>, <span class="st">'매립가스'</span>, <span class="st">'중유'</span>, <span class="st">'태양광'</span>, <span class="st">'폐기물'</span>,</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">'풍력'</span>, <span class="st">'LNG'</span>, <span class="st">'LPG'</span>, <span class="st">'연료전지'</span>, <span class="st">'경유'</span>, <span class="st">'해양에너지'</span>,  <span class="st">'바이오매스'</span>, <span class="st">'IGCC'</span>, <span class="st">'바이오중유'</span>, <span class="st">'기타'</span>]</span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a>df[scale_columns] <span class="op">=</span> scaler.fit_transform(df[scale_columns])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="55">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="55">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>전력수요</th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>...</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>가스압</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>RPS</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.131574</td>
+      <td>1.533286</td>
+      <td>-0.187856</td>
+      <td>0.766991</td>
+      <td>0.520811</td>
+      <td>-0.805093</td>
+      <td>-0.791950</td>
+      <td>-1.409010</td>
+      <td>0.693333</td>
+      <td>-0.043777</td>
+      <td>...</td>
+      <td>2.906348</td>
+      <td>-1.256522</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>0.272315</td>
+      <td>-0.055644</td>
+      <td>-1.105328</td>
+      <td>0</td>
+      <td>0.528951</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-0.124968</td>
+      <td>1.532571</td>
+      <td>-0.255639</td>
+      <td>0.799543</td>
+      <td>0.496631</td>
+      <td>-0.801767</td>
+      <td>-0.833962</td>
+      <td>-1.408960</td>
+      <td>-0.339551</td>
+      <td>-0.029497</td>
+      <td>...</td>
+      <td>3.194672</td>
+      <td>-1.250060</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>0.267874</td>
+      <td>0.394029</td>
+      <td>-1.105110</td>
+      <td>0</td>
+      <td>0.558226</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-0.309320</td>
+      <td>1.532546</td>
+      <td>-0.261654</td>
+      <td>0.783489</td>
+      <td>0.520489</td>
+      <td>-0.800775</td>
+      <td>-1.049230</td>
+      <td>-1.408856</td>
+      <td>-0.792758</td>
+      <td>-0.023284</td>
+      <td>...</td>
+      <td>2.989786</td>
+      <td>-1.249210</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>0.280036</td>
+      <td>0.421150</td>
+      <td>-1.105153</td>
+      <td>0</td>
+      <td>0.553650</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-0.420281</td>
+      <td>1.531426</td>
+      <td>-0.279132</td>
+      <td>0.771408</td>
+      <td>0.511762</td>
+      <td>-0.799340</td>
+      <td>-1.343942</td>
+      <td>-1.408956</td>
+      <td>-0.792849</td>
+      <td>-0.023562</td>
+      <td>...</td>
+      <td>2.682687</td>
+      <td>-1.245248</td>
+      <td>-0.388147</td>
+      <td>0.123660</td>
+      <td>0</td>
+      <td>0.258703</td>
+      <td>0.423482</td>
+      <td>-1.104990</td>
+      <td>0</td>
+      <td>0.492640</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-0.447694</td>
+      <td>1.530005</td>
+      <td>-0.281410</td>
+      <td>0.769591</td>
+      <td>0.536779</td>
+      <td>-0.799666</td>
+      <td>-1.538695</td>
+      <td>-1.409131</td>
+      <td>-0.792849</td>
+      <td>0.008482</td>
+      <td>...</td>
+      <td>2.381001</td>
+      <td>-1.244275</td>
+      <td>-0.388147</td>
+      <td>1.260876</td>
+      <td>0</td>
+      <td>0.233166</td>
+      <td>0.427858</td>
+      <td>-1.105072</td>
+      <td>0</td>
+      <td>0.577075</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 25 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="56">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>df[scale_columns].head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="56">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>전력수요</th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>...</th>
+      <th>풍력</th>
+      <th>LNG</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.131574</td>
+      <td>1.533286</td>
+      <td>-0.187856</td>
+      <td>0.766991</td>
+      <td>0.520811</td>
+      <td>-0.805093</td>
+      <td>-0.791950</td>
+      <td>-1.409010</td>
+      <td>0.693333</td>
+      <td>-0.043777</td>
+      <td>...</td>
+      <td>1.199196</td>
+      <td>-0.125749</td>
+      <td>2.906348</td>
+      <td>-1.256522</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0.272315</td>
+      <td>-0.055644</td>
+      <td>-1.105328</td>
+      <td>0.528951</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-0.124968</td>
+      <td>1.532571</td>
+      <td>-0.255639</td>
+      <td>0.799543</td>
+      <td>0.496631</td>
+      <td>-0.801767</td>
+      <td>-0.833962</td>
+      <td>-1.408960</td>
+      <td>-0.339551</td>
+      <td>-0.029497</td>
+      <td>...</td>
+      <td>1.133030</td>
+      <td>-0.396063</td>
+      <td>3.194672</td>
+      <td>-1.250060</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0.267874</td>
+      <td>0.394029</td>
+      <td>-1.105110</td>
+      <td>0.558226</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-0.309320</td>
+      <td>1.532546</td>
+      <td>-0.261654</td>
+      <td>0.783489</td>
+      <td>0.520489</td>
+      <td>-0.800775</td>
+      <td>-1.049230</td>
+      <td>-1.408856</td>
+      <td>-0.792758</td>
+      <td>-0.023284</td>
+      <td>...</td>
+      <td>1.163823</td>
+      <td>-0.647912</td>
+      <td>2.989786</td>
+      <td>-1.249210</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0.280036</td>
+      <td>0.421150</td>
+      <td>-1.105153</td>
+      <td>0.553650</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-0.420281</td>
+      <td>1.531426</td>
+      <td>-0.279132</td>
+      <td>0.771408</td>
+      <td>0.511762</td>
+      <td>-0.799340</td>
+      <td>-1.343942</td>
+      <td>-1.408956</td>
+      <td>-0.792849</td>
+      <td>-0.023562</td>
+      <td>...</td>
+      <td>1.051797</td>
+      <td>-0.822836</td>
+      <td>2.682687</td>
+      <td>-1.245248</td>
+      <td>-0.388147</td>
+      <td>0.123660</td>
+      <td>0.258703</td>
+      <td>0.423482</td>
+      <td>-1.104990</td>
+      <td>0.492640</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-0.447694</td>
+      <td>1.530005</td>
+      <td>-0.281410</td>
+      <td>0.769591</td>
+      <td>0.536779</td>
+      <td>-0.799666</td>
+      <td>-1.538695</td>
+      <td>-1.409131</td>
+      <td>-0.792849</td>
+      <td>0.008482</td>
+      <td>...</td>
+      <td>0.868320</td>
+      <td>-0.870349</td>
+      <td>2.381001</td>
+      <td>-1.244275</td>
+      <td>-0.388147</td>
+      <td>1.260876</td>
+      <td>0.233166</td>
+      <td>0.427858</td>
+      <td>-1.105072</td>
+      <td>0.577075</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 23 columns</p>
+</div>
+</div>
+</div>
+<ul>
+<li>training/test set 나누기
+<ul>
+<li>나중에 도출될 예측 모델의 예측 성능을 평가하기 위해, 먼저 전체 데이터셋을 “Training set”과 “Test set”으로 나누겠습니다.</li>
+<li>Training set에서 모델을 학습하고 Test set에서 모델의 예측 성능을 검증할 겁니다.</li>
+</ul></li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="80">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co">### features for linear regression model</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 참고) CHAS: 해당 지역이 Charles 강과 접하고 있는지 여부 (dummy variable)</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co">### numerical features(except "LON" &amp; "LAT") :  LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>numerical_columns <span class="op">=</span> [<span class="st">'원자력'</span>, <span class="st">'유연탄'</span>, <span class="st">'무연탄'</span>, <span class="st">'바이오가스'</span>, <span class="st">'부생가스'</span>, <span class="st">'소수력'</span>, <span class="st">'수력'</span>, <span class="st">'양수'</span>, <span class="st">'매립가스'</span>, <span class="st">'중유'</span>, <span class="st">'태양광'</span>, <span class="st">'폐기물'</span>,</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">'풍력'</span>, <span class="st">'LNG'</span>, <span class="st">'LPG'</span>, <span class="st">'연료전지'</span>, <span class="st">'경유'</span>, <span class="st">'해양에너지'</span>,  <span class="st">'바이오매스'</span>, <span class="st">'IGCC'</span>, <span class="st">'바이오중유'</span>,  <span class="st">'기타'</span> ]</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>df[numerical_columns].head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="80">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>중유</th>
+      <th>...</th>
+      <th>풍력</th>
+      <th>LNG</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.533286</td>
+      <td>-0.187856</td>
+      <td>0.766991</td>
+      <td>0.520811</td>
+      <td>-0.805093</td>
+      <td>-0.791950</td>
+      <td>-1.409010</td>
+      <td>0.693333</td>
+      <td>-0.043777</td>
+      <td>-0.408537</td>
+      <td>...</td>
+      <td>1.199196</td>
+      <td>-0.125749</td>
+      <td>2.906348</td>
+      <td>-1.256522</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0.272315</td>
+      <td>-0.055644</td>
+      <td>-1.105328</td>
+      <td>0.528951</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.532571</td>
+      <td>-0.255639</td>
+      <td>0.799543</td>
+      <td>0.496631</td>
+      <td>-0.801767</td>
+      <td>-0.833962</td>
+      <td>-1.408960</td>
+      <td>-0.339551</td>
+      <td>-0.029497</td>
+      <td>-0.406187</td>
+      <td>...</td>
+      <td>1.133030</td>
+      <td>-0.396063</td>
+      <td>3.194672</td>
+      <td>-1.250060</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0.267874</td>
+      <td>0.394029</td>
+      <td>-1.105110</td>
+      <td>0.558226</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.532546</td>
+      <td>-0.261654</td>
+      <td>0.783489</td>
+      <td>0.520489</td>
+      <td>-0.800775</td>
+      <td>-1.049230</td>
+      <td>-1.408856</td>
+      <td>-0.792758</td>
+      <td>-0.023284</td>
+      <td>-0.404731</td>
+      <td>...</td>
+      <td>1.163823</td>
+      <td>-0.647912</td>
+      <td>2.989786</td>
+      <td>-1.249210</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0.280036</td>
+      <td>0.421150</td>
+      <td>-1.105153</td>
+      <td>0.553650</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.531426</td>
+      <td>-0.279132</td>
+      <td>0.771408</td>
+      <td>0.511762</td>
+      <td>-0.799340</td>
+      <td>-1.343942</td>
+      <td>-1.408956</td>
+      <td>-0.792849</td>
+      <td>-0.023562</td>
+      <td>-0.406326</td>
+      <td>...</td>
+      <td>1.051797</td>
+      <td>-0.822836</td>
+      <td>2.682687</td>
+      <td>-1.245248</td>
+      <td>-0.388147</td>
+      <td>0.123660</td>
+      <td>0.258703</td>
+      <td>0.423482</td>
+      <td>-1.104990</td>
+      <td>0.492640</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.530005</td>
+      <td>-0.281410</td>
+      <td>0.769591</td>
+      <td>0.536779</td>
+      <td>-0.799666</td>
+      <td>-1.538695</td>
+      <td>-1.409131</td>
+      <td>-0.792849</td>
+      <td>0.008482</td>
+      <td>-0.403995</td>
+      <td>...</td>
+      <td>0.868320</td>
+      <td>-0.870349</td>
+      <td>2.381001</td>
+      <td>-1.244275</td>
+      <td>-0.388147</td>
+      <td>1.260876</td>
+      <td>0.233166</td>
+      <td>0.427858</td>
+      <td>-1.105072</td>
+      <td>0.577075</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 22 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="83">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="co"># split dataset into training &amp; test</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df[numerical_columns]</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">'전력수요'</span>]</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="66">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>X_train.shape, y_train.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="66">
+<pre><code>((7008, 24), (7008,))</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="84">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>X_test.shape, y_test.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="84">
+<pre><code>((1752, 22), (1752,))</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="85">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>y_train</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 전력수요 값을 의미합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="85">
+<pre><code>54     -0.530805
+5748   -0.382493
+8382    0.301837
+4228   -1.142727
+7437   -0.615008
+          ...   
+2895   -1.382996
+7813    0.902073
+905    -0.315655
+5192    0.719250
+235     0.674473
+Name: 전력수요, Length: 7008, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>X_train</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="69">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>원자력</th>
+      <th>유연탄</th>
+      <th>무연탄</th>
+      <th>바이오가스</th>
+      <th>부생가스</th>
+      <th>소수력</th>
+      <th>수력</th>
+      <th>양수</th>
+      <th>매립가스</th>
+      <th>중유</th>
+      <th>...</th>
+      <th>LPG</th>
+      <th>연료전지</th>
+      <th>경유</th>
+      <th>해양에너지</th>
+      <th>가스압</th>
+      <th>바이오매스</th>
+      <th>IGCC</th>
+      <th>바이오중유</th>
+      <th>RPS</th>
+      <th>기타</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>54</th>
+      <td>1.529375</td>
+      <td>-0.928721</td>
+      <td>0.805475</td>
+      <td>0.599234</td>
+      <td>-0.808364</td>
+      <td>-1.995769</td>
+      <td>-1.414636</td>
+      <td>-0.672495</td>
+      <td>0.022800</td>
+      <td>-0.412604</td>
+      <td>...</td>
+      <td>2.643301</td>
+      <td>-1.422684</td>
+      <td>1.027149</td>
+      <td>1.558248</td>
+      <td>0</td>
+      <td>0.123250</td>
+      <td>0.418269</td>
+      <td>-1.085906</td>
+      <td>0</td>
+      <td>0.445297</td>
+    </tr>
+    <tr>
+      <th>5748</th>
+      <td>-0.073489</td>
+      <td>0.368325</td>
+      <td>0.759125</td>
+      <td>-1.592599</td>
+      <td>1.297155</td>
+      <td>1.939306</td>
+      <td>0.289497</td>
+      <td>-0.792649</td>
+      <td>-0.015176</td>
+      <td>-0.697063</td>
+      <td>...</td>
+      <td>-0.495782</td>
+      <td>0.719577</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>0.587450</td>
+      <td>0.685356</td>
+      <td>1.409862</td>
+      <td>0</td>
+      <td>-2.490523</td>
+    </tr>
+    <tr>
+      <th>8382</th>
+      <td>2.249333</td>
+      <td>0.721306</td>
+      <td>-1.689075</td>
+      <td>0.639275</td>
+      <td>-0.507397</td>
+      <td>-0.631479</td>
+      <td>-1.401082</td>
+      <td>-0.792687</td>
+      <td>0.147637</td>
+      <td>-0.476603</td>
+      <td>...</td>
+      <td>0.487732</td>
+      <td>1.840264</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>-0.254562</td>
+      <td>0.521073</td>
+      <td>0.957480</td>
+      <td>0</td>
+      <td>-0.181800</td>
+    </tr>
+    <tr>
+      <th>4228</th>
+      <td>-1.214517</td>
+      <td>0.028157</td>
+      <td>-0.455666</td>
+      <td>0.691835</td>
+      <td>-0.594045</td>
+      <td>-0.179975</td>
+      <td>-0.102232</td>
+      <td>-0.792849</td>
+      <td>-2.200085</td>
+      <td>-0.737480</td>
+      <td>...</td>
+      <td>-0.495782</td>
+      <td>-0.753360</td>
+      <td>-0.388147</td>
+      <td>2.626899</td>
+      <td>0</td>
+      <td>-1.103016</td>
+      <td>-1.722452</td>
+      <td>-0.286802</td>
+      <td>0</td>
+      <td>0.784771</td>
+    </tr>
+    <tr>
+      <th>7437</th>
+      <td>0.537027</td>
+      <td>-1.235642</td>
+      <td>-0.471834</td>
+      <td>0.662118</td>
+      <td>-0.426955</td>
+      <td>-0.259979</td>
+      <td>-1.217471</td>
+      <td>-0.262759</td>
+      <td>1.248346</td>
+      <td>-0.581955</td>
+      <td>...</td>
+      <td>-0.495782</td>
+      <td>0.805896</td>
+      <td>-0.388147</td>
+      <td>-0.536074</td>
+      <td>0</td>
+      <td>-1.024238</td>
+      <td>0.397927</td>
+      <td>-1.279522</td>
+      <td>0</td>
+      <td>-0.011921</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2895</th>
+      <td>-1.202214</td>
+      <td>-1.253771</td>
+      <td>-0.473847</td>
+      <td>0.761325</td>
+      <td>-0.570862</td>
+      <td>0.306989</td>
+      <td>1.618863</td>
+      <td>-0.792849</td>
+      <td>0.218146</td>
+      <td>-0.749983</td>
+      <td>...</td>
+      <td>-0.495782</td>
+      <td>-0.107035</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>1.230738</td>
+      <td>0.280155</td>
+      <td>-1.945167</td>
+      <td>0</td>
+      <td>0.699638</td>
+    </tr>
+    <tr>
+      <th>7813</th>
+      <td>0.158908</td>
+      <td>0.587843</td>
+      <td>1.255900</td>
+      <td>0.505883</td>
+      <td>-0.058851</td>
+      <td>-0.501427</td>
+      <td>-0.650621</td>
+      <td>0.405314</td>
+      <td>0.883570</td>
+      <td>2.215578</td>
+      <td>...</td>
+      <td>0.521293</td>
+      <td>1.365267</td>
+      <td>-0.388147</td>
+      <td>-0.691450</td>
+      <td>0</td>
+      <td>-1.174935</td>
+      <td>0.563802</td>
+      <td>-0.999401</td>
+      <td>0</td>
+      <td>0.080016</td>
+    </tr>
+    <tr>
+      <th>905</th>
+      <td>0.232520</td>
+      <td>0.160219</td>
+      <td>0.777619</td>
+      <td>0.910048</td>
+      <td>-0.525019</td>
+      <td>-1.515832</td>
+      <td>0.295975</td>
+      <td>-0.762081</td>
+      <td>0.305957</td>
+      <td>-0.454695</td>
+      <td>...</td>
+      <td>0.649809</td>
+      <td>-1.086574</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>-0.402271</td>
+      <td>0.673853</td>
+      <td>-1.099200</td>
+      <td>0</td>
+      <td>0.774011</td>
+    </tr>
+    <tr>
+      <th>5192</th>
+      <td>-0.664592</td>
+      <td>1.245532</td>
+      <td>0.730008</td>
+      <td>0.669742</td>
+      <td>0.765423</td>
+      <td>1.482855</td>
+      <td>0.635872</td>
+      <td>-0.589718</td>
+      <td>0.488304</td>
+      <td>-0.758893</td>
+      <td>...</td>
+      <td>-0.495782</td>
+      <td>0.513958</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>-0.053258</td>
+      <td>-0.013122</td>
+      <td>0.912406</td>
+      <td>0</td>
+      <td>0.062048</td>
+    </tr>
+    <tr>
+      <th>235</th>
+      <td>0.369275</td>
+      <td>-0.411297</td>
+      <td>0.772094</td>
+      <td>0.343111</td>
+      <td>-0.498102</td>
+      <td>-1.012083</td>
+      <td>0.049939</td>
+      <td>2.068376</td>
+      <td>-1.479749</td>
+      <td>-0.421272</td>
+      <td>...</td>
+      <td>4.031078</td>
+      <td>-1.692856</td>
+      <td>-0.388147</td>
+      <td>-0.691777</td>
+      <td>0</td>
+      <td>-0.856501</td>
+      <td>0.422812</td>
+      <td>-1.098112</td>
+      <td>0</td>
+      <td>0.433936</td>
+    </tr>
+  </tbody>
+</table>
+<p>7008 rows × 24 columns</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>다중공산성</p>
+<ul>
+<li>회귀 분석에서 하나의 feature(예측 변수)가 다른 feature와의 상관 관계가 높으면 (즉, 다중공선성이 존재하면), 회귀 분석 시 부정적인 영향을 미칠 수 있기 때문에, 모델링 하기 전에 먼저 다중공선성의 존재 여부를 확인해야합니다.</li>
+<li>보통 다중공선성을 판단할 때 VIF값을 확인합니다. 일반적으로, VIF &gt; 10인 feature들은 다른 변수와의 상관관계가 높아, 다중공선성이 존재하는 것으로 판단합니다.</li>
+<li>즉, VIF &gt; 10인 feature들은 설명변수에서 제거하는 것이 좋을 수도 있습니다.</li>
+</ul></li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="86">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels.stats.outliers_influence <span class="im">import</span> variance_inflation_factor</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>vif <span class="op">=</span> pd.DataFrame()</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>vif[<span class="st">'features'</span>] <span class="op">=</span> X_train.columns</span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>vif[<span class="st">"VIF Factor"</span>] <span class="op">=</span> [variance_inflation_factor(X_train.values, i) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(X_train.shape[<span class="dv">1</span>])] <span class="co">## X_train.shape[1]=13</span></span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>vif.<span class="bu">round</span>(<span class="dv">1</span>) </span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a><span class="co">### 소수점 첫째자리까지 표시합니다. 즉, 소수점 둘째짜리에서 반올림 합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="86">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>features</th>
+      <th>VIF Factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>원자력</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>유연탄</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>무연탄</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>바이오가스</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>부생가스</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>소수력</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>수력</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>양수</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>매립가스</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>중유</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>태양광</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>폐기물</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>풍력</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>LNG</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>LPG</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>연료전지</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>경유</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>해양에너지</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>바이오매스</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>IGCC</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>바이오중유</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>기타</td>
+      <td>1.3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) VIF값을 확인해보면, 모든 변수의 VIF값이 다 10 이하입니다. 따라서 다중공선성 문제가 존재하지 않아 모든 feature을 활용하여 회귀 모델링을 진행하면 됩니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="회귀모델링" class="level4">
+<h4 class="anchored" data-anchor-id="회귀모델링">3-2 회귀모델링</h4>
+<ul>
+<li>먼저 Training set에서 선형 회귀 예측 모델을 학습합니다.</li>
+<li>그 다음 도출된 모델을 Test set에 적용해 주택 가격(“CMEDV”)을 예측합니다.</li>
+<li>이 결과는 실제 “CMEDV” 값과 비교하여 모델의 예측 성능을 평가하는 데 활용하게 됩니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="91">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> linear_model</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fit regression model in training set</span></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>lr <span class="op">=</span> linear_model.LinearRegression()</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> lr.fit(X_train, y_train)</span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a><span class="co"># predict in test set</span></span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>pred_test <span class="op">=</span> lr.predict(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="모델해석하기" class="level4">
+<h4 class="anchored" data-anchor-id="모델해석하기">3-3 모델해석하기</h4>
+<ul>
+<li>각 feature, 설명변수, x, 컬럼에 대한 회귀계수를 확인해 보겠습니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="92">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co">### print coef </span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 계수를 출력합니다.</span></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lr.coef_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[ 0.19027638  0.43163873  0.0147826  -0.0038524   0.01652054  0.00823441
+  0.02935437  0.0875245   0.00211112  0.02383963  0.08366638  0.00479943
+  0.02795186  0.66184733  0.00227071  0.01042959  0.00539486 -0.00123438
+  0.00481722  0.02122935  0.00883865  0.00568356]</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="94">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co">### "feature - coefficients" DataFrame 만들기</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a><span class="co">### zip 키워드는 리스트 2개를 하나로 묶습니다.(결과는 튜플로 됩니다.)</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>coefs <span class="op">=</span> pd.DataFrame(<span class="bu">zip</span>(df[numerical_columns].columns, lr.coef_), columns <span class="op">=</span> [<span class="st">'feature'</span>, <span class="st">'coefficients'</span>])</span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>coefs.<span class="bu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a><span class="co">### from sklearn.model_selection import train_test_split</span></span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a><span class="co">### split dataset into training &amp; test</span></span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a><span class="co"># X = df[numerical_columns]</span></span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a><span class="co"># y = df['CMEDV']</span></span>
+<span id="cb68-12"><a href="#cb68-12" aria-hidden="true" tabindex="-1"></a><span class="co"># X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="94">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>feature</th>
+      <th>coefficients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>원자력</td>
+      <td>0.190</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>유연탄</td>
+      <td>0.432</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>무연탄</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>바이오가스</td>
+      <td>-0.004</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>부생가스</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>소수력</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>수력</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>양수</td>
+      <td>0.088</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>매립가스</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>중유</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>태양광</td>
+      <td>0.084</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>폐기물</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>풍력</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>LNG</td>
+      <td>0.662</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>LPG</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>연료전지</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>경유</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>해양에너지</td>
+      <td>-0.001</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>바이오매스</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>IGCC</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>바이오중유</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>기타</td>
+      <td>0.006</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="95">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 크기 순서대로 나열합니다. </span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 크기 순서로 나열 : 내림차순으로 합니다. 다만 양, 음을 가리지 않습니다. 절대값을 기준으로 합니다. </span></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 절대값 기준 함수: coefficients.abs().sort_values </span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>coefs_new <span class="op">=</span> coefs.reindex(coefs.coefficients.<span class="bu">abs</span>().sort_values(ascending<span class="op">=</span><span class="va">False</span>).index)</span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>coefs_new.<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="95">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>feature</th>
+      <th>coefficients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>13</th>
+      <td>LNG</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>유연탄</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>원자력</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>양수</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>태양광</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>수력</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>풍력</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>중유</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>IGCC</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>부생가스</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>무연탄</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>연료전지</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>바이오중유</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>소수력</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>기타</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>경유</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>바이오매스</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>폐기물</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>바이오가스</td>
+      <td>-0.00</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>LPG</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>매립가스</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>해양에너지</td>
+      <td>-0.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<pre><code>1. TOWN: 소속 도시 이름
+2. LON, LAT: 해당 지역의 경도(Longitudes) 위도(Latitudes) 정보
+3. CMEDV: 해당 지역의 주택 가격 (중앙값) (corrected median values of housing)(단위: USD 1000)
+4. CRIM: 지역 범죄율 (per capita crime)
+5. ZN: 소속 도시에 25,000 제곱 피트(sq.ft) 이상의 주택지 비율
+6. INDUS: 소속 도시에 상업적 비즈니스에 활용되지 않는 농지 면적
+7. CHAS: 해당 지역이 Charles 강과 접하고 있는지 여부 (dummy variable)
+8. NOX: 소속 도시의 산화질소 농도
+9. RM: 해당 지역의 자택당 평균 방 갯수
+10. AGE: 해당 지역에 1940년 이전에 건설된 주택의 비율
+11. DIS: 5개의 보스턴 고용 센터와의 거리에 따른 가중치 부여
+12. RAD: 소속 도시가 Radial 고속도로와의 접근성 지수
+13. TAX: 소속 도시의 10000달러당 재산세
+14. PTRATIO: 소속 도시의 학생-교사 비율
+15. B: 해당 지역의 흑인 지수 (1000(Bk - 0.63)^2), Bk는 흑인의 비
+16. LSTAT: 해당 지역의 빈곤층 비율</code></pre>
+<div class="cell" data-tags="[]" data-execution_count="96">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co">### coefficients 를 시각화 합니다. </span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="co">### figure size</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a><span class="co">### bar plot : matplotlib.pyplot 모듈의 barh() 함수를 사용해서 수평 막대 그래프를 그릴 수 있습니다. </span></span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>plt.barh(coefs_new[<span class="st">'feature'</span>], coefs_new[<span class="st">'coefficients'</span>])</span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'"feature - coefficient" Graph'</span>)</span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'coefficients'</span>)</span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'features'</span>)</span>
+<span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-52-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li><p>유의성 검정을 합니다 (통계에서 변수가 유의하다는 의미입니다).</p></li>
+<li><p>X=sm.add_constant(X)</p></li>
+<li><p>modeling - model = sm.OLS(y,X) - result = model.fit() - print(results.summary())</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co">## https://stackoverflow.com/questions/68463220/pandas-importing-error-importerror-cannot-import-name-dtypearg-from-pandas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="97">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>X_train2 <span class="op">=</span> sm.add_constant(X_train)</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a><span class="co">### 회귀분석모형 수식을 간단하게 만들기 위해 다음과 같이 상수항을 독립변수 데이터에 추가하는 것을 상수항 결합(bias augmentation)작업이라고 합니다.</span></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a><span class="co">### ordinary least square 의 약자로, 거리의 최소값을 기준으로 구하는 함수입니다. </span></span>
+<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a><span class="co">### 상수항이 추간된 독립변수와 그에 대한 y 값으로 학습을 합니다. </span></span>
+<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a>model2 <span class="op">=</span> sm.OLS(y_train, X_train2).fit()</span>
+<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a>model2.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="97">
+
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tbody><tr>
+  <th>Dep. Variable:</th>          <td>전력수요</td>       <th>  R-squared:         </th>  <td>   0.994</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th>  <td>   0.994</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>  <td>5.494e+04</td>
+</tr>
+<tr>
+  <th>Date:</th>             <td>Tue, 19 Sep 2023</td> <th>  Prob (F-statistic):</th>   <td>  0.00</td>  
+</tr>
+<tr>
+  <th>Time:</th>                 <td>23:17:01</td>     <th>  Log-Likelihood:    </th>  <td>  8206.1</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>  7008</td>      <th>  AIC:               </th> <td>-1.637e+04</td>
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>  6985</td>      <th>  BIC:               </th> <td>-1.621e+04</td>
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>    22</td>      <th>                     </th>      <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>      <td> </td>    
+</tr>
+</tbody></table>
+<table class="simpletable">
+<tbody><tr>
+    <td></td>       <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P&gt;|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>const</th> <td>   -0.0004</td> <td>    0.001</td> <td>   -0.457</td> <td> 0.648</td> <td>   -0.002</td> <td>    0.001</td>
+</tr>
+<tr>
+  <th>원자력</th>   <td>    0.1903</td> <td>    0.002</td> <td>  116.506</td> <td> 0.000</td> <td>    0.187</td> <td>    0.193</td>
+</tr>
+<tr>
+  <th>유연탄</th>   <td>    0.4316</td> <td>    0.002</td> <td>  286.644</td> <td> 0.000</td> <td>    0.429</td> <td>    0.435</td>
+</tr>
+<tr>
+  <th>무연탄</th>   <td>    0.0148</td> <td>    0.001</td> <td>   10.875</td> <td> 0.000</td> <td>    0.012</td> <td>    0.017</td>
+</tr>
+<tr>
+  <th>바이오가스</th> <td>   -0.0039</td> <td>    0.001</td> <td>   -3.489</td> <td> 0.000</td> <td>   -0.006</td> <td>   -0.002</td>
+</tr>
+<tr>
+  <th>부생가스</th>  <td>    0.0165</td> <td>    0.001</td> <td>   13.891</td> <td> 0.000</td> <td>    0.014</td> <td>    0.019</td>
+</tr>
+<tr>
+  <th>소수력</th>   <td>    0.0082</td> <td>    0.002</td> <td>    4.977</td> <td> 0.000</td> <td>    0.005</td> <td>    0.011</td>
+</tr>
+<tr>
+  <th>수력</th>    <td>    0.0294</td> <td>    0.001</td> <td>   21.367</td> <td> 0.000</td> <td>    0.027</td> <td>    0.032</td>
+</tr>
+<tr>
+  <th>양수</th>    <td>    0.0875</td> <td>    0.001</td> <td>   80.917</td> <td> 0.000</td> <td>    0.085</td> <td>    0.090</td>
+</tr>
+<tr>
+  <th>매립가스</th>  <td>    0.0021</td> <td>    0.001</td> <td>    1.964</td> <td> 0.050</td> <td> 4.26e-06</td> <td>    0.004</td>
+</tr>
+<tr>
+  <th>중유</th>    <td>    0.0238</td> <td>    0.001</td> <td>   21.488</td> <td> 0.000</td> <td>    0.022</td> <td>    0.026</td>
+</tr>
+<tr>
+  <th>태양광</th>   <td>    0.0837</td> <td>    0.001</td> <td>   67.585</td> <td> 0.000</td> <td>    0.081</td> <td>    0.086</td>
+</tr>
+<tr>
+  <th>폐기물</th>   <td>    0.0048</td> <td>    0.001</td> <td>    4.068</td> <td> 0.000</td> <td>    0.002</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>풍력</th>    <td>    0.0280</td> <td>    0.001</td> <td>   26.401</td> <td> 0.000</td> <td>    0.026</td> <td>    0.030</td>
+</tr>
+<tr>
+  <th>LNG</th>   <td>    0.6618</td> <td>    0.001</td> <td>  487.027</td> <td> 0.000</td> <td>    0.659</td> <td>    0.665</td>
+</tr>
+<tr>
+  <th>LPG</th>   <td>    0.0023</td> <td>    0.001</td> <td>    1.596</td> <td> 0.110</td> <td>   -0.001</td> <td>    0.005</td>
+</tr>
+<tr>
+  <th>연료전지</th>  <td>    0.0104</td> <td>    0.002</td> <td>    6.496</td> <td> 0.000</td> <td>    0.007</td> <td>    0.014</td>
+</tr>
+<tr>
+  <th>경유</th>    <td>    0.0054</td> <td>    0.001</td> <td>    5.513</td> <td> 0.000</td> <td>    0.003</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>해양에너지</th> <td>   -0.0012</td> <td>    0.001</td> <td>   -1.208</td> <td> 0.227</td> <td>   -0.003</td> <td>    0.001</td>
+</tr>
+<tr>
+  <th>바이오매스</th> <td>    0.0048</td> <td>    0.001</td> <td>    4.683</td> <td> 0.000</td> <td>    0.003</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>IGCC</th>  <td>    0.0212</td> <td>    0.001</td> <td>   17.195</td> <td> 0.000</td> <td>    0.019</td> <td>    0.024</td>
+</tr>
+<tr>
+  <th>바이오중유</th> <td>    0.0088</td> <td>    0.001</td> <td>    7.075</td> <td> 0.000</td> <td>    0.006</td> <td>    0.011</td>
+</tr>
+<tr>
+  <th>기타</th>    <td>    0.0057</td> <td>    0.001</td> <td>    5.482</td> <td> 0.000</td> <td>    0.004</td> <td>    0.008</td>
+</tr>
+</tbody></table>
+<table class="simpletable">
+<tbody><tr>
+  <th>Omnibus:</th>       <td>154.923</td> <th>  Durbin-Watson:     </th> <td>   2.014</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.000</td>  <th>  Jarque-Bera (JB):  </th> <td> 161.740</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td>-0.361</td>  <th>  Prob(JB):          </th> <td>7.56e-36</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 2.817</td>  <th>  Cond. No.          </th> <td>    4.69</td>
+</tr>
+</tbody></table><br><br>Notes:<br>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="68">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co">##!pip install pandas==1.3.0</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="co">##!pip install --force-reinstall pandas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co">## https://stackoverflow.com/questions/71106940/cannot-import-name-centered-from-scipy-signal-signaltools</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="70">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co">##!pip install statsmodels --upgrade</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="98">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="co">## import scipy.signal.signaltools as sm</span></span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>X_train2 <span class="op">=</span> sm.add_constant(X_train)</span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="co">### 회귀분석모형 수식을 간단하게 만들기 위해 다음과 같이 상수항을 독립변수 데이터에 추가하는 것을 상수항 결합(bias augmentation)작업이라고 합니다.</span></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a><span class="co">### ordinary least square 의 약자로, 거리의 최소값을 기준으로 구하는 함수입니다. </span></span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a><span class="co">### 상수항이 추간된 독립변수와 그에 대한 y 값으로 학습을 합니다. </span></span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a>model2 <span class="op">=</span> sm.OLS(y_train, X_train2).fit()</span>
+<span id="cb77-10"><a href="#cb77-10" aria-hidden="true" tabindex="-1"></a>model2.summary()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="98">
+
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tbody><tr>
+  <th>Dep. Variable:</th>          <td>전력수요</td>       <th>  R-squared:         </th>  <td>   0.994</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th>  <td>   0.994</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>  <td>5.494e+04</td>
+</tr>
+<tr>
+  <th>Date:</th>             <td>Tue, 19 Sep 2023</td> <th>  Prob (F-statistic):</th>   <td>  0.00</td>  
+</tr>
+<tr>
+  <th>Time:</th>                 <td>23:17:06</td>     <th>  Log-Likelihood:    </th>  <td>  8206.1</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>  7008</td>      <th>  AIC:               </th> <td>-1.637e+04</td>
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>  6985</td>      <th>  BIC:               </th> <td>-1.621e+04</td>
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>    22</td>      <th>                     </th>      <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>      <td> </td>    
+</tr>
+</tbody></table>
+<table class="simpletable">
+<tbody><tr>
+    <td></td>       <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P&gt;|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>const</th> <td>   -0.0004</td> <td>    0.001</td> <td>   -0.457</td> <td> 0.648</td> <td>   -0.002</td> <td>    0.001</td>
+</tr>
+<tr>
+  <th>원자력</th>   <td>    0.1903</td> <td>    0.002</td> <td>  116.506</td> <td> 0.000</td> <td>    0.187</td> <td>    0.193</td>
+</tr>
+<tr>
+  <th>유연탄</th>   <td>    0.4316</td> <td>    0.002</td> <td>  286.644</td> <td> 0.000</td> <td>    0.429</td> <td>    0.435</td>
+</tr>
+<tr>
+  <th>무연탄</th>   <td>    0.0148</td> <td>    0.001</td> <td>   10.875</td> <td> 0.000</td> <td>    0.012</td> <td>    0.017</td>
+</tr>
+<tr>
+  <th>바이오가스</th> <td>   -0.0039</td> <td>    0.001</td> <td>   -3.489</td> <td> 0.000</td> <td>   -0.006</td> <td>   -0.002</td>
+</tr>
+<tr>
+  <th>부생가스</th>  <td>    0.0165</td> <td>    0.001</td> <td>   13.891</td> <td> 0.000</td> <td>    0.014</td> <td>    0.019</td>
+</tr>
+<tr>
+  <th>소수력</th>   <td>    0.0082</td> <td>    0.002</td> <td>    4.977</td> <td> 0.000</td> <td>    0.005</td> <td>    0.011</td>
+</tr>
+<tr>
+  <th>수력</th>    <td>    0.0294</td> <td>    0.001</td> <td>   21.367</td> <td> 0.000</td> <td>    0.027</td> <td>    0.032</td>
+</tr>
+<tr>
+  <th>양수</th>    <td>    0.0875</td> <td>    0.001</td> <td>   80.917</td> <td> 0.000</td> <td>    0.085</td> <td>    0.090</td>
+</tr>
+<tr>
+  <th>매립가스</th>  <td>    0.0021</td> <td>    0.001</td> <td>    1.964</td> <td> 0.050</td> <td> 4.26e-06</td> <td>    0.004</td>
+</tr>
+<tr>
+  <th>중유</th>    <td>    0.0238</td> <td>    0.001</td> <td>   21.488</td> <td> 0.000</td> <td>    0.022</td> <td>    0.026</td>
+</tr>
+<tr>
+  <th>태양광</th>   <td>    0.0837</td> <td>    0.001</td> <td>   67.585</td> <td> 0.000</td> <td>    0.081</td> <td>    0.086</td>
+</tr>
+<tr>
+  <th>폐기물</th>   <td>    0.0048</td> <td>    0.001</td> <td>    4.068</td> <td> 0.000</td> <td>    0.002</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>풍력</th>    <td>    0.0280</td> <td>    0.001</td> <td>   26.401</td> <td> 0.000</td> <td>    0.026</td> <td>    0.030</td>
+</tr>
+<tr>
+  <th>LNG</th>   <td>    0.6618</td> <td>    0.001</td> <td>  487.027</td> <td> 0.000</td> <td>    0.659</td> <td>    0.665</td>
+</tr>
+<tr>
+  <th>LPG</th>   <td>    0.0023</td> <td>    0.001</td> <td>    1.596</td> <td> 0.110</td> <td>   -0.001</td> <td>    0.005</td>
+</tr>
+<tr>
+  <th>연료전지</th>  <td>    0.0104</td> <td>    0.002</td> <td>    6.496</td> <td> 0.000</td> <td>    0.007</td> <td>    0.014</td>
+</tr>
+<tr>
+  <th>경유</th>    <td>    0.0054</td> <td>    0.001</td> <td>    5.513</td> <td> 0.000</td> <td>    0.003</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>해양에너지</th> <td>   -0.0012</td> <td>    0.001</td> <td>   -1.208</td> <td> 0.227</td> <td>   -0.003</td> <td>    0.001</td>
+</tr>
+<tr>
+  <th>바이오매스</th> <td>    0.0048</td> <td>    0.001</td> <td>    4.683</td> <td> 0.000</td> <td>    0.003</td> <td>    0.007</td>
+</tr>
+<tr>
+  <th>IGCC</th>  <td>    0.0212</td> <td>    0.001</td> <td>   17.195</td> <td> 0.000</td> <td>    0.019</td> <td>    0.024</td>
+</tr>
+<tr>
+  <th>바이오중유</th> <td>    0.0088</td> <td>    0.001</td> <td>    7.075</td> <td> 0.000</td> <td>    0.006</td> <td>    0.011</td>
+</tr>
+<tr>
+  <th>기타</th>    <td>    0.0057</td> <td>    0.001</td> <td>    5.482</td> <td> 0.000</td> <td>    0.004</td> <td>    0.008</td>
+</tr>
+</tbody></table>
+<table class="simpletable">
+<tbody><tr>
+  <th>Omnibus:</th>       <td>154.923</td> <th>  Durbin-Watson:     </th> <td>   2.014</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.000</td>  <th>  Jarque-Bera (JB):  </th> <td> 161.740</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td>-0.361</td>  <th>  Prob(JB):          </th> <td>7.56e-36</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 2.817</td>  <th>  Cond. No.          </th> <td>    4.69</td>
+</tr>
+</tbody></table><br><br>Notes:<br>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="74">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) coeff를 봐야 합니다.</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="co">### P&gt;|t|를 봐야 합니다. p-value를 의미한다. 0.05 보다 작아야 유의하다!! </span></span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a><span class="co">### R-squre 를 봐야 합니다. 설명력을 의미합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="기억하기" class="level5">
+<h5 class="anchored" data-anchor-id="기억하기">|기억하기|</h5>
+<ul>
+<li>결정 계수 (coefficient of determination)는 추정한 선형 모형이 주어진 자료에 적합한 정도를 재는 척도이다.
+<ul>
+<li>종속 변수의 변동량 중에서 적용한 모형으로 설명 가능한 부분의 비율을 가리킨다.</li>
+<li>결정계수의 통상적인 기호는 R²이다.</li>
+<li>일반적으로 모형의 설명력으로 해석되지만 모형에 설명 변수가 들어갈수록 증가하기 때문에 해석에 주의해야 한다.</li>
+<li>결정계수의 값은 0에서 1 사이에 있으며, 종속 변인과 독립변인 사이에 상관관계가 높을수록 1에 가까워진다.</li>
+<li>즉, 결정계수가 0에 가까운 값을 가지는 회귀모형은 유용성이 낮은 반면, 결정계수의 값이 클수록 회귀모형의 유용성이 높다고 할 수 있다.</li>
+</ul></li>
+</ul>
+</section>
+<section id="해석하기" class="level5">
+<h5 class="anchored" data-anchor-id="해석하기">| 해석하기 |</h5>
+<ol type="1">
+<li><p>“INDUS”(상업적 비즈니스에 활용되지 않는 농지 면적: p-value: 0.747)과 “AGE”(1940년 이전에 건설된 비율: p-value:0.771)은 유의하지 않습니다. (p value &gt; 0.05)</p></li>
+<li><p>주택 가격에 Positive(coefficient &gt; 0)한 영향을 미칩니다.</p></li>
+</ol>
+<ul>
+<li>“ZN”(25,000 제곱 피트(sq.ft) 이상의 주택지 비율),</li>
+<li>“CHAS”(Charles 강과 접하고 있는지 여부),</li>
+<li>“RM”(자택당 평균 방 갯수),</li>
+<li>“RAD”(소속 도시가 Radial 고속도로와의 접근성 지수),</li>
+<li><dl>
+<dt>“B”(흑인 지수)는</dt>
+<dd>
+다른 변수의 값이 고정했을 때, 해당 변수의 값이 클수록 주택의 가격이 높을 것입니다.
+</dd>
+</dl></li>
+</ul>
+<ol start="3" type="1">
+<li>주택 가격에 Negative(coefficient &lt; 0)한 영향을 미칩니다.</li>
+</ol>
+<ul>
+<li>“CRIM”(지역 범죄율),</li>
+<li>“NOX”(산화질소 농도),</li>
+<li>“DIS”(보스턴 고용 센터와의 거리),</li>
+<li>“TAX”(재산세),</li>
+<li>“PTRATIO”(학생-교사 비율),</li>
+<li>“LSTAT”(빈곤층 비율)은 :다른 변수의 값이 고정했을 때, 해당 변수의 값이 작을수록 주택의 가격이 높을 것입니다.</li>
+</ul>
+</section>
+</section>
+<section id="모델-에측-결과-및-성능-평가" class="level4">
+<h4 class="anchored" data-anchor-id="모델-에측-결과-및-성능-평가">3-4 모델 에측 결과 및 성능 평가</h4>
+<ul>
+<li>예측 결과를 가시화 합니다</li>
+</ul>
+<p>학습한 모델을 Test set에 적용하여 y값(“CMEDV”)을 예측합니다.</p>
+<p>예측 결과를 확인하기 위해 실제값과 예측값을 한 plot에 출력해 시각화해보겠습니다.</p>
+<div class="cell" data-tags="[]" data-execution_count="99">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> linear_model</span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fit regression model in training set</span></span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>lr <span class="op">=</span> linear_model.LinearRegression()</span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> lr.fit(X_train, y_train)</span>
+<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a><span class="co"># predict in test set</span></span>
+<span id="cb79-8"><a href="#cb79-8" aria-hidden="true" tabindex="-1"></a>pred_test <span class="op">=</span> lr.predict(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="100">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 예측 결과 시각화 (test set)</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">'actual'</span>: y_test, <span class="st">'prediction'</span>: pred_test})</span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">'actual'</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a>df.head()</span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-6"><a href="#cb80-6" aria-hidden="true" tabindex="-1"></a><span class="co">### reset_index() : 아무래도 데이터프레임의 다양한 전처리 과정을 거치게 되면 인덱스가 뒤죽박죽인 경우가 많다. 이럴때 인덱스를 다시 처음부터 재배열 해주는 유용한 함수다.</span></span>
+<span id="cb80-7"><a href="#cb80-7" aria-hidden="true" tabindex="-1"></a><span class="co">### drop=True옵션을 주면 기존 인덱스를 버리고 재배열해준다.</span></span>
+<span id="cb80-8"><a href="#cb80-8" aria-hidden="true" tabindex="-1"></a><span class="co">### https://yganalyst.github.io/data_handling/Pd_2/</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="100">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>actual</th>
+      <th>prediction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-2.296565</td>
+      <td>-2.198572</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-2.231911</td>
+      <td>-2.058227</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-2.230819</td>
+      <td>-2.017243</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-2.222628</td>
+      <td>-2.052249</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-2.196744</td>
+      <td>-2.111403</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="101">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>df.tail(<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="101">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>actual</th>
+      <th>prediction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1732</th>
+      <td>2.510238</td>
+      <td>2.535799</td>
+    </tr>
+    <tr>
+      <th>1733</th>
+      <td>2.543985</td>
+      <td>2.491212</td>
+    </tr>
+    <tr>
+      <th>1734</th>
+      <td>2.574237</td>
+      <td>2.603024</td>
+    </tr>
+    <tr>
+      <th>1735</th>
+      <td>2.604708</td>
+      <td>2.624030</td>
+    </tr>
+    <tr>
+      <th>1736</th>
+      <td>2.616066</td>
+      <td>2.672456</td>
+    </tr>
+    <tr>
+      <th>1737</th>
+      <td>2.632448</td>
+      <td>2.691611</td>
+    </tr>
+    <tr>
+      <th>1738</th>
+      <td>2.674167</td>
+      <td>2.674725</td>
+    </tr>
+    <tr>
+      <th>1739</th>
+      <td>2.705293</td>
+      <td>2.683771</td>
+    </tr>
+    <tr>
+      <th>1740</th>
+      <td>2.712283</td>
+      <td>2.686997</td>
+    </tr>
+    <tr>
+      <th>1741</th>
+      <td>2.714576</td>
+      <td>2.780406</td>
+    </tr>
+    <tr>
+      <th>1742</th>
+      <td>2.736201</td>
+      <td>2.717661</td>
+    </tr>
+    <tr>
+      <th>1743</th>
+      <td>2.740460</td>
+      <td>2.719423</td>
+    </tr>
+    <tr>
+      <th>1744</th>
+      <td>2.753456</td>
+      <td>2.745240</td>
+    </tr>
+    <tr>
+      <th>1745</th>
+      <td>2.765142</td>
+      <td>2.775897</td>
+    </tr>
+    <tr>
+      <th>1746</th>
+      <td>2.814288</td>
+      <td>2.970564</td>
+    </tr>
+    <tr>
+      <th>1747</th>
+      <td>2.830452</td>
+      <td>2.877691</td>
+    </tr>
+    <tr>
+      <th>1748</th>
+      <td>2.841810</td>
+      <td>2.847767</td>
+    </tr>
+    <tr>
+      <th>1749</th>
+      <td>2.894451</td>
+      <td>2.896483</td>
+    </tr>
+    <tr>
+      <th>1750</th>
+      <td>2.928307</td>
+      <td>2.970032</td>
+    </tr>
+    <tr>
+      <th>1751</th>
+      <td>2.945562</td>
+      <td>2.990872</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="102">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">9</span>))</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(df.index, df[<span class="st">'prediction'</span>], marker<span class="op">=</span><span class="st">'x'</span>, color<span class="op">=</span><span class="st">'r'</span>)</span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(df.index, df[<span class="st">'actual'</span>], alpha<span class="op">=</span><span class="fl">0.3</span>, marker<span class="op">=</span><span class="st">'o'</span>, color<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Prediction Result in Test Set"</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>plt.legend([<span class="st">'prediction'</span>, <span class="st">'actual'</span>], fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a><span class="co">### x축은 집 index, y축이 집값</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\ProgramData\anaconda3\Lib\site-packages\IPython\core\pylabtools.py:152: UserWarning: Glyph 8722 (\N{MINUS SIGN}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="과제_files/figure-html/cell-63-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>모델 성능 평가 (R squre 와 RMSE)</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="103">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co">### R square</span></span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.score(X_train, y_train))  <span class="co"># training set</span></span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.score(X_test, y_test))  <span class="co"># test set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.994254206255394
+0.99483809156575</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="104">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RMSE</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt</span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a><span class="co"># training set</span></span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a>pred_train <span class="op">=</span> lr.predict(X_train)</span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sqrt(mean_squared_error(y_train, pred_train)))</span>
+<span id="cb86-8"><a href="#cb86-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-9"><a href="#cb86-9" aria-hidden="true" tabindex="-1"></a><span class="co"># test set</span></span>
+<span id="cb86-10"><a href="#cb86-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-11"><a href="#cb86-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sqrt(mean_squared_error(y_test, pred_test)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.07502749641007687
+0.0746899948132357</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해설) Test set에서 해당 예측 모델의 R square가 0.76이고, RMSE가 4.83입니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -428,7 +428,7 @@ data_tidy %>%
 
     -   sector : carbon storage, subsector: onshore carbon storage, technology: onshore carbon storage =\> cost is 8,938 90us\$/tC
 
-    -   from 2020 to 2050, 8938.28	19663.0	30745.3	41899.0	53067.0	64237.9	75409.4
+    -   from 2020 to 2050, 8938.28 19663.0 30745.3 41899.0 53067.0 64237.9 75409.4
 
 -   it's not KAIST member who set this high values, but JGCRI member.(pf Haewon told)
 

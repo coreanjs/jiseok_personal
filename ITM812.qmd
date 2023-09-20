@@ -16,6 +16,7 @@ format:
     number-depth: 2
     highlight-style: github
     self-contained: false
+jupyter: python3
 bibliography: references.bib
 
 freeze: true
@@ -153,6 +154,8 @@ freeze: true
 
 -   종속변수(y)를 독립변수(x)들의 함수 f(x)로 적합. Y =f(x)
 
+    -   독립변수!!! x1, x2, x3, x4, ... 독립볍수가 아니라면 전처리를 해야 함
+
 -   f(함수)가 무엇일까? 문제를 풀 방법? 분석방법을 의미한다.
 
 -   예제 1) Sales prediction : 특정 고객 -\> 마케핑 캠패인에 반응할 확률
@@ -176,8 +179,119 @@ freeze: true
     -   Training set, Validation set, Testing set 으로 구분
 5.  데이터 방법론 선택
     -   Regression, Classification, Clustering, Recommender 등 선택
+    -   regression은 원인과 결과를 찾는 데 쓸 수 있는데, 상관관계는 correlation. 다르다.
 6.  구체적인 기술 및 평가 방법 선택
     -   Linear Regression, Logistic Regression, Decision tree, Random Forest, KNN, K-means, Matrix Factorization
 7.  테스트 및 튜닝
 8.  결과 및 모델 비교
 9.  모델 선택 및 적용
+
+# Week 4
+
+## Regression(회귀)
+
+-   Regression -\> 원인과 결과를 분석하는데 쓰임. y= ax1+bx2+cx3+d 와 같은 회귀식을 도출한다.
+
+-   똘똘한 기울기와 절편을 구하는 것. 기울기 = 가중치, 절편 = 편향.
+
+### 선형회귀
+
+-   가장 훌륭한 선 긋기 -\> 머신러닝은 미래의 방향을 설정하는 것에서 부터 시작. y = ax+b로 표현될 수 있으며, x값이 변함에 따라 y 값도 변한다. Simple linear regression. 예, 독립변수 x가 공부한 시간, 성적 y를 예측할 경우, x가 한 개 이므로, simple linear regression.
+
+-   가장 정확한 기울기 a와 절편 b를 찾으면 된다.
+
+-   여러가지 선을 그을 수 있고, 여러가지 선 중, 반복되는 선 긋기를 통해 가장 훌륭한 선을 찾는다.
+
+-   선형회귀는 임의의 직선을 그어 이에 대한 평균제곱오차를 구하고, 이 값을 가장 작게 만들어주는 a와 b를 찾아가는 작업.
+
+-   어떻게 훌륭한 선을 찾을까? 오차(예측값 - 실제값) 줄이기
+
+-   예측모델 성능 평가
+
+    -   가장 많이 쓰는 방법: **평균 제곱 오차(MSE: Mean Square Error)**
+
+    -   **평균 제곱근 오차(RMSE: Root Mean Square Error)** : MSE 값은 오류의 제곱을 구하므로, 실제 오류의 푱균보다 값이 더 커질 수 있어, MSE 에 루트를 씌운 경우
+
+    -   **평균절대오차(MAE: Mean Absolute Error**)
+
+-   모든 것을 정확히 고려하면 overfitting이 될 수 있다.
+
+-   선형은 직선을 의미하는 것이 아니라 계수들의 곱과 합을로 이루어진 것을 말함.
+
+-   
+
+-   예재로 배우기 : 집값 예측
+
+    -   최근 주변 부동산 시세를 살펴본다. 보통 얼마에 거래되었을까?
+
+    -   방법: 여러가지 특징 세트가 있을 때 특정 변화에 따라 output(y)의 변화를 살펴본다.
+
+-   **(로지스틱 회귀)** 전달받은 정보를 놓고 참과 거짓 중 하나를 Output으로 선택하는 방법론. 참/거짓 판단장치라고 하며, 이진 분류에 많이 사용함. 예제) 합격자 발표에서 점수화 상관없이 '합격' 불합격'만 존재합니다.
+
+## 실습
+
+-   python 설치. Terminal.
+
+    ::: callout-note
+    py -m pip install jupyter
+    :::
+
+    ::: callout-note
+    ```         
+    python -m pip install jupyter
+    ```
+
+    -   pip install pandas
+
+    -   pip install numpy
+
+    -   pip install matplotlib
+
+    -   pip install seaborn
+    :::
+
+    python3 -m pip install matplotlib
+
+-   
+
+-   
+
+```{python}
+import pandas as pd
+```
+
+```{python}
+import pandas as pd ### 데이터 분석을 하기 위한 파이썬 라이브러리 such as a table
+import numpy as np ### 수치해석 라이브러리
+import matplotlib.pyplot as plt ### 그래프 그리는 라이브러리
+import seaborn as sns ### 그래프 그리는 라이브러리
+```
+
+```{python}
+
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+```{python}
+df=pd.read_csv("./ITM812/BostonHousing2.csv")
+```
+
+```{python}
+#데이터셋을 불러와서 첫 세 줄을 출력하여 데이터의 구성을 한 번 살펴볼게요.
+df.tail(10)
+#df.tail(3)
+```
