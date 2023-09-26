@@ -162,7 +162,7 @@ origQuery
 
 
 dac_cstorage_Extended %>%
-    filter(param == param_selected & x >= 2015) %>%
+    filter(param == param_selected & x >= 2015 & x <= 2050) %>%
     group_by(x, scenario, sector, region) %>% 
     summarise(value = sum(value)) %>% 
     ggplot(aes(x = x, y = value, group = sector, fill = sector))+
@@ -192,7 +192,7 @@ ggsave(file =paste0("param_", param_selected, ".png"),  width =1200, height = 70
 
 
 dac_cstorage_Extended %>%
-    filter(param == param_selected & x >= 2015) %>%
+    filter(param == param_selected & x >= 2015 ) %>%
     group_by(x, scenario, sector, region) %>% 
     summarise(value = sum(value)) %>% 
     ggplot(aes(x = x, y = value, group = sector, color = sector))+
@@ -747,3 +747,45 @@ for (i in aggParam_all) {
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  graph =  aggParam %>%
+         filter(param == i) %>% 
+         ggplot(aes(x = x, y = value, group = scenario, color = scenario))+
+         geom_line(linewidth = 1.5)+
+         facet_wrap(~class)+
+         scale_x_continuous(limits = c(2010,2100), breaks = c(2015, 2050,2100))+
+         scale_color_manual(values = c("#1f5c99", "#d83d36"))+
+         theme_bw()+
+         geom_vline(xintercept = 2050, linetype = "dotted")+
+        #theme_minimal()+
+         theme(plot.title = element_text(size = 20, face ="bold"),
+               strip.text.x  = element_text(size=18),
+               axis.text.x = element_text(size =14),
+               axis.text.y = element_text(size =14),
+               axis.title = element_text(size =16),
+               panel.grid.minor.x = element_blank(),
+               panel.grid.major.x = element_blank(),
+               # panel.grid.major.y = element_blank(),
+               panel.grid.minor.y = element_blank(),
+               plot.background = element_rect(fill = "white"),
+               plot.title.position =  "plot",
+               legend.text = element_text(size = 16),
+               legend.title = element_text(size = 16),
+               plot.subtitle = element_text(size = 16))+
+         labs(title = paste("Parameter:", i),
+              x = "year",
+              y = unit_param_selected)

@@ -1,4 +1,485 @@
 {
-    "sources": [],
+    "sources": [
+        {
+            "DOI": "10.1038/s41560-022-01124-4",
+            "URL": "https://www.nature.com/articles/s41560-022-01124-4",
+            "author": [
+                {
+                    "family": "Wolfram",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Kyle",
+                    "given": "Page"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Xin"
+                },
+                {
+                    "family": "Gkantonas",
+                    "given": "Savvas"
+                },
+                {
+                    "family": "Smith",
+                    "given": "Steven"
+                }
+            ],
+            "container-title": "Nature Energy",
+            "id": "wolfram2022",
+            "issue": "12",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Number: 12 Publisher: Nature Publishing Group",
+            "page": "1112-1114",
+            "title": "Using ammonia as a shipping fuel could disturb the nitrogen cycle",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "DOI": "10.1016/j.euroecorev.2018.07.004",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0014292118301107",
+            "author": [
+                {
+                    "family": "Zerrahn",
+                    "given": "Alexander"
+                },
+                {
+                    "family": "Schill",
+                    "given": "Wolf-Peter"
+                },
+                {
+                    "family": "Kemfert",
+                    "given": "Claudia"
+                }
+            ],
+            "container-title": "European Economic Review",
+            "id": "zerrahn2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "page": "259-279",
+            "title": "On the economics of electrical storage for variable renewable energy sources",
+            "type": "article-journal",
+            "volume": "108"
+        },
+        {
+            "DOI": "10.1016/j.energy.2018.06.222",
+            "URL": "http://arxiv.org/abs/1801.05290",
+            "author": [
+                {
+                    "family": "Brown",
+                    "given": "T."
+                },
+                {
+                    "family": "Schlachtberger",
+                    "given": "D."
+                },
+                {
+                    "family": "Kies",
+                    "given": "A."
+                },
+                {
+                    "family": "Schramm",
+                    "given": "S."
+                },
+                {
+                    "family": "Greiner",
+                    "given": "M."
+                }
+            ],
+            "container-title": "Energy",
+            "id": "brown2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        10
+                    ]
+                ]
+            },
+            "note": "arXiv:1801.05290 [physics]",
+            "page": "720-739",
+            "title": "Synergies of sector coupling and transmission reinforcement in a cost-optimised, highly renewable european energy system",
+            "type": "article-journal",
+            "volume": "160"
+        },
+        {
+            "DOI": "10.1016/j.enconman.2019.111977",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0196890419309835",
+            "author": [
+                {
+                    "family": "Victoria",
+                    "given": "Marta"
+                },
+                {
+                    "family": "Zhu",
+                    "given": "Kun"
+                },
+                {
+                    "family": "Brown",
+                    "given": "Tom"
+                },
+                {
+                    "family": "Andresen",
+                    "given": "Gorm B."
+                },
+                {
+                    "family": "Greiner",
+                    "given": "Martin"
+                }
+            ],
+            "container-title": "Energy Conversion and Management",
+            "id": "victoria2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        12,
+                        1
+                    ]
+                ]
+            },
+            "page": "111977",
+            "title": "The role of storage technologies throughout the decarbonisation of the sector-coupled european energy system",
+            "type": "article-journal",
+            "volume": "201"
+        },
+        {
+            "author": [
+                {
+                    "family": "김도원",
+                    "given": "정연제"
+                }
+            ],
+            "id": "gimdoweon",
+            "language": "ko",
+            "title": "E-mobility 성장에 따른 석유·전력·신재생에너지 산업 대응 전략 연구(전력)",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1088/1748-9326/ac2db0",
+            "URL": "https://dx.doi.org/10.1088/1748-9326/ac2db0",
+            "author": [
+                {
+                    "family": "Fuhrman",
+                    "given": "Jay"
+                },
+                {
+                    "family": "Clarens",
+                    "given": "Andres"
+                },
+                {
+                    "family": "Calvin",
+                    "given": "Katherine"
+                },
+                {
+                    "family": "Doney",
+                    "given": "Scott C."
+                },
+                {
+                    "family": "Edmonds",
+                    "given": "James A."
+                },
+                {
+                    "family": "O’Rourke",
+                    "given": "Patrick"
+                },
+                {
+                    "family": "Patel",
+                    "given": "Pralit"
+                },
+                {
+                    "family": "Pradhan",
+                    "given": "Shreekar"
+                },
+                {
+                    "family": "Shobe",
+                    "given": "William"
+                },
+                {
+                    "family": "McJeon",
+                    "given": "Haewon"
+                }
+            ],
+            "container-title": "Environmental Research Letters",
+            "id": "fuhrman2021",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Publisher: IOP Publishing",
+            "page": "114012",
+            "title": "The role of direct air capture and negative emissions technologies in the shared socioeconomic pathways towards +1.5 °C and +2 °C futures",
+            "type": "article-journal",
+            "volume": "16"
+        },
+        {
+            "DOI": "10.1016/j.fuel.2021.121354",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0016236121012333",
+            "author": [
+                {
+                    "family": "Ince",
+                    "given": "Alper Can"
+                },
+                {
+                    "family": "Colpan",
+                    "given": "C. Ozgur"
+                },
+                {
+                    "family": "Hagen",
+                    "given": "Anke"
+                },
+                {
+                    "family": "Serincan",
+                    "given": "Mustafa Fazıl"
+                }
+            ],
+            "container-title": "Fuel",
+            "id": "ince2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        11,
+                        15
+                    ]
+                ]
+            },
+            "page": "121354",
+            "title": "Modeling and simulation of power-to-x systems: A review",
+            "title-short": "Modeling and simulation of power-to-x systems",
+            "type": "article-journal",
+            "volume": "304"
+        },
+        {
+            "author": [
+                {
+                    "family": "Sterman",
+                    "given": "John"
+                },
+                {
+                    "family": "Sweeney",
+                    "given": "Linda Booth"
+                }
+            ],
+            "id": "sterman",
+            "language": "en",
+            "page": "4",
+            "title": "UNDERSTANDING PUBLIC COMPLACENCY ABOUT CLIMATE CHANGE",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1016/j.enpol.2015.02.022",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0301421515000956",
+            "author": [
+                {
+                    "family": "Song",
+                    "given": "ChiUng"
+                },
+                {
+                    "family": "Oh",
+                    "given": "Wankeun"
+                }
+            ],
+            "container-title": "Energy Policy",
+            "id": "song2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        6,
+                        1
+                    ]
+                ]
+            },
+            "page": "122-130",
+            "title": "Determinants of innovation in energy intensive industry and implications for energy policy",
+            "type": "article-journal",
+            "volume": "81"
+        },
+        {
+            "author": [
+                {
+                    "family": "Schumpeter",
+                    "given": "Joseph A."
+                }
+            ],
+            "collection-title": "Harvard economic studies",
+            "id": "schumpeter1934",
+            "issued": {
+                "date-parts": [
+                    [
+                        1934,
+                        1,
+                        1
+                    ]
+                ]
+            },
+            "publisher": "Harvard University Press",
+            "publisher-place": "Cambridge, MA",
+            "title": "The theory of economic development: An inquiry into profits, capital, credit, interest, and the business cycle",
+            "title-short": "The theory of economic development",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1038/s41558-023-01604-9",
+            "URL": "https://www.nature.com/articles/s41558-023-01604-9",
+            "author": [
+                {
+                    "family": "Fuhrman",
+                    "given": "Jay"
+                },
+                {
+                    "family": "Bergero",
+                    "given": "Candelaria"
+                },
+                {
+                    "family": "Weber",
+                    "given": "Maridee"
+                },
+                {
+                    "family": "Monteith",
+                    "given": "Seth"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Frances M."
+                },
+                {
+                    "family": "Clarens",
+                    "given": "Andres F."
+                },
+                {
+                    "family": "Doney",
+                    "given": "Scott C."
+                },
+                {
+                    "family": "Shobe",
+                    "given": "William"
+                },
+                {
+                    "family": "McJeon",
+                    "given": "Haewon"
+                }
+            ],
+            "container-title": "Nature Climate Change",
+            "id": "fuhrman2023",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        4
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Number: 4 Publisher: Nature Publishing Group",
+            "page": "341-350",
+            "title": "Diverse carbon dioxide removal approaches could reduce impacts on the energywaterland system",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "DOI": "10.1016/j.eneco.2010.10.007",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0140988310001866",
+            "author": [
+                {
+                    "family": "McJeon",
+                    "given": "Haewon C."
+                },
+                {
+                    "family": "Clarke",
+                    "given": "Leon"
+                },
+                {
+                    "family": "Kyle",
+                    "given": "Page"
+                },
+                {
+                    "family": "Wise",
+                    "given": "Marshall"
+                },
+                {
+                    "family": "Hackbarth",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Bryant",
+                    "given": "Benjamin P."
+                },
+                {
+                    "family": "Lempert",
+                    "given": "Robert J."
+                }
+            ],
+            "collection-title": "Special issue on the economics of technologies to combat global warming",
+            "container-title": "Energy Economics",
+            "id": "mcjeon2011",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011,
+                        7,
+                        1
+                    ]
+                ]
+            },
+            "page": "619-631",
+            "title": "Technology interactions among low-carbon energy technologies: What can we learn from a large number of scenarios?",
+            "title-short": "Technology interactions among low-carbon energy technologies",
+            "type": "article-journal",
+            "volume": "33"
+        },
+        {
+            "URL": "https://www.jstor.org/stable/1808579",
+            "author": [
+                {
+                    "family": "Nelson",
+                    "given": "Richard R."
+                },
+                {
+                    "family": "Winter",
+                    "given": "Sidney G."
+                }
+            ],
+            "container-title": "The American Economic Review",
+            "id": "nelson1982",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1982
+                    ]
+                ]
+            },
+            "note": "Publisher: American Economic Association",
+            "page": "114-132",
+            "title": "The schumpeterian tradeoff revisited",
+            "type": "article-journal",
+            "volume": "72"
+        }
+    ],
     "project_biblios": []
 }

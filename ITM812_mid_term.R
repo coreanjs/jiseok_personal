@@ -21,12 +21,20 @@ str(demand)
 
 
 
+
 trade<-read.csv("./ITM812/trade.csv") %>% 
     rename(date = 거래일, fuel = 연료원, hour = 거래시간, trade = 전력거래량) %>% 
     select(date, hour, fuel, trade) %>% 
     as.tibble() %>% 
     pivot_wider(names_from="fuel", values_from="trade") 
 
+
+read.csv("./ITM812/trade.csv") %>% 
+    rename(date = 거래일, fuel = 연료원, hour = 거래시간, trade = 전력거래량) %>% 
+    select(date, hour, fuel, trade) %>% 
+    distinct(fuel)
+
+unique(trade$fuel)
 
 
 trade %>% 
@@ -40,7 +48,11 @@ str(trade)
 demand_trade<- inner_join(demand, trade, by = c('date', 'hour'))
 
 
-demand_trade
+
+demand_trade %>% 
+    mutate(year = year(as.Date(date))) %>% 
+    distinct(year)
+
 
 
 ## 인코딩 cp949
@@ -50,3 +62,6 @@ demand_trade %>%
 
 
 colnames(demand_trade)
+
+
+

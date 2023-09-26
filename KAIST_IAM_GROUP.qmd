@@ -434,3 +434,19 @@ data_tidy %>%
 
 -   and what's next??
 :::
+
+### 2023-09-25 
+
+::: callout-important
+Dear all students. Starting from the next meeting on the 26th, I would ask each of you to prepare a one-pager research question slide at the end of your weekly. On this slide, please write out a research question or two that is "specific" enough to be a unique and tangible topic to work with, "relevant" to stakeholders (policymakers, analysts, or business managers), and "novel" enough to fill the gap in the literature. I, with Prof. McJeon, would like to see your progress not only in GCAM literacy but also in competency in research.
+:::
+
+-   Research question
+
+-   1\. What are the consequences of current treatment of negative emissions technologies by IAMs for other Sustainable Development Goals?
+
+-   2\. What are the impacts of direct air capture deployment for achieving South Korea's NDC for 2030?
+
+-   3\. How can the availability of direct air capture contribute to country-scale decarbonization efforts?
+
+-   4\. How might future socioeconomic developments influence the role of and balance between direct air capture and other forms of negative emissions?

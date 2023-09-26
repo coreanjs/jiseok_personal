@@ -290,13 +290,15 @@ flowchart LR
 
 ## Source of Innovation
 
-### Technology Push
+### Technology Push - 시험 준비!!!
 
 -   Technology Push Model
 
 -   Basic Science -\> Applied Science and Engineering -\> Manufacturing -\> Marketing
 
-### Demand Pull
+-   
+
+### Demand Pull - 시험 준비!!!
 
 ### Seven sources of innovation
 
@@ -393,3 +395,21 @@ Types, Architecture and Taxonomy 관련 논문
     -   limited to the analysis of global patterns of innovation, but the analysis of national or regional innovation patterns could reveal implications that might be more meaningful at those levels.
 
     -   it should be noted that knowledge about patterns of innovation and evolution based on patent analysis may be limited, as patent documents provide only little information about markets.
+
+# Week 4
+
+## Types and Patterns of Innovation
+
+-   Product innovation
+
+-   Process innovation
+
+## Assignment
+
+::: callout-important
+## 이번주 과제는 두 개임
+
+Process innovation과 Process innovation을 구분할 수 있는 방법? 정답은 없다. 아이디어 제출.
+
+Product/Process innovation 다룬 논문 요약해서 제출
+:::
