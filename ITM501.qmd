@@ -1,5 +1,5 @@
 ---
-title: "ITM501 - Innovation Management"
+title: "Innovation Management lecture"
 date : last-modified # now
 author: 
  - name: "Jiseok AHN"
@@ -284,8 +284,6 @@ flowchart LR
 
     -   We recommend future studies to focus on the link of sources and types of innovation in other context with qualitative research.
 
-# 
-
 # Week 3
 
 ## Source of Innovation
@@ -295,8 +293,6 @@ flowchart LR
 -   Technology Push Model
 
 -   Basic Science -\> Applied Science and Engineering -\> Manufacturing -\> Marketing
-
--   
 
 ### Demand Pull - 시험 준비!!!
 
@@ -309,12 +305,6 @@ flowchart LR
 -   Prescriptive 처방적. 피터 드러커의 연구는 증명할 거리가 아니다. 처방적인 것은 측정하기가 너무 어렵다. 기껏해야 설문 조사. 처방적 얘기를 가지고 연구주제로 가기는 쉽지 않다. 마케팅이나 MBA에서 가능
 
 -   **Gibbons Mode 1 to Mode 2 (중요!!!!!!!!!!!)**
-
--   
-
--   
-
--   
 
 ### 과학-기술 연계성 분석
 
@@ -413,3 +403,11 @@ Process innovation과 Process innovation을 구분할 수 있는 방법? 정답�
 
 Product/Process innovation 다룬 논문 요약해서 제출
 :::
+
+# 20231028. Week7
+
+## Diffusion, Chasm and Disruptive Innovation
+
+### 강의
+
+-   ㅇㅇ

@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Jiseok AHN – spring_lecture9_restaurant_review_classification_10242023_upload</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Jiseok AHN</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About me</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../GGS621.html">GGS621</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ITM501.html">ITM501</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../ITM812.html">ITM812</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sector_coupling.html">Sector Coupling</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../KAIST_IAM_GROUP.html">KAIST IAM Group</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">PPT</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../paper_critique_slide.html" class="sidebar-item-text sidebar-link">Paper critique GS621</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../research_slide.html" class="sidebar-item-text sidebar-link">Research</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="machine-learning-based-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-based-data-analysis">Machine Learning-based Data Analysis</h3>
+<section id="minseo-park" class="level4">
+<h4 class="anchored" data-anchor-id="minseo-park">Minseo Park</h4>
+</section>
+</section>
+<section id="practice-2-supervised-learning" class="level3">
+<h3 class="anchored" data-anchor-id="practice-2-supervised-learning">[Practice 2] : Supervised Learning</h3>
+<pre><code>0. Problem Define 
+1. Library import
+2. Data Collection
+3. EDA(Exploratory Data Analysis) 
+4. Preprocessing
+    - 4.1 Stemmer 
+    - 4.2 Bag of Words : 문장별 단어 벡터 만들기
+    - 4.3 Train : Test 로 나누기
+5. Modeling</code></pre>
+<section id="problem-define" class="level4">
+<h4 class="anchored" data-anchor-id="problem-define">[0]: Problem Define</h4>
+<p>레스토랑 리뷰 : 레스토랑 리뷰를 분석하여 Positive/Negative로 분류합니다. - Data: Kaggle (https://www.kaggle.com/akram24/restaurant-reviews)</p>
+</section>
+<section id="libraries-setteting-import-libraries" class="level4">
+<h4 class="anchored" data-anchor-id="libraries-setteting-import-libraries">[1] Libraries setteting : import libraries</h4>
+<div class="cell" data-tags="[]" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Import Libraries</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co"># data provessing, CSV file I/O(e.g.pd.read_csv)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">## Visualization Libraries</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt  <span class="co"># https://matplotlib.org/stable/gallery/index</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns  <span class="co"># https://seaborn.pydata.org/</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#import warnings</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#warnings.filterwarnings("ignore", category=FutureWarning)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#warnings.filterwarnings("ignore", category=DeprecationWarning)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="data-collection" class="level4">
+<h4 class="anchored" data-anchor-id="data-collection">[2]: Data Collection</h4>
+</section>
+<section id="사용할-데이터-셋을-가져옵니다-restaurant-review" class="level4">
+<h4 class="anchored" data-anchor-id="사용할-데이터-셋을-가져옵니다-restaurant-review">[2.1]: 사용할 데이터 셋을 가져옵니다: Restaurant Review</h4>
+<div class="cell" data-tags="[]" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dataset<span class="op">=</span>pd.read_csv(<span class="st">"./data/Restaurant_Reviews.tsv"</span>, delimiter<span class="op">=</span><span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">### TSV: 파일 형식 "탭으로 구분 된 값"을 의미하고,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 이 탭으로 구분 된 값 파일이 많은 스프레드 시트 응용 프로그램에 의해 만들어지고 사용</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">### 1000개의 레스토랑 리뷰를 가져옵니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#데이터셋을 불러와서 첫 세 줄을 출력하여 데이터의 구성을 한 번 살펴봅니다.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>dataset.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Review</th>
+      <th>Liked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Wow... Loved this place.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Crust is not good.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Not tasty and the texture was just nasty.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Stopped by during the late May bank holiday of...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>The selection on the menu was great and so wer...</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="edaexploratory-data-analysis-데이터-탐색" class="level4">
+<h4 class="anchored" data-anchor-id="edaexploratory-data-analysis-데이터-탐색">[3]: EDA(Exploratory Data Analysis) : 데이터 탐색</h4>
+<ul>
+<li>통계량 확인하기 (Summary)</li>
+<li>pandas 로 불러온 데이터 살펴보기: head(), shape(), info(), describe(), value_counts(), unique() 등</li>
+<li>https://hogni.tistory.com/5</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#데이터 셋 구조보기</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dataset.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>(1000, 2)</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">### 해석) 행이 1000개, 열이 2, 리뷰를 통해 분류하는데 사용한 변수가 2개</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dataset.describe()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#.describe() 함수는 데이터의 컬럼별 요약 통계량을 나타냅니다. </span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># mean(), max(), median()등 개별 함수를 사용하여 통계량을 계산할 수도 있습니다</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Liked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1000.00000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.50000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.50025</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.00000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.50000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.00000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.00000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">### [data type]을 확인합니다.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>dataset.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   Review  1000 non-null   object
+ 1   Liked   1000 non-null   int64 
+dtypes: int64(1), object(1)
+memory usage: 15.8+ KB</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">### [결측치] : 비어있는 데이터를 찾습니다. </span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 여기서는 어떤 컬럼(변수, 특성, x)에 결측치가 많은지 봅니다.</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>dataset.isnull().<span class="bu">sum</span>() <span class="co"># There has no null values</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>Review    0
+Liked     0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x <span class="op">=</span> dataset[<span class="st">'Liked'</span>], data <span class="op">=</span> dataset)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>&lt;Axes: xlabel='Liked', ylabel='count'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2023_Spring_Lecture9_Restaurant_Review_Classification_10242023_upload_files/figure-html/cell-10-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="해석-liked-disliked-are-500." class="level4">
+<h4 class="anchored" data-anchor-id="해석-liked-disliked-are-500.">해석) Liked &amp; Disliked are 500.</h4>
+<div class="cell" data-tags="[]" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dataset[dataset[<span class="st">'Liked'</span>] <span class="op">==</span> <span class="dv">1</span>][<span class="st">"Liked"</span>].count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>500</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dataset[dataset[<span class="st">'Liked'</span>] <span class="op">==</span> <span class="dv">0</span>][<span class="st">"Liked"</span>].count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>500</code></pre>
+</div>
+</div>
+<pre><code>0. Problem Define 
+1. Library import
+2. Data Collection
+3. EDA(Exploratory Data Analysis) : 데이터 탐색
+4. Preprocessing
+    - 4.1 Stemmer 
+    - 4.2 Bag of Words : 문장별 단어 벡터 만들기
+    - 4.3 Train : Test 로 나누기
+5. Modeling</code></pre>
+</section>
+<section id="preprocessing" class="level4">
+<h4 class="anchored" data-anchor-id="preprocessing">[4]: Preprocessing</h4>
+<div class="cell" data-tags="[]" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> stopwords</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.stem.snowball <span class="im">import</span> SnowballStemmer</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re <span class="co"># 정규화</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>[nltk.corpus.stopword] - 자연어처리를 할때, 너무 빈번하게 나와서, 아무의미 없다고 판단되는 단어들을 보통 “stopword”라고 부릅니다. - 가령, ‘a’, ’the’와 같은 단어들은 모든 구문(phrase)들에 매우 많이 등장합니다. 따라서 아무 의미를 가지지 못합니다. - 사실 연구자 혹은 분석가가 자연어 처리중에 보면, “아 이 단어는 제외해야겠구나”라는 생각이 옵니다. - 앞에서 본 것처럼 너무 명확하고, 아무 의미가 없는 것이니까요. - Reference: https://frhyme.github.io/python-libs/nltk_stopwords/</p>
+<p>[TF-IDF] - 다른 방법으로는 TF-IDF 값을 사용할 수도 있습니다. - TF-IDF는 “Term Frequency - Inverse Document Frequency”를 말하며, 키워드의 빈도(TF)가 클수록 크고, 등장한 문서의 비율(DF)가 클수록 작아집니다. - 즉, DF가 클수록 작아집니다. - 보통 stopword는 DF(Document Frequency)가 굉장히 큽니다. 대부분의 문서에서 등장합니다. - nltk.corpus.stopwords.words(‘english’)를 사용해서 보편적으로 사용되는 stopwords를 가져올 수 있습니다. - nltk.corpus.stopword 에는 다음 단어들이 포함되어 있죠. 보면 대략 합당하고 느껴집니다. - Reference: https://wikidocs.net/22530</p>
+<p>[Stemming] - Stemming은 단어에서 접사(affix)를 제거하는 것을 의미합니다. - Stemming은 검색엔진에서 색인할 때 가장 많이 씁니다. - 모든 형태의 단어를 저장하는것 보다 Stemming한 단어를 저장하는 것이 색인 크기를 줄일 뿐만아니라 검색 정확성을 높일 수 있습니다. - 이런 알고리즘 stemmer/stemming algorithm 이라고 합니다. - Reference: https://excelsior-cjh.tistory.com/67</p>
+</section>
+<section id="stemmer-snowballstemmer-class" class="level4">
+<h4 class="anchored" data-anchor-id="stemmer-snowballstemmer-class">[4-1 Stemmer] SnowballStemmer Class</h4>
+<ul>
+<li>steeming words를 지원하는 class가 여러개가 있습니다.</li>
+<li>그 중 본 강의에서는 영어 외의 13개 국가의 언어에대한 Stemming을 지원하는 SnowballStemmer를 사용합니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>stemmer <span class="op">=</span> SnowballStemmer(<span class="st">'english'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>stemmer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>&lt;nltk.stem.snowball.SnowballStemmer at 0x256bcf230d0&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>corpus<span class="op">=</span>[]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">##stemmer = SnowballStemmer('english')</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nltk</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>nltk.download(<span class="st">'stopwords'</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>corpus <span class="op">=</span> []</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">1000</span>):</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    review <span class="op">=</span> re.sub(<span class="st">'[^a-zA-Z]'</span>,<span class="st">' '</span>,dataset[<span class="st">'Review'</span>][i]) </span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">## ^뒤의 문자열로 문자열이 시작됩니다.</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">## sub = substitution.</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">## 가정입니다. </span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">## 알파벳을 제외한 문자들을 ' '로 대체합니다.</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">## 영어 문장에 각주 등과 같은 이유로 특수 문자가 섞여있습니다. </span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">## 자연어 처리를 위해 특수 문자를 제거하고 싶다면 알파벳 외의 문자는 공백으로 처리하는 등의 사용 용도로 쓸 수 있습니다.</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>    review <span class="op">=</span> review.lower() <span class="co">## 대문자를 소문자(lower)로 바꾸어 줍니다.</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>    review <span class="op">=</span> review.split()</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>    review <span class="op">=</span> [stemmer.stem(word) <span class="cf">for</span> word <span class="kw">in</span> review <span class="cf">if</span> word <span class="kw">not</span> <span class="kw">in</span> <span class="bu">set</span>(stopwords.words(<span class="st">'english'</span>))]</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>    <span class="co">#stemmer 에 있는 모든 단어에서 접사를 빼고 review 에 넣어줍니다. </span></span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>    review <span class="op">=</span> <span class="st">' '</span>.join(review)</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>    corpus.append(review)</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">#append를 사용해서 계속 붙여 나갑니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\User\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!</code></pre>
+</div>
+</div>
+<p>[Regular Expression]</p>
+<pre><code>- split(): 함수는 입력된 정규 표현식을 기준으로 문자열들을 분리하여 리스트로 리턴합니다. 
+- 자연어 처리에 있어서 가장 많이 사용되는 정규 표현식 함수 중 하나인데, 토큰화에 유용하게 쓰일 수 있기 때문입니다.
+- import re
+    - text="사과 딸기 수박 메론 바나나"
+    - re.split(" ",text)
+- 결과
+    - ['사과', '딸기', '수박', '메론', '바나나']
+- Reference : https://wikidocs.net/21703</code></pre>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">### import nltk</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co">### nltk.download()</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co">### 또다른 방법</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co">### !pip install nltk (at jupyter)</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co">### pip install nltk(at python console)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dataset.head()</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="co">### dataset=pd.read_csv("./data/Restaurant_Reviews.tsv", delimiter='\t')</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Review</th>
+      <th>Liked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Wow... Loved this place.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Crust is not good.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Not tasty and the texture was just nasty.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Stopped by during the late May bank holiday of...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>The selection on the menu was great and so wer...</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="데이터-전처리가-잘-되어-있는지-확인해-보자" class="level5">
+<h5 class="anchored" data-anchor-id="데이터-전처리가-잘-되어-있는지-확인해-보자">데이터 전처리가 잘 되어 있는지 확인해 보자!!</h5>
+<div class="cell" data-tags="[]" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>corpus[<span class="dv">0</span>]</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co">### corpus는 전처리 후의 데이터 셋</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+<pre><code>'wow love place'</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>corpus[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>'crust good'</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="해석" class="level4">
+<h4 class="anchored" data-anchor-id="해석">해석)</h4>
+<ul>
+<li>모든 데이터의 전처리를 잘 마쳤는지, corpus의 길이를 확인합니다.<br>
+</li>
+<li>corpus는 전처리된 리스트들이 들어 있는 테이블 입니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(corpus)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="34">
+<pre><code>1000</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(dataset) <span class="co">## 기존 데이터셋과 같음을 확인하기 위해 점검</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="35">
+<pre><code>1000</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>dataset.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="38">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Review</th>
+      <th>Liked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>995</th>
+      <td>I think food should have flavor and texture an...</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>Appetite instantly gone.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>Overall I was not impressed and would not go b...</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>The whole experience was underwhelming, and I ...</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>Then, as if I hadn't wasted enough of my life ...</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>corpus[<span class="dv">999</span>] <span class="co">### 데이터 전처리 되 후의 데이터 확인</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="39">
+<pre><code>'wast enough life pour salt wound draw time took bring check'</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>dataset[<span class="st">"Review"</span>][<span class="dv">999</span>] <span class="co">### 원본 데이터 확인</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="40">
+<pre><code>"Then, as if I hadn't wasted enough of my life there, they poured salt in the wound by drawing out the time it took to bring the check."</code></pre>
+</div>
+</div>
+</section>
+<section id="해석-1" class="level4">
+<h4 class="anchored" data-anchor-id="해석-1">해석)</h4>
+<ul>
+<li>raw data 와 preprocessed data 를 비교해 봅니다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>dataset.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="41">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Review</th>
+      <th>Liked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Wow... Loved this place.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Crust is not good.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Not tasty and the texture was just nasty.</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Stopped by during the late May bank holiday of...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>The selection on the menu was great and so wer...</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>dataset[<span class="st">"Review"</span>][<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="42">
+<pre><code>'Wow... Loved this place.'</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>corpus[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="43">
+<pre><code>'wow love place'</code></pre>
+</div>
+</div>
+<pre><code>0. Problem Define 
+1. Library import
+2. Data Collection
+3. EDA(Exploratory Data Analysis) : 데이터 탐색
+4. Preprocessing
+    - 4.1 Stemmer 
+    - 4.2 Bag of Words : 문장별 단어 벡터 만들기
+    - 4.3 Train : Test 로 나누기
+5. Modeling</code></pre>
+</section>
+<section id="bag-of-words" class="level4">
+<h4 class="anchored" data-anchor-id="bag-of-words">[4-2 Bag of Words]</h4>
+<section id="참고-0-sentimantal-analysis-단어-벡터-및-단어-갯수" class="level5">
+<h5 class="anchored" data-anchor-id="참고-0-sentimantal-analysis-단어-벡터-및-단어-갯수">[참고 0] Sentimantal Analysis: 단어 벡터 및 단어 갯수</h5>
+<ul>
+<li>https://smlee729.github.io/python/natural%20language%20processing/2015/04/06/1-sentimental-analysis-2.html</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> CountVectorizer</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="co">### Convert a collection of text documents to a matrix of token counts</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="co">### sklearn&gt;&gt;feature_extraction&gt;&gt;text&gt;&gt;CountVectorizer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#디폴트 값으로 CountVectorizer를 만들어줍니다.</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>cv <span class="op">=</span> CountVectorizer(max_features<span class="op">=</span><span class="dv">1500</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="참고-1-max_features" class="level5">
+<h5 class="anchored" data-anchor-id="참고-1-max_features">[참고 1] max_features</h5>
+<ul>
+<li>max_feature는 최대 feature 갯수를 설정해주는 파라미터입니다.</li>
+<li>해당 파라미터를 이해하려면, feature의 개념에 대해 아셔야 합니다.</li>
+<li>머신러닝에서 feature란, 테이블의 컬럼에 해당하는 개념입니다. 또한 행렬의 열에 해당하는 것이기도 합니다.</li>
+<li>그럼 구체적인 예시를 코드로 한 번 살펴보겠습니다.</li>
+<li>만약 한 문장에서 15 종류의 단어가 사용되었다면, feature 값은 15이다. max_features 값은 최대 단어의 종류(15)가 될 것 이다.</li>
+<li>또 다른 의미로는 너무 많은 단어가 있을 경우, 가장 빈도수가 높은 단어 15개만 사용합니다.</li>
+</ul>
+</section>
+<section id="참고-2-countvectorizer" class="level5">
+<h5 class="anchored" data-anchor-id="참고-2-countvectorizer">[참고 2] CountVectorizer</h5>
+<ul>
+<li>단어들의 카운트(출현 빈도(frequency))로 여러 문서들을 벡터화</li>
+<li>카운트 행렬, 단어 문서 행렬 (Term-Document Matrix, TDM))</li>
+<li>모두 소문자로 변환시키기 때문에 me 와 Me 는 모두 같은 특성이 된다.</li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="58">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>cv.fit(corpus)</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="co">### fit 함수를 통해서 각 리뷰들을 대입합니다. (단어 그대로 사용해서) 벡터로 만들어 줍니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="58">
+<style>#sk-container-id-4 {color: black;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>CountVectorizer(max_features=1500)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" checked=""><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">CountVectorizer</label><div class="sk-toggleable__content"><pre>CountVectorizer(max_features=1500)</pre></div></div></div></div></div>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="59">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Vocabulary: '</span>)</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cv.vocabulary_)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="co">### cv에 있는 단어들과 들어있는 순서를 의미합니다.(다시 알파벳으로  ordering을 합니다.)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Vocabulary: 
+{'wow': 1482, 'love': 762, 'place': 972, 'crust': 312, 'good': 581, 'tasti': 1299, 'textur': 1311, 'nasti': 845, 'stop': 1248, 'late': 740, 'may': 789, 'bank': 91, 'holiday': 652, 'rick': 1088, 'steve': 1241, 'recommend': 1055, 'select': 1143, 'menu': 798, 'great': 595, 'price': 1005, 'get': 565, 'angri': 33, 'want': 1433, 'damn': 321, 'pho': 960, 'honeslti': 655, 'tast': 1297, 'fresh': 540, 'potato': 997, 'like': 750, 'rubber': 1102, 'could': 285, 'tell': 1304, 'made': 771, 'ahead': 15, 'time': 1332, 'kept': 729, 'warmer': 1435, 'fri': 541, 'touch': 1350, 'servic': 1152, 'prompt': 1016, 'would': 1480, 'go': 575, 'back': 82, 'cashier': 201, 'care': 194, 'ever': 449, 'say': 1128, 'still': 1243, 'end': 433, 'wayyy': 1443, 'overpr': 912, 'tri': 1360, 'cape': 190, 'cod': 247, 'ravoli': 1045, 'chicken': 224, 'cranberri': 298, 'mmmm': 817, 'disgust': 372, 'pretti': 1004, 'sure': 1283, 'human': 671, 'hair': 615, 'shock': 1161, 'sign': 1172, 'indic': 693, 'cash': 199, 'high': 645, 'waitress': 1430, 'littl': 753, 'slow': 1184, 'worth': 1479, 'let': 747, 'alon': 23, 'vega': 1404, 'blah': 132, 'food': 526, 'amaz': 27, 'also': 24, 'cute': 319, 'interior': 707, 'beauti': 107, 'perform': 952, 'right': 1090, 'red': 1056, 'velvet': 1410, 'cake': 181, 'ohhh': 881, 'stuff': 1261, 'never': 854, 'brought': 163, 'salad': 1112, 'ask': 59, 'hole': 651, 'wall': 1432, 'mexican': 801, 'street': 1253, 'taco': 1289, 'friend': 543, 'staff': 1229, 'took': 1344, 'hour': 666, 'tabl': 1288, 'restaur': 1078, 'luke': 766, 'warm': 1434, 'sever': 1154, 'run': 1104, 'around': 55, 'total': 1349, 'overwhelm': 913, 'worst': 1478, 'salmon': 1113, 'sashimi': 1121, 'combo': 254, 'burger': 170, 'beer': 110, 'decent': 328, 'deal': 327, 'final': 502, 'blow': 141, 'found': 533, 'accid': 2, 'happier': 626, 'seem': 1141, 'quick': 1033, 'grab': 588, 'bite': 130, 'familiar': 479, 'pub': 1021, 'favor': 489, 'look': 759, 'elsewher': 429, 'overal': 909, 'lot': 761, 'redeem': 1057, 'qualiti': 1031, 'inexpens': 696, 'ampl': 31, 'portion': 993, 'poor': 990, 'waiter': 1429, 'feel': 492, 'stupid': 1262, 'everi': 450, 'came': 185, 'first': 509, 'visit': 1421, 'hiro': 649, 'delight': 343, 'suck': 1269, 'shrimp': 1169, 'tender': 1307, 'moist': 819, 'enough': 436, 'drag': 392, 'establish': 443, 'hard': 627, 'judg': 725, 'whether': 1456, 'side': 1171, 'gross': 605, 'melt': 797, 'styrofoam': 1264, 'eat': 412, 'fear': 491, 'sick': 1170, 'posit': 994, 'note': 868, 'server': 1151, 'attent': 66, 'provid': 1020, 'frozen': 545, 'puck': 1023, 'peopl': 949, 'behind': 112, 'regist': 1064, 'thing': 1318, 'prime': 1007, 'rib': 1084, 'dessert': 354, 'section': 1139, 'bad': 84, 'generic': 562, 'beef': 109, 'cook': 277, 'sandwich': 1119, 'firehous': 508, 'greek': 598, 'dress': 397, 'pita': 970, 'hummus': 673, 'refresh': 1061, 'order': 897, 'duck': 405, 'rare': 1039, 'pink': 968, 'insid': 701, 'nice': 857, 'char': 211, 'outsid': 905, 'us': 1395, 'realiz': 1049, 'husband': 677, 'left': 744, 'sunglass': 1280, 'chow': 232, 'horribl': 660, 'attitud': 67, 'toward': 1352, 'custom': 317, 'talk': 1293, 'one': 889, 'enjoy': 435, 'huge': 670, 'wonder': 1470, 'imagin': 684, 'heart': 635, 'attack': 65, 'grill': 601, 'downtown': 391, 'absolut': 0, 'flat': 513, 'excus': 459, 'much': 832, 'seafood': 1134, 'string': 1256, 'pasta': 935, 'bottom': 152, 'amount': 30, 'sauc': 1125, 'power': 1000, 'scallop': 1129, 'perfect': 951, 'rip': 1093, 'banana': 90, 'petrifi': 956, 'tasteless': 1298, 'least': 742, 'think': 1319, 'refil': 1059, 'water': 1440, 'struggl': 1259, 'wave': 1441, 'minut': 812, 'receiv': 1053, 'star': 1232, 'appet': 48, 'cocktail': 245, 'handmad': 622, 'delici': 341, 'definit': 337, 'glad': 570, 'give': 568, 'militari': 807, 'discount': 370, 'alway': 26, 'dos': 383, 'gringo': 602, 'updat': 1392, 'went': 1452, 'second': 1138, 'got': 585, 'appar': 46, 'heard': 634, 'salt': 1115, 'batter': 101, 'fish': 510, 'chewi': 223, 'way': 1442, 'finish': 506, 'includ': 689, 'drink': 400, 'jeff': 715, 'beyond': 119, 'expect': 461, 'realli': 1050, 'rice': 1086, 'meh': 796, 'min': 810, 'milkshak': 809, 'noth': 869, 'chocol': 229, 'milk': 808, 'guess': 610, 'known': 735, 'excalibur': 455, 'use': 1396, 'common': 257, 'sens': 1146, 'dish': 373, 'quit': 1034, 'appal': 45, 'valu': 1401, 'well': 1451, 'sweet': 1286, 'season': 1136, 'today': 1337, 'lunch': 768, 'buffet': 166, 'cheat': 216, 'wast': 1438, 'opportun': 894, 'compani': 258, 'come': 255, 'experienc': 464, 'underwhelm': 1379, 'relationship': 1067, 'parti': 931, 'wait': 1428, 'person': 955, 'break': 158, 'walk': 1431, 'smell': 1189, 'old': 884, 'greas': 593, 'trap': 1358, 'other': 899, 'turkey': 1370, 'roast': 1095, 'bland': 134, 'pan': 923, 'everyon': 451, 'rave': 1044, 'sugari': 1273, 'disast': 368, 'tailor': 1290, 'palat': 920, 'six': 1180, 'year': 1490, 'spring': 1227, 'roll': 1097, 'oh': 880, 'yummi': 1498, 'meat': 794, 'ratio': 1043, 'unsatisfi': 1388, 'omelet': 887, 'die': 357, 'everyth': 452, 'summari': 1276, 'larg': 738, 'disappoint': 366, 'dine': 360, 'experi': 463, 'sexi': 1156, 'mouth': 828, 'outrag': 903, 'flirt': 518, 'hottest': 665, 'rock': 1096, 'casino': 202, 'step': 1240, 'forward': 532, 'best': 117, 'breakfast': 159, 'bye': 176, 'tip': 1334, 'ladi': 737, 'arriv': 57, 'cafe': 180, 'serv': 1150, 'fantast': 483, 'wife': 1461, 'garlic': 557, 'bone': 147, 'marrow': 788, 'ad': 11, 'extra': 468, 'meal': 792, 'anoth': 35, 'help': 642, 'bloddi': 138, 'mari': 786, 'town': 1353, 'cannot': 188, 'beat': 105, 'mussel': 838, 'wine': 1463, 'reduct': 1058, 'better': 118, 'tigerlilli': 1331, 'afternoon': 13, 'bartend': 95, 'ambienc': 29, 'music': 837, 'play': 979, 'next': 856, 'trip': 1363, 'sooooo': 1206, 'real': 1048, 'sushi': 1285, 'lover': 763, 'honest': 656, 'yama': 1487, 'pass': 933, 'busi': 172, 'thai': 1312, 'spici': 1221, 'check': 217, 'atmospher': 62, 'kind': 733, 'steak': 1237, 'although': 25, 'sound': 1210, 'actual': 10, 'bit': 128, 'know': 734, 'manag': 781, 'blandest': 135, 'eaten': 413, 'prepar': 1002, 'indian': 692, 'cuisin': 315, 'boot': 149, 'worri': 1476, 'fine': 504, 'guy': 612, 'son': 1202, 'said': 1110, 'thought': 1324, 'ventur': 1412, 'away': 74, 'hit': 650, 'spot': 1225, 'night': 859, 'host': 662, 'lack': 736, 'word': 1472, 'bitch': 129, 'number': 871, 'reason': 1051, 'review': 1080, 'leav': 743, 'phenomen': 958, 'ambianc': 28, 'return': 1079, 'strip': 1257, 'pork': 992, 'belli': 115, 'mediocr': 795, 'penn': 948, 'vodka': 1422, 'excel': 457, 'crispi': 307, 'wrap': 1483, 'delish': 344, 'tuna': 1369, 'rude': 1103, 'nyc': 874, 'bagel': 85, 'cream': 302, 'chees': 219, 'caper': 191, 'even': 447, 'subway': 1267, 'fact': 473, 'serious': 1148, 'solid': 1195, 'bar': 92, 'extrem': 470, 'mani': 784, 'weekend': 1448, 'empti': 432, 'suggest': 1274, 'ate': 61, 'curri': 316, 'bamboo': 89, 'shoot': 1163, 'blanket': 136, 'moz': 830, 'top': 1345, 'done': 379, 'cover': 292, 'subpar': 1266, 'bathroom': 100, 'clean': 240, 'decor': 331, 'chang': 210, 'consid': 271, 'pace': 917, 'thumb': 1329, 'watch': 1439, 'pay': 941, 'ignor': 682, 'fianc': 497, 'middl': 804, 'day': 325, 'greet': 600, 'seat': 1137, 'mandalay': 782, 'bay': 102, 'forti': 531, 'five': 511, 'vain': 1399, 'crostini': 308, 'stale': 1230, 'highlight': 646, 'nigiri': 860, 'joint': 722, 'differ': 358, 'cut': 318, 'piec': 964, 'flavor': 514, 'voodoo': 1424, 'sinc': 1177, 'gluten': 574, 'free': 537, 'ago': 14, 'unfortun': 1381, 'must': 839, 'bakeri': 86, 'reloc': 1070, 'impress': 687, 'immedi': 685, 'divers': 376, 'avoid': 72, 'cost': 282, 'full': 550, 'hand': 620, 'phoenix': 961, 'metro': 800, 'area': 52, 'treat': 1359, 'bacon': 83, 'hella': 640, 'salti': 1116, 'spinach': 1223, 'avocado': 71, 'ingredi': 699, 'sad': 1107, 'liter': 752, 'zero': 1499, 'list': 751, 'khao': 731, 'soi': 1194, 'miss': 814, 'terrif': 1310, 'thrill': 1326, 'accommod': 3, 'vegetarian': 1407, 'daughter': 324, 'perhap': 953, 'caught': 204, 'inspir': 702, 'desir': 351, 'modern': 818, 'hip': 648, 'maintain': 777, 'cozi': 294, 'week': 1447, 'haunt': 630, 'sat': 1122, 'take': 1291, 'overcook': 910, 'charcoal': 212, 'decid': 329, 'send': 1145, 'verg': 1414, 'probabl': 1009, 'dirt': 363, 'someth': 1199, 'healthi': 633, 'quantiti': 1032, 'raspberri': 1040, 'ice': 680, 'incred': 691, 'interest': 706, 'crepe': 305, 'station': 1235, 'hot': 664, 'bread': 157, 'butter': 174, 'home': 653, 'chip': 226, 'origin': 898, 'egg': 423, 'gyro': 613, 'wing': 1464, 'satisfi': 1124, 'joey': 720, 'vote': 1425, 'dog': 377, 'valley': 1400, 'reader': 1047, 'magazin': 774, 'bowl': 153, 'live': 754, 'friday': 542, 'insult': 705, 'felt': 496, 'disrespect': 375, 'drive': 402, 'exceed': 456, 'hope': 659, 'dream': 395, 'serivc': 1149, 'brunch': 164, 'invit': 708, 'last': 739, 'foot': 527, 'mix': 816, 'mushroom': 836, 'yukon': 1496, 'gold': 578, 'pure': 1027, 'white': 1457, 'corn': 279, 'beateous': 106, 'bug': 167, 'show': 1167, 'given': 569, 'climb': 241, 'soon': 1204, 'tartar': 1296, 'though': 1323, 'soggi': 1193, 'jamaican': 713, 'mojito': 820, 'small': 1185, 'rich': 1087, 'accord': 5, 'shower': 1168, 'rins': 1092, 'unless': 1385, 'mind': 811, 'nude': 870, 'see': 1140, 'lobster': 755, 'bisqu': 127, 'bussel': 173, 'sprout': 1228, 'risotto': 1094, 'filet': 499, 'need': 849, 'pepper': 950, 'cours': 289, 'none': 865, 'bode': 145, 'someon': 1198, 'either': 425, 'cold': 249, 'date': 323, 'unbeliev': 1376, 'bargain': 94, 'folk': 524, 'otto': 901, 'make': 778, 'welcom': 1450, 'special': 1217, 'main': 776, 'uninspir': 1383, 'whenev': 1455, 'world': 1475, 'annoy': 34, 'drunk': 404, 'fun': 551, 'chef': 222, 'doubl': 384, 'cheeseburg': 220, 'singl': 1178, 'patti': 940, 'fall': 477, 'apart': 42, 'pictur': 963, 'upload': 1394, 'yeah': 1489, 'coupl': 287, 'sport': 1224, 'event': 448, 'tv': 1372, 'possibl': 995, 'descript': 349, 'yum': 1497, 'eel': 419, 'yet': 1494, 'mayo': 791, 'hardest': 628, 'decis': 330, 'suppos': 1282, 'eye': 471, 'stay': 1236, 'money': 822, 'flavour': 516, 'almost': 22, 'build': 168, 'freez': 538, 'close': 242, 'point': 986, 'ayc': 77, 'light': 749, 'dark': 322, 'set': 1153, 'mood': 825, 'base': 96, 'sub': 1265, 'par': 927, 'effort': 422, 'gratitud': 591, 'owner': 915, 'privileg': 1008, 'work': 1473, 'creami': 303, 'parent': 929, 'similar': 1174, 'complaint': 261, 'silent': 1173, 'pizza': 971, 'peanut': 945, 'fast': 486, 'godfath': 577, 'tough': 1351, 'short': 1165, 'stick': 1242, 'recal': 1052, 'charg': 213, 'tap': 1294, 'exquisit': 466, 'generous': 563, 'plus': 984, 'buck': 165, 'thus': 1330, 'far': 484, 'twice': 1373, 'self': 1144, 'proclaim': 1011, 'coffe': 248, 'wild': 1462, 'veggitarian': 1409, 'platter': 978, 'cant': 189, 'wrong': 1485, 'madison': 773, 'ironman': 709, 'job': 719, 'dedic': 332, 'boba': 144, 'tea': 1301, 'jenni': 716, 'patio': 938, 'outstand': 906, 'goat': 576, 'skimp': 1181, 'mac': 769, 'bachi': 81, 'stink': 1244, 'saganaki': 1109, 'hate': 629, 'disagre': 365, 'fellow': 495, 'yelper': 1493, 'later': 741, 'neighborhood': 852, 'conveni': 276, 'locat': 756, 'pull': 1024, 'soooo': 1205, 'gave': 559, 'rate': 1041, 'pleas': 980, 'third': 1320, 'write': 1484, 'stir': 1245, 'noodl': 866, 'count': 286, 'box': 154, 'bore': 150, 'greedi': 597, 'corpor': 280, 'dime': 359, 'atroci': 63, 'summer': 1277, 'charm': 214, 'outdoor': 902, 'toast': 1336, 'english': 434, 'muffin': 833, 'untoast': 1389, 'hous': 667, 'bus': 171, 'boy': 155, 'basic': 98, 'figur': 498, 'joke': 723, 'public': 1022, 'bbq': 103, 'fare': 485, 'two': 1374, 'happi': 625, 'downsid': 390, 'without': 1469, 'doubt': 385, 'except': 458, 'month': 824, 'favorit': 490, 'shawarrrrrrma': 1159, 'black': 131, 'pea': 943, 'unreal': 1387, 'vinaigrett': 1418, 'seen': 1142, 'especi': 442, 'mom': 821, 'pleasant': 981, 'honor': 657, 'hut': 678, 'coupon': 288, 'truli': 1366, 'dirti': 364, 'replenish': 1073, 'plain': 973, 'yucki': 1495, 'standard': 1231, 'omg': 888, 'delicioso': 342, 'authent': 69, 'spaghetti': 1216, 'whatsoev': 1453, 'veget': 1406, 'tucson': 1367, 'chipotl': 228, 'classi': 238, 'succul': 1268, 'basebal': 97, 'brick': 161, 'oven': 908, 'app': 44, 'multipl': 835, 'ten': 1306, 'terribl': 1309, 'equal': 441, 'pancak': 924, 'genuin': 564, 'enthusiast': 438, 'gordon': 584, 'ramsey': 1035, 'shall': 1157, 'sharpli': 1158, 'life': 748, 'door': 382, 'offer': 878, 'cool': 278, 'turn': 1371, 'els': 428, 'buy': 175, 'handl': 621, 'rowdi': 1101, 'find': 503, 'despic': 352, 'soup': 1212, 'lukewarm': 767, 'crave': 299, 'deserv': 350, 'stomach': 1246, 'ach': 7, 'rest': 1076, 'drop': 403, 'ball': 88, 'space': 1215, 'tini': 1333, 'eleg': 426, 'comfort': 256, 'usual': 1397, 'eggplant': 424, 'green': 599, 'bean': 104, 'outta': 907, 'part': 930, 'inconsider': 690, 'hi': 644, 'dinner': 361, 'outshin': 904, 'halibut': 617, 'told': 1339, 'happen': 624, 'car': 192, 'front': 544, 'starv': 1234, 'disgrac': 371, 'def': 335, 'ethic': 445, 'continu': 275, 'andddd': 32, 'anyon': 38, 'past': 934, 'stuf': 1260, 'crystal': 314, 'shop': 1164, 'mall': 779, 'aria': 54, 'summar': 1275, 'nay': 846, 'transcend': 1357, 'bring': 162, 'joy': 724, 'pneumat': 985, 'condiment': 268, 'dispens': 374, 'ian': 679, 'kid': 732, 'option': 896, 'famili': 478, 'impecc': 686, 'simpli': 1176, 'account': 6, 'screw': 1133, 'remind': 1072, 'pop': 991, 'san': 1118, 'francisco': 535, 'gourmet': 587, 'frustrat': 547, 'petti': 957, 'hungri': 675, 'assur': 60, 'teeth': 1303, 'sore': 1208, 'complet': 262, 'becom': 108, 'regular': 1065, 'profession': 1012, 'companion': 259, 'ground': 606, 'smear': 1188, 'track': 1354, 'everywher': 453, 'pile': 965, 'bird': 125, 'poop': 989, 'furthermor': 553, 'oper': 892, 'websit': 1445, 'mistak': 815, 'expert': 465, 'connisseur': 269, 'topic': 1346, 'jerk': 717, 'strike': 1255, 'rush': 1105, 'nicest': 858, 'across': 9, 'biscuit': 126, 'absolutley': 1, 'awkward': 76, 'cow': 293, 'ths': 1328, 'gristl': 603, 'fat': 487, 'steiner': 1239, 'dollar': 378, 'anyway': 41, 'fs': 548, 'combin': 253, 'pear': 946, 'almond': 21, 'big': 120, 'winner': 1465, 'spicier': 1222, 'prefer': 1001, 'ribey': 1085, 'mesquit': 799, 'anytim': 40, 'gooodd': 583, 'connoisseur': 270, 'certain': 207, 'contain': 274, 'driest': 399, 'relax': 1068, 'venu': 1413, 'group': 607, 'etc': 444, 'nargil': 844, 'tater': 1300, 'tot': 1348, 'southwest': 1214, 'paid': 919, 'vanilla': 1402, 'smooth': 1191, 'profiterol': 1013, 'choux': 231, 'pastri': 936, 'im': 683, 'az': 78, 'new': 855, 'due': 407, 'acknowledg': 8, 'forget': 529, 'margarita': 785, 'ventil': 1411, 'upgrad': 1393, 'rather': 1042, 'camelback': 186, 'flower': 520, 'cartel': 197, 'trim': 1362, 'claim': 236, 'bill': 123, 'jewel': 718, 'exact': 454, 'near': 847, 'boil': 146, 'crab': 296, 'leg': 745, 'toro': 1347, 'cavier': 206, 'extraordinari': 469, 'thin': 1317, 'slice': 1183, 'wagyu': 1427, 'truffl': 1365, 'dont': 380, 'long': 757, 'attach': 64, 'gas': 558, 'awesom': 75, 'wors': 1477, 'humili': 672, 'worker': 1474, 'bunch': 169, 'name': 842, 'call': 183, 'conclus': 267, 'fill': 500, 'daili': 320, 'tragedi': 1356, 'struck': 1258, 'crawfish': 300, 'monster': 823, 'funni': 552, 'multi': 834, 'grain': 589, 'pumpkin': 1025, 'pecan': 947, 'fluffi': 521, 'airlin': 16, 'noca': 863, 'thorough': 1322, 'homemad': 654, 'cheesecurd': 221, 'typic': 1375, 'glanc': 571, 'finger': 505, 'item': 711, 'gone': 580, 'greasi': 594, 'unhealthi': 1382, 'might': 805, 'deliveri': 346, 'man': 780, 'apolog': 43, 'expens': 462, 'pack': 918, 'tiramisu': 1335, 'cannoli': 187, 'sun': 1278, 'whole': 1458, 'choos': 230, 'frenchman': 539, 'opinion': 893, 'entre': 440, 'gc': 560, 'sampl': 1117, 'thirti': 1321, 'vacant': 1398, 'yellowtail': 1492, 'carpaccio': 195, 'stranger': 1251, 'hello': 641, 'strang': 1250, 'boyfriend': 156, 'recent': 1054, 'donut': 381, 'save': 1127, 'room': 1098, 'mayb': 790, 'howev': 668, 'particular': 932, 'suffer': 1271, 'tapa': 1295, 'vinegrett': 1419, 'babi': 80, 'palm': 922, 'believ': 113, 'hanker': 623, 'forth': 530, 'theft': 1315, 'eew': 420, 'overhaul': 911, 'wit': 1468, 'guest': 611, 'super': 1281, 'swung': 1287, 'deepli': 334, 'effici': 421, 'fan': 481, 'sucker': 1270, 'dri': 398, 'cheap': 215, 'oliv': 886, 'perpar': 954, 'present': 1003, 'giant': 566, 'dust': 409, 'powder': 999, 'sugar': 1272, 'fo': 522, 'accomod': 4, 'vegan': 1405, 'veggi': 1408, 'crumbi': 311, 'pale': 921, 'color': 252, 'instead': 704, 'crouton': 309, 'crema': 304, 'caf': 179, 'expand': 460, 'wish': 1467, 'philadelphia': 959, 'sit': 1179, 'fair': 475, 'crisp': 306, 'north': 867, 'scottsdal': 1131, 'soooooo': 1207, 'freak': 536, 'paper': 926, 'reheat': 1066, 'ok': 883, 'wedg': 1446, 'sorri': 1209, 'tongu': 1342, 'cheek': 218, 'bloodi': 139, 'despit': 353, 'yellow': 1491, 'saffron': 1108, 'thru': 1327, 'mean': 793, 'half': 616, 'somehow': 1197, 'luck': 765, 'non': 864, 'focus': 523, 'grandmoth': 590, 'hostess': 663, 'four': 534, 'blue': 143, 'shirt': 1160, 'vibe': 1417, 'drastic': 393, 'caesar': 178, 'madhous': 772, 'proven': 1019, 'dead': 326, 'greatest': 596, 'macaron': 770, 'insan': 700, 'inform': 698, 'somewhat': 1201, 'edibl': 416, 'promis': 1015, 'fail': 474, 'deliv': 345, 'averag': 70, 'plater': 977, 'togeth': 1338, 'construct': 273, 'italian': 710, 'scream': 1132, 'legit': 746, 'book': 148, 'somethat': 1200, 'duo': 408, 'violinist': 1420, 'song': 1203, 'request': 1074, 'baklava': 87, 'falafel': 476, 'baba': 79, 'ganoush': 555, 'mgm': 802, 'courteous': 291, 'eclect': 414, 'onion': 890, 'ring': 1091, 'nobu': 862, 'googl': 582, 'smashburg': 1187, 'gem': 561, 'plantain': 974, 'spend': 1219, 'panna': 925, 'cotta': 284, 'slaw': 1182, 'drench': 396, 'piano': 962, 'soundtrack': 1211, 'rge': 1082, 'fillet': 501, 'relleno': 1069, 'plate': 976, 'sergeant': 1147, 'auju': 68, 'hawaiian': 631, 'breez': 160, 'mango': 783, 'magic': 775, 'pineappl': 967, 'smoothi': 1192, 'mortifi': 826, 'needless': 850, 'drip': 401, 'most': 827, 'hospit': 661, 'industri': 695, 'paradis': 928, 'refrain': 1060, 'cibo': 234, 'longer': 758, 'famous': 480, 'read': 1046, 'pros': 1018, 'simpl': 1175, 'dough': 387, 'tonight': 1343, 'elk': 427, 'hook': 658, 'classic': 239, 'quaint': 1029, 'compliment': 263, 'thank': 1313, 'dylan': 410, 'tummi': 1368, 'gratuiti': 592, 'fli': 517, 'appl': 50, 'juic': 726, 'han': 619, 'nan': 843, 'bare': 93, 'ryan': 1106, 'edinburgh': 417, 'revisit': 1081, 'chines': 225, 'naan': 840, 'pine': 966, 'nut': 872, 'airport': 17, 'speedi': 1218, 'calligraphi': 184, 'anyth': 39, 'complain': 260, 'stood': 1247, 'begin': 111, 'open': 891, 'extens': 467, 'wide': 1459, 'array': 56, 'inflat': 697, 'smaller': 1186, 'grow': 608, 'rapid': 1038, 'fuzzi': 554, 'fabul': 472, 'wonton': 1471, 'thick': 1316, 'spice': 1220, 'whelm': 1454, 'crowd': 310, 'older': 885, 'mid': 803, 'arepa': 53, 'jalapeno': 712, 'that': 1314, 'shoe': 1162, 'defin': 336, 'block': 137, 'low': 764, 'key': 730, 'fanci': 482, 'afford': 12, 'sour': 1213, 'sunday': 1279, 'tradit': 1355, 'hunan': 674, 'style': 1263, 'bother': 151, 'flair': 512, 'nutshel': 873, 'restaraunt': 1077, 'sewer': 1155, 'girlfriend': 567, 'veal': 1403, 'satifi': 1123, 'join': 721, 'club': 243, 'via': 1416, 'email': 430, 'case': 198, 'colder': 250, 'flavorless': 515, 'describ': 348, 'tepid': 1308, 'chain': 209, 'easili': 411, 'nacho': 841, 'crazi': 301, 'juri': 727, 'court': 290, 'wienerschnitzel': 1460, 'idea': 681, 'herea': 643, 'tribut': 1361, 'held': 638, 'salsa': 1114, 'pissd': 969, 'surpris': 1284, 'golden': 579, 'fell': 493, 'devin': 356, 'employe': 431, 'mozzarella': 831, 'neglig': 851, 'unwelcom': 1390, 'consist': 272, 'fruit': 546, 'peach': 944, 'offici': 879, 'blown': 142, 'put': 1028, 'plastic': 975, 'oppos': 895, 'cram': 297, 'takeout': 1292, 'cr': 295, 'pe': 942, 'delic': 340, 'aw': 73, 'kabuki': 728, 'maria': 787, 'articl': 58, 'fuck': 549, 'caballero': 177, 'head': 632, 'oyster': 916, 'round': 1100, 'disbelief': 369, 'qualifi': 1030, 'version': 1415, 'toler': 1340, 'polit': 988, 'wash': 1437, 'otherwis': 900, 'heat': 636, 'coconut': 246, 'fella': 494, 'huevo': 669, 'ranchero': 1037, 'appeal': 47, 'pricey': 1006, 'temp': 1305, 'glove': 573, 'deep': 333, 'oil': 882, 'pleasur': 982, 'plethora': 983, 'seal': 1135, 'approv': 51, 'colleg': 251, 'class': 237, 'start': 1233, 'edit': 418, 'besid': 116, 'costco': 283, 'uniqu': 1384, 'weird': 1449, 'groceri': 604, 'store': 1249, 'japanes': 714, 'dude': 406, 'doughi': 388, 'inch': 688, 'wire': 1466, 'albondiga': 19, 'tomato': 1341, 'three': 1325, 'occas': 876, 'bloodiest': 140, 'refus': 1063, 'anymor': 37, 'chai': 208, 'allergi': 20, 'warn': 1436, 'clue': 244, 'rotat': 1099, 'concern': 266, 'strawberri': 1252, 'unprofession': 1386, 'patron': 939, 'occasion': 877, 'pat': 937, 'bellagio': 114, 'anticip': 36, 'weak': 1444, 'correct': 281, 'sal': 1111, 'fav': 488, 'unexperienc': 1380, 'steakhous': 1238, 'proper': 1017, 'understand': 1378, 'concept': 265, 'guacamol': 609, 'pur': 1026, 'ed': 415, 'postino': 996, 'poison': 987, 'batch': 99, 'yay': 1488, 'hilari': 647, 'christma': 233, 'eve': 446, 'rememb': 1071, 'biggest': 122, 'entir': 439, 'teamwork': 1302, 'degre': 338, 'ri': 1083, 'calamari': 182, 'fondu': 525, 'lost': 760, 'forev': 528, 'scene': 1130, 'denni': 347, 'downright': 389, 'waaaaaayyyyyyyyyi': 1426, 'sangria': 1120, 'glass': 572, 'ridicul': 1089, 'neat': 848, 'trippi': 1364, 'hurri': 676, 'reserv': 1075, 'stretch': 1254, 'cashew': 200, 'undercook': 1377, 'chipolt': 227, 'ranch': 1036, 'dip': 362, 'saus': 1126, 'douchey': 386, 'indoor': 694, 'garden': 556, 'con': 264, 'spotti': 1226, 'neither': 853, 'ensu': 437, 'bing': 124, 'carb': 193, 'profound': 1014, 'deuchebaggeri': 355, 'smoke': 1190, 'solidifi': 1196, 'ala': 18, 'cart': 196, 'blame': 133, 'del': 339, 'hamburg': 618, 'hell': 639, 'gotten': 586, 'ya': 1486, 'shot': 1166, 'firebal': 507, 'disapppoint': 367, 'heimer': 637, 'caus': 205, 'own': 914, 'vomit': 1423, 'circumst': 235, 'obvious': 875, 'movi': 829, 'ha': 614, 'flop': 519, 'problem': 1010, 'bigger': 121, 'unwrap': 1391, 'mile': 806, 'mirag': 813, 'refri': 1062, 'crusti': 313, 'caterpillar': 203, 'appetit': 49, 'instant': 703, 'ninja': 861, 'pour': 998, 'wound': 1481, 'draw': 394}</code></pre>
+</div>
+</div>
+</section>
+<section id="참고-3-두개의-새로운-문장을-리뷰들로-fit했던-단어들을-vectorizer로-변형시킵니다." class="level5">
+<h5 class="anchored" data-anchor-id="참고-3-두개의-새로운-문장을-리뷰들로-fit했던-단어들을-vectorizer로-변형시킵니다.">[참고 3] 두개의 새로운 문장을 리뷰들로 fit했던 단어들을 vectorizer로 변형시킵니다.</h5>
+</section>
+<section id="x-cv.transforma-whole-new-text-zzzzzzzzz-something-very-new-new-new-phrase-uh" class="level5">
+<h5 class="anchored" data-anchor-id="x-cv.transforma-whole-new-text-zzzzzzzzz-something-very-new-new-new-phrase-uh">&gt;&gt;&gt; X = cv.transform([‘A whole new text zzzzzzzzz’, ‘Something very new new new phrase uh ?’])</h5>
+</section>
+<section id="print-x" class="level5">
+<h5 class="anchored" data-anchor-id="print-x">&gt;&gt;&gt; print X</h5>
+<p>(0, 855) 1<br>
+(0, 13428) 1<br>
+(0, 14844) 1<br>
+(0, 15164) 1<br>
+(1, 855) 3<br>
+(1, 9807) 1<br>
+(1, 12374) 1<br>
+(1, 13980) 1<br>
+(1, 14482) 1</p>
+</section>
+<section id="해석-2" class="level5">
+<h5 class="anchored" data-anchor-id="해석-2">해석)</h5>
+<ul>
+<li>입력됐던 문장들이 sparse matrix형태로 변형됩니다.
+<ul>
+<li>앞의 tuple은 (i번째 document, j번째 단어(cv.vocabury에서 확인)를 의미하고, 더 쉽게 설명하면, i번째 문서에서, 전체의 단어빈도수 기준으로 j번째 단어를 의미합니다.</li>
+<li>int값은 등장 횟수를 의미합니다.</li>
+</ul></li>
+<li>matrix이다보니 숫자로만 index가 되어 무엇을 의미하는지는 헷갈리실 수 있습니다.</li>
+</ul>
+</section>
+<section id="참고-4-fit-과-transform을-한-코드로-만들-수-있습니다." class="level5">
+<h5 class="anchored" data-anchor-id="참고-4-fit-과-transform을-한-코드로-만들-수-있습니다.">[참고 4] fit 과 transform을 한 코드로 만들 수 있습니다.</h5>
+<ul>
+<li><p>fit함수를 통해서 각 리뷰들을 대입합니다.</p></li>
+<li><p>두개의 새로운 문장을 –&gt; fit(단어그대로) –&gt; transform (vectorizer)로 변형시킵니다.</p></li>
+<li><p>먼저 fit 명령어를 통해서 text 변수</p>
+<ul>
+<li>(위의 설명에서….### fit 함수를 통해서 각 리뷰들을 대입합니다. (단어 그대로 사용해서) 벡터로 만들어 줍니다.)</li>
+</ul></li>
+<li><p>transform 명령어를 통해서 vectorizer로</p></li>
+<li><p>따로 따로</p>
+<ul>
+<li>cv.fit(corpus)</li>
+<li>cv.transform(corpus)</li>
+</ul></li>
+<li><p>한번에</p>
+<ul>
+<li>x_1 =cv.fit_transform(corpus)</li>
+</ul></li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="60">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>x_1 <span class="op">=</span>cv.fit_transform(corpus)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="61">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Our final vector:</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Full vector: '</span>)</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x_1.toarray())</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="co">### 한 행은 한 문서입니다. 여기서 한 문장, 한 row입니다.</span></span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="co">### 각 열(featrues, column)은 단어를 의미합니다. </span></span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a><span class="co">### 여기서는 빈도수가 높은 1500개의 단어를 기준으로 값을 표현한 것입니다. </span></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="co">### 그것을 다시 알파벳으로 ordering 합니다.</span></span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a><span class="co">### 값이 0 해당 문장에 단어가 없다는 의미입니다. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Full vector: 
+[[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="62">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>x_1.shape</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 1000 개의 reviews를 1500개의 단어로 표현합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="62">
+<pre><code>(1000, 1500)</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="63">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Or if we wanted to get the vector for one word:</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'absolut vector: '</span>)</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cv.transform([<span class="st">'absolut'</span>]).toarray())</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'wow vector: '</span>)</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cv.transform([<span class="st">'wow'</span>]).toarray())</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="co">### max_features=1500 개 이므로, wow는 그 중 wow가 해당하는 곳에 1로 변형될 것입니다.</span></span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a><span class="co">### one-hot encoding 개념입니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>absolut vector: 
+[[1 0 0 ... 0 0 0]]
+wow vector: 
+[[0 0 0 ... 0 0 0]]</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="64">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Or if we wanted to get multiple vectors at once to build matrices</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'absolut and wow and love: '</span>)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(cv.transform([<span class="st">'absolut'</span>,<span class="st">'wow'</span>, <span class="st">'love'</span>]).toarray())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>absolut and wow and love: 
+[[1 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]</code></pre>
+</div>
+</div>
+</section>
+<section id="참고-5-toarray-까지-한번에" class="level5">
+<h5 class="anchored" data-anchor-id="참고-5-toarray-까지-한번에">[참고 5] + toarray() 까지 한번에!!</h5>
+<ul>
+<li>We could also do the whole thing at once with the fit_transform method:
+<ul>
+<li>print(‘One swoop:’)</li>
+<li>new_text = [‘Today is the day that I do the thing today, today’]</li>
+<li>new_vectorizer = CountVectorizer()</li>
+<li>print(new_vectorizer.fit_transform(new_text).toarray())</li>
+</ul></li>
+<li>해석)
+<ul>
+<li>fit함수를 통해서 각 리뷰(텍스트 기반 텍스트: 빈도수)들을 대입합니다.</li>
+<li>두개의 새로운 문장을 리뷰들로 fit했던 것을 transform 를 통해 vectorizer로 변형시킵니다.</li>
+<li>먼저 fit 명령어를 통해서 text 변수에 저장된 데이터를 학습시켜줘야 합니다.</li>
+</ul></li>
+</ul>
+<div class="cell" data-tags="[]" data-execution_count="65">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> cv.fit_transform(corpus)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="66">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>x</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 1000 개의 review에 대해서 one-hot encoding 적용해서 vector화 합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="66">
+<pre><code>&lt;1000x1500 sparse matrix of type '&lt;class 'numpy.int64'&gt;'
+    with 5324 stored elements in Compressed Sparse Row format&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="67">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> cv.fit_transform(corpus).toarray()</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="co">### corpus에 들어있는 문장. 즉, 전처리 후에 들어 있는 문장을 의미합니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="68">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>x.shape</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="co">### (row, column): 데이터 확인</span></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 벡터의 모양</span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a><span class="co">### 1000개의 문장, 1500개 단어로 구성</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="69">
+<pre><code>(1000, 1500)</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="72">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> dataset[<span class="st">'Liked'</span>].values</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y)</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 1000개의 값(value)가 저장되어 있습니다.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1 0 0 1 1 0 0 0 1 1 1 0 0 1 0 0 1 0 0 0 0 1 1 1 1 1 0 1 0 0 1 0 1 0 1 1 1
+ 0 1 0 1 0 0 1 0 1 0 1 1 1 1 1 1 0 1 1 0 0 1 0 0 1 1 1 1 1 1 1 0 1 1 1 0 0
+ 0 0 0 1 1 0 0 0 0 1 0 1 0 1 1 1 0 1 0 1 0 0 1 1 0 1 1 1 1 1 1 1 1 1 1 1 0
+ 0 1 1 1 1 0 0 0 0 0 0 1 1 1 0 0 1 0 1 0 1 1 0 1 1 1 1 0 1 0 0 0 0 1 1 0 0
+ 0 0 1 1 0 0 1 1 1 1 1 0 0 1 1 0 1 1 1 0 0 1 0 1 1 1 1 0 0 1 1 0 0 0 0 0 1
+ 1 0 1 1 1 1 1 0 1 0 1 0 0 1 1 1 1 0 1 1 1 0 0 0 1 0 0 1 0 1 1 0 1 0 1 0 0
+ 0 0 0 1 1 1 0 1 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 1 1 0 1 0 1 0 1 1 1 0 1
+ 0 1 0 1 1 1 1 0 1 1 0 1 1 1 1 1 0 1 1 0 0 1 0 0 0 1 1 0 0 1 0 0 0 1 0 1 1
+ 0 1 0 1 1 0 0 0 1 0 0 0 1 1 1 0 1 0 1 0 0 1 1 1 0 0 1 1 1 1 1 1 0 0 0 1 1
+ 0 1 1 0 0 1 0 0 1 1 1 0 1 1 1 1 1 0 0 1 0 1 1 0 1 1 1 0 1 1 0 1 0 0 1 1 1
+ 0 0 1 1 0 1 0 1 0 0 0 1 1 0 0 0 1 0 0 1 1 1 1 1 1 1 0 1 1 1 0 0 0 1 1 0 1
+ 1 1 0 1 1 0 1 0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 1 0 1 1 0 1 0 1 1 1 1 0 1 1 0
+ 1 1 0 0 1 1 0 1 0 0 0 0 1 1 1 1 0 1 1 0 1 1 0 0 1 1 1 0 1 0 0 0 1 1 1 1 0
+ 1 0 0 1 1 1 0 0 1 1 1 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 0 0 0 1 1 1 1 1 1 0 1
+ 0 1 1 1 0 0 1 0 0 1 1 1 1 1 1 1 0 1 0 1 0 1 1 0 1 0 0 1 1 0 0 1 1 1 1 0 0
+ 0 0 0 1 1 0 0 1 1 1 0 0 1 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 1 0 1 1 0 1 0 1 1
+ 1 0 0 1 0 1 1 0 1 0 1 1 1 1 1 0 1 0 0 0 0 0 1 1 0 0 1 0 0 0 1 0 1 1 0 0 0
+ 1 1 1 0 1 0 1 0 1 0 1 1 0 1 0 0 0 0 0 1 0 0 1 1 0 1 0 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 0 0 1 0 1 1 1 1 0 1 0 1 0 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 0 0 0 0 0 1
+ 1 1 0 1 0 1 0 1 0 1 0 1 1 1 0 1 0 1 1 1 1 1 1 1 0 1 1 0 0 1 1 1 0 0 1 1 1
+ 1 0 0 0 0 1 1 1 0 1 1 1 1 1 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1 1 0 1 0 0 1 0 1
+ 0 0 0 1 1 1 0 0 1 0 1 1 1 1 0 0 1 0 1 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0
+ 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 1 0 1 1 0 0 0 0 1 0 0 1
+ 0 1 1 0 0 1 1 0 0 1 1 0 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 0 0 0 0
+ 1 0 1 1 0 0 1 1 1 1 0 1 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0]</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="73">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>y.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="73">
+<pre><code>(1000,)</code></pre>
+</div>
+</div>
+<pre><code>0. Problem Define 
+1. Library import
+2. Data Collection
+3. EDA(Exploratory Data Analysis) : 데이터 탐색
+4. Preprocessing
+    - 4.1 Stemmer 
+    - 4.2 Bag of Words : 문장별 단어 벡터 만들기
+    - 4.3 Train : Test 로 나누기
+5. Modeling</code></pre>
+</section>
+</section>
+<section id="데이터-셋-나누기-train-vs.-test" class="level4">
+<h4 class="anchored" data-anchor-id="데이터-셋-나누기-train-vs.-test">[4-3 데이터 셋 나누기] Train vs.&nbsp;Test</h4>
+<div class="cell" data-tags="[]" data-execution_count="74">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="75">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>x_train,x_test,y_train,y_test <span class="op">=</span> train_test_split(x,y,test_size <span class="op">=</span> <span class="fl">0.2</span>,random_state <span class="op">=</span> <span class="dv">17</span>)</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="co">#train : test = 8:2</span></span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a><span class="co">#같은 랜덤 초기값 사용 같은 랜덤 데이터 추출 옵션 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="modeling" class="level4">
+<h4 class="anchored" data-anchor-id="modeling">[5 Modeling]</h4>
+<div class="cell" data-tags="[]" data-execution_count="77">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="78">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>rf <span class="op">=</span> RandomForestClassifier(n_estimators<span class="op">=</span><span class="dv">800</span>) </span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="co">### 트리 800개로 구성된 랜덤 포레스트를 만든다.  </span></span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="co">### 즉, 숲을 만들 때 나무의 개수를 의미한다.</span></span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="co">### random forest 는 수많은 작은 decision tree가 모여서 생성된다. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="training-the-classifier" class="level5">
+<h5 class="anchored" data-anchor-id="training-the-classifier">Training the classifier</h5>
+<div class="cell" data-tags="[]" data-execution_count="79">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>rf.fit(x_train,y_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="79">
+<style>#sk-container-id-5 {color: black;}#sk-container-id-5 pre{padding: 0;}#sk-container-id-5 div.sk-toggleable {background-color: white;}#sk-container-id-5 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-5 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-5 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-5 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-5 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-5 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-5 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-5 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-5 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-5 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-5 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-5 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-5 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-5 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-5 div.sk-item {position: relative;z-index: 1;}#sk-container-id-5 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-5 div.sk-item::before, #sk-container-id-5 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-5 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-5 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-5 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-5 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-5 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-5 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-5 div.sk-label-container {text-align: center;}#sk-container-id-5 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-5 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RandomForestClassifier(n_estimators=800)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" checked=""><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier(n_estimators=800)</pre></div></div></div></div></div>
+</div>
+</div>
+</section>
+<section id="making-predictions" class="level5">
+<h5 class="anchored" data-anchor-id="making-predictions">Making Predictions</h5>
+<div class="cell" data-tags="[]" data-execution_count="81">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>y_train_pred <span class="op">=</span> rf.predict(x_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="82">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> rf.predict(x_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="evaluating-predictions" class="level5">
+<h5 class="anchored" data-anchor-id="evaluating-predictions">Evaluating Predictions</h5>
+<div class="cell" data-tags="[]" data-execution_count="87">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report,confusion_matrix,accuracy_score</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="co">#confusion matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="88">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>confusion_matrix(y_test,y_pred)</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="co">#    + -</span></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="co"># + </span></span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a><span class="co"># - </span></span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a><span class="co">#? confusion_matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="88">
+<pre><code>array([[72, 23],
+       [35, 70]], dtype=int64)</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="89">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test,y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              precision    recall  f1-score   support
+
+           0       0.67      0.76      0.71        95
+           1       0.75      0.67      0.71       105
+
+    accuracy                           0.71       200
+   macro avg       0.71      0.71      0.71       200
+weighted avg       0.71      0.71      0.71       200
+</code></pre>
+</div>
+</div>
+<div class="cell" data-tags="[]" data-execution_count="86">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Traning Accuracy ---&gt;'</span>,accuracy_score(y_train,y_train_pred))</span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Testing Accuracy ---&gt;'</span>,accuracy_score(y_test,y_pred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Traning Accuracy ---&gt; 0.99875
+Testing Accuracy ---&gt; 0.71</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

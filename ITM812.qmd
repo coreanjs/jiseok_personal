@@ -218,8 +218,6 @@ freeze: true
 
 -   선형은 직선을 의미하는 것이 아니라 계수들의 곱과 합을로 이루어진 것을 말함.
 
--   
-
 -   예재로 배우기 : 집값 예측
 
     -   최근 주변 부동산 시세를 살펴본다. 보통 얼마에 거래되었을까?
@@ -295,3 +293,19 @@ df=pd.read_csv("./ITM812/BostonHousing2.csv")
 df.tail(10)
 #df.tail(3)
 ```
+
+# Week7. 2023.10.17.
+
+-   회귀분석. 선형 회귀 vs 로지스틱
+
+    -   linear regression
+
+    -   logistic -\> binary classification. 분류에 따라 true or false로 구분 될 수 있는 것.
+
+-   Classification(supervised learning) -\> labeling -\> deep learning.
+
+    -   classification은 정답이 있다.
+
+# 기말 조별 과제
+
+asdas

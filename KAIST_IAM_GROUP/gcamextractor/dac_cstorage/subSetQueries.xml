@@ -2,7 +2,6 @@
 <queries>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="Final energy by detailed end-use sector and fuel">
    <axis1 name="sector">sector</axis1>
    <axis2 name="Year">demand-physical[@vintage]</axis2>
@@ -20,7 +19,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="elec gen by gen tech and cooling tech">
    <axis1 name="technology">technology</axis1>
    <axis2 name="Year">physical-output[@vintage]</axis2>
@@ -82,7 +80,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="elec consumption by demand sector">
    <axis1 name="sector">sector</axis1>
    <axis2 name="Year">demand-physical[@vintage]</axis2>
@@ -94,7 +91,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="Land Use Change Emission (future)">
    <axis1 name="land-use-change-emission">LandLeaf</axis1>
    <axis2 name="Year">land-use-change-emission[@year]</axis2>
@@ -104,7 +100,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="transport service output by mode">
    <axis1 name="mode">subsector</axis1>
    <axis2 name="Year">physical-output[@vintage]</axis2>
@@ -116,7 +111,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="transport service output by tech (new)">
    <axis1 name="technology">technology</axis1>
    <axis2 name="Year">physical-output[@vintage]</axis2>
@@ -128,7 +122,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="transport service output by tech">
    <axis1 name="technology">technology</axis1>
    <axis2 name="Year">physical-output[@vintage]</axis2>
@@ -140,7 +133,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="CO2 emissions by sector (no bio)">
    <axis1 name="sector">sector[@name]</axis1>
    <axis2 name="Year">emissions[@year]</axis2>
@@ -333,7 +325,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <emissionsQueryBuilder title="nonCO2 emissions by resource production">
    <axis1 name="GHG">GHG</axis1>
    <axis2 name="Year">emissions</axis2>
@@ -343,7 +334,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <emissionsQueryBuilder title="nonCO2 emissions by sector">
    <axis1 name="GHG">GHG</axis1>
    <axis2 name="Year">emissions</axis2>
@@ -353,7 +343,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <emissionsQueryBuilder title="nonCO2 emissions by subsector">
    <axis1 name="GHG">GHG</axis1>
    <axis2 name="Year">emissions</axis2>
@@ -364,7 +353,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <emissionsQueryBuilder title="CO2 emissions by sector">
    <axis1 name="sector">sector</axis1>
    <axis2 name="Year">emissions</axis2>
@@ -374,7 +362,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <emissionsQueryBuilder title="CO2 emissions by subsector">
    <axis1 name="subsector">subsector</axis1>
    <axis2 name="Year">emissions</axis2>
@@ -384,7 +371,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <emissionsQueryBuilder title="CO2 sequestration by sector">
    <axis1 name="sector">sector</axis1>
    <axis2 name="Year">emissions-sequestered</axis2>
@@ -468,7 +454,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="hydrogen production by tech">
    <axis1 name="technology">technology</axis1>
    <axis2 name="Year">physical-output[@vintage]</axis2>
@@ -480,7 +465,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="hydrogen utilization by technology">
    <axis1 name="input">input</axis1>
    <axis2 name="Year">demand-physical[@vintage]</axis2>
@@ -492,7 +476,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="hydrogen inputs by tech">
    <axis1 name="fuel">input</axis1>
    <axis2 name="Year">demand-physical[@vintage]</axis2>
@@ -504,7 +487,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="hydrogen prices by sector">
    <axis1 name="fuel">sector</axis1>
    <axis2 name="Year">cost</axis2>
@@ -514,7 +496,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="hydrogen costs by tech">
    <axis1 name="technology">technology</axis1>
    <axis2 name="Year">cost</axis2>
@@ -525,7 +506,6 @@
  </aQuery>
  <aQuery>
   <region name="South Korea"/>
-  <region name="Japan"/>
   <supplyDemandQuery title="hydrogen outputs by technology">
    <axis1 name="technology">technology</axis1>
    <axis2 name="Year">physical-output[@vintage]</axis2>
