@@ -479,6 +479,273 @@
             "title": "The schumpeterian tradeoff revisited",
             "type": "article-journal",
             "volume": "72"
+        },
+        {
+            "DOI": "10.1016/j.tej.2014.03.015",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1040619014000761",
+            "author": [
+                {
+                    "family": "Sovacool",
+                    "given": "Benjamin K."
+                },
+                {
+                    "family": "Nugent",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Gilbert",
+                    "given": "Alex"
+                }
+            ],
+            "container-title": "The Electricity Journal",
+            "id": "sovacool2014",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "112-120",
+            "title": "Construction Cost Overruns and Electricity Infrastructure: An Unavoidable Risk?",
+            "title-short": "Construction Cost Overruns and Electricity Infrastructure",
+            "type": "article-journal",
+            "volume": "27"
+        },
+        {
+            "DOI": "10.1016/j.energy.2014.07.070",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0360544214008925",
+            "author": [
+                {
+                    "family": "Sovacool",
+                    "given": "Benjamin K."
+                },
+                {
+                    "family": "Gilbert",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Nugent",
+                    "given": "Daniel"
+                }
+            ],
+            "container-title": "Energy",
+            "id": "sovacool2014a",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "page": "906-917",
+            "title": "Risk, innovation, electricity infrastructure and construction cost overruns: Testing six hypotheses",
+            "title-short": "Risk, innovation, electricity infrastructure and construction cost overruns",
+            "type": "article-journal",
+            "volume": "74"
+        },
+        {
+            "DOI": "10.1016/j.joule.2020.10.001",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S254243512030458X",
+            "author": [
+                {
+                    "family": "Eash-Gates",
+                    "given": "Philip"
+                },
+                {
+                    "family": "Klemun",
+                    "given": "Magdalena M."
+                },
+                {
+                    "family": "Kavlak",
+                    "given": "Goksin"
+                },
+                {
+                    "family": "McNerney",
+                    "given": "James"
+                },
+                {
+                    "family": "Buongiorno",
+                    "given": "Jacopo"
+                },
+                {
+                    "family": "Trancik",
+                    "given": "Jessika E."
+                }
+            ],
+            "container-title": "Joule",
+            "id": "eash-gates2020",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "2348-2373",
+            "title": "Sources of Cost Overrun in Nuclear Power Plant Construction Call for a New Approach to Engineering Design",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "DOI": "10.1016/j.enpol.2021.112138",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421521000070",
+            "author": [
+                {
+                    "family": "Arbuckle",
+                    "given": "Evan J."
+                },
+                {
+                    "family": "Binsted",
+                    "given": "Matthew"
+                },
+                {
+                    "family": "Davies",
+                    "given": "Evan G. R."
+                },
+                {
+                    "family": "Chiappori",
+                    "given": "Diego V."
+                },
+                {
+                    "family": "Bergero",
+                    "given": "Candelaria"
+                },
+                {
+                    "family": "Siddiqui",
+                    "given": "Muhammad-Shahid"
+                },
+                {
+                    "family": "Roney",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "McJeon",
+                    "given": "Haewon C."
+                },
+                {
+                    "family": "Zhou",
+                    "given": "Yuyu"
+                },
+                {
+                    "family": "Macaluso",
+                    "given": "Nick"
+                }
+            ],
+            "container-title": "Energy Policy",
+            "id": "arbuckle2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        3
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "112138",
+            "title": "Insights for Canadian electricity generation planning from an integrated assessment model: Should we be more cautious about hydropower cost overruns?",
+            "title-short": "Insights for Canadian electricity generation planning from an integrated assessment model",
+            "type": "article-journal",
+            "volume": "150"
+        },
+        {
+            "URL": "https://www.tandfonline.com/doi/epdf/10.1080/14693062.2019.1617667?needAccess=true",
+            "id": "challeng",
+            "language": "en",
+            "note": "ISSN: 1469-3062",
+            "title": "Challenges for hydropower-based nationally determined contributions: a case study for Ecuador",
+            "title-short": "Challenges for hydropower-based nationally determined contributions",
+            "type": ""
+        },
+        {
+            "DOI": "10.1080/14693062.2019.1617667",
+            "URL": "https://www.tandfonline.com/doi/ref/10.1080/14693062.2019.1617667",
+            "author": [
+                {
+                    "family": "Carvajal",
+                    "given": "Pablo E."
+                },
+                {
+                    "family": "Li",
+                    "given": "Francis G. N."
+                }
+            ],
+            "container-title": "Climate Policy",
+            "id": "carvajal2019",
+            "issue": "8",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        9,
+                        14
+                    ]
+                ]
+            },
+            "note": "Publisher: Taylor & Francis",
+            "page": "974-987",
+            "title": "Challenges for hydropower-based nationally determined contributions: A case study for ecuador",
+            "title-short": "Challenges for hydropower-based nationally determined contributions",
+            "type": "article-journal",
+            "volume": "19"
+        },
+        {
+            "DOI": "10.1016/j.enpol.2018.08.021",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0301421518305263",
+            "author": [
+                {
+                    "family": "Köberle",
+                    "given": "Alexandre C."
+                },
+                {
+                    "family": "Garaffa",
+                    "given": "Rafael"
+                },
+                {
+                    "family": "Cunha",
+                    "given": "Bruno S. L."
+                },
+                {
+                    "family": "Rochedo",
+                    "given": "Pedro"
+                },
+                {
+                    "family": "Lucena",
+                    "given": "André F. P."
+                },
+                {
+                    "family": "Szklo",
+                    "given": "Alexandre"
+                },
+                {
+                    "family": "Schaeffer",
+                    "given": "Roberto"
+                }
+            ],
+            "container-title": "Energy Policy",
+            "id": "köberle2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        11,
+                        1
+                    ]
+                ]
+            },
+            "page": "689-700",
+            "title": "Are conventional energy megaprojects competitive? Suboptimal decisions related to cost overruns in brazil",
+            "type": "article-journal",
+            "volume": "122"
         }
     ],
     "project_biblios": []

@@ -21,7 +21,7 @@ setwd("C:/R/Rproject/jiseok_personal/GGS621")
 
 
 ### Import NZ2050
-GGS621_cap_tax <- gcamextractor::readgcam(gcamdatabase = "E:/gcam-v7.0-Windows-Release-Package_GGS621/output/Assignment0927",
+GGS621_cap_tax <- gcamextractor::readgcam(gcamdatabase = "E:/gcam-v7.0-Windows-Release-Package_GGS621/output/231114_Assign7",
                                     paramsSelect = c(#"energy" ## energy 오류 남
                                                      "electricity", 
                                                      "transport", 

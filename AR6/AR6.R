@@ -6,10 +6,10 @@ options(scipen =999)
 getwd()
 
 
-setwd("C:/R/Rproject/jiseok_personal/AR6")
+setwd("C:/R/Rproject/jiseok_personal")
 
 library(readxl)
-AR6_meta<- read_excel('AR6_Scenarios_Database_metadata_indicators_v1.1.xlsx', sheet="meta")
+AR6_meta<- read_excel('./AR6/AR6_Scenarios_Database_metadata_indicators_v1.1.xlsx', sheet="meta")
 
 
 
@@ -19,16 +19,24 @@ unique(AR6_meta$Regional_scope)
 
 
 
-AR6<- read.csv('AR6_Scenarios_Database_World_v1.1.csv') %>% 
+
+AR6<- read.csv('./AR6/AR6_Scenarios_Database_World_v1.1.csv') %>% 
     select(-Region) %>%  # Region은 모두 World라 지워도 됌.
     pivot_longer(-c('Model', 'Scenario', 'Variable', 'Unit'), names_to ="year", values_to="value") %>% 
     mutate(year = as.numeric(str_sub(year, 2, 5))) %>% 
     drop_na(value)
 
 
+#AR6_R10<- read.csv('./AR6/AR6_Scenarios_Database_R10_regions_v1.1.csv') %>% 
+#    pivot_longer(-c('Model', 'Scenario', 'Variable', 'Unit', 'Region'), names_to ="year", values_to="value") %>% 
+#    mutate(year = as.numeric(str_sub(year, 2, 5))) %>% 
+#    drop_na(value) %>% as_tibble()
+
+head(AR6_R10)
 
 
-head(AR6)
+str(AR6_R10)
+unique(AR6_R10$Region)
 
 
 str(AR6)
